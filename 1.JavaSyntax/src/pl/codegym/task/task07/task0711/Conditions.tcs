@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task07.task0711"\n\nUsuń i wstaw
+
+1. Utwórz listę ciągów.
+2. Dodaj 5 ciągów z klawiatury.
+3. Wykonaj następującą czynność 13 razy: usuń ostatni ciąg z listy i wstaw go na jej początek.
+4. Używając pętli wyświetl powstałą listę, każdą wartość w nowej linii.
+
+
+Requirements:
+1.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+2.	Program powinien czytać 5 ciąg&oacute;w z klawiatury.
+3.	Usuń ostatni ciąg i wstaw go na początek. Powt&oacute;rz tę czynność 13 razy.
+4.	Program powinien wyświetlać listę, każdą wartość w nowej linii.
+
+
