@@ -1,5 +1,7 @@
 package com.codegym.games.minesweeper;
 
+import java.awt.*;
+
 /**
  * Created by Piotr on 2020-06-19
  */
@@ -11,4 +13,6 @@ public class GameObject {
         this.x = x;
         this.y = y;
     }
+
+
 }
