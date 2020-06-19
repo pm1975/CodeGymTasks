@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task07.task0703"\n\nSamotne tablice oddziałują na siebie
+
+1. Utwórz tablicę z 10 ciągów.
+2. Utwórz tablicę z 10 liczb.
+3. Wprowadź 10 ciągów z klawiatury i umieść je w tablicy z ciągami.
+4. W każdym elemencie tablicy z liczbami zapisz długość ciągu, którego indeks w tablicy z ciągami odpowiada bieżącemu indeksowi tablicy z liczbami.
+
+Wyświetl zawartość tablicy z liczbami, każdą wartość w nowej linii.
+
+
+Requirements:
+1.	Program musi tworzyć tablicę z 10 ciąg&oacute;w.
+2.	Program musi tworzyć tablicę z 10 liczb całkowitych.
+3.	Program powinien wczytać ciągi z klawiatury do tablicy.
+4.	Program musi zapisywać długości ciąg&oacute;w w tablicy z liczbami i wyświetlać je na ekranie.
+
+

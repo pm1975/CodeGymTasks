@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task07.task0709"\n\nMów zwięźle
+
+1. Utwórz listę ciągów.
+2. Wczytaj 5 ciągów z klawiatury i dodaj je do listy.
+3. Używając pętli, znajdź najkrótszy ciąg w liście.
+4. Wyświetl ten ciąg.
+5. Jeśli jest ich więcej, wyświetl każdy z nich w nowej linii.
+
+
+Requirements:
+1.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+2.	Program powinien wczytać 5 ciąg&oacute;w z klawiatury i zapisać je do listy.
+3.	Program powinien wyświetlać najkr&oacute;tszy ciąg.
+4.	Jeśli najkr&oacute;tszych ciąg&oacute;w jest więcej, musisz wyświetlić każdy z nich w nowej linii.
+
+

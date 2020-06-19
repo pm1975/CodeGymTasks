@@ -1,0 +1,32 @@
+taskKey="pl.codegym.task.task04.task0416"\n\nPrzejście przez ulicę na oślep
+
+Światło dla pieszych jest zaprogramowane następująco:
+na początku każdej godziny świeci się zielone światło przez trzy minuty,
+następnie światło jest żółte przez minutę,
+a później czerwone przez kolejną minutę.
+Później światło jest znowu zielone przez trzy minuty itd.
+Za pomocą klawiatury wprowadź prawdziwą liczbę t, która odpowiada liczbie minut, które upłynęły od początku godziny.
+Określ, jakiego koloru jest światło w danym momencie.
+Wyświetl wynik w następujący sposób:
+"zielone", jeśli światło jest zielone,
+"żółte", jeśli światło jest żółte i
+"czerwone", jeśli światło jest czerwone.
+
+Przykład dla 2,5:
+zielone
+Przykład dla 3:
+żółte
+Przykład dla 4:
+czerwone
+Przykład dla 5:
+zielone
+
+
+Requirements:
+1.	Program powinien odczytywać liczbę rzeczywistą z klawiatury.
+2.	Program powinien wyświetlać tekst na ekranie.
+3.	Jeśli światło jest zielone, wyświetl: &quot;zielone&quot;
+4.	Jeśli światło jest ż&oacute;łte, wyświetl: &quot;ż&oacute;łte&quot;
+5.	Jeśli światło jest czerwone, wyświetl: &quot;czerwone&quot;
+
+

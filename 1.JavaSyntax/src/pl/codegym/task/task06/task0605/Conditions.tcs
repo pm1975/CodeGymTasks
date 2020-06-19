@@ -1,0 +1,24 @@
+taskKey="pl.codegym.task.task06.task0605"\n\nKontrola wagi ciała
+
+Program powinien czytać wprowadzoną przez użytkownika wagę w kilogramach i wzrost w metrach. Następnie powinien wyświetlić informację o BMI użytkownika.
+Zaimplementuj metodę statyczną w klasie Cialo. Metoda powinna obliczać BMI i wyświetlać poniższą wiadomość:
+"Niedowaga: BMI < 18.5" - jeśli BMI jest niższy niż 18.5,
+"Norma: 18.5 <= BMI < 25" - jeśli BMI jest pomiędzy 18.5 a 25 (z wyłączeniem 25),
+"Nadwaga: 25 <= BMI < 30" - jeśli BMI jest pomiędzy 25 a 30 (z wyłączeniem 30),
+"Otyłość: BMI >= 30" - jeśli BMI wynosi co najmniej 30.
+
+Wskazówka:
+Body mass index (BMI) = waga w kg / (wzrost w metrach * wzrost w metrach)
+
+Przykładowy wynik dla 68.4 i 1.77:
+Norma: 18.5 <= BMI < 25
+
+
+Requirements:
+1.	Metoda obliczBMI powinna wyświetlać tekst na ekranie.
+2.	Metoda obliczBMI powinna wyświetlać &quot;Niedowaga: BMI &lt; 18.5&quot; jeśli wskaźnik masy ciała jest niższy niż 18.5 (z wyłączeniem 18.5).
+3.	Metoda obliczBMI powinna wyświetlać &quot;Norma: 18.5 &lt;= BMI &lt; 25&quot; - jeśli wskaźnik masy ciała jest pomiędzy 18.5 a 25 (z wyłączeniem 25).
+4.	Metoda calculateBMI powinna wyświetlać &quot;Nadwaga: 25 &lt;= BMI &lt; 30&quot; - jeśli wskaźnik masy ciała jest pomiędzy 25 a 30 (z wyłączeniem 30).
+5.	Metoda obliczBMI powinna wyświetlać &quot;Otyłość: BMI &gt;= 30&quot;, jeśli BMI wynosi co najmniej 30.
+
+

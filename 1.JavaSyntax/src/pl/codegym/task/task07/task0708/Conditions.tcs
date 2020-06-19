@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task07.task0708"\n\nNajdłuższy ciąg
+
+1. Inicjalizuj listę ciągów.
+2. Wczytaj 5 ciągów z klawiatury i dodaj je do listy.
+3. Używając pętli, znajdź najdłuższy ciąg na liście.
+4. Wyświetl ten ciąg. Jeśli jest ich więcej, wyświetl każdy z nich w nowej linii.
+
+
+Requirements:
+1.	W metodzie main inicjalizuj istniejące pole strings w klasie Solution w nowej ArrayList&lt;&gt;.
+2.	Program powinien wczytać 5 ciąg&oacute;w z klawiatury i zapisać je do listy ciąg&oacute;w.
+3.	Program powinien wyświetlać najdłuższy ciąg.
+4.	Jeśli najdłuższych ciąg&oacute;w jest więcej, musisz wyświetlić każdy z nich w nowej linii.
+
+

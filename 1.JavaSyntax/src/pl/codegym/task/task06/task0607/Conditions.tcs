@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task06.task0607"\n\nLicznik klasy
+
+Zadeklaruj statyczną zmienną int licznikKotow w klasie Kot. Zadeklaruj konstruktor, czyli public Kot(), który zwiększa tę zmienną o 1.
+
+
+Requirements:
+1.	Dodaj konstruktor do klasy Kot.
+2.	Konstruktor musi być publiczny.
+3.	Dodaj pole licznikKotow do klasy Kot.
+4.	Pole licznikKotow musi być typu int.
+5.	Pole licznikKotow musi być statyczne.
+6.	Konstruktor musi zwiększać wartość zmiennej licznikKotow o 1.
+
+

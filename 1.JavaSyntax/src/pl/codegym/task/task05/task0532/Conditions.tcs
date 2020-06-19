@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task05.task0532"\n\nZadanie z algorytmami
+
+Napisz program, który:
+1. czyta liczbę N (musi być większa niż 0) z konsoli
+2. czyta N liczb z konsoli
+3. wyświetla maksimum z N wprowadzonych liczb.
+
+
+Requirements:
+1.	Program powinien czytać liczby z klawiatury.
+2.	Program musi wyświetlać liczbę na ekranie.
+3.	Klasa musi mieć publiczną statyczną metodę void main.
+4.	Nie dodawaj nowych metod do klasy Solution.
+5.	Program powinien wyświetlać maksimum z N wprowadzonych liczb.
+6.	Program nie powinien niczego wyświetlać, jeśli N jest mniejsze lub r&oacute;wne 0.
+
+

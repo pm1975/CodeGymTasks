@@ -1,0 +1,31 @@
+taskKey="pl.codegym.task.task05.task0510"\n\nInicjalizowanie kotów
+
+Utwórz klasę Kot z pięcioma inicjalizatorami:
+- Imie,
+- Imie, waga, wiek
+- Imie, wiek (standardowa waga)
+- Waga, kolor (nieznane imie, adres i wiek, np. bezdomny kot)
+- Waga, kolor, adres (czyjeś inne zwierzę)
+
+Zadaniem inicjalizatora jest sprawienie, by obiekt był poprawny.
+Na przykład, jeśli nie znamy wagi danego kota, powinniśmy określić jego średnią wagę.
+Kot nie może nic nie ważyć.
+To samo tyczy się wieku i koloru.
+Z kolei kot może mieć lub nie mieć imienia (np. imie może być null).
+To samo tyczy się adresu (może być null).
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Klasa Kot musi mieć zmienną imie typu String.
+3.	Klasa Kot musi mieć zmienną wiek typu int.
+4.	Klasa Kot musi mieć zmienną waga typu int.
+5.	Klasa Kot musi mieć zmienną adres typu String.
+6.	Klasa Kot musi mieć zmienną kolor typu String.
+7.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie jako argument i inicjuje wszystkie zmienne opr&oacute;cz adresu.
+8.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie, waga i wiek jako argumenty i inicjuje wszystkie zmienne opr&oacute;cz adresu.
+9.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie i wiek jako argumenty i inicjalizuje wszystkie zmienne opr&oacute;cz adresu.
+10.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera waga i kolor jako argumenty i inicjuje wszystkie zmienne opr&oacute;cz imienia i adresu.
+11.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera waga, kolor i adres jako argumenty i inicjalizuje wszystkie zmienne opr&oacute;cz imienia.
+
+

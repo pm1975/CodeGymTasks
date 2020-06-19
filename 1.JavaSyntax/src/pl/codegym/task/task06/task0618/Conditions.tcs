@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task06.task0618"\n\nPocalujMojBlyszczacyMetalowyTylnySilownik
+
+Utwórz klasę o nazwie PocalujMojBlyszczacyMetalowyTylnySilownik. Utwórz obiekt tej klasy i wyświetl go na ekranie.
+
+
+Requirements:
+1.	Utw&oacute;rz klasę o nazwie PocalujMojBlyszczacyMetalowyTylnySilownik.
+2.	Klasa PocalujMojBlyszczacyMetalowyTylnySilownik musi być statyczna.
+3.	Klasa PocalujMojBlyszczacyMetalowyTylnySilownik musi być publiczna.
+4.	W metodzie main utw&oacute;rz obiekt klasy PocalujMojBlyszczacyMetalowyTylnySilownik.
+5.	W metodzie main wyświetl obiekt PocalujMojBlyszczacyMetalowyTylnySilownik na ekranie.
+
+

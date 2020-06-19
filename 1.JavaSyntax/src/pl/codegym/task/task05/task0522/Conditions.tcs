@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task05.task0522"\n\nMaksimum konstruktorów
+
+Przeanalizuj klasę Kolo. Napisz maksymalną liczbę możliwych konstruktorów z różnymi parametrami.
+
+Wskazówka:
+Nie zapomnij o domyślnym konstruktorze.
+
+
+Requirements:
+1.	Klasa musi mieć przynajmniej trzy zmienne.
+2.	Klasa musi mieć domyślny konstruktor.
+3.	Klasa musi mieć przynajmniej jeden konstruktor.
+4.	Klasa musi mieć przynajmniej dwa konstruktory.
+5.	Klasa musi mieć przynajmniej trzy konstruktory.
+6.	Klasa musi mieć przynajmniej cztery konstruktory.
+
+

@@ -1,0 +1,21 @@
+taskKey="pl.codegym.task.task04.task0411"\n\nPory Roku na Terze
+
+Napisz metodę sprawdzPoreRoku. Bazując na numerze danego miesiąca, metoda powinna określać i wyświetlać porę roku (zima, wiosna, lato, jesień).
+
+Przykład dla liczby 2:
+zima
+
+Przykład dla liczby 5:
+wiosna
+
+Wskazówka: liczby 12, 1 i 2 są miesiącami zimowymi; 3, 4 i 5 wiosennymi itd.
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Metoda main nie powinna wywoływać System.out.println ani System.out.print.
+3.	Metoda main musi wywoływać metodę sprawdzPoreRoku.
+4.	Metoda sprawdzPoreRoku musi być statyczna i void oraz mieć tylko jeden parametr int.
+5.	Metoda sprawdzPoreRoku powinna wyświetlać na tekst na ekranie zgodnie z warunkami zadania.
+
+

@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task05.task0530"\n\nSzefie, mam tu coś dziwnego...
+
+Zadanie: Program czyta z klawiatury dwie liczby i wyświetla ich sumę na ekranie.
+
+
+Requirements:
+1.	Program powinien czytać liczby z klawiatury.
+2.	W klasie może być tylko jedna metoda main.
+3.	- Program powinien wyświetlać ciąg, zaczynający się od &quot;Suma = &quot;.
+4.	Program powinien wyświetlać ciąg, kt&oacute;ry kończy się sumą wprowadzonych liczb.
+
+

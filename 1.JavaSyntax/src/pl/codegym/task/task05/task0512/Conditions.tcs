@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task05.task0512"\n\nUtwórz klasę Kolo
+
+Utwórz klasę Kolo z trzema inicjalizatorami:
+- srodekX, srodekY, promien
+- srodekX, srodekY, promien, szerokosc
+- srodekX, srodekY, promien, szerokosc, kolor
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Klasa Kolo musi mieć zmienne srodekX, srodekY, promien, szerokosc i kolor typu int.
+3.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera srodekX, srodekY i promien jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+4.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera srodekX, srodekY, promien i szerokosc jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+5.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera srodekX, srodekY, promien, szerokosc i kolor jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+
+

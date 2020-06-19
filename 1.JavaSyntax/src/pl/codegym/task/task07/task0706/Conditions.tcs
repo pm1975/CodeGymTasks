@@ -1,0 +1,19 @@
+taskKey="pl.codegym.task.task07.task0706"\n\nUlice i domy
+
+1. Utwórz tablicę z 15 liczb całkowitych.
+2. Zapełnij ją wartościami z klawiatury.
+3. Niech indeks w tablicy reprezentuje numer domu. Wartości poszczególnych indeksów w tablicy reprezentują liczbę ludzi mieszkającą w odpowiadających im domach.
+Po jednej stronie ulicy znajdują się domy o nieparzystych numerach. Domy o numerach parzystych znajdują się po drugiej stronie. Dowiedz się, po której stronie ulicy mieszka więcej ludzi.
+4. Wyświetl następującą informację: "Więcej ludzi mieszka w domach o nieparzystych numerach." lub "Więcej ludzi mieszka w domach o parzystych numerach."
+
+Uwaga:
+dom z indeksem 0 traktujemy jako parzysty.
+
+
+Requirements:
+1.	Program musi tworzyć tablicę z 15 liczb całkowitych.
+2.	Program powinien wczytać liczby z klawiatury do tablicy.
+3.	Program powinien wyświetlać &bdquo;Więcej ludzi mieszka w domach o nieparzystych numerach.&rdquo;, jeśli suma element&oacute;w nieparzystych tablicy jest większa niż suma parzystych.
+4.	Program powinien wyświetlać &bdquo;Więcej ludzi mieszka w domach o parzystych numerach.&rdquo;, jeśli suma element&oacute;w parzystych tablicy jest większa niż suma nieparzystych.
+
+

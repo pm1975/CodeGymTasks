@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task05.task0518"\n\nRejestr psów
+
+Utwórz klasę Pies z trzema konstruktorami:
+- Imie
+- Imie, wzrost
+- Imie, wzrost, kolor
+
+
+Requirements:
+1.	Klasa Pies musi mieć zmienną imie typu String.
+2.	Klasa Pies musi mieć zmienną wzrost typu int.
+3.	Klasa Pies musi mieć zmienną kolor typu String.
+4.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie jako argument i inicjalizuje odpowiednią zmienną instancji.
+5.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie i wzrost jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+6.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie, wzrost i kolor jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+
+

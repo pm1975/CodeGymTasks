@@ -1,0 +1,29 @@
+taskKey="pl.codegym.task.task05.task0517"\n\nTworzenie kotów
+
+Utwórz klasę Kot z pięcioma konstruktorami:
+- Imie,
+- Imie, waga, wiek
+- Imie, wiek (standardowa waga)
+- Waga, kolor (imie, adres i wiek są nieznane; kot jest bezdomny)
+- Waga, kolor, adres (czyjeś inne zwierzę)
+
+Zadaniem konstruktora jest sprawić, by obiekt był poprawny.
+Na przykład, jeśli nie znamy wagi danego kota, powinniśmy określić jego średnią wagę.
+Kot nie może nic nie ważyć.
+To samo tyczy się wieku. Z kolei kot może mieć lub nie mieć imienia (np. imie może być null).
+To samo tyczy się adresu (może być null).
+
+
+Requirements:
+1.	Klasa Kot musi mieć zmienną imie typu String.
+2.	Klasa Kot musi mieć zmienną wiek typu int.
+3.	Klasa Kot musi mieć zmienną waga typu int.
+4.	Klasa Kot musi mieć zmienną adres typu String.
+5.	Klasa Kot musi mieć zmienną kolor typu String.
+6.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie jako argument i inicjalizuje wszystkie zmienne opr&oacute;cz zmiennej adres.
+7.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie, waga i wiek jako argumenty i inicjuje wszystkie zmienne opr&oacute;cz zmiennej adres.
+8.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie i wiek jako argumenty i inicjalizuje wszystkie zmienne opr&oacute;cz zmiennej adres.
+9.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera waga i kolor jako argumenty i inicjalizuje wszystkie zmienne opr&oacute;cz zmiennych imie i adres.
+10.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera zmienne waga, kolor i adres jako argumenty i inicjalizuje wszystkie zmienne opr&oacute;cz zmiennej imie.
+
+

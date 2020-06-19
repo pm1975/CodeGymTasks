@@ -1,0 +1,20 @@
+taskKey="pl.codegym.task.task05.task0509"\n\nUtwórz klasę Przyjaciel
+
+Utwórz klasę Przyjaciel z trzema inicjalizatorami (trzy metody inicjalizuj):
+- Imie
+- Imie, wiek
+- Imie, wiek, plec
+
+Uwaga:
+imie jest typu String, wiek typu int, a plec typu char.
+
+
+Requirements:
+1.	Klasa Przyjaciel musi mieć zmienną imie typu String.
+2.	Klasa Przyjaciel musi mieć zmienną wiek typu int.
+3.	Klasa Przyjaciel musi mieć zmienną plec typu char.
+4.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie jako argument i inicjalizuje odpowiednią zmienną instancji.
+5.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie i wiek jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+6.	Klasa musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie, wiek i plec jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+
+

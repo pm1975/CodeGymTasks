@@ -1,0 +1,21 @@
+taskKey="pl.codegym.task.task05.task0508"\n\nGettery i settery dla klasy Osoba
+
+Utwórz klasę Osoba. Osoba powinna mieć String imie, int wiek i char plec.
+Utwórz gettery i settery dla wszystkich zmiennych klasy Osoba.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Klasa Osoba musi mieć publiczną statyczną metodę void main.
+3.	Klasa Osoba powinna mieć 3 zmienne.
+4.	Klasa Osoba musi mieć zmienną imie typu String.
+5.	Klasa Osoba musi mieć zmienną wiek typu int.
+6.	Klasa Osoba musi mieć zmienną plec typu char.
+7.	Klasa musi mieć setter dla zmiennej imie.
+8.	Klasa musi mieć getter dla zmiennej imie.
+9.	Klasa musi mieć setter dla zmiennej wiek.
+10.	Klasa musi mieć getter dla zmiennej wiek.
+11.	Klasa musi mieć setter dla zmiennej plec.
+12.	Klasa musi mieć getter dla zmiennej plec.
+
+

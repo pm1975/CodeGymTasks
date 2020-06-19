@@ -1,0 +1,21 @@
+taskKey="pl.codegym.task.task05.task0513"\n\nStwórzmy sobie prostokąt
+
+Utwórz klasę Prostokat. Danymi dla tej klasy będą: gora, lewy, szerokosc, wysokosc.
+Utwórz tyle metod inicjalizuj(...), ile to możliwe.
+
+Oto kilka przykładów:
+- określone są 4 parametry: lewy, gora, szerokosc i wysokosc
+- szerokosc/wysokosc nie jest określona (obie to 0)
+- wysokość nie jest określona (jest równa szerokości), tworzymy kwadrat
+- utwórz kopię innego prostokąta, przekazanego jako argument
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Klasa Prostokat musi mieć zmienne gora, lewy, szerokosc i wysokosc typu int.
+3.	Klasa musi mieć przynajmniej jedną metodę inicjalizuj.
+4.	Klasa musi mieć przynajmniej dwie metody inicjalizuj.
+5.	Klasa musi mieć przynajmniej trzy metody inicjalizuj.
+6.	Klasa musi mieć przynajmniej cztery metody inicjalizuj.
+
+

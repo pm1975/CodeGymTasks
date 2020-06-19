@@ -1,0 +1,45 @@
+taskKey="pl.codegym.task.task05.task0507"\n\nŚrednia arytmetyczna
+
+Za pomocą klawiatury wprowadź liczby i oblicz ich średnią arytmetyczną.
+Jeśli użytkownik wprowadzi -1, zostanie wyświetlona średnia arytmetyczna wprowadzonych liczb i program się zakończy.
+-1 nie powinno być włączane do obliczeń.
+
+Oto kilka przykładów:
+a) jeśli wprowadzisz liczby
+1
+2
+2
+4
+5
+-1
+to wyświetlimy
+2.8
+
+b) jeśli wprowadzisz liczby
+4
+3
+2
+1
+-1
+to wyświetlimy
+2.5
+
+Wskazówka: jedno z rozwiązań zawiera następującą konstrukcję:
+
+while (true) {
+int liczba = wczytaj liczbę;
+if (sprawdza, czy liczba jest -1)
+break;
+}
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlać dane na ekranie.
+3.	Po wprowadzeniu -1 program musi prawidłowo się zakończyć.
+4.	Jeśli wprowadzisz kolejno liczby 1, 2, 2, 4, 5 i -1, program powinien wyświetlić 2.8.
+5.	Jeśli wprowadzisz kolejno liczby -100, 0, 100 i -1, program powinien wyświetlić 0.0.
+6.	Jeśli wprowadzisz kolejno liczby 1 i -1, program powinien wyświetlić 1.0.
+7.	Wyświetlany tekst musi spełniać warunki zadania dla danych wejściowych.
+
+

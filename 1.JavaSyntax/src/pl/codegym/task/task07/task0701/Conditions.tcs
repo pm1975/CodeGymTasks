@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task07.task0701"\n\nMaksimum w tablicy
+
+1. W metodzie inicjalizujTablice():
+1.1 Utwórz tablicę 20 liczb
+1.2 Wczytaj 20 liczb z konsoli i umieść je w tablicy
+2. Metoda max(int[] tablica) musi znajdować maksimum spośród elementów tablicy
+
+
+Requirements:
+1.	Metoda inicjalizujTablice musi tworzyć tablicę z 20 liczb całkowitych.
+2.	Metoda inicjalizujTablice musi czytać 20 liczb i zwracać je jako tablicę.
+3.	Metoda max musi zwracać największy element z przekazanej tablicy.
+4.	Nie zmieniaj metody main.
+
+

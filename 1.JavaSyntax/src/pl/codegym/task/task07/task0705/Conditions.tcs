@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task07.task0705"\n\nJedna wielka tablica i dwie małe
+
+1. Utwórz tablicę z 20 liczb.
+2. Zapełnij ją wartościami z klawiatury.
+3. Utwórz dwie tablice, każdą składającą się z 10 liczb.
+4. Skopiuj dużą tablicę do dwóch małych: połowę jej liczb do jednej małej tablicy, a drugą połowę do drugiej.
+5. Wyświetl drugą małą tablicę, każdą wartość w nowej linii.
+
+
+Requirements:
+1.	Program musi tworzyć tablicę z 20 liczb całkowitych.
+2.	Program powinien wczytać 20 liczb z klawiatury do dużej tablicy.
+3.	Program musi tworzyć dwie małe tablice, każdą składającą się z 10 liczb.
+4.	Program musi kopiować połowę dużej tablicy do pierwszej małej tablicy, a drugą połowę do drugiej małej tablicy, a następnie wyświetlać tę ostatnią na ekranie.
+
+

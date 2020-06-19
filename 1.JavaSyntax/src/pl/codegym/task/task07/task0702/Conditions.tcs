@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task07.task0702"\n\nTablica z ciągami w odwrotnej kolejności
+
+1. Utwórz tablicę z 10 ciągów.
+2. Wprowadź za pomocą klawiatury 8 ciągów i zapisz je w tablicy.
+3. Wyświetl zawartość całej tablicy (10 elementów) na ekranie w odwrotnej kolejności. Każdy element w nowej linii.
+
+
+Requirements:
+1.	Program musi tworzyć tablicę z 10 ciąg&oacute;w.
+2.	Program powinien wczytać 8 ciąg&oacute;w z klawiatury do tablicy.
+3.	Program powinien wyświetlać 10 ciąg&oacute;w, każdy w nowej linii.
+4.	Tablica ciąg&oacute;w (10 element&oacute;w) musi wyświetlać się w odwrotnej kolejności.
+
+

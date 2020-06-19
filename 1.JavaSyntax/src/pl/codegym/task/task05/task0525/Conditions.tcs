@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task05.task0525"\n\nKaczka to za mało
+
+Używając klasy Kaczka  jako wzoru, utwórz klasy Kot i Pies .
+Jak myślisz, co powinna zwracać metoda toString w klasach Kot i Pies?
+W metodzie main utwórz dwa obiekty każdej klasy i wyświetl je na ekranie.
+Obiekty klasy Kaczka zostały już utworzone i są wyświetlane na ekranie.
+
+
+Requirements:
+1.	Utw&oacute;rz klasę Kot.
+2.	Utw&oacute;rz klasę Pies.
+3.	Klasa Kot musi prawidłowo implementować metodę toString.
+4.	Klasa Pies musi prawidłowo implementować metodę toString.
+5.	W metodzie main utw&oacute;rz dwa obiekty klasy Kot.
+6.	W metodzie main utw&oacute;rz dwa obiekty Pies.
+7.	Wyświetl wszystkie utworzone obiekty na ekranie.
+
+

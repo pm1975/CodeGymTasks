@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task06.task0609"\n\nOdległość między dwoma punktami
+
+Zaimplementuj metodę statyczną double getOdleglosc(x1, y1, x2, y2). Powinna ona wyznaczać odległość między dwoma punktami.
+Użyj metody double Math.sqrt(double a), która oblicza pierwiastek kwadratowy z przekazanego argumentu.
+
+
+Requirements:
+1.	Metoda getOdleglosc musi zwracać double.
+2.	Metoda getOdleglosc musi być statyczna.
+3.	Metoda getOdleglosc musi być publiczna.
+4.	Metoda getOdleglosc musi zwracać odległość między dwoma punktami.
+5.	Metoda getOdleglosc musi używać metody double Math.sqrt(double a).
+
+

@@ -1,0 +1,26 @@
+taskKey="pl.codegym.task.task06.task0622"\n\nLiczby w kolejności rosnącej
+
+Zadanie: Napisz program, który czyta 5 liczb z klawiatury i wyświetla je w kolejności rosnącej.
+
+Przykładowe wejście:
+3
+2
+15
+6
+17
+
+Przykładowy wynik:
+2
+3
+6
+15
+17
+
+
+Requirements:
+1.	Program powinien czytać 5 liczb z klawiatury.
+2.	Program powinien wyświetlać 5 liczb, każdą w nowej linii.
+3.	Wynik musi zawierać te same liczby, kt&oacute;re zostały wprowadzone (kolejność nie ma znaczenia).
+4.	Wyświetlone liczby powinny zostać uporządkowane w kolejności rosnącej.
+
+

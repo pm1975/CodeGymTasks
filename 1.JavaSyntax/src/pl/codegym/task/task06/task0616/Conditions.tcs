@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task06.task0616"\n\nMinimalna liczba statycznych
+
+Umieść minimalną liczbę modyfikatorów statycznych potrzebnych do tego, żeby kod zaczął działać, a program poprawnie się zakończył.
+
+
+Requirements:
+1.	Nie zmieniaj implementacji metody i modyfikator&oacute;w dostępu.
+2.	Dodaj modyfikatory statyczne do wymaganych lokalizacji.
+3.	Program musi mieć tylko 4 modyfikatory statyczne.
+4.	Program powinien wyświetlać tekst na ekranie.
+
+

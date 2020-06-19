@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task06.task0608"\n\nMetody statyczne dla kotów
+
+Dodaj dwie metody statyczne do klasy Kot: int getLicznikKotow() i setLicznikKotow(int),
+których możesz użyć do pobrania/zmiany liczby kotów (zmienna licznikKotow).
+
+
+Requirements:
+1.	Dodaj metodę getLicznikKotow do klasy.
+2.	Metoda getLicznikKotow musi zwracać int.
+3.	Metoda getLicznikKotow musi zwracać wartość zmiennej licznikKotow.
+4.	Dodaj metodę setLicznikKotow, kt&oacute;ra pobiera int do klasy.
+5.	Metoda setLicznikKotow nie powinna nic zwracać.
+6.	Metoda setLicznikKotow musi ustawiać wartość zmiennej licznikKotow jako przekazaną wartość.
+
+

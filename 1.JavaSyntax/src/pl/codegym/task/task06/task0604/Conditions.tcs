@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task06.task0604"\n\nLicznik kotów
+
+W konstruktorze klasy Kot, tj. public Kot(), zwiększ licznik kotów (zmienna statyczna klasy Kot licznikKotow) o 1. Zmniejsz go o 1 w metodzie finalizuj.
+
+
+Requirements:
+1.	Dodaj konstruktor bez parametr&oacute;w do klasy Kot, tj. public Kot().
+2.	Konstruktor musi zwiększać wartość zmiennej licznikKotow o 1.
+3.	Dodaj metodę finalizuj do klasy Kot.
+4.	Metoda finalizuj nie powinna nic zwracać (zwracany typ jest void).
+5.	Metoda finalizuj powinna zmniejszać zmienną licznikKotow o 1.
+
+

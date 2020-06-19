@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task05.task0528"\n\nWyświetl dzisiejszą datę
+
+Wyświetl bieżącą datę w poniższym formacie: "06 15 2018".
+
+
+Requirements:
+1.	Data powinna zawierać miesiąc, dzień i rok oddzielone spacjami.
+2.	Jako miesiąc ustaw bieżący miesiąc.
+3.	Jako dzień ustaw bieżący dzień.
+4.	Jako rok ustaw bieżący rok.
+5.	Cała data powinna być wyświetlona w jednej linii.
+
+

@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task06.task0614"\n\nStatyczne koty
+
+1. W klasie Kot dodaj publiczną, statyczną zmienną koty ArrayList<Kot>.
+2. Za każdym razem, kiedy tworzony jest (nowy obiekt Kot), dodaj go do zmiennej koty. Utwórz 10 obiektów Kot.
+3. Metoda printKoty powinna wyświetlać wszystkie koty na ekranie. Musisz użyć zmiennej koty.
+
+
+Requirements:
+1.	Dodaj publiczną, statyczną zmienną koty ArrayList&lt;Kot&gt; do klasy Kot.
+2.	Zmienna koty musi być zainicjalizowana.
+3.	Metoda main powinna utworzyć 10 obiekt&oacute;w Kot (użyj konstruktora Kot()).
+4.	Metoda main musi dodawać wszystkie utworzone koty do zmiennej koty.
+5.	Metoda printKoty powinna wyświetlać wszystkie obiekty kot w zmiennej koty. Każdy w nowej linii.
+
+

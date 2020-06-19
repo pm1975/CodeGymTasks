@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task05.task0515"\n\nInicjalizowanie obiektów
+
+Przeanalizuj klasę Osoba.
+Popraw klasę tak, żeby tylko jedna metoda inicjalizuj inicjalizowała zmienne instancji klasy Osoba.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Klasa Osoba musi mieć 5 zmiennych.
+3.	Klasa musi mieć jedną metodę inicjalizuj.
+4.	Metoda inicjalizuj musi mieć pięć parametr&oacute;w.
+
+

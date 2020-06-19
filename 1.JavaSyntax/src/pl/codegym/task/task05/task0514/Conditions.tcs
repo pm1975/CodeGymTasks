@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task05.task0514"\n\nI programista stworzył człowieka
+
+Utwórz klasę Osoba. Osoba powinna mieć String imie i int wiek.
+Dodaj metodę inicjalizuj(String imie, int wiek), w której zainicjalizujesz zmienne imie i wiek.
+W metodzie main utwórz obiekt klasy Osoba i umieść referencję do niego w zmiennej osoba.
+Wywołaj metodę inicjalizuj z jakimikolwiek wartościami.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać klasę Osoba.
+2.	Klasa Osoba musi mieć zmienną imie typu String.
+3.	Klasa Osoba musi mieć zmienną wiek typu int.
+4.	Klasa Osoba musi mieć metodę inicjalizuj, kt&oacute;ra pobiera imie i wiek jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+5.	Musisz utworzyć obiekt klasy Osoba i referencję do niego w zmiennej osoba.
+6.	Musisz wywołać metodę inicjalizuj do utworzonego obiektu i przekazać jej jakieś argumenty.
+
+

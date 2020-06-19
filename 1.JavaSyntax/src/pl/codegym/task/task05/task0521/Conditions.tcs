@@ -1,0 +1,19 @@
+taskKey="pl.codegym.task.task05.task0521"\n\nWywoływanie konstruktora z konstruktora
+
+Dowiedz się, jak działa program.
+Popraw konstruktor z dwoma parametrami tak, żeby wywoływał inny konstruktor o promieniu 10.
+Pomyśl, który konstruktor powinieneś/powinnaś wywołać.
+
+Wskazówka:
+uważnie przeanalizuj implementację domyślnego konstruktora.
+
+
+Requirements:
+1.	Klasa musi mieć 3 konstruktory.
+2.	Konstruktor z dwoma parametrami musi inicjalizować zmienne x i y do przekazanych wartości.
+3.	Konstruktor z dwoma parametrami musi inicjalizować zmienną promien do wartości 10.
+4.	Konstruktor z dwoma parametrami musi wywoływać inny konstruktor, przekazując poprawne argumenty.
+5.	Nie zmieniaj metody main.
+6.	Nie zmieniaj domyślnego konstruktora.
+
+

@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task05.task0519"\n\nChodzenie w kółko
+
+Utwórz klasę Kolo z trzema konstruktorami:
+- srodekX, srodekY, promien
+- srodekX, srodekY, promien, szerokosc
+- srodekX, srodekY, promien, szerokosc, kolor
+
+
+Requirements:
+1.	Klasa Kolo musi mieć zmienne srodekX, srodekY, promien, szerokosc i kolor typu int.
+2.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera srodekX, srodekY i promien jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+3.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera srodekX, srodekY, promien i szerokosc jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+4.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera srodekX, srodekY, promien, szerokosc i kolor jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+
+

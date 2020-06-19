@@ -1,0 +1,20 @@
+taskKey="pl.codegym.task.task05.task0526"\n\nMężczyzna i kobieta
+
+1. Wewnątrz klasy Solution utwórz publiczne i statyczne klasy Mezczyzna i Kobieta.
+2. Klasy muszą mieć następujące pola: String imie, int wiek oraz String adres.
+3. Utwórz konstruktory ze wszystkimi możliwymi parametrami.
+4. Utwórz dwa obiekty każdej klasy z kompletnymi danymi, używając konstruktora.
+5. Wyświetl obiekty na ekranie w tym formacie: imie + " " + wiek + " " + adres
+
+
+Requirements:
+1.	W klasie Solution utw&oacute;rz publiczną i statyczną klasę Mezczyzna.
+2.	W klasie Solution utw&oacute;rz publiczną i statyczną klasę Kobieta.
+3.	Klasa Mezczyzna musi mieć zmienne:  String imie, int wiek oraz String adres.
+4.	Klasa Kobieta musi mieć zmienne:  String imie, int wiek oraz String adres.
+5.	Klasy Mezczyzna i Kobieta muszą mieć konstruktory, kt&oacute;re pobierają argumenty String, int i String.
+6.	Konstruktor musi inicjalizować zmienne instancji.
+7.	W metodzie main musisz utworzyć dwa obiekty każdego typu.
+8.	Metoda main powinna wyświetlać utworzone obiekty na ekranie w określonym formacie.
+
+

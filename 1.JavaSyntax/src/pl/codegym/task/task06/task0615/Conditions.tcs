@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task06.task0615"\n\nFeng Shui i statyczne
+
+Przenieś jeden modyfikator statyczny tak, aby program się kompilował.
+
+
+Requirements:
+1.	Nie zmieniaj metody main.
+2.	Dodaj modyfikator statyczny w wymaganej lokalizacji.
+3.	Usuń nadprogramowy modyfikator statyczny.
+4.	Program musi mieć tylko 2 modyfikatory statyczne.
+
+

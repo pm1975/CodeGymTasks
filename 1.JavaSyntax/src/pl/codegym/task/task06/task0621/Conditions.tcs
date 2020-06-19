@@ -1,0 +1,41 @@
+taskKey="pl.codegym.task.task06.task0621"\n\nRelacje między kotami
+
+Zadanie: każdy kot ma imię i matkę.
+Utwórz klasę, która opisuje tę sytuację.
+Utwórz dwa obiekty: corka kot i matka.
+Wyświetl je na ekranie.
+
+Nowe zadanie: Każdy kot ma imię, ojca i matkę.
+Edytuj klasę Kot tak, by odzwierciedlała te relacje.
+Utwórz 6 obiektów: dziadek (ojciec ojca), babcia (matka matki), ojciec, matka, syn, corka.
+Wyświetl je wszystkie w następującej kolejności: dziadek, babcia, ojciec, matka, syn, corka.
+
+Przykładowe wejście:
+Dziadek Tytus
+Babcia Pestka
+Ojciec Oskar
+Matka Mania
+Syn Simba
+Corka Koko
+
+Przykładowy wynik:
+Imię kota to Dziadek Tytus, brak matki, brak ojca
+Imię kota to Babcia Pestka, brak matki, brak brak ojca
+Imię kota to Ojciec Oskar, brak matki, Dziadek Tytus to ojciec
+Imię kota to Matka Mania, Babcia Pestka to matka, brak ojca
+Imię kota to Syn Simba, Matka Mania to matka, Ojciec Oskar to ojciec
+Imię kota to Corka Koko, Matka Mania to matka, Ojciec Oskar to ojciec
+
+
+Requirements:
+1.	Program powinien czytać imiona 6 kot&oacute;w w określonej kolejności.
+2.	Metoda main powinna tworzyć 6 obiekt&oacute;w Kot.
+3.	Program powinien wyświetlać 6 linii z informacjami o kotach.
+4.	Linia dotycząca dziadka (pierwsza linia) musi spełniać warunki.
+5.	Linia dotycząca babci (druga linia) musi spełniać warunki.
+6.	Linia dotycząca ojca (trzecia linia) musi spełniać warunki.
+7.	Linia dotycząca matki (czwarta linia) musi spełniać warunki.
+8.	Linia dotycząca syna (piąta linia) musi spełniać warunki.
+9.	Linia dotycząca c&oacute;rki (sz&oacute;sta linia) musi spełniać warunki.
+
+

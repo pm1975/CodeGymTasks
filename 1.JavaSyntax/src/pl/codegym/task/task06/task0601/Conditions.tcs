@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task06.task0601"\n\nMetoda finalize (obiektu) Kot
+
+W klasie Kot utwórz metodę protected void finalize() throws Throwable.
+
+
+Requirements:
+1.	Klasa Kot musi mieć metodę o nazwie finalize.
+2.	Metoda finalize nie powinna nic zwracać (void).
+3.	Metoda finalize musi być chroniona.
+4.	Metoda finalize może zwr&oacute;cić wyjątek reprezentowany przez obiekt klasy Throwable. Wskaż to w deklaracji metody.
+
+

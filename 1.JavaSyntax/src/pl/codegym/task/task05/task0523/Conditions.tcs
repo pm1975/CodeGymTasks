@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task05.task0523"\n\nKonstruktor
+
+Dowiedz się, jak działa program.
+Znajdź i napraw jeden błąd w klasie Kolo. Nie zmieniaj metody main.
+
+Wskazówka:
+przeanalizuj domyślny konstruktor.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Nie zmieniaj metody main.
+3.	Program powinien wyświetlać na ekranie słowo &bdquo;Czerwony&rdquo;.
+4.	Metoda getOpis klasy Kolor musi zwracać wartość opisu zmiennej.
+5.	Metoda setOpis klasy Kolor musi nadawać wartość opisu zmiennej.
+
+

@@ -1,0 +1,25 @@
+taskKey="pl.codegym.task.task05.task0529"\n\nBank-świnka na bazie konsoli
+
+Za pomocą klawiatury wprowadź liczby i licz ich sumę, aż wprowadzone zostanie słowo "sumuj".
+Wyświetl sumę na ekranie.
+
+Wskazówka: aby czytać z klawiatury, aż zostanie wprowadzony string „wyjdz”, napisz:
+
+BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+while (true)
+{
+String s = buffer.readLine();
+if (s.equals("wyjdz"))
+break;
+}
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien przestać czytać dane klawiatury w momencie, kiedy użytkownik wprowadzi słowo &bdquo;sumuj&rdquo; małymi literami i naciśnie Enter.
+3.	Program powinien działać prawidłowo, jeśli użytkownik wprowadzi tylko jedną liczbę i wpisze słowo &bdquo;sumuj&rdquo;.
+4.	Program powinien działać prawidłowo, jeśli użytkownik wprowadzi dwie liczby i wpisze słowo &bdquo;sumuj&rdquo;.
+5.	Program powinien działać prawidłowo, jeśli użytkownik wprowadzi więcej niż dwie liczby i wpisze słowo &bdquo;sumuj&rdquo;.
+6.	Program powinien wyświetlać tekst na ekranie.
+
+

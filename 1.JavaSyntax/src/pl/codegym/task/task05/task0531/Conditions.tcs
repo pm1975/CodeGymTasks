@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task05.task0531"\n\nPoprawianie funkcjonalności
+
+Bieżąca implementacja: Program czyta dwie liczby z klawiatury i wyświetla minimum.
+Nowe zadanie: Program czyta pięć liczb z klawiatury i wyświetla minimum.
+
+
+Requirements:
+1.	Program powinien czytać liczby z klawiatury.
+2.	Klasa musi mieć publiczną statyczną metodę void main.
+3.	Klasa musi mieć publiczną i statyczną metodę min, kt&oacute;ra pobiera 5 argument&oacute;w int.
+4.	Metoda min musi zwracać minimum z 5 przekazanych liczb. Jeśli najmniejszych liczb jest kilka, zwr&oacute;ć jedną z nich.
+5.	Program powinien wyświetlać ciąg, zaczynający się od &quot;Minimum = &quot;.
+6.	Program powinien wyświetlać ciąg, kt&oacute;ry kończy się minimum z wprowadzonych 5 liczb.
+
+

@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task06.task0619"\n\nTrzy statyczne zmienne imie
+
+Dodaj 3 publiczne zmienne statyczne: String Solution.imie, String Kot.imie, String Pies.imie.
+
+
+Requirements:
+1.	W klasie Solution dodaj publiczną, statyczną zmienną imie typu String.
+2.	W klasie Kot dodaj publiczną, statyczną zmienną imie typu String.
+3.	W klasie Pies dodaj publiczną, statyczną zmienną imie typu String.
+4.	Każda klasa musi mieć swoją własną zmienną imie.
+
+

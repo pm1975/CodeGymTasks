@@ -1,0 +1,19 @@
+taskKey="pl.codegym.task.task07.task0707"\n\nCo to za rodzaj listy?
+
+1. Utwórz listę ciągów.
+2. Dodaj do niej 5 różnych ciągów.
+3. Wyświetl na ekranie jej rozmiar.
+4. Wyświetl jej zawartość przy użyciu pętli, każdą wartość w nowej linii.
+
+Uwaga:
+Dodaj ciągi do listy dopiero wtedy, gdy lista zostanie zainicjalizowana.
+
+
+Requirements:
+1.	Program nie powinien nic czytać z klawiatury.
+2.	Zadeklaruj zmienną ArrayList&lt;String&gt; i natychmiast ją zainicjalizuj.
+3.	Program powinien dodawać 5 ciąg&oacute;w do listy.
+4.	Program powinien wyświetlać na ekranie rozmiar listy.
+5.	Program powinien wyświetlać zawartość listy, każdą wartość w nowej linii.
+
+

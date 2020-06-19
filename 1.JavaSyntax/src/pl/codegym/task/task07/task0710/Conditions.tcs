@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task07.task0710"\n\nNa szczycie listy
+
+1. Utwórz listę ciągów w metodzie main.
+2. Dodaj tam 10 ciągów z klawiatury, ale dodawaj je do początku listy, a nie do jej końca.
+3. Wyświetl jej zawartość przy użyciu pętli, każdą wartość w nowej linii.
+
+
+Requirements:
+1.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+2.	Program powinien wczytać 10 ciąg&oacute;w z klawiatury i dodawać je do listy.
+3.	Program powinien dodawać linie do początku listy.
+4.	Program powinien wyświetlać listę, każdą wartość w nowej linii.
+
+

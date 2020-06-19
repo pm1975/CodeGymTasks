@@ -1,0 +1,23 @@
+taskKey="pl.codegym.task.task05.task0527"\n\nTom i Jerry
+
+Utwórz klasy Pies, Kot i Mysz.
+Do każdej klasy dodaj trzy pola wedle własnego wyboru.
+Utwórz obiekty związane z bohaterami kreskówki „Tom i Jerry”.
+Pamiętaj, że jest ich kilkoro.
+
+Na przykład:
+Mysz jerryMysz = new Mysz("Jerry", 5, 2),
+gdzie 5 to wzrost w calach,
+a 2 to długość jego ogona w calach.
+
+
+Requirements:
+1.	Utw&oacute;rz klasę Pies.
+2.	Utw&oacute;rz klasę Kot.
+3.	Klasa Pies musi mieć trzy zmienne.
+4.	Klasa Kot musi mieć trzy zmienne.
+5.	Musisz utworzyć przynajmniej jeden obiekt klasy Mysz.
+6.	Musisz utworzyć przynajmniej jeden obiekt klasy Pies.
+7.	Musisz utworzyć przynajmniej jeden obiekt klasy Kot.
+
+

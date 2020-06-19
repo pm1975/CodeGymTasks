@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task07.task0704"\n\nOdwróć tablicę
+
+1. Utwórz tablicę z 10 liczb.
+2. Wprowadź 10 liczb z klawiatury i zapisz je w tablicy.
+3. Wyświetl elementy tablicy w odwrotnej kolejności. Każdą wartość wyświetl w nowej linii.
+
+
+Requirements:
+1.	Program musi tworzyć tablicę z 10 liczb całkowitych.
+2.	Program powinien wczytać liczby z klawiatury do tablicy.
+3.	Program powinien wyświetlać 10 wartości, każdą w nowej linii.
+4.	Elementy tablicy muszą się wyświetlać w odwrotnej kolejności.
+
+

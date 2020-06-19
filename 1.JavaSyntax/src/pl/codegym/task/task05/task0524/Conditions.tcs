@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task05.task0524"\n\nIstota koła
+
+W klasie Kolo stwórz konstruktor, który inicjalizuje wszystkie zmienne instancji.
+Konstruktor musi mieć trzy parametry.
+
+
+Requirements:
+1.	Klasa Kolo musi mieć zmienne x, y i r typu double.
+2.	Klasa musi mieć jeden konstruktor.
+3.	Konstruktor musi być publiczny.
+4.	Konstruktor musi mieć trzy podw&oacute;jne parametry.
+5.	Konstruktor musi inicjalizować wszystkie zmienne instancji klasy.
+
+

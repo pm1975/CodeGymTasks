@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task06.task0617"\n\nNotes na nowe idee
+
+1. W klasie Solution utwórz publiczną, statyczną klasę Idea
+2. W klasie Idea zadeklaruj metodę public String getOpis(), która zwraca niepusty ciąg
+3. W klasie Solution utwórz statyczną, publiczną metodę void printIdea(Idea idea), która będzie wyświetlać opis idei (to, co zwraca metoda getOpis)
+
+
+Requirements:
+1.	W klasie Solution utw&oacute;rz publiczną, statyczną klasę Idea.
+2.	W klasie Idea utw&oacute;rz publiczną metodę getOpis() typu String.
+3.	Metoda getOpis musi zwracać jakiś niepusty ciąg.
+4.	W klasie Solution utw&oacute;rz publiczną, statyczną metodę void printIdea(Idea idea).
+5.	Metoda printIdea powinna wyświetlać opis idei na ekranie.
+
+

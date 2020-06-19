@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task05.task0516"\n\nPrzyjaciół nie da się kupić
+
+Utwórz klasę Przyjaciel z trzema konstruktorami:
+- Imie
+- Imie, wiek
+- Imie, wiek, plec
+
+
+Requirements:
+1.	Klasa Przyjaciel musi mieć zmienną imie typu String.
+2.	Klasa Przyjaciel musi mieć zmienną wiek typu int.
+3.	Klasa Przyjaciel musi mieć zmienną plec typu char.
+4.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie jako argument i inicjalizuje odpowiednią zmienną instancji.
+5.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie i wiek jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+6.	Klasa musi mieć konstruktor, kt&oacute;ry pobiera imie, wiek i plec jako argumenty i inicjalizuje odpowiednie zmienne instancji.
+
+
