@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task07.task0715"\n\nWięcej Ala ma kota
+
+1. Utwórz listę składającą się z słów: "Ala", "ma", "kota".
+2. Po każdym słowie wstaw w liście słowo "As".
+3. Wyświetl wynik na ekranie, każdy element listy w nowej linii.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+3.	Dodaj do listy poniższe wyrazy: &quot;Ala&quot;, &quot;ma&quot;, &quot;kota&quot;.
+4.	Po każdym wyrazie dodaj do listy słowo &quot;As&quot;.
+5.	Wyświetl elementy listy na ekranie, każdy w nowej linii.
+
+

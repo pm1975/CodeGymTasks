@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task07.task0720"\n\nPrzestawiono w samą porę
+
+Używając klawiatury, wprowadź 2 liczby N i M.
+Wprowadź N ciągów i umieść je w liście.
+Przenieś pierwsze M ciągów na koniec listy.
+Wyświetl listę, każdą wartość w nowej linii.
+
+Uwaga:
+powinieneś utworzyć tylko jedną listę.
+
+
+Requirements:
+1.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+2.	Wczytaj liczby N i M z klawiatury. Wczytaj N ciąg&oacute;w i dodaj je do listy.
+3.	Przenieś pierwsze M ciąg&oacute;w na koniec listy.
+4.	Wyświetl listę, każdą wartość w nowej linii.
+
+

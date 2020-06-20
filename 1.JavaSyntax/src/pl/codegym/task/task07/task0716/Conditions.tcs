@@ -1,0 +1,28 @@
+taskKey="pl.codegym.task.task07.task0716"\n\nR czy L
+
+1. Utwórz listę wyrazów i sam ją zapełnij.
+2. Metoda napraw powinna:
+2.1. usuwać z listy wszystkie wyrazy zawierające literę „r”.
+2.2. duplikować wszystkie wyrazy zawierające literę "l".
+2.3. pozostawiać niezmienione wszystkie wyrazy zawierające zarówno literę "r, jak i "l".
+2.4. nic nie robić z pozostałymi wyrazami.
+
+Na przykład:
+rosa
+lira
+luz
+
+Wyjście:
+lira
+luz
+luz
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Metoda napraw powinna usuwać z listy wszystkie wyrazy zawierające literę &bdquo;r&rdquo;. Jest jednak wyjątek: wyrazy zawierające zar&oacute;wno literę &bdquo;r&rdquo;, jak i &bdquo;l&rdquo; powinny pozostać niezmienione.
+3.	Metoda napraw musi duplikować wyrazy zawierające literę &bdquo;l&rdquo; (dodaj inną instancję tego słowa do listy). Jest jednak wyjątek: wyrazy zawierające zar&oacute;wno literę &bdquo;r&rdquo;, jak i &bdquo;l&rdquo; nie powinny być duplikowane.
+4.	Metoda napraw nie powinna nic robić z wyrazami zawierającymi zar&oacute;wno &bdquo;l&rdquo;, jak i &bdquo;r&rdquo;.
+5.	Metoda napraw nie powinna nic robić z wyrazami, kt&oacute;re nie zawierają ani &bdquo;l&rdquo;, ani &bdquo;r&rdquo;.
+
+

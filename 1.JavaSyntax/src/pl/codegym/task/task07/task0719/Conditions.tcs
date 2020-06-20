@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task07.task0719"\n\nWyświetl liczby w odwrotnej kolejności
+
+Wprowadź 10 liczb z klawiatury i umieść je w liście.
+Wyświetl je w odwrotnej kolejności. Każdy element w nowej linii.
+Użyj tylko pętli for.
+
+
+Requirements:
+1.	Zadeklaruj zmienną stanowiącą listę liczb całkowitych i natychmiast ją zainicjalizuj.
+2.	Wczytaj 10 liczb całkowitych z klawiatury i dodaj je do listy.
+3.	Wyświetl liczby w odwrotnej kolejności.
+4.	Użyj pętli for.
+
+

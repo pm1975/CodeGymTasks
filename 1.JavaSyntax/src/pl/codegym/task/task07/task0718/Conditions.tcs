@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task07.task0718"\n\nSprawdzanie kolejności
+
+1. Wczytaj z klawiatury 10 wyrazów i dodaj je do listy ciągów.
+2. Ustal, czy lista jest ułożona zgodnie z rosnącą długością ciągów.
+3. Jeśli nie, wyświetl indeks pierwszego elementu, który zaburza ten porządek.
+
+
+Requirements:
+1.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+2.	Wczytaj 10 linii z klawiatury i dodaj je do listy.
+3.	Jeśli lista jest ułożona zgodnie z rosnącą długością ciąg&oacute;w, nie musisz nic wyświetlać.
+4.	Jeśli lista nie jest ułożona zgodnie z rosnącą długością ciąg&oacute;w, wyświetl indeks pierwszego elementu, kt&oacute;ry zaburza ten porządek.
+
+

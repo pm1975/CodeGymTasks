@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task07.task0714"\n\nSłowa na odwrót
+
+Wczytaj 5 liczb z klawiatury i dodaj je do listy ciągów. Usuń 3. element listy i wyświetl pozostałe elementy w odwrotnej kolejności.
+
+
+Requirements:
+1.	Zadeklaruj zmienną ArrayList&lt;String&gt; i natychmiast ją zainicjalizuj.
+2.	Wczytaj 5 linii z klawiatury i dodaj je do listy.
+3.	Usuń trzeci element listy.
+4.	Wyświetl elementy na ekranie, każdy w nowej linii.
+5.	Kolejność wyświetlania musi być odwrotna.
+
+

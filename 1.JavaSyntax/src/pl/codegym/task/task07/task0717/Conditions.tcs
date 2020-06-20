@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task07.task0717"\n\nDuplikowanie słów
+
+1. Wczytaj z klawiatury 10 wyrazów i dodaj je do listy ciągów.
+
+2. Metoda doubleValues powinna duplikować wyrazy w następujący sposób:
+alfa, beta, gamma, -> alfa, alfa, beta, beta, gamma, gamma.
+
+3. Wyświetl wynik, każdą wartość w nowej linii.
+
+
+Requirements:
+1.	Zadeklaruj zmienną lista typu string i natychmiast ją zainicjalizuj.
+2.	Wczytaj 10 linii z klawiatury i dodaj je do listy.
+3.	Metoda doubleValues powinna duplikować elementy listy następująco: alfa, beta, gamma, -&gt; alfa, alfa, beta, beta, gamma, gamma.
+4.	Wyświetl powstałą listę, każdy element w nowej linii.
+
+
