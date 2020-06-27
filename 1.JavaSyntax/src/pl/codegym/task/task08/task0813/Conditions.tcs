@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task08.task0813"\n\n20 wyrazów, które zaczynają się na literę „L”
+
+Musisz utworzyć Set<String> i dodać 20 wyrazów, które zaczynają się na literę „L”.
+
+
+Requirements:
+1.	Nie zmieniaj sygnatury metody utworzSet().
+2.	Program nie powinien wyświetlać tekstu na ekranie.
+3.	Program nie powinien czytać wartości z klawiatury.
+4.	Metoda utworzSet() musi tworzyć i zwracać set (HashSet).
+5.	Set zwr&oacute;cony przez metodę utworzSet() musi zawierać 20 sł&oacute;w, kt&oacute;re zaczynają się literą &bdquo;L&rdquo;.
+
+

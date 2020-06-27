@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task08.task0810"\n\nCzas na 10000 wywołań get
+
+Zmierz, ile czasu zajmuje przeprowadzenie 10000 wywołań get i set na każdej liście.
+Metoda getCzasGetWms musi zwracać czas jej przeprowadzenia w milisekundach.
+
+
+Requirements:
+1.	Program powinien wyświetlać liczby na ekranie.
+2.	Metoda main powinna wywoływać metodę getCzasGetWms tylko dwa razy.
+3.	Metoda main powinna wywoływać metodę wypełniającą tylko dwa razy.
+4.	Metoda zapelnij(List lista) musi wstawiać 10000 pozycji do listy.
+5.	Metoda get10000(List lista) powinna wywoływać get na liście 10000 razy.
+6.	Metoda getCzasGetWms musi wywoływać metodę get10000(List lista) tylko raz.
+7.	Metoda getCzasGetWms powinna zwracać czas (w milisekundach) przeprowadzenia 10000 wywołań get na liście.
+
+

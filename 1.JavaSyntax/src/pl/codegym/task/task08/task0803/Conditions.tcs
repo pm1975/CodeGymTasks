@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task08.task0803"\n\nHashMap kotów
+
+Mamy klasę Kot i String imie.
+Utwórz HashMap<String, Kot>.
+Dodaj do kolekcji 10 kotów. Imię kota powinno zostać użyte jako klucz.
+Wyświetl wynik na ekranie, każdy element w nowej linii.
+
+
+Requirements:
+1.	Program nie powinien czytać wartości z klawiatury.
+2.	W metodzie dodajKotyDoMap() zadeklaruj zmienną HashMap z parami (String, Kot) i natychmiast ją zainicjalizuj.
+3.	Metoda dodajKotyDoMap() powinna dodawać wszystkie koty z tablicy String[] koty do kolekcji zgodnie z warunkami zadania.
+4.	Program powinien wyświetlać na ekranie zawartość kolekcji, każdą parę w nowej linii, z łącznikiem (&bdquo;-&rdquo;) pomiędzy kluczem a wartością.
+
+

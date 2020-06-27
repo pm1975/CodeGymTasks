@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task08.task0805"\n\nWartości, na ekran!
+
+Dana jest HashMap<String, String>. Dodano do niego 10 różnych ciągów.
+Wyświetl na ekranie listę wartości, każdy element w nowej linii.
+
+
+Requirements:
+1.	Program musi tworzyć zmienną HashMap z elementami (String, String). Zmienna musi zostać natychmiast zainicjalizowana.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Program powinien dodawać do kolekcji 10 r&oacute;żnych ciąg&oacute;w, zgodnie z warunkami.
+4.	Metoda printWartosci() powinna wyświetlać wartości w kolekcji, każdy element w nowej linii.
+
+

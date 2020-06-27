@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task08.task0804"\n\nWyświetl listę kluczy
+
+Dana jest HashMap<String, String>. Dodano do niego 10 różnych ciągów. Wyświetl na ekranie listę kluczy, każdy element w nowej linii.
+
+
+Requirements:
+1.	Program musi tworzyć zmienną HashMap z elementami (String, String). Zmienna musi zostać natychmiast zainicjalizowana.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Program powinien dodawać do kolekcji 10 r&oacute;żnych ciąg&oacute;w, zgodnie z warunkami.
+4.	Metoda printKlucze() powinna wyświetlać klucze w kolekcji, każdy element w nowej linii.
+
+

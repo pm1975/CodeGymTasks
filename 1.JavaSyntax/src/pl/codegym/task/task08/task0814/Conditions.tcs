@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0814"\n\nWiększa niż 10? Wcale do nas nie pasujesz!
+
+Utwórz setu liczb (Set<Integer>) i dodaj do niego 20  różnych liczb.
+Usuń z set wszystkie liczby większe niż 10 .
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Klasa Solution musi mieć tylko trzy metody.
+4.	Metoda utworzSet() musi tworzyć i zwracać HashSet zawierający 20 r&oacute;żnych liczb.
+5.	Metoda usunLiczbyWiekszeNiz10() musi usuwać z setu wszystkie liczby większe niż 10.
+
+

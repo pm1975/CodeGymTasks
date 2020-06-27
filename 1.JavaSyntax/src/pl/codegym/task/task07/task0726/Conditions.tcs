@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task07.task0726"\n\nKoci kod się nie kompiluje
+
+Zadanie: Program czyta z klawiatury dane dotyczące kotów i wyświetla je na ekranie.
+
+Na przykład:
+Imie kota: Tytus, wiek: 6, waga: 5, ogon: 22
+Imie kota: Mania, wiek: 8, waga: 7, ogon: 20
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Jeśli użytkownik wprowadzi pusty ciąg zamiast imienia, program powinien wyświetlić dane na ekranie i zakończyć się.
+3.	Jeśli użytkownik wprowadzi: Tytus, 6, 5 i 22 (każdą wartość w nowej linii), to program powinien wyświetlić &quot;Imie kota: Tytus, wiek: 6, waga: 5, ogon: 22&quot;.
+4.	Jeśli użytkownik wprowadzi: Mania, 8, 7 i 20 (każdą wartość w nowej linii), to program powinien wyświetlić &quot;Imie kota: Mania, wiek: 8, waga: 7, ogon: 20&quot;.
+5.	Jeśli użytkownik wprowadzi: Tytus, 6, 5, 22, Mania, 8, 7 i 20 (każdą wartość w nowej linii), to program powinien wyświetlić dwie linie: &quot;Imie kota: Tytus, wiek: 6, waga: 5, ogon: 22&quot; i &quot;Imie kota: Mania, wiek: 8, waga: 7, ogon: 20&quot;.
+
+

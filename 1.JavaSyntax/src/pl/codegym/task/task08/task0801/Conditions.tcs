@@ -1,0 +1,25 @@
+taskKey="pl.codegym.task.task08.task0801"\n\nHashSet roślin
+
+Utwórz HashSet z elementami typu String.
+Dodaj do niego 10 ciągów:
+arbuz
+banan
+wiśnia
+gruszka
+kantalupa
+jeżyna
+żeńszeń
+truskawka
+irys
+ziemniak
+Wyświetl zawartość kolekcji, każdy element w nowej linii.
+Zaobserwuj, jak zmieniła się kolejność wpisów.
+
+
+Requirements:
+1.	Zadeklaruj zmienną HashSet z elementami typu String i natychmiast ją zainicjalizuj.
+2.	Program nie powinien czytać ciąg&oacute;w z klawiatury.
+3.	Program powinien dodawać do kolekcji 10 ciąg&oacute;w zgodnie z warunkami.
+4.	Program powinien wyświetlać 10 ciąg&oacute;w z kolekcji, każdy w nowej linii.
+
+

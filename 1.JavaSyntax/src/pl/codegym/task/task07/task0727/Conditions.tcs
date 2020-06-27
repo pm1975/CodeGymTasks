@@ -1,0 +1,27 @@
+taskKey="pl.codegym.task.task07.task0727"\n\nZmiana funkcjonalności
+
+Zadanie: Program pobiera ciągi, aż użytkownik wprowadzi pusty ciąg (naciskając Enter). Wtedy zamienia on litery w ciągach na wielkie litery ("matka" zamienia się w "MATKA") i wyświetla je.
+
+Nowe zadanie: Program pobiera ciągi, aż użytkownik wprowadzi pusty ciąg (naciskając Enter).
+Następnie program tworzy nową listę. Jeśli ciąg ma parzystą liczbę liter, to powinien zostać zduplikowany. Jeśli liczba liter jest nieparzysta, to ciąg powinien zostać potrojony.
+Program wyświetla zawartość nowej listy.
+
+Przykładowe wejście:
+Kot
+Koty
+I
+
+Przykładowy wynik:
+Kot Kot Kot
+Koty Koty
+I I I
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlić tyle ciąg&oacute;w, ile zostało wprowadzonych.
+3.	Jeśli ciąg ma parzystą liczbę liter, to powinien zostać zduplikowany (tak, jak w przykładzie).
+4.	Jeśli ciąg ma nieparzystą liczbę liter, to powinien zostać powt&oacute;rzony trzy razy (tak, jak w przykładzie).
+5.	Program powinien przestać czytać dane z klawiatury w momencie, kiedy użytkownik wprowadzi pusty ciąg (naciskając Enter).
+
+

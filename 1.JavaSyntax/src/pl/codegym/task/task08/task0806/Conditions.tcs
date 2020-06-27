@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task08.task0806"\n\nHashMap Obiektów
+
+Dana jest HashMap<String, Object>. Dodano do niego 10 par różnych obiektów.
+Wyświetl zawartość kolekcji, każdy element w nowej linii.
+Przykładowy wynik: (pokazujemy jedną przykładową linię):
+Sim - 5
+
+
+Requirements:
+1.	Program musi tworzyć zmienną HashMap z elementami (String, Object). Zmienna musi zostać natychmiast zainicjalizowana.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Program powinien dodawać do kolekcji 10 r&oacute;żnych obiekt&oacute;w, zgodnie z warunkami.
+4.	Program powinien wyświetlać na ekranie zawartość kolekcji, każdą parę w nowej linii.
+
+

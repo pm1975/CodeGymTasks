@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task08.task0802"\n\nHashMap z 10 par
+
+Utwórz HashMap<String, String> i dodaj 10 par ciągów:
+arbuz - melon, banan - owoc, wiśnia - owoc, gruszka - owoc, kantalupa - melon, jeżyna - owoc, żeńszeń - korzeń, truskawka - owoc, irys - kwiat, ziemniak - bulwa.
+Wyświetl zawartość kolekcji, każdy element w nowej linii.
+Przykładowy wynik: (pokazujemy jedną przykładową linię):
+ziemniak - bulwa
+
+
+Requirements:
+1.	Zadeklaruj zmienną HashMap z parami (String, String) i natychmiast ją zainicjalizuj.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Program powinien dodawać do kolekcji 10 par ciąg&oacute;w zgodnie z warunkami.
+4.	Program powinien wyświetlać na ekranie zawartość kolekcji, każdą parę w nowej linii.
+
+

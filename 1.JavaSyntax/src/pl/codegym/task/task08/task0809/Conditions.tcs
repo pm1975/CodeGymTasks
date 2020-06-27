@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0809"\n\nCzas na 10000 wstawień
+
+Zmierz, ile czasu zajmuje przeprowadzenie 10000 wstawień do każdej listy.
+Metoda getCzasWstawienWms musi zwracać czas jej przeprowadzenia w milisekundach.
+
+
+Requirements:
+1.	Program powinien wyświetlać liczby na ekranie.
+2.	Metoda main powinna wywoływać metodę getCzasWstawienWms tylko dwa razy.
+3.	Metoda wstaw10000(List lista) musi wstawiać 10000 pozycji do listy.
+4.	Metoda getCzasWstawienWms powinna wywoływać metodę wstaw10000 tylko raz.
+5.	Metoda getCzasWstawienWms powinna zwracać czas (w milisekundach) przeprowadzenia 10000 wstawień do listy.
+
+

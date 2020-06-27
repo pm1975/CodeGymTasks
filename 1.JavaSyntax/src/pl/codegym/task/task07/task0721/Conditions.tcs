@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task07.task0721"\n\nMinimum i maksimum w tablicach
+
+Utwórz tablicę z 20 liczb.
+Zapełnij ją liczbami z klawiatury.
+Znajdź największą i najmniejszą spośród liczb w tablicy.
+Wyświetl maksymalne i minimalne liczby, rozdzielając je spacją.
+
+
+Requirements:
+1.	Utw&oacute;rz tablicę liczb całkowitych (int[]) z 20 element&oacute;w.
+2.	Wczytaj 20 liczb całkowitych z klawiatury i dodaj je do tablicy.
+3.	Znajdź największą i najmniejszą liczbę całkowitą i wyświetl je, rozdzielając je spacją.
+4.	Użyj pętli for.
+
+

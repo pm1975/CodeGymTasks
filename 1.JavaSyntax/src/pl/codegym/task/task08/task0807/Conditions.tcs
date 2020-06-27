@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task08.task0807"\n\nLinkedList i ArrayList
+
+Musisz utworzyć dwie instancje listy: LinkedList i ArrayList.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Program powinien mieć tylko trzy metody.
+4.	Metoda utworzArrayList() musi tworzyć i zwracać ArrayList.
+5.	Metoda utworzLinkedList() musi tworzyć i zwracać LinkedList.
+
+

@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task08.task0811"\n\nKwartet metod
+
+Zaimplementuj 4 metody. Każda z nich powinna zwracać taką listę, która jest najlepiej dopasowana do
+przeprowadzenia odpowiednich operacji (tzn. listę, które najszybciej przeprowadzi dużą liczbę operacji).
+Nie musisz jednak niczego mierzyć.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Solution musi mieć tylko 5 metod.
+3.	Metoda getListaDlaGet powinna zwracać listę, kt&oacute;ra jest najlepiej dopasowana do operacji get.
+4.	Metoda getListaDlaSet powinna zwracać listę, kt&oacute;ra jest najlepiej dopasowana do operacji set.
+5.	Metoda getListaDlaDodajLubWstaw powinna zwracać listę, kt&oacute;ra jest najlepiej dopasowana do operacji dodawania i wstawiania element&oacute;w.
+6.	Metoda getListaDlaUsun powinna zwracać listę, kt&oacute;ra jest najlepiej dopasowana do usuwania element&oacute;w.
+
+

@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task07.task0728"\n\nW kolejności malejącej
+
+Zadanie: Napisz program, który czyta 20 liczb z klawiatury i wyświetla je w kolejności malejącej.
+
+
+Requirements:
+1.	Program powinien czytać 20 liczb całkowitych z klawiatury.
+2.	Program powinien wyświetlać 20 liczb.
+3.	Klasa Solution musi mieć publiczną, statyczną metodę void sortuj(int[] tablica).
+4.	Metoda main powinna wywoływać metodę sortuj.
+5.	Metoda sortuj powinna sortować przekazaną tablicę w kolejności malejącej.
+
+
