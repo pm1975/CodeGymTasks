@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0816"\n\nMiła Emma i letnie wakacje
+
+Utwórz Map<String, Date> i dodaj dziesięć wpisów, które odpowiadają parom (nazwisko, data urodzenia).
+Usuń z mapy wszystkie osoby urodzone latem.
+Wskazówka: W CodeGym lato trwa od 1 czerwca do 31 sierpnia.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Metoda utworzMap() musi tworzyć i zwracać HashMap, kt&oacute;ra ma elementy (String, Date) i zawiera 10 wpis&oacute;w.
+4.	Metoda usunUrodzonychLatem() powinna usuwać z mapy wszystkich ludzi urodzonych latem.
+
+
