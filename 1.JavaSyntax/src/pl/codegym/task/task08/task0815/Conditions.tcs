@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0815"\n\nSpis ludności
+
+Utwórz Map<String, String> i dodaj dziesięć wpisów, które odpowiadają parom (nazwisko, imie).
+Sprawdź, jak dużo ludzi ma takie samo imię bądź nazwisko.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Metoda utworzMap() powinna tworzyć i zwracać HashMap, kt&oacute;ra ma elementy (String, String) i zawiera 10 wpis&oacute;w, kt&oacute;re odpowiadają parom (nazwisko, imie).
+4.	Metoda getLicznikTakichSamychImion() musi zwracać liczbę os&oacute;b, kt&oacute;re mają takie same imiona.
+5.	Metoda getLicznikTakichSamychNazwisk() musi zwracać liczbę os&oacute;b, kt&oacute;re mają takie same nazwiska.
+
+
