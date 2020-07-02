@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task08.task0818"\n\nTylko dla bogaczy
+
+Utwórz Map<String, Integer> i dodaj dziesięć wpisów, które odpowiadają parom (nazwisko, pensja).
+Usuń z mapy wszystkie osoby, których pensja jest niższa niż 500.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Metoda utworzMap() powinna tworzyć i zwracać HashMap, kt&oacute;ra ma elementy (String, Integer) i zawiera 10 wpis&oacute;w, kt&oacute;re odpowiadają parom (nazwisko, pensja).
+4.	Metoda usunPozycjeZmap() musi usuwać z mapy wszystkie osoby, kt&oacute;rych pensja jest niższa niż 500.
+
+

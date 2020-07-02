@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task08.task0819"\n\nKoci Set
+
+1. Wewnątrz klasy Solution utwórz publiczną i statyczną klasę Kot.
+2. Zaimplementuj metodę utworzKoty. Musi ona tworzyć Set z kotów i dodawać do niego 3 koty.
+3. W metodzie main usuń jednego kota z Set koty.
+4. Zaimplementuj metodę printKoty. Powinna wyświetlać wszystkie koty, które zostały w secie. Każdego kota w nowej linii.
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Wewnątrz klasy Solution musi być publiczna i statyczna klasa Kot z domyślnym konstruktorem.
+3.	Metoda klasy Solution utworzKoty() musi zwracać Set zawierający 3 koty.
+4.	Metoda klasy Solution printKoty() musi wyświetlać wszystkie koty w secie. Każdego kota w nowej linii.
+5.	Metoda main() powinna wywoływać metodę utworzKoty() jeden raz.
+6.	Metoda main() powinna wywoływać metodę printKoty().
+7.	Metoda main() powinna usuwać jednego kota z setu kot&oacute;w.
+
+

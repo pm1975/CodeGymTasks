@@ -11,6 +11,10 @@ public class MinesweeperGame extends Game {
     private GameObject[][] gameField = new GameObject[SIDE][SIDE];
     private int countMinesOnField;
 
+    private void countMineNeighbors() {
+
+    }
+
     @Override
     public void initialize() {
         setScreenSize(SIDE, SIDE);
@@ -28,6 +32,7 @@ public class MinesweeperGame extends Game {
                 setCellColor(x, y, Color.ORANGE);
             }
         }
+        countMineNeighbors();
     }
 
     private List<GameObject> getNeighbors(GameObject gameObject) {

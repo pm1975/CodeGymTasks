@@ -1,0 +1,20 @@
+taskKey="pl.codegym.task.task08.task0820"\n\nZwierzęcy secik
+
+1. Wewnątrz klasy Solution utwórz publiczne i statyczne klasy Kot i Pies.
+2. Zaimplementuj metodę utworzKoty, która będzie zwracać set, który ma 4 koty.
+3. Zaimplementuj metodę utworzPsy, która będzie zwracać, set, który ma 3 psy.
+4. Zaimplementuj metodę dolacz, która będzie zwracać połączony set wszystkich zwierząt (wszystkie koty i psy).
+5. Zaimplementuj metodę usunKoty, która będzie usuwać z setu zwierzeta wszystkie koty z setu koty.
+6. Zaimplementuj metodę printZwierzeta, która będzie wyświetlać wszystkie zwierzęta w secie ze zwierzętami.
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Wewnątrz klasy Solution powinny być publiczne i statyczne klasy Kot i Pies.
+3.	Metoda klasy Solution utworzKoty() musi zwracać Set zawierający 4 koty.
+4.	Metoda klasy Solution utworzPsy() musi zwracać Set zawierający 3 psy.
+5.	Metoda klasy Solution dolacz() powinna zwracać połączony set wszystkich zwierząt (wszystkich ps&oacute;w i kot&oacute;w).
+6.	Metoda usunKoty() powinna usuwać z setu zwierząt wszystkie koty z set koty.
+7.	Metoda printZwierzeta() powinna wyświetlać wszystkie zwierzęta w set zwierzęta. Każde zwierzę powinno być w nowej linii.
+
+

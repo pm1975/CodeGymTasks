@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0817"\n\nPowtórzenia nie są potrzebne
+
+Utwórz Map<String, String> i dodaj dziesięć wpisów, które odpowiadają parom (nazwisko, imie).
+Usuń ludzi o takich samych imionach.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Program nie powinien czytać wartości z klawiatury.
+3.	Metoda utworzMap() musi tworzyć i zwracać HashMap, kt&oacute;ry ma elementy (String, String) i zawiera 10 wpis&oacute;w.
+4.	Metoda usunPowtorzoneImiona() musi usuwać z mapy wszystkich ludzi o takich samych imionach.
+5.	Metoda usunPowtorzoneImiona() musi wywoływać metodę usunElementZMapPoWartosci().
+
+
