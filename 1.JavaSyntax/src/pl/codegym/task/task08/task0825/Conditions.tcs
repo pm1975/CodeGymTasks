@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0825"\n\nZakręcony modyfikator
+
+Przenieś jeden modyfikator statyczny tak, aby program się kompilował.
+
+
+Requirements:
+1.	Klasa Solution musi mieć zmienną o nazwie A.
+2.	Klasa Solution musi mieć zmienną o nazwie B.
+3.	Klasa Solution musi mieć zmienną o nazwie C.
+4.	Klasa Solution musi mieć zmienną o nazwie D.
+5.	Klasa Solution musi mieć tylko trzy metody.
+6.	Klasa musi mieć 4 modyfikatory statyczne (zmienne i metody).
+
+

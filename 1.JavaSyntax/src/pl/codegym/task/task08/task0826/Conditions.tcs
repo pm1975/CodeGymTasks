@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0826"\n\nPięciu wygranych
+
+Utwórz tablicę z 20 liczb. Zapełnij ją liczbami z klawiatury. Wyświetl pięć największych liczb. Każda wartość powinna być wyświetlona w nowej linii.
+
+
+Requirements:
+1.	Program powinien wyświetlać liczby na ekranie.
+2.	Program powinien czytać wartości z klawiatury.
+3.	Klasa Solution musi mieć dwie metody.
+4.	Metoda sortuj() powinna sortować tablicę z liczbami od najwyższej od najniższej.
+5.	Metoda main() powinna wywoływać metodę sortuj().
+6.	Program powinien wyświetlać pięć największych liczb w tablicy. Każda wartość powinna być wyświetlona w nowej linii.
+
+

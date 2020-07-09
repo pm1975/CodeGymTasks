@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task08.task0824"\n\nZałóż rodzinę
+
+1. Utwórz klasę Ludzie z polami String imie, boolean plec, int wiek i ArrayList<Ludzie> dzieci.
+2. Utwórz i zapełnij obiekty tak, żeby otrzymać: dwóch dziadków, dwie babcie, jednego ojca, jedną matkę i troje dzieci.
+3. Wyświetl wszystkie obiekty Ludzie (Wskazówka: użyj metody klasy Ludzie toString().
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Klasa Ludzie musi mieć cztery pola.
+3.	Klasa Ludzie musi mieć jedną metodę.
+4.	Klasa Solution musi mieć jedną metodę.
+5.	Program powinien tworzyć obiekty i zapełniać je danymi tak, aby otrzymać dw&oacute;ch dziadk&oacute;w, dwie babcie, jednego ojca, jedną matkę i troje dzieci. Następnie powinien wyświetlić wszystkie obiekty Ludzie na ekranie.
+
+

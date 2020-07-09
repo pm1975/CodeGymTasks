@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task08.task0827"\n\nPraca z datami
+
+1. Zaimplementuj metodę isDataNieparzysta(String date), która zwraca true, jeśli liczba dni, licząc od początku roku, jest nieparzysta, a w innym wypadku zwraca false
+2. String date zostaje przekazany w fomie: FEBRUARY 1 2013
+Pamiętaj, aby liczyć od pierwszego dnia od początku roku.
+Przykład:
+JANUARY 1 2000 = true
+JANUARY 2 2020 = false
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Klasa Solution musi mieć dwie metody.
+3.	Metoda isDataNieparzysta() musi zwracać true, jeśli liczba dni, licząc od początku roku, jest nieparzysta, a w innym wypadku zwraca false.
+4.	Metoda main() powinna wywoływać metodę isDataNieparzysta().
+
+

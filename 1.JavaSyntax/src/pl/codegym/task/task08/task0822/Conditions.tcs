@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task08.task0822"\n\nNajmniejsza z N liczb
+
+1. Używając klawiatury, wprowadź liczbę N.
+2. Wczytaj N liczb całkowitych i umieść je w liście: metoda getListaLiczbCalkowitych.
+3. Znajdź minimum pośród elementów listy: metoda getMinimum.
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Program powinien czytać wartości z klawiatury.
+3.	Klasa Solution musi mieć tylko trzy metody.
+4.	Metoda getListaLiczbCalkowitych() powinna czytać liczbę N z klawiatury i zwracać listę złożoną z N element&oacute;w, zapełnioną liczbami czytanymi z klawiatury.
+5.	Metoda getMinimum() powinna zwracać minimum pośr&oacute;d element&oacute;w listy.
+6.	Metoda main() powinna wywoływać metodę getListaLiczbCalkowitych().
+7.	Metoda main() powinna wywoływać metodę getMinimum().
+
+
