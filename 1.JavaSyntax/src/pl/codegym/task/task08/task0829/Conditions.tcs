@@ -1,0 +1,25 @@
+taskKey="pl.codegym.task.task08.task0829"\n\nAktualizacja oprogramowania
+
+Zadanie: Program określa, która rodzina (nazwisko) mieszka w domu o konkretnym numerze.
+Nowe zadanie: Program powinien działać z parametrami miasta, a nie z numery domow:
+Przykładowe wejście:
+Chicago
+Capone
+Nowy Jork City
+Rockefeller
+Seattle
+Gates
+
+Seattle
+
+Przykładowy wynik:
+Gates
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Program powinien czytać wartości z klawiatury.
+3.	Klasa Solution musi mieć jedną metodę.
+4.	Program powinien wyświetlać nazwisko rodziny, bazując na wprowadzonym mieście.
+
+
