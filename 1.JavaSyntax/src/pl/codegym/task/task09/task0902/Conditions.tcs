@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task09.task0902"\n\nŚlad stosu wita ponownie
+
+Napisz pięć metod, które wywołują siebie nawzajem.
+Każda metoda powinna zwracać nazwę metody, która ją wywołała. Aby uzyskać tę informację, użyj śladu stosu.
+
+
+Requirements:
+1.	W klasie powinno być 5 metod (opr&oacute;cz metody main).
+2.	Każda metoda powinna wywoływać następną: main wywołuje method1, method1 wywołuje method2 itd.
+3.	Każda metoda musi zwracać nazwę metody, kt&oacute;ra ją wywołała.
+4.	Aby uzyskać nazwę metody wywołującej, użyj metody getMethodName.
+
+

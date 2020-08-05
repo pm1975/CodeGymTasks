@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task09.task0929"\n\nSprawmy, by kod robił coś pożytecznego!
+
+Zadanie: Program wczytuje dwie nazwy plików. Kopiuje pierwszy plik do lokalizacji określonej przez nazwę drugiego pliku.
+Nowe zadanie: Program wczytuje dwie nazwy plików. Kopiuje pierwszy plik do lokalizacji określonej przez nazwę drugiego pliku.
+Jeśli określony plik (ten, który ma zostać skopiowany) nie istnieje, program powinien wyświetlić "Plik nie istnieje." i wczytać nazwę pliku jeszcze raz i dopiero wtedy wczytać nazwę pliku docelowego.
+
+
+Requirements:
+1.	Program musi wczytywać nazwy plik&oacute;w.
+2.	Metoda main musi obsłużyć wyjątki zwracane przez metodę getInputStream. Jeśli pojawi się wyjątek, powinien wyświetlić się komunikat &quot;Plik nie istnieje.&quot;.
+3.	Program musi kopiować zawartość pierwszego pliku do drugiego.
+4.	Metoda main powinna wywoływać metodę getInputStream.
+5.	Nie zmieniaj metody getInputStream.
+6.	Metoda main powinna wywoływać metodę getOutputStream.
+7.	Nie zmieniaj metody getOutputStream.
+
+

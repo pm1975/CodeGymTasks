@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task09.task0928"\n\nKod się nie kompiluje...
+
+Zadanie: Program wczytuje dwie nazwy plików. Kopiuje pierwszy plik do lokalizacji określonej przez nazwę drugiego pliku.
+
+
+Requirements:
+1.	Program musi wczytywać nazwy plik&oacute;w.
+2.	Nie zmieniaj metody getInputStream.
+3.	Nie zmieniaj metody getOutputStream.
+4.	Program musi kopiować zawartość pierwszego pliku do drugiego.
+5.	Program powinien wyświetlać liczbę skopiowanych bajt&oacute;w.
+6.	Metoda main powinna wywoływać metodę getInputStream.
+7.	Metoda main powinna wywoływać metodę getOutputStream.
+
+
