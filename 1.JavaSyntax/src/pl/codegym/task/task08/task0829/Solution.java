@@ -32,12 +32,20 @@ public class Solution {
         HashMap<String, String> map = new HashMap<>();
         while (true) {
             String city = reader.readLine();
+<<<<<<< HEAD
             if (city.isEmpty())
+=======
+            if (city.isEmpty() && city != null)
+>>>>>>> 25ea01473c069bbd96a8701eccdce9cc3f864744
                 break;
             String surname = reader.readLine();
             if (city.isEmpty())
                 break;
+<<<<<<< HEAD
             map.put(city, surname);
+=======
+            map.put(surname, city);
+>>>>>>> 25ea01473c069bbd96a8701eccdce9cc3f864744
         }
 
         //get surname

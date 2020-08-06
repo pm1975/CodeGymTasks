@@ -8,7 +8,7 @@ import java.util.List;
 
 public class MinesweeperGame extends Game {
     private static final int SIDE = 9;
-    private GameObject[][] gameField = new GameObject[SIDE][SIDE];
+    private final GameObject[][] gameField = new GameObject[SIDE][SIDE];
     private int countMinesOnField;
 
     @Override
@@ -50,6 +50,23 @@ public class MinesweeperGame extends Game {
     }
 
     private void countMineNeighbors() {
+<<<<<<< HEAD
 
+=======
+        for (int y = 0; y < SIDE; y++) {
+            for (int x = 0; x < SIDE; x++) {
+                //Do not count the number of adjacent mines for a cell that is a mine
+                if (!gameField[y][x].isMine) {
+                    List<GameObject> neighbors = getNeighbors(gameField[y][x]);
+                    for (int i = 0; i < neighbors.size(); i++) {
+
+                        if (neighbors.get(i).isMine) {
+                            gameField[y][x].countMineNeighbors++;
+                        }
+                    }
+                }
+            }
+        }
+>>>>>>> 25ea01473c069bbd96a8701eccdce9cc3f864744
     }
 }
