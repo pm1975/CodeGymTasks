@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task09.task0920"\n\nOdliczanie
+
+Użyj pętli, aby napisać odliczanie od 10 do 0. Aby utworzyć opóźnienie, użyj Thread.sleep(100);
+Otocz wywołanie sleep blokiem try-catch.
+
+
+Requirements:
+1.	Program powinien wyświetlać odliczanie od 10 do 0.
+2.	Program powinien wyświetlać nową liczbę co każde 100 milisekund.
+3.	Program powinien używać &quot;Thread.sleep(100);&quot;.
+4.	Metoda main musi mieć blok try-catch.
+5.	Metoda main nie powinna zwracać wyjątk&oacute;w.
+
+

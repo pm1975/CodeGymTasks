@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task09.task0901"\n\nZwracanie śladu stosu
+
+Napisz pięć metod, które wywołują siebie nawzajem.
+Każda metoda musi zwracać swój ślad stosu.
+
+
+Requirements:
+1.	W klasie powinno być 5 metod (opr&oacute;cz metody main).
+2.	Każda metoda powinna wywoływać następną: main wywołuje method1, method1 wywołuje method2 itd.
+3.	Każda metoda musi zwracać sw&oacute;j ślad stosu.
+4.	Aby pobrać ślad stosu, użyj Thread.currentThread().getStackTrace().
+
+

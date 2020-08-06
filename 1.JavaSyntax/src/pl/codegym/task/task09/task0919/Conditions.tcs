@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task09.task0919"\n\nDzielenie przez zero
+
+Utwórz publiczną i statyczną metodę void dzielimyPrzezZero, która dzieli dowolną liczbę przez zero i wyświetla wynik tego dzielenia.
+Otocz wywołanie metody dzielimyPrzezZero blokiem try-catch. Wyświetl ślad stosu wyjątku, używając metody exception.printStackTrace().
+
+
+Requirements:
+1.	Klasa musi mieć publiczną statyczną metodę void dzielimyPrzezZero.
+2.	Metoda dzielimyPrzezZero musi zawierać operację dzielenia przez zero.
+3.	Metoda dzielimyPrzezZero powinna wywoływać System.out.println lub System.out.print.
+4.	Metoda main musi mieć blok try-catch.
+5.	Metoda main powinna obsługiwać wyjątki zwracane przez metodę dzielimyPrzezZero.
+6.	Program powinien wyświetlać ślad stosu obsłużonego wyjątku.
+
+

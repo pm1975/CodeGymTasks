@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task09.task0918"\n\nWszyscy są naszymi kumplami, nawet wyjątki
+
+Dane są cztery klasy: MyException, MyException2, MyException3 i MyException4.
+Odziedzicz po klasach tak, aby otrzymać dwa dowolne wyjątki typu checked i dowolne dwa wyjątki typu unchecked.
+Wskazówka:
+Przeanalizuj klasy z drugiego zadania w tej lekcji: Exception1, Exception2 i Exception3.
+
+
+Requirements:
+1.	Klasa Solution musi mieć 4 zagnieżdżone klasy: MyException, MyException2, MyException3 i MyException4.
+2.	Wszystkie zagnieżdżone klasy muszą dziedziczyć po klasach wyjątk&oacute;w.
+3.	Dwie z czterech klas muszą być wyjątkami typu checked.
+4.	Dwie z czterech klas muszą być wyjątkami typu unchecked.
+
+

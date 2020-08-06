@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task09.task0916"\n\nObsługiwanie wyjątków typu checked
+
+W metodzie obslugaExceptions zajmij się wyjątkami typu checked.
+Należy wyświetlić wyjątek typu checked, który się pojawił.
+Możesz użyć tylko jednego bloku try-catch.
+
+
+Requirements:
+1.	Metoda obslugaExceptions musi wywoływać method1.
+2.	Metoda obslugaExceptions musi wywoływać method2.
+3.	Metoda obslugaExceptions musi wywoływać method3.
+4.	Metoda obslugaExceptions musi używać tylko jednego bloku try-catch.
+5.	Metoda obslugaExceptions powinna obsługiwać i wyświetlać pojawiające się wyjątki.
+6.	Program powinien wyświetlać tekst.
+
+

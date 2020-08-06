@@ -1,0 +1,24 @@
+taskKey="pl.codegym.task.task09.task0923"\n\nSamogłoski i spółgłoski
+
+Napisz program, który czyta ciąg z klawiatury.
+Program powinien wyświetlać dwie linie:
+1. Pierwsza linia zawiera tylko samogłoski z wprowadzonego ciągu.
+2. Druga zawiera tylko spółgłoski i znaki interpunkcyjne z wprowadzonego ciągu.
+Litery powinny być rozdzielone spacją, każda linia musi kończyć się spacją.
+
+Przykładowe wejście:
+Ja Janek.
+
+Przykładowy wynik:
+a a e
+J J n k .
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlać dwie linie.
+3.	Pierwsza linia powinna zawierać tylko samogłoski z wprowadzonego ciągu, rozdzielone spacją.
+4.	Druga linia powinna zawierać tylko sp&oacute;łgłoski i znaki interpunkcyjne z wprowadzonego ciągu, rozdzielone spacją.
+5.	Każda linia musi kończyć się spacją.
+
+

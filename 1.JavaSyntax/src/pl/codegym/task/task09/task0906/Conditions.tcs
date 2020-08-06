@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task09.task0906"\n\nLogowanie śladów stosu
+
+Zaimplementuj metodę log.
+Metoda log powinna wyświetlać nazwę klasy i metody, w których jest wywoływana, a także przekazaną wiadomość.
+Dla zwiększenia przejrzystości użyj dwukropka i spacji, aby oddzielić nazwę klasy, nazwę metody i wiadomość.
+
+Przykładowy wynik:
+pl.codegym.task.task09.task0906.Solution: main: W metodzie main
+
+
+Requirements:
+1.	Metoda log musi wyświetlać wiadomość na ekranie.
+2.	Wyświetlona wiadomość musi zawierać nazwę klasy, kt&oacute;rej metoda wywołała metodę log.
+3.	Wyświetlona wiadomość musi zawierać nazwę metody, kt&oacute;ra wywołała metodę log.
+4.	Wyświetlona wiadomość musi zawierać przekazywaną wiadomość.
+5.	Wynik musi odpowiadać przykładowi z zadania.
+
+

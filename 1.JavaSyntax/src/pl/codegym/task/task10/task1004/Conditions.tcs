@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task10.task1004"\n\nZadanie nr 4 z konwersją typu int
+
+Dodaj jedną konwersję typu, aby otrzymać następującą odpowiedź: dziewiec = 9
+short liczba = 9;
+char zero = '0';
+int dziewiec = (zero + liczba);
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie. Możesz jedynie dodawać do niej operatory rzutowania.
+3.	Metoda main() musi zawierać zmienną liczba typu short.
+4.	Metoda main() musi zawierać zmienną zero typu char.
+5.	Metoda main() musi zawierać zmienną dziewiec typu int.
+6.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie dodawać operatory rzutowania.
+7.	Program powinien wyświetlać liczbę 9.
+
+
