@@ -1,0 +1,21 @@
+taskKey="pl.codegym.task.task10.task1011"\n\nDużo pieniędzy
+
+Wyświetl "Wcale nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy" 43 razy zgodnie z następującym wzorem.
+Wzór:
+Wcale nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy
+cale nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy
+ale nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy
+le nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy
+e nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy
+nie chcę uczyć się Javy. Chcę tylko dużo pieniędzy
+…
+pieniędzy
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Program powinien wyświetlać 48 linie.
+3.	Program musi używać pętli for bądź pętli while.
+4.	Wynik powinien odpowiadać przykładowi z warunk&oacute;w zadania.
+
+

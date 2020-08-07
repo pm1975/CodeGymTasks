@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task08.task0828"\n\nNumer miesiąca
+
+Program czyta nazwę miesiąca z klawiatury, a następnie wyświetla jego numer na ekranie w następujący sposób: "Maj to miesiąc nr 5".
+Użyj kolekcji.
+
+
+Requirements:
+1.	Program powinien czytać jedną wartość z klawiatury.
+2.	Program powinien wyświetlać tekst na ekranie.
+3.	Program musi używać kolekcji.
+4.	Program powinien czytać nazwę miesiąca z klawiatury, a następnie wyświetlać jego numer na ekranie zgodnie z określonym wzorem.
+
+

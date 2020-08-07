@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task10.task1005"\n\nZadanie nr 5 z konwersją typu int
+
+Przestaw operatory rzutowania tak, aby otrzymać odpowiedź: c = 256
+int a = (byte)44;
+int b = (byte)300;
+short c = (byte)(b - a);
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną a typu int.
+4.	Metoda main() musi zawierać zmienną b typu int.
+5.	Metoda main() musi zawierać zmienną c typu short.
+6.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie zmieniać operatory rzutowania.
+7.	Program powinien wyświetlać liczbę 256.
+
+

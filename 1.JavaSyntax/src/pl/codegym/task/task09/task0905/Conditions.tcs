@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task09.task0905"\n\nKrok po kroku po śladach stosu...
+
+Napisz metodę, która zwraca głębokość stosu wywołań, tzn. liczbę metod w stosie wywołań.
+Metoda powinna wyświetlać tę liczbę na ekranie.
+
+
+Requirements:
+1.	Metoda getGlebokoscStosu musi zwracać głębokość jej stosu.
+2.	Metoda getGlebokoscStosu powinna wyświetlać głębokość jej stosu.
+3.	Użyj Thread.currentThread().getStackTrace().
+4.	Metoda main musi wywoływać metodę getGlebokoscStosu.
+
+

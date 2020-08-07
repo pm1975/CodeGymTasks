@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task09.task0922"\n\nJaka dzisiaj jest data?
+
+Wprowadź datę w formacie "2013-08-18"
+Wyświetl tę datę w formacie "18 SIE 2013".
+Użyj obiektu Date i SimpleDateFormat.
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	W programie należy zadeklarować zmienną SimpleDateFormat.
+3.	W programie należy zadeklarować zmienną Date.
+4.	Program powinien wyświetlać dane na ekranie.
+5.	Wynik musi spełniać warunki zadania.
+
+

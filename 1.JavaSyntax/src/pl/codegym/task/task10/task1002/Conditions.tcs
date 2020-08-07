@@ -1,0 +1,20 @@
+taskKey="pl.codegym.task.task10.task1002"\n\nZadanie nr 2 z konwersją typu int
+
+Przestaw operatory rzutowania tak, aby uzyskać wymagany wynik: d = 3.765
+int a = 15;
+int b = 4;
+float c = a / b;
+double d = a * 1e-3 + c;
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną a typu int.
+4.	Metoda main() musi zawierać zmienną b typu int.
+5.	Metoda main() musi zawierać zmienną f typu float.
+6.	Metoda main() musi zawierać zmienną d typu double.
+7.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie dodawać operatory rzutowania.
+8.	Program powinien wyświetlać liczbę 3.765.
+
+

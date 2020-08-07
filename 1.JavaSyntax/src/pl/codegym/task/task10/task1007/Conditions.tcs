@@ -1,0 +1,21 @@
+taskKey="pl.codegym.task.task10.task1007"\n\nZadanie nr 7 z konwersją typu int
+
+Usuń niepotrzebne operatory tak, aby otrzymać prawidłową odpowiedź: 1234567
+long l = (byte)1234_564_890L;
+int x = (byte)0b1000_1100_1010;
+double m = (byte)110_987_654_6299.123_34;
+float f = (byte)l++ + 10 + ++x - (float)m;
+l = (long) f / 1000;
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną l typu long.
+4.	Metoda main() musi zawierać zmienną x typu int.
+5.	Metoda main() musi zawierać zmienną m typu double.
+6.	Metoda main() musi zawierać zmienną f typu float.
+7.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie zmieniać operatory rzutowania.
+8.	Program powinien wyświetlać 1234567.
+
+

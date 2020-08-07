@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task09.task0921"\n\nMetoda w try-catch
+
+Napisz program, który czyta liczby z klawiatury.
+Kod czytający liczby z klawiatury musi być w metodzie czytajDane.
+Otocz kod wewnątrz czytajDane blokiem try-catch.
+Jeśli użytkownik wprowadzi tekst zamiast liczby, metoda powinna wyłapać wyjątek, a następnie wyświetlić wszystkie uprzednio wprowadzone liczby.
+Wyświetl każdą liczbę w nowej linii w kolejności, w jakiej liczby zostały wprowadzone.
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Nie zmieniaj metody main.
+3.	Metoda main nie powinna zwracać wyjątk&oacute;w.
+4.	Metoda czytajDane musi zawierać blok try-catch.
+5.	Jeśli użytkownik wprowadzi tekst zamiast liczby, program powinien wyświetlić wszystkie uprzednio wprowadzone liczby.
+
+

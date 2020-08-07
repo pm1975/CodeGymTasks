@@ -1,0 +1,35 @@
+taskKey="pl.codegym.task.task09.task0930"\n\nZadanie z algorytmami
+
+Zadanie: Użytkownik wprowadza listę wyrazów (i liczb) z klawiatury. Wyrazy zostają wyświetlone w kolejności alfabetycznej, a liczby w kolejności malejącej.
+
+Przykładowe wejście:
+Czereśnia
+1
+Bob
+3
+Arbuz
+22
+0
+Melon
+
+Przykładowy wynik:
+Arbuz
+22
+Bob
+3
+Czereśnia
+1
+0
+Melon
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlać dane na ekranie.
+3.	Wyświetlone wyrazy powinny zostać uporządkowane w kolejności alfabetycznej (używając podanej metody isWiekszeOd).
+4.	Wyświetlone liczby powinny zostać uporządkowane w kolejności malejącej.
+5.	Metoda main powinna używać metody sortuj.
+6.	Metoda sortuj() powinna wywoływać metodę isWiekszeOd().
+7.	Metoda sortuj() powinna wywoływać metodę isLiczba().
+
+

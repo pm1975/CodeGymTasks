@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task09.task0926"\n\nLista tablic z liczbami
+
+Utwórz listę, której elementy są tablicami liczb.
+Dodaj do listy pięć obiektów tablicy, których długości to odpowiednio 5, 2, 4, 7 i 0.
+Zapełnij tablice dowolnymi danymi i wyświetl je na ekranie.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Metoda utworzLista musi deklarować i inicjalizować zmienną ArrayList&lt;int[]&gt;.
+3.	Metoda utworzLista musi zwracać utworzoną listę.
+4.	Metoda utworzLista musi dodawać do listy 5 element&oacute;w.
+5.	Każdy element w liście musi być tablicą liczb. Długość pierwszej tablicy musi być r&oacute;wna 5; drugiej 2; a reszty odpowiednio 4, 7 i 0.
+6.	Program powinien wyświetlać w liście elementy wszystkich tablic. Każdy element w nowej linii.
+
+

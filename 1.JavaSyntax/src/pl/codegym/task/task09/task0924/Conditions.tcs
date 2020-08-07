@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task09.task0924"\n\nStraszna opowieść
+
+1. Dawno temu było sobie pięć klas: czerwony kapturek, babcia, ciasto, drwal i wilk.
+2. Każda klasa ma 2 pola: ArrayList zabił i ArrayList zjadł.
+3. Utworzono niezbędne obiekty (kapturek, babcia, ...).
+4. Następnie opisz związki między nimi odpowiadające temu, kto kogo zjadł i/lub zabił w starej baśni z Terry „Czerwony Kapturek”.
+
+PS: Nikt nie zjadł ciasta. Po prostu przyniesiono je w koszu. Wilk zjadł tylko kawałeczek. A potem został zabity.
+
+
+Requirements:
+1.	Metoda main powinna zmieniać stan (wewnętrzne zmienne) obiektu wilk.
+2.	Metoda main powinna zmieniać stan (wewnętrzne zmienne) obiektu drwal.
+3.	Nikt nie zjadł ciasta.
+4.	Wilk zjadł tylko kawałeczek.
+5.	A potem został zabity.
+
+

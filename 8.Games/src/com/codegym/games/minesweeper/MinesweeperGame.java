@@ -28,7 +28,6 @@ public class MinesweeperGame extends Game {
                 setCellColor(x, y, Color.ORANGE);
             }
         }
-        countMineNeighbors();
     }
 
     private List<GameObject> getNeighbors(GameObject gameObject) {
@@ -51,6 +50,9 @@ public class MinesweeperGame extends Game {
     }
 
     private void countMineNeighbors() {
+<<<<<<< HEAD
+
+=======
         for (int y = 0; y < SIDE; y++) {
             for (int x = 0; x < SIDE; x++) {
                 //Do not count the number of adjacent mines for a cell that is a mine
@@ -65,5 +67,6 @@ public class MinesweeperGame extends Game {
                 }
             }
         }
+>>>>>>> 25ea01473c069bbd96a8701eccdce9cc3f864744
     }
 }

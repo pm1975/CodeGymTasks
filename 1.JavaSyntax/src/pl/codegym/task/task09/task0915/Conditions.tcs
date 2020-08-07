@@ -1,0 +1,26 @@
+taskKey="pl.codegym.task.task09.task0915"\n\nObsługiwanie zwyczajnych wyjątków
+
+1. Przeanalizuj wyjątki zwrócone przez metodę BEAN.throwExceptions.
+2. Metoda obslugaExceptions musi wywoływać metodę BEAN.throwExceptions i obsługiwać wyjątki:
+2.1. jeśli wystąpił wyjątek FileSystemException, zaloguj go (wywołaj metodęBEAN.log) i wyrzuć ponownie
+2.2. jeśli wystąpił wyjątek CharConversionException bądź jakikolwiek inny IOException, po prostu go zaloguj (wywołaj metodę BEAN.log)
+3. Do sygnatury metody obslugaExceptions dodaj klasę wyjątku, który zwracasz w podpunkcie 2.1.
+4. W metodzie main zajmij się pozostałym wyjątkiem, logując go. Użyj try-catch
+
+Wskazówka:
+Jeśli złapiesz MyException, a nie chciałeś tego zrobić, możesz wyrzucić go ponownie, używając kodu:
+catch (MyException e) {
+throw e;
+}
+
+
+Requirements:
+1.	Metoda obslugaExceptions musi wywoływać metodę BEAN.throwExceptions.
+2.	Metoda obslugaExceptions powinna logować FileSystemException (wywoływać metodę BEAN.log), a następnie ponownie go wyrzucać.
+3.	Metoda obslugaExceptions powinna tylko logować (wywoływać metodę BEAN.log) CharConversionException.
+4.	Metoda obslugaExceptions powinna tylko logować każdy IOException.
+5.	Do klasy FileSystemException dodaj sygnaturę metody obslugaExceptions.
+6.	Metoda main powinna używać try-catch.
+7.	Metoda main powinna logować wyjątki wyrzucone przez metodę obslugaExceptions.
+
+

@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task09.task0904"\n\nŚlad stosu z 10 wywołaniami
+
+Napisz kod tworzący stos głęboki na 10 wywołań. Nie zmieniaj metody main.
+
+
+Requirements:
+1.	W klasie powinno być 10 metod (opr&oacute;cz metody main).
+2.	Wartość zmiennej dlugoscSladuStosu musi na koniec być r&oacute;wna 10.
+3.	Każda metoda musi wywoływać metodę następną.
+4.	Użyj metody Thread.currentThread().getStackTrace().
+
+

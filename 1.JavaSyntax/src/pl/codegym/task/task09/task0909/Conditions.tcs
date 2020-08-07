@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task09.task0909"\n\nWyjątek podczas pracy z tablicami
+
+Obsłuż wyjątek (i wyświetl jego typ), który pojawia się podczas wykonywania następującego kodu:
+int[] m = new int[2];
+m[8] = 5;
+
+
+Requirements:
+1.	Program powinien wyświetlać wiadomość na ekranie.
+2.	Program musi mieć blok try-catch.
+3.	Program musi obsługiwać określony typ wyjątku, a nie wszystkie możliwe wyjątki (tj. wszystkie możliwe instancje Exception).
+4.	Wyświetlona wiadomość musi zawierać typ wyjątku, kt&oacute;ry się pojawił.
+5.	Nie usuwaj istniejącego kodu w metodzie main.
+
+
