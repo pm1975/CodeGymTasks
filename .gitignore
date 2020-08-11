@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #############
 ## Idea
 #############
@@ -21,4 +22,29 @@ target/
 /CodeGymPlugin.properties
 /Instruction.png
 /out.log
+=======
+#############
+## Idea
+#############
+target/
+.idea/
+.idea
+.repository/
+*.iml
+*.iws
+#*.tcs #Conditions.tcs
+#*.java
+*.class
+*.info
+*.properties
+
+#/1.JavaSyntax/
+#/2.JavaCore/
+/3.JavaMultithreading/
+/4.JavaCollections/
+/out/
+/CodeGymPlugin.properties
+/Instruction.png
+/out.log
+>>>>>>> 871c125ce8269544f2e9d922807839160bb2f6ca
 /out.log.*
