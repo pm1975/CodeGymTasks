@@ -61,7 +61,6 @@ public class MinesweeperGame extends Game {
                 if (!gameField[y][x].isMine) {
                     List<GameObject> neighbors = getNeighbors(gameField[y][x]);
                     for (int i = 0; i < neighbors.size(); i++) {
-
                         if (neighbors.get(i).isMine) {
                             gameField[y][x].countMineNeighbors++;
                         }
@@ -76,7 +75,11 @@ public class MinesweeperGame extends Game {
         if (gameObject.isMine) {
             setCellValue(x, y, MINE);
         } else {
-            setCellNumber(x, y, gameObject.countMineNeighbors);
+            if (gameObject.countMineNeighbors != 0) {
+                setCellNumber(x, y, gameObject.countMineNeighbors);
+            } else {
+                
+            }
         }
         gameObject.isOpen = true;
         setCellColor(x, y, Color.GREEN);
