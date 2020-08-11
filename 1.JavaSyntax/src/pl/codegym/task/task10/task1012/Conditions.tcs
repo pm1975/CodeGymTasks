@@ -1,0 +1,20 @@
+taskKey="pl.codegym.task.task10.task1012"\n\nLiczba liter
+
+Wprowadź 10 ciągów z klawiatury i policz, ile różnych liter one zawierają (bierzemy pod uwagę 32 małe litery polskiego alfabetu). Wyświetl wynik na ekranie w kolejności alfabetycznej.
+Przykładowy wynik:
+a 5
+b 8
+c 3
+d 7
+e 0
+…
+z 9
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury 10 razy.
+2.	Program powinien wyświetlać tekst na ekranie.
+3.	Wyświetlony tekst powinien składać się z 32 linii.
+4.	Każda linia wyjściowa powinna zawierać literę polskiego alfabetu, spację i liczbę wystąpień danej litery we wprowadzonych liniach.
+
+

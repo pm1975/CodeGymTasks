@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task10.task1003"\n\nZadanie nr 3 z konwersją typu int
+
+Dodaj jedną operację rzutowania typu, aby otrzymać następującą odpowiedź: b = 0
+float f = (float)128.50;
+int i = (int)f;
+int b = (int)(i + f);
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną f typu float.
+4.	Metoda main() musi zawierać zmienną i typu int.
+5.	Metoda main() musi zawierać zmienną b typu int.
+6.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie dodawać operatory rzutowania.
+7.	Program powinien wyświetlać liczbę 0.
+
+

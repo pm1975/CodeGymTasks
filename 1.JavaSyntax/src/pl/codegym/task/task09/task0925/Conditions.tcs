@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task09.task0925"\n\nModyfikatory statyczne są nie na miejscu
+
+Przestaw modyfikatory statyczne tak, aby program się kompilował.
+
+
+Requirements:
+1.	Klasa musi mieć zmienną A.
+2.	Klasa musi mieć zmienną B.
+3.	Klasa musi mieć zmienną C.
+4.	Nie zmieniaj metody main.
+5.	Nie zmieniaj metody getA.
+6.	W klasie muszą być 3 pola statyczne.
+
+

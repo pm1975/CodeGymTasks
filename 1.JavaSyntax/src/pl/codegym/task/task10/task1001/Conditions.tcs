@@ -1,0 +1,22 @@
+taskKey="pl.codegym.task.task10.task1001"\n\nZadanie nr 1 z konwersją typu int
+
+Przestaw operatory rzutowania tak, aby uzyskać wymagany wynik: d > 0
+int a = 0;
+int b = (byte) a + 46;
+byte c = (byte) (a*b);
+double f = (char) 1234.15;
+long d = (short) (a + f / c + b);
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną a typu int.
+4.	Metoda main() musi zawierać zmienną b typu int.
+5.	Metoda main() musi zawierać zmienną c typu byte.
+6.	Metoda main() musi zawierać zmienną f typu double.
+7.	Metoda main() musi zawierać zmienną d typu long.
+8.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz edytować (dodawać/usuwać/zmieniać) tylko operatory rzutowania.
+9.	Program powinien wyświetlać liczbę większą niż 0.
+
+

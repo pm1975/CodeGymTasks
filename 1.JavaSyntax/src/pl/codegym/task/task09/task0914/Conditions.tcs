@@ -1,0 +1,19 @@
+taskKey="pl.codegym.task.task09.task0914"\n\nObsługiwanie grupy wyjątków
+
+1. Mamy trzy wyjątki, które kolejno dziedziczą po Exception.
+2. Klasa Exception1 stanowi rozszerzenie Exception
+3. Klasa Exception2 stanowi rozszerzenie Exception1
+4. Klasa Exception3 stanowi rozszerzenie Exception2
+5. Dana jest metoda z następującą sygnaturą:
+public static void method1() throws Exception1, Exception2, Exception3
+6. Napisz blok catch, który obsłuży wszystkie trzy wyjątki: Exception1, Exception2 i Exception3
+
+
+Requirements:
+1.	Metoda main musi wywoływać method1.
+2.	Metoda main musi obsługiwać wyjątek Exception1.
+3.	Metoda main musi obsługiwać wyjątek Exception2.
+4.	Metoda main musi obsługiwać wyjątek Exception3.
+5.	Nie zmieniaj metody method1.
+
+

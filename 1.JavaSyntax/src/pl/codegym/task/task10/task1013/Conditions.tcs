@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task10.task1013"\n\nKonstruktory klasy Ludzie
+
+Napisz klasę Ludzie z 6 polami. Wymyśl i zaimplementuj dla niej 10 różnych konstruktorów. Każdy konstruktor musi mieć sens.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	W klasie Ludzie powinno być 6 p&oacute;l.
+3.	Wszystkie pola klasy Ludzie muszą być prywatne.
+4.	W klasie Ludzie powinno być 10 konstruktor&oacute;w.
+5.	Wszystkie konstruktory klasy Ludzie muszą być publiczne.
+
+

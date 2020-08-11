@@ -1,0 +1,24 @@
+taskKey="pl.codegym.task.task10.task1006"\n\nZadanie nr 6 z konwersją typu int
+
+Usuń niepotrzebne operatory tak, aby otrzymać prawidłową odpowiedź: wynik: 1000.0
+double d = (short) 2.50256e2d;
+char c = (short) 'd';
+short s = (short) 2.22;
+int i = (short) 150000;
+float f = (short) 0.50f;
+double wynik = f + (i / c) - (d * s) - 500e-3;
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną c typu char.
+4.	Metoda main() musi zawierać zmienną s typu short.
+5.	Metoda main() musi zawierać zmienną i typu int.
+6.	Metoda main() musi zawierać zmienną f typu float.
+7.	Metoda main() musi zawierać zmienną d typu double.
+8.	Metoda main musi zawierać zmienną wynik typu double.
+9.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie zmieniać operatory rzutowania.
+10.	Program powinien wyświetlać &quot;wynik: 1000.0&quot;.
+
+

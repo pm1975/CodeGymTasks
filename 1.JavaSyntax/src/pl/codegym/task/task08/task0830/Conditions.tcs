@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task08.task0830"\n\nZadanie z algorytmami
+
+Zadanie: Wprowadź 20 słów z klawiatury i wyświetl je w kolejności alfabetycznej. Każdy wyraz powinien być w nowej linii.
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Program powinien czytać wartości z klawiatury.
+3.	Klasa Solution musi mieć trzy metody.
+4.	Metoda main() powinna wywoływać metodę sortuj().
+5.	Metoda sort() powinna wywoływać metodę isWiekszeOd().
+6.	Słowa powinny wyświetlać się w kolejności alfabetycznej.
+
+

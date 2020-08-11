@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task10.task1010"\n\nPrawidłowa odpowiedź: d = 1.0
+
+Dodaj jedną konwersję typu, aby otrzymać następującą odpowiedź: d = 1.0
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+3.	Metoda main() musi zawierać zmienną a typu int.
+4.	Metoda main() musi zawierać zmienną b typu int.
+5.	Metoda main() musi zawierać zmienną c typu int.
+6.	Metoda main() musi zawierać zmienną e typu int.
+7.	Metoda main() musi zawierać zmienną d typu double.
+8.	Nie zmieniaj początkowej wartości zmiennych w trakcie inicjalizacji. Możesz jedynie dodawać operatory rzutowania.
+9.	Program powinien wyświetlać liczbę 1.0.
+
+

@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task09.task0913"\n\nWyjątki. Po prostu wyjątki.
+
+Metoda zgłasza dwa wyjątki, które dziedziczą Exception oraz dwa wyjątki, które dziedziczą RuntimeException:
+NullPointerException, ArithmeticException, FileNotFoundException, URISyntaxException.
+
+Należy obsłużyć NullPointerException i FileNotFoundException, ale nie obsługiwać ArithmeticException i URISyntaxException.
+Jak to zrobić?
+
+
+Requirements:
+1.	Metoda main musi wywoływać method1.
+2.	Metoda main musi obsługiwać wyjątek NullPointerException.
+3.	Metoda main musi obsługiwać wyjątek FileNotFoundException.
+4.	Metoda main nie może obsługiwać wyjątku ArithmeticException.
+5.	Metoda main nie może obsługiwać wyjątku URISyntaxException.
+6.	Nie zmieniaj metody method1.
+
+

@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task09.task0917"\n\nObsługiwanie wyjątków typu unchecked
+
+W metodzie obslugaExceptions zajmij się wszystkimi wyjątkami typu unchecked.
+Należy użyć metody printStos, aby wyświetlić ślad stosu pojawiającego się wyjątku.
+Możesz użyć tylko jednego bloku try-catch.
+
+
+Requirements:
+1.	Metoda obslugaExceptions musi wywoływać method1.
+2.	Metoda obslugaExceptions musi wywoływać method2.
+3.	Metoda obslugaExceptions musi wywoływać method3.
+4.	Metoda obslugaExceptions musi używać tylko jednego bloku try-catch.
+5.	Metoda obslugaExceptions powinna wychwytywać wszystkie niesprawdzone wyjątki i używać metody printStos do wyświetlania śladu stosu występującego wyjątku.
+6.	Program powinien wyświetlać tekst.
+
+
