@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1110"\n\nNie zapomnij o enkapsulacji
+
+Przyjrzyj się uważnie metodom i dodaj brakujące pola.
+
+
+Requirements:
+1.	Klasa Cat musi mieć pole name typu String.
+2.	Klasa Cat musi mieć pole age typu int.
+3.	Klasa Cat musi mieć pole weight typu int.
+4.	Klasa Cat musi mieć pole speed typu int.
+5.	Klasa Cat musi mieć 4 pola.
+6.	Wszystkie pola klasy Cat muszą być prywatne.
+
+

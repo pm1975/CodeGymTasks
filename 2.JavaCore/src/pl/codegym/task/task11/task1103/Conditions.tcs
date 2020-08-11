@@ -1,0 +1,20 @@
+taskKey="pl.codegym.task.task11.task1103"\n\nMiędzyplanetarna farma
+
+Napisz następujące sześć klas: Animal, Cow, Pig, Sheep, Bull i Goat.
+Spraw, aby klasy Cow, Pig, Sheep, Bull i Goat dziedziczyły klasę Animal.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Animal.
+2.	Klasa Solution musi zawierać publiczną klasę Cow.
+3.	Klasa Solution musi zawierać publiczną klasę Pig.
+4.	Klasa Solution musi zawierać publiczną klasę Sheep.
+5.	Klasa Solution musi zawierać publiczną klasę Bull.
+6.	Klasa Solution musi zawierać publiczną klasę Goat.
+7.	Klasa Cow musi dziedziczyć klasę Animal.
+8.	Klasa Pig musi dziedziczyć klasę Animal.
+9.	Klasa Sheep musi dziedziczyć klasę Animal.
+10.	Klasa Bull musi dziedziczyć klasę Animal.
+11.	Klasa Goat musi dziedziczyć klasę Animal.
+
+

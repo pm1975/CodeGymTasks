@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1112"\n\nPseudoprzyjaciele
+
+Edytuj klasy AppleIPhone i SamsungGalaxyS2.
+Spraw, aby klasa SamsungGalaxyS2 dziedziczyła klasę AppleIPhone.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać klasę AppleIPhone.
+2.	Klasa AppleIPhone musi być publiczna.
+3.	Klasa Solution musi zawierać klasę SamsungGalaxyS2.
+4.	Klasa SamsungGalaxyS2 musi być publiczna.
+5.	Klasa SamsungGalaxyS2 musi dziedziczyć klasę AppleIPhone.
+
+

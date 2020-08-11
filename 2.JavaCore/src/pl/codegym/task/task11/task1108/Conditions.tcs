@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task11.task1108"\n\nNiedostępny kot
+
+Ukryj wszystkie wewnętrzne zmienne klasy Cat oraz wszelkie metody, które mogą zmieniać wewnętrzny stan obiektów Cat.
+
+
+Requirements:
+1.	Zmienna name klasy Cat musi być prywatna.
+2.	Zmienna age klasy Cat musi być prywatna.
+3.	Zmienna weight klasy Cat musi być prywatna.
+4.	Getter getName musi być publiczny.
+5.	Setter setName musi być prywatny.
+6.	Getter getAge musi być publiczny.
+7.	Setter setAge musi być prywatny.
+
+

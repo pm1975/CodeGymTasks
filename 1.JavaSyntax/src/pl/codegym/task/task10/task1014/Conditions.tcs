@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task10.task1014"\n\nUżyj możliwie najmniejszej liczby modyfikatorów statycznych
+
+Użyj możliwie najmniejszej liczby modyfikatorów statycznych tak, aby kod się kompilował.
+
+
+Requirements:
+1.	Klasa musi mieć zmienną A.
+2.	Klasa musi mieć zmienną B.
+3.	Klasa musi mieć zmienną C.
+4.	Klasa musi mieć zmienną D.
+5.	Nie zmieniaj metody main.
+6.	Nie zmieniaj metody getA.
+
+

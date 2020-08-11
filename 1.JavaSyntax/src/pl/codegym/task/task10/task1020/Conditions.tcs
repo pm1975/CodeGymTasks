@@ -1,0 +1,23 @@
+taskKey="pl.codegym.task.task10.task1020"\n\nZadanie z algorytmami
+
+Zadanie: wczytaj 30 liczb z klawiatury. Wyświetl 10. i 11. najmniejszą liczbę.
+Wyjaśnienie:
+Najmniejszą liczbą jest liczba o najmniejszej wartości.
+Następną najmniejszą po niej liczbą jest druga z kolei liczba o najmniejszej wartości
+Na przykład:
+1 6 5 7 1 15 63 88
+Pierwsza najmniejsza liczba to 1
+Druga najmniejsza liczba to 1
+Trzecia najmniejsza liczba to 5
+Czwarta najmniejsza liczba to 6
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlać tekst na ekranie.
+3.	Klasa Solution musi mieć dwie metody.
+4.	Metoda sortuj() musi sortować tablicę z elementami.
+5.	Metoda main() powinna wywoływać metodę sortuj().
+6.	Program powinien wyświetlać 10. i 11. najmniejszą liczbę. Każda wartość powinna być wyświetlona w nowej linii.
+
+

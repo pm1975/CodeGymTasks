@@ -1,0 +1,23 @@
+taskKey="pl.codegym.task.task11.task1105"\n\nFirma z branży IT
+
+Napisz następujące dziewięć klas: Employee, Clerk, ITSpecialist, Programmer, ProjectManager, CTO, Recruiter, OfficeManager i Custodian.
+Spraw, aby klasy Programmer, ProjectManager, CTO dziedziczyły klasę ITSpecialist.
+Spraw, aby klasy Recruiter, Custodian i OfficeManager dziedziczyły klasę Clerk.
+Spraw, aby klasy Clerk i ITSpecialist dziedziczyły klasę Employee.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Employee.
+2.	Klasa Solution musi zawierać publiczną klasę Clerk.
+3.	Klasa Solution musi zawierać publiczną klasę ITSpecialist.
+4.	Klasa Solution musi zawierać publiczną klasę Programmer.
+5.	Klasa Solution musi zawierać publiczną klasę ProjectManager.
+6.	Klasa Solution musi zawierać publiczną klasę CTO.
+7.	Klasa Solution musi zawierać publiczną klasę Recruiter.
+8.	Klasa Solution musi zawierać publiczną klasę OfficeManager.
+9.	Klasa Solution musi zawierać publiczną klasę Custodian.
+10.	Klasy Programmer, ProjectManager i CTO muszą dziedziczyć klasę ITSpecialist.
+11.	Klasy Recruiter, Custodian i OfficeManager muszą dziedziczyć klasę Clerk.
+12.	Klasy Clerk i ITSpecialist muszą dziedziczyć klasę Employee.
+
+

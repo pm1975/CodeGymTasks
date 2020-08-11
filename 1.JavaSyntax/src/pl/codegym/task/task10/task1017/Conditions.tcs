@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task10.task1017"\n\nBezpieczne odzyskiwanie z listy
+
+Utwórz listę z liczb całkowitych.
+Wprowadź z klawiatury 20 liczb całkowitych.
+Utwórz metodę bezpiecznie odzyskującą liczby z listy:
+int bezpiecznieGetElement(ArrayLisе<Integer> lista, int indeks, int wartoscDomyslna)
+Metoda musi zwracać element listy w oparciu o jego indeks.
+Jeśli podczas odzyskiwania elementu pojawi się wyjątek, musi on zostać obsłużony, a metoda powinna zwrócić wartoscDomyslna.
+
+
+Requirements:
+1.	Program powinien czytać 20 liczb z klawiatury.
+2.	Program powinien wyświetlać dane na ekranie.
+3.	Metoda bezpiecznieGetElement musi zwracać element listy w oparciu o jego indeks, chyba że w metodzie pojawią się wyjątki.
+4.	Metoda bezpiecznieGetElement musi zwracać wartoscDomyslna, jeśli w metodzie pojawią się wyjątki. Obsłuż wyjątki.
+5.	Metoda bezpiecznieGetElement nie może zwracać wyjątk&oacute;w.
+
+

@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task10.task1018"\n\nKorekta potrzebna natychmiast
+
+Zadanie: Program przedstawia sposób działania HashMap: wczytaj zbiór par (liczbę i ciąg) z klawiatury, umieść je w HashMap, a następnie wyświetl zawartość HashMap.
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlać tekst na ekranie.
+3.	Klasa Solution musi mieć trzy zmienne.
+4.	Program powinien zapełniać HashMap 10 parami wczytanymi z klawiatury.
+5.	Program powinien wyświetlać zawartość HashMap. Każda wartość powinna być wyświetlona w nowej linii.
+
+

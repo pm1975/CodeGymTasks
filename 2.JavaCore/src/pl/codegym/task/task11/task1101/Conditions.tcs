@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1101"\n\nKoń i Pegaz
+
+Edytuj następujące dwie klasy: Horse i Pegasus.
+Spraw, aby klasa Pegasus dziedziczyła klasę Horse.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać klasę Horse.
+2.	Klasa Horse powinna być publiczna.
+3.	Klasa Solution musi zawierać klasę Pegasus.
+4.	Klasa Pegasus powinna być publiczna.
+5.	Klasa Pegasus powinna dziedziczyć klasę Horse.
+
+

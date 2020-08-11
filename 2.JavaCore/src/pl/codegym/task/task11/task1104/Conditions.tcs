@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task11.task1104"\n\nPracowici ludzie
+
+Napisz następujące cztery klasy: Employee, Manager, CEO i Secretary.
+Spraw, aby klasy Manager, CEO i Secretary dziedziczyły klasę Employee.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Employee.
+2.	Klasa Solution musi zawierać publiczną klasę Manager.
+3.	Klasa Solution musi zawierać publiczną klasę CEO.
+4.	Klasa Solution musi zawierać publiczną klasę Secretary.
+5.	Klasa Manager musi dziedziczyć klasę Employee.
+6.	Klasa CEO musi dziedziczyć klasę Employee.
+7.	Klasa Secretary musi dziedziczyć klasę Employee.
+
+

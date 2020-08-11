@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1111"\n\n„I wziął jedno z jego żeber”
+
+Edytuj dwie klasy: Adam i Eve.
+Spraw, aby klasa Eve dziedziczyła klasę Adam.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać klasę Adam.
+2.	Klasa Adam musi być publiczna.
+3.	Klasa Solution musi zawierać klasę Eve.
+4.	Klasa Eve musi być publiczna.
+5.	Klasa Eve musi dziedziczyć klasę Adam.
+
+

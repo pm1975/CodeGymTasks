@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task10.task1015"\n\nTablica z listami ciągów
+
+Utwórz tablicę, której elementy będą listami ciągów. Zapełnij tablicę dowolnymi danymi i wyświetl ją na ekranie.
+
+
+Requirements:
+1.	Metoda utworzList musi deklarować i inicjalizować tablicę z elementami ArrayList&lt;String&gt;.
+2.	Metoda utworzList musi zwracać utworzoną tablicę.
+3.	Metoda utworzList musi dodawać elementy (listy ciąg&oacute;w) do tablicy. Listy nie mogą być puste.
+4.	Program powinien wyświetlać dane na ekranie.
+5.	Metoda main musi wywoływać metodę utworzList.
+6.	Metoda main musi wywoływać metodę printList.
+
+

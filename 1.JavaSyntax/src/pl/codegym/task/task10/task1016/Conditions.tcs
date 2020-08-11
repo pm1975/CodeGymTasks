@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task10.task1016"\n\nIdentyczne wyrazy na liście
+
+Wczytaj listę 20 wyrazów z klawiatury.
+Należy policzyć, ile razy każde słowo pojawia się na liście.
+Wynik należy przedstawić w formie Map<String, Integer>, gdzie kluczem jest unikatowy wyraz, a wartością jest liczba jego wystąpień na liście.
+Wyświetl zawartość mapy.
+Wielkość liter (wielkie/małe) wpływa na wynik.
+
+
+Requirements:
+1.	Metoda liczSlowa musi deklarować i inicjalizować HashMap&lt;String, Integer&gt;.
+2.	Metoda liczSlowa musi zwracać utworzoną mapę.
+3.	Metoda liczSlowa powinna dodawać klucze, kt&oacute;re odpowiadają unikalnym słowom i wartości, kt&oacute;re odpowiadają liczbie wystąpień tych sł&oacute;w.
+4.	Program powinien wyświetlać powstałą mapę.
+5.	Metoda main musi wywoływać metodę liczSlowa.
+
+

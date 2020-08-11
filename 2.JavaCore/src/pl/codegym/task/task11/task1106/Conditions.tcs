@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task11.task1106"\n\nPrywatnie enkapsulowany kot
+
+Spraw, aby wszystkie wewnętrzne zmienne klasy Cat były prywatne.
+
+
+Requirements:
+1.	Zmienna name klasy Cat musi być prywatna.
+2.	Zmienna age klasy Cat musi być prywatna.
+3.	Zmienna weight klasy Cat musi być prywatna.
+4.	W klasie Cat muszą być trzy zmienne.
+5.	Wszystkie zmienne w klasie Cat muszą być prywatne.
+
+

@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1102"\n\nZwierzęta
+
+Edytuj następujące trzy klasy: Pet, Cat i Dog.
+Spraw, aby klasy Cat i Dog dziedziczyły klasę Pet.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Pet.
+2.	Klasa Solution musi zawierać publiczną klasę Cat.
+3.	Klasa Solution musi zawierać publiczną klasę Dog.
+4.	Klasa Cat powinna dziedziczyć klasę Pet.
+5.	Klasa Dog powinna dziedziczyć klasę Pet.
+
+

@@ -1,0 +1,40 @@
+taskKey="com.codegym.games.game2048.part01"\n\n2048 (Part 1/18)
+
+Hi! Today we'll start writing an interesting and addictive game — 2048. Are you ready? Then let's go.
+Rules of the game:
+The game board is square. The standard board size is 4x4 tiles. The objective of the game is to get a tile
+whose value is 2048.
+1. A tile with a value of 2 (probability of 90%) or 4 (probability of 10%) appears in each round.
+2. You can shift all the tiles on the game board to one of the 4 sides by pressing the corresponding key:
+up, down,
+right, or left. If a shift causes two tiles with the same value to "collide", then they merge into one.
+The new value is the sum of the merged tiles. After each move, a new tile with a value of 2 or 4 appears in
+an empty
+space on the game board. If pressing a key does not cause the tiles to change locations or values, then no
+turn has been made.
+3. If more than two tiles of the same value are in the same row or column, then they merge from the side
+from which they are being shifted. For example, after a shift to the left, the tiles (4, 4, 4, 0) in the
+same row
+become (8, 4, 0, 0). After a shift to the right, they become (0, 0, 4, 8). This way of handling ambiguity
+makes it possible to more accurately formulate a game strategy.
+4. With each merger, the score increases by the value of the resulting tile.
+5. The game is lost if no further moves are possible.
+6. The game ends in victory if a tile with the value 2048 appears on the game board.
+
+Now let's start implementing the game:
+First, we'll need a class where the game logic will be implemented. Let's call it Game2048.
+We've created a "game engine" that starts the game itself, redraws game elements, etc.
+Accordingly, your Game2048 class must inherit the Game class. This and other engine classes are located
+in the com.codegym.engine.cell package. To use them, the Game2048 class must include the following import
+statement:
+import com.codegym.engine.cell.*;
+Try running your Game2048 class and see what happens.
+
+
+Requirements:
+1.	A Game2048 class must be created.
+2.	The Game2048 class must be public.
+3.	The Game2048 class must inherit the Game class.
+4.	The Game2048 class must have a statement that imports the entire contents of the com.codegym.engine.cell.
+
+

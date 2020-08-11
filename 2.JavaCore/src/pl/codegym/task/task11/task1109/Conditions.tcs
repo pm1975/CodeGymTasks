@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1109"\n\nJak pies z kotem
+
+Spraw, aby wszystkie wewnętrzne zmienne klas Cat i Dog były prywatne.
+Spraw także, aby wszystkie metody były prywatne, oprócz tych, które pozwalają tym dwóm klasom wchodzić ze sobą w interakcje.
+
+
+Requirements:
+1.	Zmienne klasy Cat muszą być prywatne.
+2.	Zmienne klasy Dog muszą być prywatne.
+3.	Metody klasy Cat muszą być prywatne.
+4.	Metody klasy Dog muszą być prywatne.
+5.	Metody, kt&oacute;re pozwalają klasom Cat i Dog wchodzić ze sobą w interakcje, muszą być publiczne.
+
+

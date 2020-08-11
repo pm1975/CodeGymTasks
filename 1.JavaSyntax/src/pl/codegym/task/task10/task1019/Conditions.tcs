@@ -1,0 +1,29 @@
+taskKey="pl.codegym.task.task10.task1019"\n\nFunkcjonalność to nie wszystko!
+
+Zadanie: Program wczytuje parę z klawiatury (liczbę i ciąg) i wyświetla ją na ekranie.
+Nowe zadanie: Program wczytuje parę z klawiatury (liczbę i ciąg) i umieszcza je w HashMap.
+Wprowadzenie pustego ciągu oznacza koniec wprowadzania danych. Liczby mogą się powtarzać. Ciągi są zawsze unikalne. Nie możesz dopuścić, aby wprowadzane dane zostały utracone!
+Następnie program powinien wyświetlić na ekranie zawartość HashMap. Każdą parę w nowej linii.
+
+Przykładowe wejście:
+1
+Ala
+2
+Ma
+1
+Kota
+
+Przykładowy wynik:
+1 Ala
+2 Ma
+1 Kota
+
+
+Requirements:
+1.	Program musi odczytywać dane z klawiatury.
+2.	Program powinien wyświetlać tekst na ekranie.
+3.	W metodzie main zadeklaruj zmienną HashMap i natychmiast ją zainicjalizuj.
+4.	Program powinien umieszczać w HashMap pary wczytywane z klawiatury.
+5.	Program powinien wyświetlać zawartość HashMap zgodnie z warunkami zadania. Klucz i wartość powinny być oddzielone spacją. Każda wartość powinna być wyświetlona w nowej linii.
+
+
