@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task12.task1217"\n\nLataj, biegaj i pływaj
+
+Napisz publiczne interfejsy CanFly, CanRun i CanSwim.
+Do każdego interfejsu dodaj jedną metodę.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanFly.
+2.	Klasa Solution musi mieć interfejs CanRun.
+3.	Klasa Solution musi mieć interfejs CanSwim.
+4.	Interfejs CanFly musi mieć jedną metodę.
+5.	Interfejs CanRun musi mieć jedną metodę.
+6.	Interfejs CanSwim musi mieć jedną metodę.
+
+

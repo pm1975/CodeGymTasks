@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task12.task1219"\n\nStworzenie człowieka
+
+Dane są publiczne interfejsy CanFly, CanRun i CanSwim.
+Dodaj te interfejsy do klas Human, Duck, Penguin i Airplane.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanFly z tylko jedną metodą o nazwie fly().
+2.	Klasa Solution musi mieć interfejs CanRun z tylko jedną metodą o nazwie run().
+3.	Klasa Solution musi posiadać interfejs CanSwim z tylko jedną metodą o nazwie swim().
+4.	Człowiek musi potrafić biegać i pływać.
+5.	Kaczka z klasy Duck powinna potrafić latać, pływać i biegać.
+6.	Pingwin w klasie Penguin powinien potrafić pływać i biegać.
+7.	Samolot musi potrafić latać i biegać (musi przecież jakoś wzbić się w powietrze z pasa startowego!)
+
+

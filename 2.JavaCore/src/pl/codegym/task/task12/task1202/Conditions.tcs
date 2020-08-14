@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task12.task1202"\n\nWieloryby, potomkowie krów
+
+Nadpisz metodę getName w klasie Whale, tak aby program nie wyświetlał nic na ekranie.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Whale musi dziedziczyć klasę Cow.
+3.	Klasa Whale musi nadpisywać metodę getName().
+4.	Metoda main() musi wywoływać metodę getName() obiektu Cow.
+5.	Zaimplementuj metodę getName() klasy Whale, tak aby program nie wyświetlał nic na ekranie.
+6.	Metoda main() powinna wyświetlać wynik wywoływania metody getName().
+
+

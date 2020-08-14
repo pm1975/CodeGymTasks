@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1120"\n\nPoprawny łańcuch dziedziczenia: część 5
+
+Utwórz odpowiedni „łańcuch dziedziczenia” dla następujących klas: House, Cat, Dog, Car, Animal i Asset.
+
+
+Requirements:
+1.	Dziedziczenie klasy House musi być poprawne.
+2.	Dziedziczenie klasy Cat musi być poprawne.
+3.	Dziedziczenie klasy Dog musi być poprawne.
+4.	Dziedziczenie klasy Car musi być poprawne.
+5.	Dziedziczenie klasy Animal musi być poprawne.
+6.	Dziedziczenie klasy Asset musi być poprawne.
+
+

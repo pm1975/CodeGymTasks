@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1114"\n\nEwolucja klas
+
+Edytuj następujące trzy klasy: Fish, Lizard i Dinosaur.
+Spraw, aby klasa Lizard dziedziczyła Fish, a klasa Dinosaur dziedziczyła Lizard.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Fish.
+2.	Klasa Solution musi zawierać publiczną klasę Lizard.
+3.	Klasa Solution musi zawierać publiczną klasę Dinosaur.
+4.	Klasa Lizard musi dziedziczyć klasę Fish.
+5.	Klasa Dinosaur musi dziedziczyć klasę Lizard.
+
+

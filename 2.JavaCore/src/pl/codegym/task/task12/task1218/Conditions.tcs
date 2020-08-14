@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task12.task1218"\n\nJedz, lataj i ruszaj się
+
+Publiczne interfejsy CanFly, CanMove i CanEat zostały już napisane.
+Dodaj te interfejsy do klas Dog, Car, Duck i Airplane.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanFly z tylko jedną metodą o nazwie fly().
+2.	Klasa Solution musi mieć interfejs CanMove z tylko jedną metodą o nazwie move().
+3.	Klasa Solution musi posiadać interfejs CanEat z tylko jedną metodą o nazwie eat().
+4.	Pies musi potrafić się poruszać i jeść.
+5.	Samoch&oacute;d musi potrafić się poruszać.
+6.	Samolot musi potrafić się poruszać i latać.
+7.	Kaczka powinna potrafić się poruszać, latać i jeść.
+
+

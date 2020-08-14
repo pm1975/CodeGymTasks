@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task12.task1211"\n\nKlasa abstrakcyjna Pet
+
+Spraw, aby klasa Pet stała się abstrakcyjna.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Pet musi być statyczna.
+3.	Klasa Pet musi być abstrakcyjna.
+4.	Klasa Pet musi mieć tylko jedną metodę o nazwie getName().
+
+

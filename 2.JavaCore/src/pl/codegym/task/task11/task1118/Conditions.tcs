@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task11.task1118"\n\nGospodarstwo w mieście
+
+Utwórz odpowiedni „łańcuch dziedziczenia” dla następujących klas: Pet, Cat, Dog i Car.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Pet.
+2.	Klasa Solution musi zawierać publiczną klasę Cat.
+3.	Klasa Solution musi zawierać publiczną klasę Dog.
+4.	Klasa Solution musi zawierać publiczną klasę Car.
+5.	Klasa Cat powinna dziedziczyć klasę Pet.
+6.	Klasa Dog powinna dziedziczyć klasę Pet.
+7.	Klasa Pet nie może dziedziczyć innych klas.
+8.	Klasa Car nie może dziedziczyć innych klas.
+
+

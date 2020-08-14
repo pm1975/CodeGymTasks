@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task12.task1204"\n\nCzy to ptak, czy lampa
+
+Napisz metodę, która determinuje typ klasy obiektu, który do niej przekazano,
+a następnie wyświetl na ekranie odpowiednią wiadomość: Cat, Dog, Bird i Lamp.
+
+
+Requirements:
+1.	Program musi wyświetlać tekst na e&quot;rani&quot;.
+2.	Nie zmieniaj kla&quot;y Ca&quot;.
+3.	Nie zmieniaj kla&quot;y Do&quot;.
+4.	Nie zmieniaj klas&quot; Bir&quot;.
+5.	Nie zmieniaj klas&quot; Lam&quot;.
+6.	Metoda printObjectType() musi wyświetlać jedną z następujących wiadomości, zależnie od obiektu, kt&oacute;ry do niej przekazano. Na przykład, dla obiektu Solution.Lamp powinna wyświetlać &quot;Lamp&quot;.
+
+

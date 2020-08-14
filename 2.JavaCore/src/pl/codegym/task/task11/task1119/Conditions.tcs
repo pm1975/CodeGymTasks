@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task11.task1119"\n\nPoprawny łańcuch dziedziczenia: część 4
+
+Utwórz odpowiedni „łańcuch dziedziczenia” dla następujących klas: House, Cat, Dog i Car.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę House.
+2.	Klasa Solution musi zawierać publiczną klasę Cat.
+3.	Klasa Solution musi zawierać publiczną klasę Dog.
+4.	Klasa Solution musi zawierać publiczną klasę Car.
+5.	Dziedziczenie klasy House musi być poprawne.
+6.	Dziedziczenie klasy Cat musi być poprawne.
+7.	Dziedziczenie klasy Dog musi być poprawne.
+8.	Dziedziczenie klasy Car musi być poprawne.
+
+

@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task12.task1206"\n\nJesteśmy przeciążeni!
+
+Napisz następujące dwie metody: print(int) i print(String).
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Solution musi zawierać trzy metody.
+3.	Klasa Solution musi zawierać statyczną metodę main().
+4.	Klasa Solution musi zawierać statyczną metodę print() z parametrem int.
+5.	Klasa Solution musi zawierać statyczną metodę print() z parametrem String.
+
+

@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task12.task1209"\n\nTrzy metody i minimum
+
+Napisz następujące publiczne i statyczne metody: int min(int, int), long min(long, long), double min(double, double).
+Każda metoda musi zwracać minimum z dwóch liczb, które zostały do niej przekazane.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Solution musi mieć cztery metody.
+3.	Klasa Solution musi mieć statyczną metodę int min(int, int).
+4.	Metoda int min(int, int) powinna zwracać minimum z dw&oacute;ch int.
+5.	Klasa Solution musi mieć statyczną metodę long min(long, long).
+6.	Metoda long min(long, long) musi zwracać minimum z dw&oacute;ch long.
+7.	Klasa Solution musi zawierać statyczną metodę double min(double, double).
+8.	Metoda double min(double, double) musi zwracać minimum z dw&oacute;ch double.
+
+

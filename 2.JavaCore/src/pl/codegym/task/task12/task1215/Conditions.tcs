@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task12.task1215"\n\nKoty nie mogą być abstrakcyjne!
+
+Spraw, aby klasy Cat i Dog dziedziczyły Pet.
+Zaimplementuj brakujące metody.
+Klasy Cat i Dog nie powinny być abstrakcyjne.
+
+
+Requirements:
+1.	Klasa Pet musi być abstrakcyjna.
+2.	Klasa Dog nie może być abstrakcyjna.
+3.	Klasa Cat nie może być abstrakcyjna.
+4.	Klasa Dog musi implementować metody abstrakcyjne klasy Pet.
+5.	Klasa Cat musi implementować metody abstrakcyjne klasy Pet.
+
+

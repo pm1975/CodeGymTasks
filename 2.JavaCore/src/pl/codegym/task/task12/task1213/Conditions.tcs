@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task12.task1213"\n\n„Popraw kod”, część 2
+
+Popraw kod, tak aby program się kompilował.
+
+
+Requirements:
+1.	Klasa Pet musi być statyczna.
+2.	Klasa Pet musi mieć dwie metody.
+3.	Metoda getChild() musi być abstrakcyjna.
+4.	Klasa Pet musi zostać zadeklarowana z modyfikatorem, kt&oacute;ry zapobiega tworzeniu obiekt&oacute;w tej klasy.
+
+

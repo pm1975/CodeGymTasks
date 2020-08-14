@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task11.task1116"\n\nŁańcuch dziedziczenia
+
+Utwórz odpowiedni „łańcuch dziedziczenia” dla następujących klas: Pet, Cat i Dog.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Pet.
+2.	Klasa Solution musi zawierać publiczną klasę Cat.
+3.	Klasa Solution musi zawierać publiczną klasę Dog.
+4.	Klasa Cat powinna dziedziczyć klasę Pet.
+5.	Klasa Dog powinna dziedziczyć klasę Pet.
+
+

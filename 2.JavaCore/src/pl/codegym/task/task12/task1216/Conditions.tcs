@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task12.task1216"\n\nPolatamy?
+
+Napisz swój własny publiczny interfejs CanFly.
+Dodaj do niego dwie metody.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanFly.
+2.	Interfejs CanFly musi być publiczny.
+3.	Interfejs CanFly musi mieć dwie metody.
+4.	Interfejs CanFly nie może mieć klasy macierzystej.
+
+

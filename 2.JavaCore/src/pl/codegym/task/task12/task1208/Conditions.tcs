@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task12.task1208"\n\nWolność prasy
+
+Napisz pięć metod print, używając różnych parametrów.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Solution musi mieć sześć metod.
+3.	Klasa Solution musi zawierać statyczną metodę main().
+4.	Klasa Solution musi mieć pięć statycznych metod print() z r&oacute;żnymi parametrami.
+
+

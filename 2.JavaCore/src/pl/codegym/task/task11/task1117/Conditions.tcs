@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task11.task1117"\n\nAlternatywny łańcuch dziedziczenia
+
+Utwórz odpowiedni „łańcuch dziedziczenia” dla następujących klas: Carnivore, Cow, Dog, Pig i Animal.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Carnivore.
+2.	Klasa Solution musi zawierać publiczną klasę Cow.
+3.	Klasa Solution musi zawierać publiczną klasę Dog.
+4.	Klasa Solution musi zawierać publiczną klasę Pig.
+5.	Klasa Solution musi zawierać publiczną klasę Animal.
+6.	Klasa Carnivore musi dziedziczyć klasę Animal.
+7.	Klasa Cow musi dziedziczyć klasę Animal.
+8.	Klasa Dog musi dziedziczyć klasę Carnivore.
+9.	Klasa Pig musi dziedziczyć klasę Animal.
+
+

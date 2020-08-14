@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task12.task1203"\n\nZrenderuj cesarzowi to, co cesarskie
+
+Nadpisz metodę getChild w klasach Cat i Dog, tak aby koty rodziły koty, a psy rodziły psy.
+
+
+Requirements:
+1.	Klasa Cat musi dziedziczyć klasę Pet.
+2.	Klasa Dog musi dziedziczyć klasę Pet.
+3.	Klasa Cat musi nadpisywać metodę getChild(), tak aby koty rodziły koty.
+4.	Klasa Dog musi nadpisywać metodę getChild(), tak aby psy rodziły psy.
+5.	Metoda main() musi wywoływać metodę getChild() na obiekcie Cat.
+6.	Metoda main() musi wywoływać metodę getChild() na obiekcie Dog.
+
+

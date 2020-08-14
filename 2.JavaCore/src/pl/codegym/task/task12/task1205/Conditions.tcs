@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task12.task1205"\n\nIdentyfikacja zwierząt
+
+Napisz metodę, która determinuje klasę obiektu do niej przekazanego
+i zwraca jedną z następujących wartości: "Cow", "Whale", "Dog" lub "Unknown Animal".
+
+
+Requirements:
+1.	Program musi wyświetlać tekst na ekranie.
+2.	Nie zmieniaj klasy Cow.
+3.	Nie zmieniaj klasy Dog.
+4.	Nie zmieniaj klasy Whale.
+5.	Nie zmieniaj klasy Pig.
+6.	Metoda getObjectType() musi zwracać jedną z następujących wartości: &quot;Cow&quot;, &quot;Whale&quot;, &quot;Dog&quot; lub &quot;Unknown Animal&quot;, zależnie od obiektu, kt&oacute;ry został do niej przekazany. Na przykład, dla obiekt&oacute;w Solution.Cow powinna zwr&oacute;cić &quot;Cow&quot;.
+
+

@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task11.task1123"\n\nNajmniejsza i największa
+
+Napisz metodę, która zwraca najmniejszą i największą liczbę z tablicy.
+
+
+Requirements:
+1.	Program nie może wczytywać danych z klawiatury.
+2.	Nie zmieniaj klasy Pair.
+3.	Nie zmieniaj metody main.
+4.	Napisz metodę getMinimumAndMaximum.
+5.	Program musi zwracać poprawny wynik.
+6.	Metoda getMinimumAndMaximum() nie powinna zmieniać tablicy inputArray.
+
+

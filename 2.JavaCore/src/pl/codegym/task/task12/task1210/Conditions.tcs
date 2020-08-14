@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task12.task1210"\n\nTrzy metody i maksimum
+
+Napisz następujące publiczne i statyczne metody: int max(int, int), long max(long, long), double max(double, double).
+Każda metoda musi zwracać maksimum z dwóch liczb, które zostały do niej przekazane.
+
+
+Requirements:
+1.	Program nie powinien wyświetlać tekstu na ekranie.
+2.	Klasa Solution musi mieć cztery metody.
+3.	Klasa Solution musi mieć statyczną metodę int max(int, int).
+4.	Metoda int max(int, int) musi zwracać maksimum z dw&oacute;ch int.
+5.	Klasa Solution musi zawierać statyczną metodę long max(long, long).
+6.	Metoda long max(long, long) musi zwracać maksimum z dw&oacute;ch long.
+7.	Klasa Solution musi mieć statyczną metodę double max(double, double).
+8.	Metoda double max(double, double) musi zwracać maksimum z dw&oacute;ch double.
+
+

@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task11.task1115"\n\nOd ucznia do wykwalifikowanego niewolnika
+
+Napisz następujące cztery klasy: Schoolboy, Student, Employee i Slave.
+Spraw, aby klasa Student dziedziczyła klasę Schoolboy, klasa Employee dziedziczyła Student oraz żeby klasa Slave dziedziczyła Employee.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Schoolboy.
+2.	Klasa Solution musi zawierać publiczną klasę Student.
+3.	Klasa Solution musi zawierać publiczną klasę Employee.
+4.	Klasa Solution musi zawierać publiczną klasę Slave.
+5.	Klasa Student musi dziedziczyć klasę Schoolboy.
+6.	Klasa Employee musi dziedziczyć klasę Student.
+7.	Klasa Slave musi dziedziczyć klasę Employee.
+
+

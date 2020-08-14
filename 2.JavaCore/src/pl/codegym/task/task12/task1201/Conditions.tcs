@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task12.task1201"\n\nWieloryby i krowy
+
+Nadpisz metodę getName w klasie Whale, tak aby program wyświetlał:
+
+Nie jestem krową. Jestem wielorybem.
+
+
+Requirements:
+1.	Program powinien wyświetlać tekst na ekranie.
+2.	Klasa Whale musi dziedziczyć klasę Cow.
+3.	Klasa Whale musi nadpisywać metodę getName().
+4.	Metoda main() musi wywoływać metodę getName() obiektu Cow.
+5.	Nadpisz metodę getName w klasie Whale, tak aby program wyświetlał: &quot;Nie jestem krową. Jestem wielorybem.&quot;
+6.	Metoda main() powinna wyświetlać wynik wywoływania metody getName().
+
+

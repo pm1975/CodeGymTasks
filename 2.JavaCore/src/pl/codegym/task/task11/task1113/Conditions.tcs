@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task11.task1113"\n\nZabawa w Darwina
+
+Napisz następujące cztery klasy: Fish, Animal, Ape i Human.
+Spraw, aby klasa Animal dziedziczyła klasę Fish, klasa Ape dziedziczyła Animal, a klasa Human dziedziczyła Ape.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać publiczną klasę Fish.
+2.	Klasa Solution musi zawierać publiczną klasę Animal.
+3.	Klasa Solution musi zawierać publiczną klasę Ape.
+4.	Klasa Solution musi zawierać publiczną klasę Human.
+5.	Klasa Animal musi dziedziczyć klasę Fish.
+6.	Klasa Ape musi dziedziczyć klasę Animal.
+7.	Klasa Human musi dziedziczyć klasę Ape.
+
+

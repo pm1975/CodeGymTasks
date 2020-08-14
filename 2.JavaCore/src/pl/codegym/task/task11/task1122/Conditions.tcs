@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task11.task1122"\n\nUratuj klub szachowy
+
+Dodaj wspólną klasę bazową ChessPiece do klasy każdego typu figury szachowej.
+
+
+Requirements:
+1.	Do klasy Solution dodaj publiczną klasę ChessPiece.
+2.	Klasa King musi dziedziczyć klasę ChessPiece.
+3.	Klasa Queen musi dziedziczyć klasę ChessPiece.
+4.	Klasa Rook musi dziedziczyć klasę ChessPiece.
+5.	Klasa Knight musi dziedziczyć klasę ChessPiece.
+6.	Klasa Bishop musi dziedziczyć klasę ChessPiece.
+7.	Klasa Pawn musi dziedziczyć klasę ChessPiece.
+
+
