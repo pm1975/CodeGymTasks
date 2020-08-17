@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-taskKey="com.codegym.games.minesweeper.part08"\n\nMinesweeper (Part 8/16)
-=======
 taskKey="com.codegym.games.minesweeper.part09"\n\nMinesweeper (Part 9/16)
 
 According to the rules, when a cell without adjacent mines is revealed,
@@ -22,7 +19,6 @@ Requirements:
 
 
 Minesweeper (Part 8/16)
->>>>>>> 871c125ce8269544f2e9d922807839160bb2f6ca
 
 The rules of the game provide flags to help the player. They are needed to
 mark cells that might be mined. Accordingly, the number of flags (countFlags) must be equal to
@@ -31,15 +27,6 @@ a constant to hold the symbol that represents them. Each cell in the model must 
 isFlag field that will tell us whether a cell is flagged.
 
 
-<<<<<<< HEAD
-Requirements:
-1.	The MinesweeperGame class must have a private static final String FLAG field that is initialized when it is declared. For example, you can use the UTF-16 symbol for a flag: &quot;\uD83D\uDEA9&quot;.
-2.	The MinesweeperGame class must have a private int countFlags field that stores the number of unused flags.
-3.	The createGame() method must set the countFlags field equal to countMinesOnField.
-4.	The GameObject class must have a public boolean isFlag field.
-
-=======
->>>>>>> 871c125ce8269544f2e9d922807839160bb2f6ca
 
 Minesweeper (Part 7/16)
 
@@ -99,15 +86,3 @@ Hint: use loops to call the setCellColor(int, int, Color) method for each cell o
 
 
 
-<<<<<<< HEAD
-Minesweeper (Part 3/16)
-
-Because our game will use game objects (cells), we'll create a separate GameObject class
-to describe them. Let's think about what the game object needs. Naturally, we need
-its x and y coordinates on the playing field. And how can we get by without a constructor? After you do everything,
-don't forget to run the program and look at the result.
-
-
-
-=======
->>>>>>> 871c125ce8269544f2e9d922807839160bb2f6ca
