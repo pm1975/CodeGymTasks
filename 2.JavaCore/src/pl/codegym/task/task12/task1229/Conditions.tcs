@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task12.task1229"\n\nKlasa macierzysta klasy CTO
+
+Dodaj klasę macierzystą do klasy CTO, tak aby klasa ta nie była abstrakcyjna.
+Do klasy CTO możesz dodawać i implementować jakiekolwiek metody.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs Businessman z metodą void workHard().
+2.	Klasa Solution musi zawierać nieabstrakcyjną klasę CTO.
+3.	Klasa CTO musi implementować interfejs Businessman.
+4.	Klasa CTO nie może mieć żadnych metod.
+5.	Klasa Solution musi mieć jedną dodatkową metodę.
+6.	Klasa CTO musi dziedziczyć dodatkową klasę.
+7.	Dodatkowa klasa musi mieć jedną metodę.
+
+

@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task12.task1224"\n\nNieznane zwierzę
+
+Napisz metodę, która determinuje typ przekazanego do niej obiektu.
+Program powinien wyświetlać jeden z poniższych komunikatów:
+"Cat", "Tiger", "Lion", "Bull" lub "Animal".
+
+
+Requirements:
+1.	Klasa Solution musi mieć klasy Cat, Tiger, Lion, Bull i Pig.
+2.	Klasa Solution musi posiadać metodę String getObjectType(Object o).
+3.	Metoda getObjectType() musi zwracać &quot;Cat&quot;, jeśli przekazany zostaje obiekt Cat.
+4.	Metoda getObjectType() musi zwracać &quot;Tiger&quot;, jeśli przekazany zostaje obiekt Tiger.
+5.	Metoda getObjectType() musi zwracać &quot;Lion&quot;, jeśli przekazany zostaje obiekt Lion.
+6.	Metoda getObjectType() musi zwracać &quot;Bull&quot;, jeśli przekazany zostaje obiekt Bull.
+7.	Metoda getObjectType() musi zwracać &quot;Animal&quot;, jeśli przekazany zostaje jakikolwiek inny obiekt.
+8.	Program powinien wyświetlać wynik wywoływania metody getObjectType().
+
+

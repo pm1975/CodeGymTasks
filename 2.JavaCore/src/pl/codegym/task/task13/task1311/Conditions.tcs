@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task13.task1311"\n\nZatrudnijmy tłumacza
+
+1. Utwórz klasę RussianTranslator, która dziedziczy klasę Translator.
+2. Zaimplementuj wszystkie metody abstrakcyjne.
+3. Pomyśl, co powinna zwracać metoda getLanguage.
+4. Program powinien wyświetlać "Tłumaczę z rosyjskiego", kiedy wywołasz metodę translate na obiekcie RussianTranslator.
+
+
+Requirements:
+1.	Klasa RussianTranslator musi być wewnątrz klasy Solution.
+2.	Klasa RussianTranslator musi dziedziczyć klasę Translator.
+3.	Wszystkie metody abstrakcyjne dziedziczone z klasy Translator muszą zostać zaimplementowane.
+4.	Metoda getLanguage musi zwracać String, kt&oacute;ry spełnia warunki zadania.
+5.	Metoda main powinna wyświetlać &quot;Tłumaczę z rosyjskiego&quot;, kiedy wywołujesz metodę translate na obiekcie RussianTranslator.
+
+

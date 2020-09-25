@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task13.task1307"\n\nParametryzowany interfejs
+
+Spraw, aby klasa StringObject implementowała interfejs SimpleObject, używając parametru String.
+
+
+Requirements:
+1.	Klasa StringObject musi implementować interfejs SimpleObject.
+2.	Interfejs SimpleObject w klasie StringObject musi być zaimplementowany przy użyciu parametru String.
+3.	Klasa StringObject musi implementować metodę getInstance interfejsu SimpleObject.
+4.	Nie tw&oacute;rz dodatkowych klas i interfejs&oacute;w.
+
+

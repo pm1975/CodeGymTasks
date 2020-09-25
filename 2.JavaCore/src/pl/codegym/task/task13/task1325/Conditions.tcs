@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task13.task1325"\n\nKompilowanie programu
+
+1. Popraw klasy Fox i BigFox, tak aby program się kompilował.
+To zadanie nie obejmuje tworzenia instancji klasy bazowej.
+2. Nie zmieniaj metody main.
+
+
+Requirements:
+1.	Klasa Fox musi implementować interfejs Animal.
+2.	Klasa Fox musi implementować tylko jedną metodę (getName).
+3.	Interfejs Animal musi deklarować metodę getColor.
+4.	Klasa BigFox musi dziedziczyć klasę Fox.
+5.	Klasa Fox musi być abstrakcyjna.
+
+

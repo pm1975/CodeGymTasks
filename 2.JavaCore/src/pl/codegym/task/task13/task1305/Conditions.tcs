@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task13.task1305"\n\nCztery błędy
+
+Popraw 4 błędy w programie tak, aby się kompilował.
+
+
+Requirements:
+1.	Zmienne zadeklarowane w interfejsie muszą mieć największą możliwą dostępność (public).
+2.	Możesz tylko rozszerzać klasę. Interfejsy implementujesz, używając słowa kluczowego implements.
+3.	Klasa Hobby musi być zadeklarowana przy użyciu modyfikatora statycznego.
+4.	Nie musisz tworzyć obiektu Dream, aby uzyskać dostęp do zmiennej HOBBY.
+5.	Nie zmieniaj deklaracji interfejsu.
+
+

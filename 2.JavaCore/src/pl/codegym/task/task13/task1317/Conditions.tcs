@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task13.task1317"\n\nŁadna pogoda
+
+1. Spraw, aby klasa Today implementowała interfejs Weather.
+2. Pomyśl, jaki jest związek pomiędzy typem parametru a metodą getWeatherType().
+3. Interfejsy Weather i WeatherType zostały już zaimplementowane w oddzielnych plikach.
+
+
+Requirements:
+1.	Klasa Today musi implementować interfejs Weather.
+2.	Metoda getWeatherType interfejsu Weather musi być zaimplementowana w klasie Today.
+3.	Metoda getWeatherType musi zwracać String.
+4.	Metoda getWeatherType musi zwracać wartość typu zmiennej.
+
+

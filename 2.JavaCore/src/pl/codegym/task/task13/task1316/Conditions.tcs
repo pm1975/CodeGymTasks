@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task13.task1316"\n\nNiepoprawne linie
+
+Usuń wszystkie niepoprawne linie z interfejsu Button.
+
+
+Requirements:
+1.	Interfejs SimpleObject musi być zadeklarowany wewnątrz klasy Solution.
+2.	Interfejs Button musi być zadeklarowany wewnątrz klasy Solution.
+3.	Nie zmieniaj metody main.
+4.	Deklaracja stałej NAME musi pozostać w interfejsie Button.
+5.	Poprawna deklaracja metody onPress musi pozostać w interfejsie Button.
+
+

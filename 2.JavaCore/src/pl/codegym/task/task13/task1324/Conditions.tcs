@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task13.task1324"\n\nJedna metoda w klasie
+
+1. Spraw, aby Fox dziedziczyła interfejs Animal.
+2. Edytuj kod, tak aby metoda getName była jedyną metodą w klasie Fox.
+3. Nie usuwaj żadnych metod!
+
+
+Requirements:
+1.	Klasa Fox musi implementować interfejs Animal.
+2.	Klasa Fox musi implementować tylko jedną metodę (getName).
+3.	Interfejs Animal musi deklarować metodę getColor.
+4.	Nie tw&oacute;rz dodatkowych klas i interfejs&oacute;w.
+
+

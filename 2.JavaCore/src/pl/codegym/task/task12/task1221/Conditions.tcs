@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task12.task1221"\n\nKażdy z nas w głębi duszy jest małym kotkiem...
+
+Nadpisz metodę getName klasy Cat, tak aby na ekranie wyświetliła się następująca wiadomość: "Jestem kotem".
+
+
+Requirements:
+1.	Klasa Solution musi mieć klasę Pet.
+2.	Klasa Solution musi mieć klasę Cat.
+3.	Klasa Cat musi dziedziczyć klasę Pet.
+4.	Klasa Pet musi mieć tylko jedną metodę o nazwie getName().
+5.	Klasa Cat musi nadpisywać metodę getName().
+6.	Program musi wyświetlać wynik wywoływania metody getName() na klasie Pet.
+
+

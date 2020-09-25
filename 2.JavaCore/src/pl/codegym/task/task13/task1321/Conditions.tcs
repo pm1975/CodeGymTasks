@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task13.task1321"\n\nNaprawianie błędów
+
+1. Zmień dziedziczenie w klasach i interfejsach, tak aby program się kompilował tak, jak powinien i wykazywał to samo zachowanie.
+2. Klasa Hobby musi dziedziczyć interfejsy Desire i Dream.
+
+
+Requirements:
+1.	Klasa Hobby musi implementować interfejs Desire.
+2.	Klasa Hobby musi implementować interfejs Dream.
+3.	Klasa Hobby musi mieć statyczną zmienną o nazwie INDEX.
+4.	Metoda toString klasy Hobby musi zwiększać zmienną INDEX i zwracać ją jako String.
+
+

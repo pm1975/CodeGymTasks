@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task13.task1322"\n\nInterfejs SimpleObject
+
+1. Utwórz klasę StringObject.
+2. Spraw, aby klasa StringObject implementowała interfejs SimpleObject, używając parametru String.
+3. Program musi się kompilować.
+
+
+Requirements:
+1.	Klasa StringObject musi implementować interfejs SimpleObject.
+2.	Interfejs SimpleObject w klasie StringObject musi być zaimplementowany przy użyciu parametru String.
+3.	Klasa StringObject musi implementować metodę getInstance interfejsu SimpleObject.
+4.	Klasa Solution musi mieć klasę StringObject.
+5.	Klasa StringObject musi być statyczna.
+
+

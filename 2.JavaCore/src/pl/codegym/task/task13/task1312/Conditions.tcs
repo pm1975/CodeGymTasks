@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task13.task1312"\n\nKod sam się nie poprawi
+
+Popraw kod, tak aby program działał i wyświetlał "Tłumaczę z rosyjskiego".
+Nie zmieniaj metody main!
+
+
+Requirements:
+1.	Program powinien wyświetlać &quot;Tłumaczę z rosyjskiego&quot;.
+2.	Metoda translate powinna zwracać &quot;Tłumaczę z rosyjskiego&quot;.
+3.	Program musi działać bez błęd&oacute;w.
+4.	Metoda main musi wyświetlać wynik wywoływania metody translate obiektu Translator.
+
+

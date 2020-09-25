@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task12.task1228"\n\nInterfejsy dla klasy Human
+
+Do klasy Human dodaj tyle interfejsów, ile to możliwe, ale upewnij się, że nie stanie się ona klasą abstrakcyjną.
+Nie możesz dodawać metod do klasy Human.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs Employee z metodą void workLazily().
+2.	Klasa Solution musi mieć interfejs Businessman z metodą void workHard().
+3.	Klasa Solution musi posiadać interfejs Secretary z metodą void workLazily().
+4.	Klasa Solution musi mieć interfejs Miner z metodą void workVeryHard().
+5.	Klasa Solution musi mieć klasę Human z metodami: void workHard() i void workLazily().
+6.	Klasa Human musi implementować trzy interfejsy.
+
+

@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task13.task1323"\n\nInterfejs Updatable w klasie Screen
+
+Spraw, aby klasa Screen implementowała interfejs Updatable.
+
+
+Requirements:
+1.	Interfejs Updatable musi dziedziczyć interfejs Selectable (użyj słowa kluczowego extends).
+2.	Klasa Screen musi implementować interfejs Updatable.
+3.	Metoda onSelect interfejsu Selectable musi być zaimplementowana w klasie Screen.
+4.	Metoda refresh interfejsu Updatable musi być zaimplementowana w klasie Screen.
+
+

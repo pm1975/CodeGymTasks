@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task12.task1223"\n\nPuszek raz jeszcze...
+
+Dodaj jedną metodę do klasy Cat, tak aby program nic nie wyświetlał.
+
+
+Requirements:
+1.	Klasa Solution musi mieć klasę Pet.
+2.	Klasa Solution musi mieć klasę Cat.
+3.	Klasa Cat musi dziedziczyć klasę Pet.
+4.	Klasa Pet musi mieć tylko dwie metody o nazwach getName() i setName().
+5.	Dodaj jedną metodę do klasy Cat, tak aby program nic nie wyświetlał.
+6.	Program musi wyświetlać wynik wywoływania metody getName() na klasie Pet.
+
+

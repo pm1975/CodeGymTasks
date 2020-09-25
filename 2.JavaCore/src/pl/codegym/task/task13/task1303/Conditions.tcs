@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task13.task1303"\n\nNie mieszaj piwa z colą
+
+Zaimplementuj interfejs Drink w klasach Beer i Cola.
+
+
+Requirements:
+1.	Klasa Beer musi implementować interfejs Drink.
+2.	Klasa Cola musi implementować interfejs Drink.
+3.	Klasa Beer musi implementować wszystkie metody interfejsu Drink.
+4.	Klasa Cola musi implementować wszystkie metody interfejsu Drink.
+
+

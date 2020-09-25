@@ -1,7 +1,7 @@
-package pl.codegym.task.task12.task1219;
+package pl.codegym.task.task12.task1227;
 
 /* 
-Stworzenie człowieka
+CanFly, CanRun i CanSwim dla klas Duck, Penguin i Toad
 */
 
 public class Solution {
@@ -19,20 +19,6 @@ public class Solution {
 
     public interface CanSwim {
         public void swim();
-    }
-
-
-    public class Human implements CanRun, CanSwim {
-
-        @Override
-        public void run() {
-
-        }
-
-        @Override
-        public void swim() {
-
-        }
     }
 
     public class Duck implements CanFly, CanRun, CanSwim {
@@ -66,15 +52,10 @@ public class Solution {
         }
     }
 
-    public class Airplane implements CanFly, CanRun {
+    public class Toad implements CanSwim {
 
         @Override
-        public void fly() {
-
-        }
-
-        @Override
-        public void run() {
+        public void swim() {
 
         }
     }

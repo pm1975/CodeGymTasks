@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task13.task1309"\n\nWszystko, co się porusza
+
+1. Utwórz interfejs CanMove, który ma metodę speed.
+2. Metoda speed musi zwracać Double i nie powinna akceptować żadnych argumentów.
+3. Spraw, aby interfejs CanFly dziedziczył interfejs CanMove.
+4. Dodaj metodę speed do interfejsu CanFly.
+5. Metoda speed musi zwracać Double i akceptować jeden argument CanFly.
+
+
+Requirements:
+1.	Klasa Solution musi deklarować interfejs CanMove.
+2.	Klasa Solution musi deklarować interfejs CanFly.
+3.	Interfejs CanFly musi dziedziczyć interfejs CanMove.
+4.	Interfejs CanMove musi deklarować metodę speed bez parametr&oacute;w i musi zwracać Double.
+5.	Interfejs CanFly musi deklarować metodę speed z jednym parametrem CanFly i musi zwracać Double.
+
+

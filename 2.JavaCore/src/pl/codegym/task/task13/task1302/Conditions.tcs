@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task13.task1302"\n\nPiwo. Część 2. Regeneracja.
+
+Dodaj interfejs Drink do klasy AlcoholicBeer i zaimplementuj wszystkie jego metody.
+
+
+Requirements:
+1.	Klasa AlcoholicBeer musi implementować interfejs Drink.
+2.	Klasa AlcoholicBeer musi implementować wszystkie metody interfejsu Drink.
+3.	W klasie AlcoholicBeer muszą być tylko dwie metody.
+4.	Metoda isAlcoholic musi zwracać true, jeśli piwo zawiera alkohol.
+5.	Zależnie od tego, co zwraca metoda isAlcoholic, program musi wyświetlać na ekranie odpowiedni typ napoju.
+
+

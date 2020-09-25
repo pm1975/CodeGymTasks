@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task13.task1315"\n\nTom, Jerry i Spike
+
+1. Utwórz klasy Dog, Cat i Mouse.
+2. Zaimplementuj interfejsy dla dodanych klas, biorąc pod uwagę, że:
+- Kot potrafi się poruszać, zjeść kogoś i może sam zostać zjedzony.
+- Mysz potrafi się poruszać i może zostać zjedzona.
+- Pies potrafi się poruszać i kogoś zjeść.
+
+
+Requirements:
+1.	Klasa Cat musi być wewnątrz klasy Solution.
+2.	Klasa Dog musi być wewnątrz klasy Solution.
+3.	Klasa Mouse musi być wewnątrz klasy Solution.
+4.	Kot potrafi się poruszać, zjeść kogoś i może sam zostać zjedzony.
+5.	Mysz potrafi się poruszać i może zostać zjedzona.
+6.	Pies potrafi się poruszać i kogoś zjeść.
+
+

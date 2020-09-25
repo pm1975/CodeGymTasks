@@ -1,0 +1,13 @@
+taskKey="pl.codegym.task.task12.task1232"\n\nDodawanie nowej funkcjonalności
+
+Utwórz klasę Pegasus używając klasy Horse i interfejsu CanFly.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanFly z metodą fly().
+2.	Klasa Solution musi zawierać klasę Horse z metodą run().
+3.	Klasa Solution musi zawierać klasę Pegasus.
+4.	Klasa Pegasus musi dziedziczyć klasę Horse.
+5.	Klasa Pegasus musi implementować interfejs CanFly.
+
+

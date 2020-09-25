@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task12.task1231"\n\nBezużyteczna abstrakcja
+
+Musisz umieścić słowo kluczowe abstract w odpowiednich miejscach, tak aby program się kompilował.
+Dodaj słowo abstract tam, gdzie jest potrzebne i usuń je z tych miejsc, w których nie jest konieczne.
+
+
+Requirements:
+1.	Klasa Pegasus musi implementować interfejs CanFly.
+2.	Klasa Pegasus musi dziedziczyć klasę Horse.
+3.	Klasa SwimmingPegasus musi dziedziczyć klasę Pegasus.
+4.	Powinieneś m&oacute;c utworzyć obiekt Horse.
+5.	Powinieneś m&oacute;c utworzyć obiekt Pegasus.
+6.	Metoda swim() klasy SwimmingPegasus nie może być implementowana.
+
+

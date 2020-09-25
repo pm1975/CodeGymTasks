@@ -1,0 +1,4 @@
+asa
+ma 
+kota
+exit

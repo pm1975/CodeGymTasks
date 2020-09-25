@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task12.task1233"\n\nNadchodzą izomorfy
+
+Napisz metodę, która zwraca minimum z tablicy oraz jego pozycję (indeks).
+
+
+Requirements:
+1.	Klasa Solution musi zawierać klasę Pair.
+2.	Klasa Solution musi mieć dwie metody.
+3.	Klasa Solution musi mieć metodę getMinimumAndIndex().
+4.	Metoda getMinimumAndIndex() musi zwracać minimum z tablicy i jego pozycję (indeks).
+
+

@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task13.task1308"\n\nHej, żyjesz?
+
+1. Utwórz interfejs Person.
+2. Dodaj metodę isAlive(). Ta metoda sprawdza, czy dana osoba żyje.
+3. Pomyśl, jaki typ powinna owa metoda zwracać.
+4. Utwórz interfejs Presentable.
+5. Spraw, aby interfejs Presentable dziedziczył interfejs Person.
+
+
+Requirements:
+1.	Klasa Solution musi deklarować interfejs Person.
+2.	Klasa Solution musi deklarować interfejs Presentable.
+3.	Interfejs Presentable musi dziedziczyć interfejs Person.
+4.	Interfejs Person musi deklarować metodę isAlive.
+5.	Zwracany typ metody isAlive może przybierać tylko dwie wartości.
+
+

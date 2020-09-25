@@ -1,0 +1,19 @@
+taskKey="pl.codegym.task.task12.task1226"\n\nWspinaj się, lataj i biegaj
+
+1. W klasie Solution utwórz publiczny interfejs CanFly z metodą void fly().
+2. W klasie Solution utwórz publiczny interfejs CanClimb z metodą void climb().
+3. W klasie Solution utwórz publiczny interfejs CanRun z metodą void run().
+4. Podejmując decyzję, które interfejsy dodasz do danej klasy, kieruj się zdrowym rozsądkiem.
+5. Dodaj interfejsy do klas Cat, Dog, Tiger i Duck.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanFly z metodą void fly().
+2.	Klasa Solution musi mieć interfejs CanClimb z metodą void climb().
+3.	Klasa Solution musi mieć interfejs CanRun z metodą void run().
+4.	Obiekt Cat musi potrafić biegać (obsługiwać interfejs CanRun) i wspinać się na drzewa (obsługiwać interfejs CanClimb).
+5.	Obiekt Dog musi potrafić biegać (obsługiwać interfejs CanRun).
+6.	Klasa Tiger musi być Cat.
+7.	Obiekt Duck musi potrafić biegać (obsługiwać interfejs CanRun) i latać (obsługiwać interfejs CanFly).
+
+

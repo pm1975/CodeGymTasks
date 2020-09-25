@@ -1,0 +1,12 @@
+taskKey="pl.codegym.task.task13.task1314"\n\nDuży lis to wciąż lis
+
+1. Popraw klasę BigFox, tak aby program się kompilował.
+
+
+Requirements:
+1.	Klasa Fox musi implementować interfejs Animal.
+2.	Klasa Fox musi implementować tylko jedną metodę (getName).
+3.	Interfejs Animal musi deklarować metodę getColor.
+4.	Klasa BigFox musi dziedziczyć klasę Fox.
+
+

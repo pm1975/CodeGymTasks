@@ -1,0 +1,18 @@
+taskKey="pl.codegym.task.task12.task1230"\n\nStrzał w dziesiątkę
+
+Dodaj jeszcze jedną metodę, aby program wyświetlał liczbę 10.
+
+Wskazówka:
+użyj przeciążania metod.
+
+
+Requirements:
+1.	Klasa Solution musi zawierać trzy metody.
+2.	Przeciążana metoda transformValue musi podwajać przekazaną do niej liczbę.
+3.	Nie zmieniaj typu i wartości zmiennej i.
+4.	Nie zmieniaj typu i wartości zmiennej x.
+5.	Nie zmieniaj komendy wyświetlającej się na ekranie.
+6.	Metoda main powinna wywoływać metodę transformValue tylko jeden raz.
+7.	Program powinien wyświetlać liczbę 10.
+
+

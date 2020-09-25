@@ -1,0 +1,16 @@
+taskKey="pl.codegym.task.task13.task1319"\n\nZapisywanie do pliku z konsoli
+
+1. Wczytaj nazwę pliku z konsoli.
+2. Wczytuj linie z konsoli, aż użytkownik wprowadzi "exit".
+3. Zapisz wszystkie wprowadzone linie do pliku, każdą w nowej linii.
+
+
+Requirements:
+1.	Program musi odczytywać nazwę pliku z konsoli.
+2.	Utw&oacute;rz i użyj obiektu BufferedWriter.
+3.	Program nie powinien wczytywać niczego z systemu plik&oacute;w.
+4.	Program musi wczytywać linie z konsoli, aż użytkownik wprowadzi &quot;exit&quot;.
+5.	Program musi zapisywać absolutnie wszystkie wprowadzone linie (łącznie z &quot;exit&quot;) do pliku, każdą w nowej linii.
+6.	Metod powinna zamykać obiekt BufferedWriter po jego użyciu.
+
+

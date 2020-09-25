@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task12.task1220"\n\nKlasa Human i interfejsy CanRun i CanSwim
+
+Napisz klasę publiczną Human oraz publiczne interfejsy CanRun i CanSwim.
+Do każdego interfejsu dodaj jedną metodę.
+Dodaj te interfejsy do klasy Human, ale nie implementuj metod.
+Zadeklaruj klasę Human jako abstrakcyjną.
+
+
+Requirements:
+1.	Klasa Solution musi mieć interfejs CanRun z tylko jedną metodą.
+2.	Klasa Solution musi mieć interfejs CanSwim z tylko jedną metodą.
+3.	Klasa Solution musi zawierać klasę Human.
+4.	Klasa Human musi implementować interfejsy CanRun i CanSwim.
+5.	Klasa Human musi być abstrakcyjna.
+6.	Klasa Human nie powinna mieć żadnych metod.
+
+

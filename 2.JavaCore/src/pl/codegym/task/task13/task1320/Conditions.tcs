@@ -1,0 +1,17 @@
+taskKey="pl.codegym.task.task13.task1320"\n\nNeo
+
+1. Zaimplementuj interfejs DBObject w klasie User.
+2. Zaimplementuj metodę initializeIdAndName, tak aby program działał i wyświetlał "Imię użytkownika to Neo, id = 1".
+3. Nie zmieniaj metod toString i main.
+4. Pomyśl, co powinna zwracać metoda initializeIdAndName klasy User.
+
+
+Requirements:
+1.	Klasa User musi implementować interfejs DBObject.
+2.	Metoda initializeIdAndName musi zwracać prawidłowy obiekt User, a konkretnie obiekt (this), na kt&oacute;rym została wywołana metoda.
+3.	Metoda initializeIdAndName musi ustawiać pola id i name przy użyciu przekazanych do niej argument&oacute;w.
+4.	Program musi wyświetlać: &quot;Imię użytkownika to Neo, id = 1&quot;.
+5.	Nie zmieniaj metody toString.
+6.	Nie zmieniaj metody main.
+
+

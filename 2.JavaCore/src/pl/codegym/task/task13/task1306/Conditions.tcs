@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task13.task1306"\n\nBłędy w initializeIdAndName
+
+1. Pomyśl, co w programie jest nie tak.
+2. Zaimplementuj metodę initializeIdAndName w klasie User.
+3. Metoda initializeIdAndName klasy User musi zwracać User.
+4. Popraw program tak, aby się kompilował i działał poprawnie.
+
+
+Requirements:
+1.	Interfejs DBObject musi deklarować, ale nie implementować, metodę initializeIdAndName.
+2.	Zaimplementuj metodę initializeIdAndName w klasie User.
+3.	Metoda initializeIdAndName klasy User musi zwracać User.
+4.	Metoda initializeIdAndName musi ustawiać id obiektu User i pola definicji zgodnie z przekazanymi argumentami, a następnie zwracać obiekt.
+
+

@@ -1,0 +1,14 @@
+taskKey="pl.codegym.task.task13.task1313"\n\nLis to zwierzę
+
+1. Spraw, aby klasa Fox implementowała interfejs Animal.
+2. Edytuj kod, tak aby metoda getName była jedyną metodą w klasie Fox.
+3. Nie twórz dodatkowych klas i nie usuwaj żadnych metod!
+
+
+Requirements:
+1.	Klasa Fox musi implementować interfejs Animal.
+2.	Klasa Fox musi implementować tylko jedną metodę (getName).
+3.	Interfejs Animal musi deklarować metodę getColor.
+4.	Nie tw&oacute;rz dodatkowych klas i interfejs&oacute;w.
+
+

@@ -1,0 +1,15 @@
+taskKey="pl.codegym.task.task13.task1310"\n\nPrzyszły manager
+
+1. Dodaj interfejsy Secretary i Boss do klas Manager i Subordinate. Jeden interfejs do każdej klasy.
+Pomyśl, który interfejs powinien trafić do danej klasy.
+2. Spraw, aby interfejsy Secretary i Boss dziedziczyły interfejsy Person i HasManagementPotential, tak aby
+wszystkie metody w klasach Manager i Subordinate zostały zadeklarowane w jednym z interfejsów.
+
+
+Requirements:
+1.	Klasa Manager musi implementować odpowiedni interfejs (Secretary lub Boss).
+2.	Klasa Subordinate musi implementować odpowiedni interfejs (Secretary lub Boss).
+3.	Secretary to Person (sekretarka to, bez wątpienia, też człowiek).
+4.	Boss to obiekt klasy Person, kt&oacute;ry możne sprawić, że inni będą ciężko pracować (HasManagementPotential).
+
+
