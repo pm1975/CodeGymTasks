@@ -24,6 +24,7 @@ public class Solution {
         private Runner owner;
         private int stepNumber;
 
+
         public Stopwatch(Runner runner) {
             this.owner = runner;
         }
@@ -39,7 +40,7 @@ public class Solution {
 
         private void doStep() throws InterruptedException {
             stepNumber++;
-            // tutaj wpisz swój kod
+            Thread.sleep(1000/owner.getSpeed());
             System.out.println(owner.getName() + " robi krok " + stepNumber + "!");
         }
     }

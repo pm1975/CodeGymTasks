@@ -25,7 +25,7 @@ public class Solution {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    System.out.println("Przerwany!");
+                    System.out.println("Przerwane!");
                     start = false;
                 }
             }
