@@ -13,6 +13,7 @@ public class Solution {
     }
 
     public static class GenerateThread extends Thread {
+        boolean hasRecurseThread = false;
         public GenerateThread() {
             super(String.valueOf(++createdThreadCount));
             start();
@@ -25,7 +26,9 @@ public class Solution {
 
         @Override
         public void run() {
-            while (createdThreadCount < count) {
+            while (createdThreadCount < Solution.count
+                && !hasRecurseThread) {
+                hasRecurseThread = true;
                 System.out.println(new GenerateThread());
             }
         }
