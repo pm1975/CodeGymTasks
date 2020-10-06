@@ -1,0 +1,28 @@
+taskKey="com.codegym.games.moonlander.part01"\n\nMoon Lander (Part 1/23)
+
+Today we invite you to write an exciting game — Moon Lander. As always, we'll start with the rules.
+The objective is guide a landing module down to the lunar surface. To do this, the player must overcome the Moon's gravitational attraction,
+using an aft booster to slow the descent and side thrusters to move the ship left or right.
+The terrain is bumpy and there's only one flat area suitable for a soft landing. We'll call it the "platform". If the player lands successfully, he or she wins.
+The score depends on how long the landing lasts: The longer a player takes to land, the lower the final score.
+The game ends when the player smashes into the surface of the Moon.
+Well, let's start with the game's main class: MoonLanderGame.
+We'll make it inherit the Game class.
+
+This and other "game engine" classes are contained in the com.codegym.engine.cell package. To use them, the MoonLanderGame class must include the following import:
+Now we'll implement the playing field. To do this, we need to override the initialize() method, which in turn must call the setScreenSize(int, int) method.
+This method sets the playing field's width and height, which it takes as arguments. We'll store them in variables.
+
+To complete the Moon Lander task successfully, we recommend that you read this article about the "Games" section. It contains information that you'll find helpful when writing games.
+
+
+Requirements:
+1.	There must be a public MoonLanderGame class.
+2.	The MoonLanderGame class must inherit the Game class.
+3.	The MoonLanderGame class must have a public static final int WIDTH field, initialized to 64 when it is declared.
+4.	The MoonLanderGame class must have a public static final int HEIGHT field, initialized to 64 when it is declared.
+5.	In the MoonLanderGame class, the initialize() method of the Game parent class must be overridden.
+6.	The Game class&#39;s setScreenSize(int, int) method must be called with arguments (WIDTH, HEIGHT) in the initialize() method.
+7.	The MoonLanderGame class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
+
+

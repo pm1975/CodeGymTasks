@@ -52,20 +52,16 @@ public class Solution {
                 if(!OnlineGame.isWinnerFound)
                 {
                     try {
-                        sleep(1000);
+                        Thread.sleep(1000/rating);
+                        System.out.println(getName() + ":" + OnlineGame.actions.get(i));
+                        if (i == OnlineGame.actions.size() - 1)
+                        {
+                            OnlineGame.isWinnerFound = true;
+                            System.out.println(getName() +":wygrał!");
+                        }
                     } catch (InterruptedException e) {
-                        e.printStackTrace();
+                        System.out.println(getName() + ":przegrał!");
                     }
-                    System.out.println(getName() + ":" + OnlineGame.actions.get(i));
-                    if (i == OnlineGame.actions.size() - 1)
-                    {
-                        OnlineGame.isWinnerFound = true;
-                        System.out.println(getName() +":wygrał!");
-                    }
-                }
-                else
-                {
-                    System.out.println(getName() + ":przegrał!");
                 }
             }
         }
