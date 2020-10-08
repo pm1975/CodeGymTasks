@@ -32,7 +32,6 @@ public class Solution {
     }
 
     public interface ReadFileInterface {
-
         void setFileName(String fullFileName);
 
         String getFileContents();
@@ -44,7 +43,7 @@ public class Solution {
 
     //tutaj wpisz swój kod
     public static class ReadFileThread extends Thread implements ReadFileInterface {
-
+        private String fileContent = "";
         private String fullFileName;
         @Override
         public void setFileName(String fullFileName) {
@@ -52,7 +51,7 @@ public class Solution {
         }
 
         @Override
-        public String getFileContents() {
+        public void run() {
             StringBuilder builder = new StringBuilder();
             try {
                 BufferedReader reader = new BufferedReader(new FileReader(fullFileName));
@@ -61,23 +60,17 @@ public class Solution {
                     builder.append(line);
                     builder.append(" ");
                 }
-                System.out.println(builder.toString());
+                fileContent = builder.toString();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return null;
         }
 
         @Override
-        public void start() {
-
-        }
-
-        @Override
-        public void run() {
-
+        public String getFileContents() {
+            return fileContent;
         }
     }
 }
