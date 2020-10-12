@@ -1,4 +1,28 @@
-taskKey="com.codegym.games.game2048.part01"\n\n2048 (Part 1/18)
+taskKey="com.codegym.games.game2048.part02"\n\n2048 (Part 2/18)
+
+Have you tried running your program? The game board is too small. Let's fix that. To do this, we need to
+override the initialize() method of the Game parent class. The initialize() method lets you
+set the size of the game board, decide whether to display the grid, etc.
+
+To set the size of the game board in the initialize() method, call the
+setScreenSize(int width, int height) method of the Game parent class, passing it the width and height
+of the game board. As you know, the size of the game board in our game is 4x4 tiles. We suggest that you
+create a private
+static final int SIDE variable (constant) whose value is 4 and pass it as the arguments to the
+setScreenSize() method. You should end up with something like this: setScreenSize(SIDE, SIDE). You can run
+your own program again
+and see what happens.
+
+
+Requirements:
+1.	In the Game2048 class, the initialize() method of the Game parent class must be overridden.
+2.	The SIDE variable must be created in the Game2048 class.
+3.	The SIDE variable must be private, static, and final, and must be an int.
+4.	The SIDE variable must be initialized to 4.
+5.	The initialize() method must call the setScreenSize(SIDE, SIDE) method.
+
+
+2048 (Part 1/18)
 
 Hi! Today we'll start writing an interesting and addictive game — 2048. Are you ready? Then let's go.
 Rules of the game:
@@ -30,11 +54,5 @@ statement:
 import com.codegym.engine.cell.*;
 Try running your Game2048 class and see what happens.
 
-
-Requirements:
-1.	A Game2048 class must be created.
-2.	The Game2048 class must be public.
-3.	The Game2048 class must inherit the Game class.
-4.	The Game2048 class must have a statement that imports the entire contents of the com.codegym.engine.cell.
 
 

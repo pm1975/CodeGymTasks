@@ -1,14 +1,15 @@
 package pl.codegym.task.task16.task1632;
 
 /**
- * Created by Piotr on 2020-10-07
+ * Created by Piotr on 2020-10-08
  */
-public class Thread1 extends Thread {
+public class Thread3 extends Thread {
     @Override
     public void run() {
         while (true) {
             try {
-                sleep(1000);
+                System.out.println("Hurra");
+                sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
