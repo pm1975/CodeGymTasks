@@ -1,4 +1,24 @@
-taskKey="com.codegym.games.moonlander.part01"\n\nMoon Lander (Part 1/23)
+taskKey="com.codegym.games.moonlander.part02"\n\nMoon Lander (Part 2/23)
+
+Now we'll implement the drawScene() method, where we'll paint all the cells of the playing field the same color.
+To help us, we'll use the Game class's setCellColor(int, int, Color) method, whose parameters are the cell coordinates and color.
+We'll call it every coordinate from 0 to WIDTH and from 0 to HEIGHT and with any color (for example, Color.ORANGE).
+
+We'll also need the createGame() method. It will be responsible for creating a game.
+But for now, we'll only call the drawScene() method in it.
+We'll call the createGame() method itself in the initialize() method after the call to setScreenSize(int, int).
+
+
+Requirements:
+1.	The MoonLanderGame class must have a private void createGame() method.
+2.	The MoonLanderGame class must have a private void drawScene() method.
+3.	The drawScene() method must be called in the createGame() method.
+4.	The createGame() method must be called in the initialize() method.
+5.	In the initialize() method, the call to the createGame() method occurs after the call to the setScreenSize(int, int) method.
+6.	In the drawScene() method, call the setCellColor(int, int, Color) method for each cell of the playing field with the following arguments: x and y coordinates of the cell and any color (for example, Color.BLACK).
+
+
+Moon Lander (Part 1/23)
 
 Today we invite you to write an exciting game — Moon Lander. As always, we'll start with the rules.
 The objective is guide a landing module down to the lunar surface. To do this, the player must overcome the Moon's gravitational attraction,
@@ -15,14 +35,5 @@ This method sets the playing field's width and height, which it takes as argumen
 
 To complete the Moon Lander task successfully, we recommend that you read this article about the "Games" section. It contains information that you'll find helpful when writing games.
 
-
-Requirements:
-1.	There must be a public MoonLanderGame class.
-2.	The MoonLanderGame class must inherit the Game class.
-3.	The MoonLanderGame class must have a public static final int WIDTH field, initialized to 64 when it is declared.
-4.	The MoonLanderGame class must have a public static final int HEIGHT field, initialized to 64 when it is declared.
-5.	In the MoonLanderGame class, the initialize() method of the Game parent class must be overridden.
-6.	The Game class&#39;s setScreenSize(int, int) method must be called with arguments (WIDTH, HEIGHT) in the initialize() method.
-7.	The MoonLanderGame class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
 
 
