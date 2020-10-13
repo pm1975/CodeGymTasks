@@ -1,4 +1,31 @@
-taskKey="com.codegym.games.racer.part01"\n\nRacer (Part 1/28)
+taskKey="com.codegym.games.racer.part02"\n\nRacer (Part 2/28)
+
+Now we'll prepare the playing field.
+In this part, we'll create variables and methods that we'll use in the future to draw the road and road markings.
+A dividing line will be placed in the middle of the road. The value of its x coordinate will be half of
+the width of the playing field and will be stored in the CENTER_X variable.
+Shoulders will be placed along the sides of the road. They will be 14 cells wide.
+This value will be stored in the ROADSIDE_WIDTH variable.
+
+We'll create helper methods:
+createGame() - for starting a new game;
+drawScene() - for drawing all the game objects;
+drawField() - for drawing the playing field's background.
+
+
+Requirements:
+1.	The RacerGame class must have a public static final int CENTER_X field, initialized to WIDTH / 2 when it is declared.
+2.	The RacerGame class must have a public static final int ROADSIDE_WIDTH field, initialized to 14 when it is declared.
+3.	The RacerGame class must have a private void createGame() method.
+4.	The RacerGame class must have a private void drawScene() method.
+5.	The drawScene() method must be called in the createGame() method.
+6.	The createGame() method must be called in the initialize() method.
+7.	In the initialize() method, the call to the createGame() method must be after the call to the setScreenSize(int, int) method.
+8.	The RacerGame class must have a private void drawField() method.
+9.	The drawField() method must be called in the drawScene() method.
+
+
+Racer (Part 1/28)
 
 We invite you to write an exciting game — Racer. We'll start with the rules.
 1. The objective of the game is to reach the finish line by driving a race car on a busy race track.
@@ -14,15 +41,5 @@ In the initialize() method, you need to:
 1. set the dimensions of the playing field by calling setScreenSize(WIDTH, HEIGHT);
 2. disable display of the grid by calling showGrid(false).
 To complete the Racer task successfully, we recommend that you read this article about the "Games" section. It contains information that you'll find helpful when writing games.
-
-Requirements:
-1.	There must be a public RacerGame class.
-2.	The RacerGame class must inherit the Game class.
-3.	The RacerGame class must have a public static final int WIDTH field, initialized to 64 when it is declared.
-4.	The RacerGame class must have a public static final int HEIGHT field, initialized to 64 when it is declared.
-5.	In the RacerGame class, the initialize() method of the Game parent class must be overridden.
-6.	In the initialize() method, the Game class&#39;s showGrid(boolean) method must be called with false as the argument.
-7.	The Game class&#39;s setScreenSize(int, int) method must be called with arguments (WIDTH, HEIGHT) in the initialize() method.
-8.	The RacerGame class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
 
 
