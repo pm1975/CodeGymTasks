@@ -1,4 +1,16 @@
-taskKey="com.codegym.games.moonlander.part02"\n\nMoon Lander (Part 2/23)
+taskKey="com.codegym.games.moonlander.part03"\n\nMoon Lander (Part 3/23)
+
+Because Moon Lander will use game objects, let's create a GameObject class, where we'll put all the common properties. At this point, these are x and y coordinates.
+
+
+Requirements:
+1.	There must be a public GameObject class.
+2.	The GameObject class must have a public double x field.
+3.	The GameObject class must have a public double y field.
+4.	The GameObject class must have one public constructor with two double parameters that are used to initialize the x and y fields.
+
+
+Moon Lander (Part 2/23)
 
 Now we'll implement the drawScene() method, where we'll paint all the cells of the playing field the same color.
 To help us, we'll use the Game class's setCellColor(int, int, Color) method, whose parameters are the cell coordinates and color.
@@ -8,14 +20,6 @@ We'll also need the createGame() method. It will be responsible for creating a g
 But for now, we'll only call the drawScene() method in it.
 We'll call the createGame() method itself in the initialize() method after the call to setScreenSize(int, int).
 
-
-Requirements:
-1.	The MoonLanderGame class must have a private void createGame() method.
-2.	The MoonLanderGame class must have a private void drawScene() method.
-3.	The drawScene() method must be called in the createGame() method.
-4.	The createGame() method must be called in the initialize() method.
-5.	In the initialize() method, the call to the createGame() method occurs after the call to the setScreenSize(int, int) method.
-6.	In the drawScene() method, call the setCellColor(int, int, Color) method for each cell of the playing field with the following arguments: x and y coordinates of the cell and any color (for example, Color.BLACK).
 
 
 Moon Lander (Part 1/23)
