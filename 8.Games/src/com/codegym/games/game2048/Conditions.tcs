@@ -1,4 +1,25 @@
-taskKey="com.codegym.games.game2048.part03"\n\n2048 (Part 3/18)
+taskKey="com.codegym.games.game2048.part04"\n\n2048 (Part 4/18)
+
+Somehow a black screen doesn't look very good, right? Let's change that.
+
+The Game class — and the Game2048 class, since it inherits Game — has a special
+setCellColor(int x, int y, Color color) method that sets the color of the cell with coordinates (x, y).
+You can find a list of available colors in the game engine's Color enum.
+
+For example, to make the cell with coordinates (0, 2) red, you need to call
+setCellColor(0, 2, Color.RED).
+
+Create a drawScene() method that colors all the cells of the game board a color you like.
+
+
+Requirements:
+1.	A private void drawScene() method must be created in the Game2048 class.
+2.	The drawScene() method must call the setCellColor(int, int, Color) method for each cell.
+3.	In the initialize() method, the drawScene() method must be called last.
+4.	All tiles must be painted the same color.
+
+
+2048 (Part 3/18)
 
 We'll use the game engine to display the current state of the game. And a 4x4 array is perfect for storing
 the state.
@@ -7,12 +28,6 @@ So, create an int[][] gameField field and initialize with a SIDExSIDE int[][] ar
 By default, the elements of the int array are initialized with zeros. Let zeros represent an empty square on
 the game board.
 
-
-Requirements:
-1.	A private int[][] (matrix or two-dimensional int array) gameField field must be created in the Game2048 class.
-2.	The matrix size must be SIDExSIDE.
-3.	A void createGame() method must be created in the Game2048 class.
-4.	The createGame() method must be called in the initialize() method.
 
 
 2048 (Part 2/18)

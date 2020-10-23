@@ -1,4 +1,31 @@
-taskKey="com.codegym.games.racer.part02"\n\nRacer (Part 2/28)
+taskKey="com.codegym.games.racer.part03"\n\nRacer (Part 3/28)
+
+Let's proceed to drawing the race track in the drawField() method.
+To set the color of a specific cell, use the setCellColor(int, int, Color) method. The passed arguments are the x and y coordinates and the color.
+Keep in mind that the playing field consists of three zones that must be painted using different colors:
+1. The shoulder is the side of the playing field, where things don't move.
+Height: the entire height of the playing field;
+Width: from 0 to ROADSIDE_WIDTH (not inclusive) and from WIDTH - ROADSIDE_WIDTH (inclusive) to WIDTH.
+2. The road is the roadway where cars move.
+Height: the entire height of the playing field;
+Width: from ROADSIDE_WIDTH (inclusive) to WIDTH - ROADSIDE_WIDTH (not inclusive), excluding CENTER_X.
+3. The dividing line is a white stripe that divides lanes.
+Height: the entire height of the playing field;
+Width: 1 cell of the playing field, where x = CENTER_X.
+The painting happens in a loop:
+The result should be a race track that looks something like this:
+api/1.0/rest/images/78/39ad56b3-2702-4b6f-8a84-ee937b8a0433?size=0
+P.S. You can choose whatever colors you like.
+
+
+Requirements:
+1.	In the drawField() method, call the setCellColor(int, int, Color) method with the following arguments for each cell of the playing field whose x coordinate is equal to CENTER_X: CENTER_X, y, and any color (for example, Color.WHITE).
+2.	In the drawField() method, call the setCellColor(int, int, Color) method with the following arguments for each cell of the playing field whose x coordinate is greater than or equal to ROADSIDE_WIDTH and less than (WIDTH - ROADSIDE_WIDTH): x, y, and any color (for example, Color.DIMGREY).
+3.	In the drawField() method, call the setCellColor(int, int, Color) method with the following arguments for all the others cells of the playing field: x, y, and any color (for example, Color.GREEN).
+4.	After the call to the initialize() method, the playing field must be painted 3 different colors based on the current situation.
+
+
+Racer (Part 2/28)
 
 Now we'll prepare the playing field.
 In this part, we'll create variables and methods that we'll use in the future to draw the road and road markings.
@@ -12,17 +39,6 @@ createGame() - for starting a new game;
 drawScene() - for drawing all the game objects;
 drawField() - for drawing the playing field's background.
 
-
-Requirements:
-1.	The RacerGame class must have a public static final int CENTER_X field, initialized to WIDTH / 2 when it is declared.
-2.	The RacerGame class must have a public static final int ROADSIDE_WIDTH field, initialized to 14 when it is declared.
-3.	The RacerGame class must have a private void createGame() method.
-4.	The RacerGame class must have a private void drawScene() method.
-5.	The drawScene() method must be called in the createGame() method.
-6.	The createGame() method must be called in the initialize() method.
-7.	In the initialize() method, the call to the createGame() method must be after the call to the setScreenSize(int, int) method.
-8.	The RacerGame class must have a private void drawField() method.
-9.	The drawField() method must be called in the drawScene() method.
 
 
 Racer (Part 1/28)

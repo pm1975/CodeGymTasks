@@ -1,4 +1,1 @@
-asa
-ma 
-kota
-exit
+AlaMaKota,AKotMaAle..
