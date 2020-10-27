@@ -1,4 +1,4 @@
-package com.codegym.games.snake;
+package com.codegym.games.snake.part05;
 
 public class GameObject {
 

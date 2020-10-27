@@ -1,9 +1,7 @@
-package com.codegym.games.snake;
+package com.codegym.games.snake.part05;
 
-import com.codegym.engine.cell.*;
 import com.codegym.engine.cell.Color;
-
-import java.awt.*;
+import com.codegym.engine.cell.Game;
 
 
 public class SnakeGame extends Game {

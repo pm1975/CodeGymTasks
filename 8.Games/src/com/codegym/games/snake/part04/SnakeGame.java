@@ -1,12 +1,9 @@
-package com.codegym.games.snake;
+package com.codegym.games.snake.part04;
 
 import com.codegym.engine.cell.*;
-import com.codegym.engine.cell.Color;
-
-import java.awt.*;
-
 
 public class SnakeGame extends Game {
+
     public static final int WIDTH = 15;
     public static final int HEIGHT = 15;
 
@@ -18,6 +15,8 @@ public class SnakeGame extends Game {
 
     private void createGame() {
         drawScene();
+        Apple apple = new Apple(7, 7);
+        apple.draw(this);
     }
 
     private void drawScene() {
