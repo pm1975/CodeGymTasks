@@ -1,7 +1,6 @@
 package com.codegym.games.snake.part05;
 
-import com.codegym.engine.cell.Color;
-import com.codegym.engine.cell.Game;
+import com.codegym.engine.cell.*;
 
 public class Apple extends GameObject {
 

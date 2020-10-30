@@ -1,12 +1,7 @@
-package pl.codegym.task.task18.task1825;
+package pl.codegym.task.task18.tworzenie_pliku_z_wielu_partN;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 

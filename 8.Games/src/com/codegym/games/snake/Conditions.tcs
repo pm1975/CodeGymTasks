@@ -1,4 +1,29 @@
-taskKey="com.codegym.games.snake.part05"\n\nSnake (Part 5/20)
+taskKey="com.codegym.games.snake.part06"\n\nSnake (Part 6/20)
+
+Once we have a snake, we need to draw it. To do this, by analogy with the Apple class, create HEAD_SIGN and BODY_SIGN constants in the Snake class.
+They will store symbols for drawing the head and body of the snake. Also, create a draw(Game) method to draw the snake
+on the playing field.
+
+We'll handle drawing the snake from the SnakeGame class. So, create a Snake snake variable in the SnakeGame class: it will store
+the snake's current state. In the createGame() method, create a new snake in the center of the playing field and assign it to the snake variable. In the drawScene method(),
+call the draw(Game) method on the snake to draw it on the playing field.
+
+
+Requirements:
+1.	The Snake class must have a private static final String HEAD_SIGN field that is initialized when it is declared. For example, you can use this UTF-16 symbol: &quot;\uD83D\uDC7E&quot;.
+2.	The Snake class must have a private static final String BODY_SIGN field that is initialized when it is declared. For example, you can use this UTF-8 symbol: &quot;\u26AB&quot;.
+3.	The Snake class must have a public void draw(Game) method.
+4.	The draw(Game) method must call the Game class&#39;s setCellValue(int, int, String) method on each GameObject in the snakeParts list.
+5.	The setCellValue(int, int, String) method must be called with arguments (x, y, HEAD_SIGN) on the snake&#39;s head (the element with index 0 in the snakeParts list).
+6.	The setCellValue(int, int, String) method must be called with arguments (x, y, BODY_SIGN) on each segment of the snake&#39;s body (elements with non-zero indices in the snakeParts list).
+7.	The SnakeGame class must have a private Snake snake field.
+8.	The SnakeGame class&#39;s createGame() method must create a new snake (instance of the Snake class) with coordinates (WIDTH / 2, HEIGHT / 2) before calling the drawScene() method.
+9.	The createGame() method must assign the created Snake object to the snake field.
+10.	In the drawScene() method, the snake object&#39;s draw(Game) method must be called last. Pass this to the method.
+11.	The Snake class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
+
+
+Snake (Part 5/20)
 
 Now let's tackle the snake, and we'll remove the test creation and drawing of the apple in the createGame() method.
 
@@ -9,14 +34,6 @@ field.
 
 Add a constructor to the Snake class that creates three snake segment all at once.
 
-
-Requirements:
-1.	The SnakeGame class&#39;s createGame() method must not create a new apple.
-2.	There must be a public Snake class.
-3.	The Snake class must have one public constructor with two int parameters (x and y).
-4.	The Snake class must have a private List&lt;GameObject&gt; snakeParts field that is initialized with a new ArrayList&lt;&gt; when it is declared.
-5.	The constructor must create three GameObjects with the following arguments: first - (x, y); second - (x + 1, y); third - (x + 2, y).
-6.	The GameObjects created in the constructor must be added to the snakeParts list in order: first, second, third.
 
 
 Snake (Part 4/20)

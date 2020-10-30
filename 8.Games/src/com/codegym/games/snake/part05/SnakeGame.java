@@ -1,7 +1,7 @@
 package com.codegym.games.snake.part05;
 
+import com.codegym.engine.cell.*;
 import com.codegym.engine.cell.Color;
-import com.codegym.engine.cell.Game;
 
 
 public class SnakeGame extends Game {
@@ -16,6 +16,8 @@ public class SnakeGame extends Game {
 
     private void createGame() {
         drawScene();
+        Apple apple = new Apple(7, 7);
+        apple.draw(this);
     }
 
     private void drawScene() {
