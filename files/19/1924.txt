@@ -1,0 +1,3 @@
+110 to liczba.
+To kosztuje 1 dolara, a to jest 12.
+Nazwa zmiennej to file1.

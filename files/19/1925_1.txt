@@ -1,0 +1,2 @@
+particular key mentioned in the parameter.
+It returns NULL when the map contains no such mapping for the key.
