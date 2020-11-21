@@ -1,0 +1,3 @@
+To jest statyczny ciąg testowy
+3
+4
