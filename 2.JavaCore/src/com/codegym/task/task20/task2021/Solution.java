@@ -14,7 +14,7 @@ public class Solution implements Serializable {
         }
 
         private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-            throw new NotSerializableException("NOt today!");
+            throw new NotSerializableException("Not today!");
         }
     }
 

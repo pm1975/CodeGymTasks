@@ -1,4 +1,32 @@
-taskKey="com.codegym.games.game2048.part04"\n\n2048 (Part 4/18)
+taskKey="com.codegym.games.game2048.part05"\n\n2048 (Part 5/18)
+
+According to the rules, when you start a game, the values of two random cells must be 2 or 4 (with a
+probability of 90% and 10%, respectively).
+
+To satisfy this requirement, create a createNewNumber() method and call it twice in the createGame() method.
+The createNewNumber() method:
+1) selects a random cell whose value is 0 in the gameField matrix.
+Hint: A "random cell" is a cell with random coordinates. To get a random x coordinate, you need to
+use a random number between 0 and SIZE. This can be done by calling the getRandomNumber(int) method
+with SIDE as the argument. For the y coordinate, you need to do something similar. After getting the
+coordinates, you need to check the cell value and,
+if it is not 0, then repeat the search for a random cell until you find one whose value is 0;
+2) randomly assigns a value of 2 (probability of 90%) or 4 (probability of 10%).
+Hint: use the getRandomNumber(int) method with 10 as the argument:
+The getRandomNumber(10) method returns a random number between 0 and 9. So it will return the number 9 with
+a probability of 10%.
+- if getRandomNumber(10) returns the number 9, the cell should be assigned the value 4;
+- if getRandomNumber(10) returns a number between 0 and 8, the cell should be assigned the value 2.
+
+
+Requirements:
+1.	A private void createNewNumber() method must be created in the Game2048 class.
+2.	The createNewNumber() method should call getRandomNumber(SIDE) twice and getRandomNumber(10) once.
+3.	The createNewNumber() method must assign a new value of 2 or 4 (with a probability of 90% and 10%, respectively) to a random empty cell in the gameField matrix.
+4.	The createGame() method must call the createNewNumber() method twice.
+
+
+2048 (Part 4/18)
 
 Somehow a black screen doesn't look very good, right? Let's change that.
 
@@ -11,12 +39,6 @@ setCellColor(0, 2, Color.RED).
 
 Create a drawScene() method that colors all the cells of the game board a color you like.
 
-
-Requirements:
-1.	A private void drawScene() method must be created in the Game2048 class.
-2.	The drawScene() method must call the setCellColor(int, int, Color) method for each cell.
-3.	In the initialize() method, the drawScene() method must be called last.
-4.	All tiles must be painted the same color.
 
 
 2048 (Part 3/18)
