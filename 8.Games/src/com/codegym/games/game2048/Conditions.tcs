@@ -1,105 +1,130 @@
-taskKey="com.codegym.games.game2048.part05"\n\n2048 (Part 5/18)
+taskKey="com.codegym.games.game2048.part13"\n\n2048 (Part 13/18)
 
-According to the rules, when you start a game, the values of two random cells must be 2 or 4 (with a
-probability of 90% and 10%, respectively).
+The basic game logic is in place, but it's not entirely complete. Based on the rules and the name of the game, the game ends
+when the value of one of the tiles becomes 2048.
 
-To satisfy this requirement, create a createNewNumber() method and call it twice in the createGame() method.
-The createNewNumber() method:
-1) selects a random cell whose value is 0 in the gameField matrix.
-Hint: A "random cell" is a cell with random coordinates. To get a random x coordinate, you need to
-use a random number between 0 and SIZE. This can be done by calling the getRandomNumber(int) method
-with SIDE as the argument. For the y coordinate, you need to do something similar. After getting the
-coordinates, you need to check the cell value and,
-if it is not 0, then repeat the search for a random cell until you find one whose value is 0;
-2) randomly assigns a value of 2 (probability of 90%) or 4 (probability of 10%).
-Hint: use the getRandomNumber(int) method with 10 as the argument:
-The getRandomNumber(10) method returns a random number between 0 and 9. So it will return the number 9 with
-a probability of 10%.
-- if getRandomNumber(10) returns the number 9, the cell should be assigned the value 4;
-- if getRandomNumber(10) returns a number between 0 and 8, the cell should be assigned the value 2.
+You need to search for the maximum value on the game board in a separate int getMaxTileValue() method that returns
+the maximum value. You can perform the check for the winning condition anywhere. For example, at the beginning
+of the createNewNumber() method, or before adding a new value to the matrix.
+
+When a tile whose value is 2048 is found, you need to inform the player that he or she has won. To make it beautiful, call
+the Game class's showMessageDialog(Color cellColor, String message, Color textColor, int textSize) method.
+I don't think I need to explain what to pass to this method: the parameter names speak for themselves.
+
+After a win, the current game ends. In the future, we'll need a certain isGameStopped flag.
+If the game is won, the flag will be equal to true.
+Let's put everything described above (displaying a message about winning, the flag about the game being stopped) in a separate method, which we'll call win().
 
 
 Requirements:
-1.	A private void createNewNumber() method must be created in the Game2048 class.
-2.	The createNewNumber() method should call getRandomNumber(SIDE) twice and getRandomNumber(10) once.
-3.	The createNewNumber() method must assign a new value of 2 or 4 (with a probability of 90% and 10%, respectively) to a random empty cell in the gameField matrix.
-4.	The createGame() method must call the createNewNumber() method twice.
+1.	The private int getMaxTileValue() method must be created in the Game2048 class. The method must return the maximum value in the gameField matrix.
+2.	A private boolean isGameStopped variable must be created in the Game2048 class and initialized to false when it is declared.
+3.	The private void win() method must be created in the Game2048 class.
+4.	The isGameStopped variable must be set to true in the win() method.
+5.	The showMessageDialog(Color, String, Color, int) method must be called in the win() method.
+6.	The createNewNumber() method must call the getMaxTileValue() method.
+7.	The win() method must be called in the createNewNumber() method if the value 2048 is in the matrix.
 
 
-2048 (Part 4/18)
+2048 (Part 12/18)
 
-Somehow a black screen doesn't look very good, right? Let's change that.
+Now you can start implementing the moveRight(), moveUp(), and moveDown() methods.
 
-The Game class — and the Game2048 class, since it inherits Game — has a special
-setCellColor(int x, int y, Color color) method that sets the color of the cell with coordinates (x, y).
-You can find a list of available colors in the game engine's Color enum.
+In the moveRight() method, rotate the gameField matrix clockwise twice, then call moveLeft(),
+which we've already written, and again rotate the gameField clockwise two more times. It should work.
 
-For example, to make the cell with coordinates (0, 2) red, you need to call
-setCellColor(0, 2, Color.RED).
+In the moveDown() method, rotate 90 degrees once, then call moveLeft() and rotate 90 degrees another 3
+times.
 
-Create a drawScene() method that colors all the cells of the game board a color you like.
-
-
-
-2048 (Part 3/18)
-
-We'll use the game engine to display the current state of the game. And a 4x4 array is perfect for storing
-the state.
-
-So, create an int[][] gameField field and initialize with a SIDExSIDE int[][] array.
-By default, the elements of the int array are initialized with zeros. Let zeros represent an empty square on
-the game board.
+In the moveUp() method, we first rotate 90 degrees three times, and then call moveLeft() and rotate 90
+degrees
+one more time.
 
 
 
-2048 (Part 2/18)
+2048 (Part 11/18)
 
-Have you tried running your program? The game board is too small. Let's fix that. To do this, we need to
-override the initialize() method of the Game parent class. The initialize() method lets you
-set the size of the game board, decide whether to display the grid, etc.
+The moveLeft() method is implemented, but there are still 3 other methods. Let's implement them as follows:
+if we need to move tiles
+down, we take our gameField matrix, rotate it 90 degrees clockwise (so the bottom becomes the left edge),
+shift to the left, and rotate the matrix back (rotate clockwise by 90 degrees 3 more
+times). The remaining methods are similar.
 
-To set the size of the game board in the initialize() method, call the
-setScreenSize(int width, int height) method of the Game parent class, passing it the width and height
-of the game board. As you know, the size of the game board in our game is 4x4 tiles. We suggest that you
-create a private
-static final int SIDE variable (constant) whose value is 4 and pass it as the arguments to the
-setScreenSize() method. You should end up with something like this: setScreenSize(SIDE, SIDE). You can run
-your own program again
-and see what happens.
-
+Let's start with the rotation of the gameField matrix. Here's how it should look:
+(2, 2, 2, 2),    (0, 8, 4, 2),
+(4, 4, 4, 4),  (0, 8, 4, 2),
+(8, 8, 8, 8),    (0, 8, 4, 2),
+(0, 0, 0, 0),    (0, 8, 4, 2)
 
 
-2048 (Part 1/18)
 
-Hi! Today we'll start writing an interesting and addictive game — 2048. Are you ready? Then let's go.
-Rules of the game:
-The game board is square. The standard board size is 4x4 tiles. The objective of the game is to get a tile
-whose value is 2048.
-1. A tile with a value of 2 (probability of 90%) or 4 (probability of 10%) appears in each round.
-2. You can shift all the tiles on the game board to one of the 4 sides by pressing the corresponding key:
-up, down,
-right, or left. If a shift causes two tiles with the same value to "collide", then they merge into one.
-The new value is the sum of the merged tiles. After each move, a new tile with a value of 2 or 4 appears in
-an empty
-space on the game board. If pressing a key does not cause the tiles to change locations or values, then no
-turn has been made.
-3. If more than two tiles of the same value are in the same row or column, then they merge from the side
-from which they are being shifted. For example, after a shift to the left, the tiles (4, 4, 4, 0) in the
-same row
-become (8, 4, 0, 0). After a shift to the right, they become (0, 0, 4, 8). This way of handling ambiguity
-makes it possible to more accurately formulate a game strategy.
-4. With each merger, the score increases by the value of the resulting tile.
-5. The game is lost if no further moves are possible.
-6. The game ends in victory if a tile with the value 2048 appears on the game board.
+2048 (Part 10/18)
 
-Now let's start implementing the game:
-First, we'll need a class where the game logic will be implemented. Let's call it Game2048.
-We've created a "game engine" that starts the game itself, redraws game elements, etc.
-Accordingly, your Game2048 class must inherit the Game class. This and other engine classes are located
-in the com.codegym.engine.cell package. To use them, the Game2048 class must include the following import
-statement:
-import com.codegym.engine.cell.*;
-Try running your Game2048 class and see what happens.
+We already know which methods are invoked by which keystrokes. So let's start implementing
+them. Let's start with the moveLeft method().
+
+In the moveLeft() method, we shift the elements of each row of the gameField matrix
+using the compressRow(int[]) method. We merge their values using the mergeRow(int[]) method, and then we
+shift again (since empty spaces may appear after
+the merging).
+Each row of the gameField matrix must be passed to these methods in turn.
+For example:
+Initial row: {2, 2, 0, 2}
+After compressRow(int[]): {2, 2, 2, 0}
+After mergeRow(int[]): {4, 0, 2, 0}
+After compressRow(int[]): {4, 2, 0, 0}
+
+If at least one shift or merger takes place, we consider a move to have been made,
+and we add a new number to the array by calling the createNewNumber() method.
+
+To made this visible on the screen, you need to call our drawScene() method at the end.
+
+
+
+2048 (Part 9/18)
+
+You can play the game using the keyboard, specifically the up arrow, down arrow, right arrow, and left arrow
+keys. When a key is pressed, the corresponding action should happen (shift, merge). To specify the action, you need to
+override the Game class's onKeyPress(Key key) method, where the parameter is the pressed key.
+In this method, you need to compare the key parameter with the four directions in the Key enum and execute
+the appropriate action.
+
+For example:
+if (key == Key.LEFT) {
+// Move left
+} else if (key == Key.RIGHT) {
+// Move right
+} etc.
+
+We suggest putting the actions themselves in appropriate methods.
+In other words, movement to the left should be put in a moveLeft() method, etc. In the end, there should be
+4 methods for the 4 actions.
+
+
+
+2048 (Part 8/18)
+
+You already know how to move tiles across the board. But that's not all you can do in this game :)
+If a shift causes two tiles with the same value to "collide", then they merge into one tile
+whose value is equal to the sum of the merged tiles. Let's implement it.
+
+Task conditions:
+Create a private boolean mergeRow(int[] row) method that merges adjacent pairs of identical non-zero
+elements
+of the row array. Merging should happen when you shift to the left.
+
+If there are more than two consecutive identical non-zero elements, merge the leftmost first.
+Merged elements are not merged again in the same move.
+
+The method must return true if at least one array element was changed, otherwise — false.
+
+Here are some examples:
+- Before (4, 4, 0, 0), after (8, 0, 0, 0). The method returns true.
+- Before (2, 2, 2, 2), after (4, 0, 4, 0). The method returns true.
+- Before (4, 2, 2, 0), after (4, 4, 0, 0). The method returns true.
+- Before (0, 2, 2, 0), after (0, 4, 0, 0). The method returns true.
+- Before (0, 2, 2, 2), after (0, 4, 0, 2). The method returns true.
+- Before (4, 0, 4, 0), after (4, 0, 4, 0). The method returns false.
 
 
 
