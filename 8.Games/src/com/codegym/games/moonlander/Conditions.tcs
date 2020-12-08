@@ -1,13 +1,38 @@
-taskKey="com.codegym.games.moonlander.part03"\n\nMoon Lander (Part 3/23)
+taskKey="com.codegym.games.moonlander.part05"\n\nMoon Lander (Part 5/23)
 
-Because Moon Lander will use game objects, let's create a GameObject class, where we'll put all the common properties. At this point, these are x and y coordinates.
+We will use a game object's properties, such as width and height, quite often. Accordingly, we'll put them in separate variables in the GameObject class.
+To allow the object to draw itself on the playing field, we'll add a draw method.
+This method will take a Game object as an argument. Now we can set a cell's color on the screen by calling the setCellColor method with the appropriate arguments.
+Note that the x and y fields of a GameObject are the coordinates of the upper left corner of its matrix. To render an object's matrix on the playing field,
+the following arguments must be passed to the setCellColor method: the object's x + x in the matrix, the object's y + y in the matrix, the color from the matrix.
+All of this has already been implemented in the GameObject class. Take a look and figure out what's happening.
+
+In the MoonLanderGame class, we'll create a rocket variable and initialize it in the createGame method.
+We'll draw the rocket in drawScene by calling rocket.draw(this);
 
 
 Requirements:
-1.	There must be a public GameObject class.
-2.	The GameObject class must have a public double x field.
-3.	The GameObject class must have a public double y field.
-4.	The GameObject class must have one public constructor with two double parameters that are used to initialize the x and y fields.
+1.	The MoonLanderGame class must have a private Rocket rocket field.
+2.	The rocket field must be initialized with a new Rocket object in the createGame() method before the call to the drawScene() method.
+3.	The Rocket class&#39;s constructor must be called with (WIDTH / 2) and 0 as arguments.
+4.	In the drawScene() method, after the field is drawn, the draw(Game) method must be called on the rocket. Pass &quot;this&quot; to the method.
+5.	The GameObject class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
+
+
+Moon Lander (Part 4/23)
+
+In addition to coordinates, a game object will have a matrix responsible for the object's appearance. Let's add an int[][] matrix variable to the GameObject class to store it.
+And now we'll tackle the lunar landing module.
+For simplicity, we'll just call it a rocket. We'll create a Rocket that inherits GameObject, since the rocket is a game object.
+
+Note that we now have a ShapeMatrix helper class, which stores the matrix responsible for the rocket's appearance.
+
+
+
+Moon Lander (Part 3/23)
+
+Because Moon Lander will use game objects, let's create a GameObject class, where we'll put all the common properties. At this point, these are x and y coordinates.
+
 
 
 Moon Lander (Part 2/23)
