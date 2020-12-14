@@ -1,68 +1,63 @@
-taskKey="com.codegym.games.moonlander.part05"\n\nMoon Lander (Part 5/23)
+taskKey="com.codegym.games.moonlander.part22"\n\nMoon Lander (Part 22/23)
 
-We will use a game object's properties, such as width and height, quite often. Accordingly, we'll put them in separate variables in the GameObject class.
-To allow the object to draw itself on the playing field, we'll add a draw method.
-This method will take a Game object as an argument. Now we can set a cell's color on the screen by calling the setCellColor method with the appropriate arguments.
-Note that the x and y fields of a GameObject are the coordinates of the upper left corner of its matrix. To render an object's matrix on the playing field,
-the following arguments must be passed to the setCellColor method: the object's x + x in the matrix, the object's y + y in the matrix, the color from the matrix.
-All of this has already been implemented in the GameObject class. Take a look and figure out what's happening.
-
-In the MoonLanderGame class, we'll create a rocket variable and initialize it in the createGame method.
-We'll draw the rocket in drawScene by calling rocket.draw(this);
+The game for entertainment, but it would still be great to add a score counter. The user's score depends on how long it takes to land: the faster the landing,
+the higher the score. Accordingly, we'll reduce the user's score (at each step in the game) until it reaches 0. To keep track of the score, we'll add a score variable,
+which will store the number of points. To display the score on the playing field, we need to use the Game class's setScore() method, to which we'll pass the total score.
+Don't forget to zero out the score if the game is lost. To display the correct score after a loss, the call to the setScore method must happen after the call to the check method.
 
 
 Requirements:
-1.	The MoonLanderGame class must have a private Rocket rocket field.
-2.	The rocket field must be initialized with a new Rocket object in the createGame() method before the call to the drawScene() method.
-3.	The Rocket class&#39;s constructor must be called with (WIDTH / 2) and 0 as arguments.
-4.	In the drawScene() method, after the field is drawn, the draw(Game) method must be called on the rocket. Pass &quot;this&quot; to the method.
-5.	The GameObject class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
+1.	There must be a private int score variable in the MoonLanderGame class.
+2.	The score field must be initialized to 1000 in the createGame() method.
+3.	The onTurn(int) method must reduce the value of the score field by one if the value of the score field is positive.
+4.	The onTurn(int) method must call the setScore(int) method with score as the argument after the call to the check() method.
+5.	The gameOver() method must set score equal to 0.
 
 
-Moon Lander (Part 4/23)
+Moon Lander (Part 21/23)
 
-In addition to coordinates, a game object will have a matrix responsible for the object's appearance. Let's add an int[][] matrix variable to the GameObject class to store it.
-And now we'll tackle the lunar landing module.
-For simplicity, we'll just call it a rocket. We'll create a Rocket that inherits GameObject, since the rocket is a game object.
+To fully implement the animation, the switchFire method must account for whether the side thusters are engaged.
+Accordingly, we'll give the existing switchFire method additional parameters responsible for the state of keys for lateral motion,
+i.e. the method's first parameter will be isUpPressed, the second — isLeftPressed, and the third — isRightPressed.
+And we'll process isLeftPressed and isRightPressed by analogy with how we process the isUpPressed parameter.
 
-Note that we now have a ShapeMatrix helper class, which stores the matrix responsible for the rocket's appearance.
-
-
-
-Moon Lander (Part 3/23)
-
-Because Moon Lander will use game objects, let's create a GameObject class, where we'll put all the common properties. At this point, these are x and y coordinates.
+Note: The x coordinates of the various thrusters are different, but the y coordinates are the same. Don't forget to correct the call to the switchFire method.
 
 
 
-Moon Lander (Part 2/23)
+Moon Lander (Part 20/23)
 
-Now we'll implement the drawScene() method, where we'll paint all the cells of the playing field the same color.
-To help us, we'll use the Game class's setCellColor(int, int, Color) method, whose parameters are the cell coordinates and color.
-We'll call it every coordinate from 0 to WIDTH and from 0 to HEIGHT and with any color (for example, Color.ORANGE).
+At this stage, we'll draw our first animation. We will need show and hide methods, which will be responsible for displaying and hiding the exhaust blast,
+as well as a switchFire method, which will set the coordinates of the exhaust and call the show and hide methods, depending on the passed argument.
+To display the exhaust blast below the center of the rocket, its x and y coordinates must be set as follows:
+- we set the blast's x coordinate to the rocket's x (position of the left edge) + the rocket's width divided by 2. This will put the blast's x coordinate in the middle of the rocket;
+- we set the blast's y coordinate to the rocket's y (position of the top edge) + the rocket's height. This will put the blast's y coordinate at the bottom of the rocket;
+Don't forget to call the switchFire method in the move method — this will makes it possible to change the animation at each step of the game.
+We also need to override the rocket's draw method in order to have the ability to draw the exhaust blast together with the rocket.
 
-We'll also need the createGame() method. It will be responsible for creating a game.
-But for now, we'll only call the drawScene() method in it.
-We'll call the createGame() method itself in the initialize() method after the call to setScreenSize(int, int).
+
+
+Moon Lander (Part 19/23)
+
+At this stage, we'll finish our work to display the animation of the jet thrusters. We'll add and implement a nextFrame() method
+that will switch frames in order to create an animation (set the matrix variable to the current matrix from frames).
+We'll also override the draw method, which will change the animation frame (by calling the nextFrame method) and call the superclass's draw method if isVisible == true.
 
 
 
-Moon Lander (Part 1/23)
+Moon Lander (Part 18/23)
 
-Today we invite you to write an exciting game — Moon Lander. As always, we'll start with the rules.
-The objective is guide a landing module down to the lunar surface. To do this, the player must overcome the Moon's gravitational attraction,
-using an aft booster to slow the descent and side thrusters to move the ship left or right.
-The terrain is bumpy and there's only one flat area suitable for a soft landing. We'll call it the "platform". If the player lands successfully, he or she wins.
-The score depends on how long the landing lasts: The longer a player takes to land, the lower the final score.
-The game ends when the player smashes into the surface of the Moon.
-Well, let's start with the game's main class: MoonLanderGame.
-We'll make it inherit the Game class.
+Let's continue implementing the jet thrusters. At this stage, we'll add variables responsible for left, right, and bottom thrust to the Rocket class.
+In the constructor, we'll set these fields to the appropriate matricies in the ShapeMatrix class, which we've already prepared.
 
-This and other "game engine" classes are contained in the com.codegym.engine.cell package. To use them, the MoonLanderGame class must include the following import:
-Now we'll implement the playing field. To do this, we need to override the initialize() method, which in turn must call the setScreenSize(int, int) method.
-This method sets the playing field's width and height, which it takes as arguments. We'll store them in variables.
 
-To complete the Moon Lander task successfully, we recommend that you read this article about the "Games" section. It contains information that you'll find helpful when writing games.
+
+Moon Lander (Part 17/23)
+
+The time has come to implement the rocket's jet thrusters. At this stage, we'll create a RocketFire class,
+which will be responsible for drawing and animating the exhaust blast. The matrices used in the animation will be stored in a List frames variable.
+
+A frameIndex variable will store the index of the current frame, while the isVisible variable will be responsible for the exhaust's visibility.
 
 
 

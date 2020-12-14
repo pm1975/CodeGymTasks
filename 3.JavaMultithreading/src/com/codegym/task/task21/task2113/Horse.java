@@ -1,9 +1,9 @@
 package com.codegym.task.task21.task2113;
 
 public class Horse {
-    String name;
-    double speed;
-    double distance;
+    private String name;
+    private double speed;
+    private double distance;
 
     public String getName() {
         return name;
@@ -35,11 +35,15 @@ public class Horse {
         this.distance = distance;
     }
 
-    public void move() {
-
+    void move() {
+        distance += speed * Math.random();
     }
 
-    public void print() {
-
+    void print() {
+        StringBuilder track = new StringBuilder();
+        for (int i = 0; i < (int) distance; i++) {
+            track.append(".");
+        }
+        System.out.println(track + name);
     }
 }
