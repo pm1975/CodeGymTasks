@@ -1,17 +1,29 @@
-taskKey="com.codegym.games.moonlander.part22"\n\nMoon Lander (Part 22/23)
+taskKey="com.codegym.games.moonlander.part23"\n\nMoon Lander (Part 23/23)
+
+Congratulations! The game is done! Now you can play it!
+If you have time and motivation, you can improve the game by adding some features of your own.
+For example:
+- make the game harder or easier by changing the landscape (for example, by adding a tunnel);
+- make several landscapes/levels;
+- add visual effects (animation).
+
+You can publish the finished game on CodeGym. But first, you need to check your solution to make the Publish button active.
+The game will be available to all users in the "Games" section.
+You can also share it with your friends on social networks. Wouldn't it be great if they played your version of "Moon Lander"?
+After you publish your game, write brief instructions (the possible actions, the keys/buttons required for the game) and describe the features of your implementation in the comments.
+
+
+Requirements:
+1.	Run the game and enjoy!
+
+
+Moon Lander (Part 22/23)
 
 The game for entertainment, but it would still be great to add a score counter. The user's score depends on how long it takes to land: the faster the landing,
 the higher the score. Accordingly, we'll reduce the user's score (at each step in the game) until it reaches 0. To keep track of the score, we'll add a score variable,
 which will store the number of points. To display the score on the playing field, we need to use the Game class's setScore() method, to which we'll pass the total score.
 Don't forget to zero out the score if the game is lost. To display the correct score after a loss, the call to the setScore method must happen after the call to the check method.
 
-
-Requirements:
-1.	There must be a private int score variable in the MoonLanderGame class.
-2.	The score field must be initialized to 1000 in the createGame() method.
-3.	The onTurn(int) method must reduce the value of the score field by one if the value of the score field is positive.
-4.	The onTurn(int) method must call the setScore(int) method with score as the argument after the call to the check() method.
-5.	The gameOver() method must set score equal to 0.
 
 
 Moon Lander (Part 21/23)
@@ -49,15 +61,6 @@ Moon Lander (Part 18/23)
 
 Let's continue implementing the jet thrusters. At this stage, we'll add variables responsible for left, right, and bottom thrust to the Rocket class.
 In the constructor, we'll set these fields to the appropriate matricies in the ShapeMatrix class, which we've already prepared.
-
-
-
-Moon Lander (Part 17/23)
-
-The time has come to implement the rocket's jet thrusters. At this stage, we'll create a RocketFire class,
-which will be responsible for drawing and animating the exhaust blast. The matrices used in the animation will be stored in a List frames variable.
-
-A frameIndex variable will store the index of the current frame, while the isVisible variable will be responsible for the exhaust's visibility.
 
 
 
