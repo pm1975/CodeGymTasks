@@ -94,7 +94,7 @@ public class Snake {
     /**
      * This method checks whether the new head is inside the room
      */
-    void checkBorders(SnakeSection head) {
+    private void checkBorders(SnakeSection head) {
         if ((head.getX() < 0 || head.getX() >= Room.game.getWidth()) || head.getY() < 0 || head.getY() >= Room.game.getHeight()) {
             isAlive = false;
         }
@@ -103,7 +103,7 @@ public class Snake {
     /**
      * This method checks whether the head coincides with some part of the snake's body.
      */
-    void checkBody(SnakeSection head) {
+    private void checkBody(SnakeSection head) {
         if (sections.contains(head)) {
             isAlive = false;
         }
