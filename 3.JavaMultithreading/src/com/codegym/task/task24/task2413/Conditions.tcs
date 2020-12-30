@@ -1,0 +1,95 @@
+taskKey="com.codegym.task.task24.task2413.big06"\n\nArkanoid (part 6)
+
+
+We will have bricks, a ball, and a paddle, and they'll have a lot in common.
+They will move about the field and be drawn on the screen.
+That means that they'll all have coordinates and a size.
+And a move() method for moving and a draw() method for drawing them on the screen.
+
+Here's an interesting suggestion: let's make one base class for all the objects.
+Let this be the BaseObject class.
+And the Ball, Paddle, and Brick classes will inherit it.
+
+Create a BaseObject class and add it as the parent of the Ball, Paddle, and Brick classes.
+
+We also need a Canvas class.
+It will be responsible for drawing the objects.
+Objects will draw themselves using it.
+Or more precisely, they'll draw themselves on it, but I'll give you those details later.
+
+Create this class as well.
+
+
+Requirements:
+1.	The BaseObject class must be in a separate file.
+2.	The Canvas class must be in a separate file.
+3.	The Ball class must be a child of the BaseObject class.
+4.	The Brick class must be a child of the BaseObject class.
+5.	The Paddle class must be a child of the BaseObject class.
+
+
+Arkanoid (part 5)
+
+
+What else is the Arkanoid class missing?
+First, it needs a run() method, where we'll define the main logic of the program.
+It also needs a move() method, which will move by one step all objects that need to be moved.
+Create the run() and move() methods.
+
+We also need a NON-private static Arkanoid game variable, which will store a reference
+to the created Arkanoid object.
+It should look something like this:
+static Arkanoid game;
+
+
+
+Arkanoid (part 4)
+
+
+The Arkanoid class will also need to store a reference to the ball (Ball), paddle (Paddle), and list of bricks.
+
+Here's what we need:
+a) create two private fields in the Arkanoid class: Ball ball and Paddle paddle
+b) add a private List<Brick> bricks field
+c) create public getters and setters for them
+
+
+
+Arkanoid (part 3)
+
+
+Perhaps it's time to add a constructor to the Arkanoid class.
+The constructor must accept two int parameters (width and height) and correctly set the values ​​of the corresponding fields in the class.
+
+
+
+Arkanoid (part 2)
+
+
+The main class (Arkanoid) will need to store information about the size of the game field.
+
+Therefore,
+a) add two private int width and height fields to the Arkanoid class
+b) create public getters and setters for them
+
+
+
+Arkanoid (part 1)
+
+
+Today let's write the game Arkanoid.
+
+The original game looks something like this: http://www.youtube.com/watch?v=Th-Z6QQ5AOQ
+To start, we'll write a simplified version of the game.
+We will have bricks, a ball, and a flying paddle that prevents the ball from falling out the bottom.
+
+So we need the following classes:
+a) Arkanoid is the class where the important actions happens. It will also include our entry point to the program: the main method.
+b) The Ball class is the ball.
+c) The Brick class represents the "bricks" that we'll hit with the ball.
+d) The Paddle class is our flying paddle.
+
+Create them, and don't forget about the public static void main(String[] args) method in the Arkanoid class.
+
+
+
