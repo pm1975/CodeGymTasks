@@ -1,18 +1,42 @@
-taskKey="com.codegym.games.spaceinvaders.part02"\n\nSpace Invaders (Part 2/34)
+taskKey="com.codegym.games.spaceinvaders.part03"\n\nSpace Invaders (Part 3/34)
+
+Let's implement the drawField() method, which will paint the playing field a single color.
+To do this, we need to set a color and the empty string on each cell. The Game class's setCellValueEx(int, int, Color, String) method will help us.
+The first two parameters are the cell's x and y coordinates, the third is the background color, and the last is the cell's text,
+which is displayed on the playing field. You can find a list of available colors in the game engine's com.codegym.engine.cell.Color enum.
+We don't need any cell text, so we'll pass an empty string.
+For example, to make the cell with coordinates x = 0 and y = 2 black, you need to call setCellValueEx(0, 2, Color.BLACK, "").
+To paint all the cells rather than just one, we need to set the color and text of each cell in each row of the playing field. Loops will help us do this.
+
+For example:
+for (int y = 0; y < height of the playing field; y++) {
+for (int x = 0; x < width of the playing field; x++) {
+setCellValueEx(x, y, cell color, empty string);
+}
+}
+
+The game involves different game objects, so we'll put their common characteristics, such as the coordinates of their location on the playing field,
+into the GameObject parent class. We'll create a separate gameobjects package for all the classes representing game objects.
+Our first game objects will be stars. We'll create a Star class in the gameobjects package and make it inherit the GameObject class.
+
+
+Requirements:
+1.	In the drawField() method, call the setCellValueEx(int, int, Color, String) method with the following arguments for all the cells of the image: x, y, any color (for example, Color.BLACK), and an empty string.
+2.	There must be a public GameObject class in a separate file in the gameobjects package.
+3.	The GameObject class must have a public double x field.
+4.	The GameObject class must have a public double y field.
+5.	The GameObject class must have a public constructor with two double parameters that are used to initialize the x and y fields.
+6.	There must be a public Star class in a separate file in the gameobjects package.
+7.	The Star class must be a descendant of the GameObject class.
+8.	The Star class must have a public constructor with two double parameters that calls the base class&#39;s constructor using these parameters.
+
+
+Space Invaders (Part 2/34)
 
 Everything in the game happens in outer space. To draw this setting, let's declare a drawField() method.
 We'll create all the elements of the game in the createGame() method, and we'll draw them in the drawScene() method.
 All objects are created when the game starts, so the initialize() method will call setScreenSize(int, int) and then createGame().
 
-
-Requirements:
-1.	The SpaceInvadersGame class must have a private void createGame() method.
-2.	The SpaceInvadersGame class must have a private void drawScene() method.
-3.	The SpaceInvadersGame class must have a private void drawField() method.
-4.	The drawField() method must be called in the drawScene() method.
-5.	The drawScene() method must be called in the createGame() method.
-6.	The createGame() method must be called in the initialize() method.
-7.	In the initialize() method, the createGame() method must be called after setScreenSize(int, int).
 
 
 Space Invaders (Part 1/34)
