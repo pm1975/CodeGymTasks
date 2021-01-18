@@ -1,4 +1,30 @@
-taskKey="com.codegym.games.racer.part08"\n\nRacer (Part 8/28)
+taskKey="com.codegym.games.racer.part09"\n\nRacer (Part 9/28)
+
+Along the horizontal axis, the car can move right, left, or not at all. To indicate these directions, create a Direction
+enum with the following fields. RIGHT, LEFT, NONE.
+The player's car must have a field that stores the direction of motion (Direction direction).
+We'll access it through a getter and setter.
+In the PlayerCar class, create a move() method that changes the car's coordinates along the horizontal axis depending on its
+direction of motion. This method will be called in moveAll().
+To handle key presses, override the onKeyPress(Key) method. Depending on which key is pressed, use a setter to set
+the appropriate direction of the player's car.
+
+
+Requirements:
+1.	 There must be a public Direction enum with the following values in a separate file: NONE, RIGHT, LEFT.
+2.	The PlayerCar class must have a private Direction direction field.
+3.	The PlayerCar class must have a public setDirection(Direction) setter that sets the value of the direction field.
+4.	The PlayerCar class must have a public getDirection() getter that returns the value of the direction field.
+5.	The PlayerCar class must have a public void move() method.
+6.	In the PlayerCar class&#39;s move() method, if the direction field is equal to Direction.LEFT, the x coordinate must be reduced by one.
+7.	In the PlayerCar class&#39;s move() method, if the direction field is equal to Direction.RIGHT, the x coordinate must be increased by one.
+8.	In the RacerGame class&#39;s moveAll() method, the move() method must be called on the player object.
+9.	In the RacerGame class, the onKeyPress(Key) method of the Game parent class must be overridden.
+10.	The onKeyPress(Key) method must set the player&#39;s direction to Direction.RIGHT if the method&#39;s parameter is equal to Key.RIGHT.
+11.	The onKeyPress(Key) method must set the player&#39;s direction to Direction.LEFT if the method&#39;s parameter is equal to Key.LEFT.
+
+
+Racer (Part 8/28)
 
 The dashed lines must move to create the illusion that the car is moving. The car itself will always be located below the game field.
 We'll give the car a field responsible for speed. Its value will be passed to roadMarking.move(int) and indicates how much the markings need to move.
@@ -7,15 +33,6 @@ In RacerGame, we'll create a moveAll() method that will move all movable game ob
 You can read about how to work with the onTurn(int) method in the description of the game engine:
 https://codegym.cc/groups/posts/139-games-section-on-codegym-event-handling
 
-
-Requirements:
-1.	The PlayerCar class must have a public int speed field that is initialized to 1 when it is declared.
-2.	The RacerGame class must have a private void moveAll() method.
-3.	In the moveAll() method, the move(int) method must be called on the roadMarking object. Pass the player&#39;s speed to the method.
-4.	In the RacerGame class, the onTurn(int) method of the Game parent class must be overridden.
-5.	The moveAll() method must be called in the onTurn(int) method.
-6.	In the onTurn(int) method, the drawScene() method must be called after the call to moveAll() method.
-7.	In the RacerGame class&#39;s createGame() method, the Game class&#39;s setTurnTimer(int) method must be called with 40 as the argument.
 
 
 Racer (Part 7/28)
@@ -62,27 +79,6 @@ During the game, many objects will appear, move about the playing field, and som
 If the setCellColor(int, int, Color) method is called with coordinates outside the bounds of the playing field, an exception
 will be thrown. To avoid this, override it so that the superclass's method is only called with coordinates that lie within the playing field.
 Hint: to call the superclass's method, use the super keyword.
-
-
-
-Racer (Part 3/28)
-
-Let's proceed to drawing the race track in the drawField() method.
-To set the color of a specific cell, use the setCellColor(int, int, Color) method. The passed arguments are the x and y coordinates and the color.
-Keep in mind that the playing field consists of three zones that must be painted using different colors:
-1. The shoulder is the side of the playing field, where things don't move.
-Height: the entire height of the playing field;
-Width: from 0 to ROADSIDE_WIDTH (not inclusive) and from WIDTH - ROADSIDE_WIDTH (inclusive) to WIDTH.
-2. The road is the roadway where cars move.
-Height: the entire height of the playing field;
-Width: from ROADSIDE_WIDTH (inclusive) to WIDTH - ROADSIDE_WIDTH (not inclusive), excluding CENTER_X.
-3. The dividing line is a white stripe that divides lanes.
-Height: the entire height of the playing field;
-Width: 1 cell of the playing field, where x = CENTER_X.
-The painting happens in a loop:
-The result should be a race track that looks something like this:
-api/1.0/rest/images/78/39ad56b3-2702-4b6f-8a84-ee937b8a0433?size=0
-P.S. You can choose whatever colors you like.
 
 
 

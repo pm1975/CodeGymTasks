@@ -1,6 +1,7 @@
 package com.codegym.games.racer;
 
-import com.codegym.engine.cell.*;
+import com.codegym.engine.cell.Color;
+import com.codegym.engine.cell.Game;
 
 public class GameObject {
     public int x;
