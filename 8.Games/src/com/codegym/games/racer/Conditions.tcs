@@ -1,4 +1,28 @@
-taskKey="com.codegym.games.racer.part09"\n\nRacer (Part 9/28)
+taskKey="com.codegym.games.racer.part10"\n\nRacer (Part 10/28)
+
+The car's behavior currently doesn't match what we would expect:
+- the car doesn't stop moving to the side when an arrow key is released;
+- the car drives right off the edge of the road and the playing field.
+To fix this, you need to implement the correct behavior for the car when the RIGHT and LEFT keys are released.
+Override the onKeyReleased(Key) method and there set the car's direction to Direction.NONE when this is necessary.
+Create a RoadManager class in the road package in order to manage the flow of items on the road. Give it fields that will store the x coordinates of the edges of the driving surface.
+Use them in the PlayerCar class's move() method to prevent the car from leaving the road.
+If you check the road boundary before changing the x coordinate of the player's car, it will be able to put one wheel on the shoulder. But if you change x first and then check the boundary, the player's car will be strictly limited to the race track.
+The choice is yours.
+
+
+Requirements:
+1.	In the RacerGame class, the onKeyReleased(Key) method of the Game parent class must be overridden.
+2.	The onKeyReleased(Key) method must set the player&#39;s direction to Direction.NONE if the method&#39;s parameter is equal to Key.RIGHT and the player&#39;s direction is equal to Direction.RIGHT.
+3.	The onKeyReleased(Key) method must set the player&#39;s direction to Direction.NONE if the method&#39;s parameter is equal to Key.LEFT and the player&#39;s direction is equal to Direction.LEFT.
+4.	There must be a public RoadManager class in a separate file in the road package.
+5.	The RoadManager class must have a public static final int LEFT_BORDER field, initialized to RacerGame.ROADSIDE_WIDTH when it is declared.
+6.	The RoadManager class must have a public static final int RIGHT_BORDER field, initialized to RacerGame.WIDTH - LEFT_BORDER when it is declared.
+7.	The PlayerCar class&#39;s move() method must set the x field to RoadManager.LEFT_BORDER if x &lt; RoadManager.LEFT_BORDER.
+8.	The PlayerCar class&#39;s move() method must set the x field to RoadManager.RIGHT_BORDER - width if x &gt; RoadManager.RIGHT_BORDER - width.
+
+
+Racer (Part 9/28)
 
 Along the horizontal axis, the car can move right, left, or not at all. To indicate these directions, create a Direction
 enum with the following fields. RIGHT, LEFT, NONE.
@@ -9,19 +33,6 @@ direction of motion. This method will be called in moveAll().
 To handle key presses, override the onKeyPress(Key) method. Depending on which key is pressed, use a setter to set
 the appropriate direction of the player's car.
 
-
-Requirements:
-1.	 There must be a public Direction enum with the following values in a separate file: NONE, RIGHT, LEFT.
-2.	The PlayerCar class must have a private Direction direction field.
-3.	The PlayerCar class must have a public setDirection(Direction) setter that sets the value of the direction field.
-4.	The PlayerCar class must have a public getDirection() getter that returns the value of the direction field.
-5.	The PlayerCar class must have a public void move() method.
-6.	In the PlayerCar class&#39;s move() method, if the direction field is equal to Direction.LEFT, the x coordinate must be reduced by one.
-7.	In the PlayerCar class&#39;s move() method, if the direction field is equal to Direction.RIGHT, the x coordinate must be increased by one.
-8.	In the RacerGame class&#39;s moveAll() method, the move() method must be called on the player object.
-9.	In the RacerGame class, the onKeyPress(Key) method of the Game parent class must be overridden.
-10.	The onKeyPress(Key) method must set the player&#39;s direction to Direction.RIGHT if the method&#39;s parameter is equal to Key.RIGHT.
-11.	The onKeyPress(Key) method must set the player&#39;s direction to Direction.LEFT if the method&#39;s parameter is equal to Key.LEFT.
 
 
 Racer (Part 8/28)
@@ -70,15 +81,6 @@ i is the y coordinate in the matrix,
 j is the x coordinate in the matrix.
 - int height, int width — The height and width match the dimensions of the matrix.
 An object must also have a method that draws it.
-
-
-
-Racer (Part 4/28)
-
-During the game, many objects will appear, move about the playing field, and sometimes leave it.
-If the setCellColor(int, int, Color) method is called with coordinates outside the bounds of the playing field, an exception
-will be thrown. To avoid this, override it so that the superclass's method is only called with coordinates that lie within the playing field.
-Hint: to call the superclass's method, use the super keyword.
 
 
 
