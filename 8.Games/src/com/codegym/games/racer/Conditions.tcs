@@ -1,4 +1,32 @@
-taskKey="com.codegym.games.racer.part13"\n\nRacer (Part 13/28)
+taskKey="com.codegym.games.racer.part14"\n\nRacer (Part 14/28)
+
+The time has come to draw the spike on the screen.
+
+There must not be more than one Spike object on the screen at the same time.
+To check this condition, create a spikeExists() method in the RoadManager class.
+To check whether the RoadObject is a spike, you can use its type field.
+
+The void generateSpike(Game) method will be responsible for generating spikes.
+It will check whether there is a spike on the road. If not, then a new spike is generated with a 10% probability.
+In the future, things other than spikes may be obstacles. We'll need the generateNewRoadObjects(Game) method to generate all different kinds of obstacles, but for now it will only generate spikes. It must be called in the RacerGame class's onTurn(int) method.
+
+Additionally, the spike must move together with the race track in the moveAll() method.
+
+
+Requirements:
+1.	 The RoadManager class must have a private boolean spikeExists() method.
+2.	The spikeExists() method must return true if there is a spike in the items list. Otherwise, it should return false.
+3.	The RoadManager class must have a private void generateSpike(Game) method.
+4.	In the generateSpike(Game game) method, you need to call the getRandomNumber(int) method with the argument 100 on the game object.
+5.	In the generateSpike(Game game) method, if the getRandomNumber(int) method returns a number less than 10 and there are no spikes in the items list, you need to call the addRoadObject(RoadObjectType, Game) method with the following arguments: RoadObjectType.SPIKE, game.
+6.	The RoadManager class must have a public void generateNewRoadObjects(Game) method.
+7.	You need to call the generateSpike(Game) method in the generateNewRoadObjects(Game) method.
+8.	In the RacerGame class&#39;s onTurn(int) method, you need to call the generateNewRoadObjects(Game) method on the roadManager object. Pass this to the method.
+9.	In the RacerGame class&#39;s onTurn(int) method, the roadManager object&#39;s generateNewRoadObjects(Game) method must called before drawScene().
+10.	In the RacerGame class&#39;s moveAll() method, the move(int) method must be called on the roadManager object. Pass the player&#39;s speed to the method.
+
+
+Racer (Part 13/28)
 
 The RoadManager class's name isn't arbitrary: it manages all the obstacles on the road.
 It must know how to draw and move all the stored objects.
@@ -6,16 +34,6 @@ It must know how to draw and move all the stored objects.
 In the RacerGame class, create a RoadManager roadManager field so you can access it.
 Initialize the roadManager field in createGame(), and call draw(Game) on it in drawScene().
 
-
-Requirements:
-1.	The RoadManager class must have a public void draw(Game) method.
-2.	In the RoadManager class&#39;s draw(Game) method, call the draw(Game) method on each object in the items list.
-3.	The RoadManager class must have a public void move(int boost) method.
-4.	In the RoadManager class&#39;s move(int) method, call the move method on each object in the items list. Pass the sum of boost and the object&#39;s speed as the argument.
-5.	The RacerGame class must have a private RoadManager roadManager field.
-6.	The roadManager field must be initialized with a new RoadManager object in the createGame() method before the call to the drawScene() method.
-7.	In the drawScene() method, the draw(Game) method must be called on the roadManager object. Pass this to the method.
-8.	In the drawScene() method, the draw(Game) method must be called on the roadManager object after the drawField() method.
 
 
 Racer (Part 12/28)
@@ -76,17 +94,6 @@ In the PlayerCar class, create a move() method that changes the car's coordinate
 direction of motion. This method will be called in moveAll().
 To handle key presses, override the onKeyPress(Key) method. Depending on which key is pressed, use a setter to set
 the appropriate direction of the player's car.
-
-
-
-Racer (Part 8/28)
-
-The dashed lines must move to create the illusion that the car is moving. The car itself will always be located below the game field.
-We'll give the car a field responsible for speed. Its value will be passed to roadMarking.move(int) and indicates how much the markings need to move.
-In RacerGame, we'll create a moveAll() method that will move all movable game objects (for now, only the marking). moveAll() must be called every 40 ms. To do this, in RacerGame you need to override the onTurn(int) and set the interval in the createGame() method.
-
-You can read about how to work with the onTurn(int) method in the description of the game engine:
-https://codegym.cc/groups/posts/139-games-section-on-codegym-event-handling
 
 
 
