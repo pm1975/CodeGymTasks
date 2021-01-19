@@ -1,6 +1,8 @@
 package com.codegym.games.racer;
 
-import com.codegym.engine.cell.*;
+import com.codegym.engine.cell.Color;
+import com.codegym.engine.cell.Game;
+import com.codegym.engine.cell.Key;
 
 public class RacerGame extends Game {
     public static final int WIDTH = 64;
@@ -51,7 +53,7 @@ public class RacerGame extends Game {
         }
     }
 
-    private void moveAll(){
+    private void moveAll() {
         roadMarking.move(player.speed);
         player.move();
     }
@@ -72,6 +74,14 @@ public class RacerGame extends Game {
             player.setDirection(Direction.RIGHT);
         } else if (key == Key.LEFT) {
             player.setDirection(Direction.LEFT);
+        }
+    }
+
+    @Override
+    public void onKeyReleased(Key key) {
+        if ((key == Key.RIGHT && player.getDirection() == Direction.RIGHT)
+                || (key == Key.LEFT && player.getDirection() == Direction.LEFT)) {
+            player.setDirection(Direction.NONE);
         }
     }
 }
