@@ -3,8 +3,6 @@ package com.codegym.games.racer.road;
 import com.codegym.games.racer.GameObject;
 import com.codegym.games.racer.ShapeMatrix;
 
-import java.util.List;
-
 public class RoadObject extends GameObject {
     public RoadObjectType type;
     public int speed;
