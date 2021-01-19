@@ -1,4 +1,32 @@
-taskKey="com.codegym.games.racer.part11"\n\nRacer (Part 11/28)
+taskKey="com.codegym.games.racer.part12"\n\nRacer (Part 12/28)
+
+Obstacles must appear at random locations on the road.
+
+Add two constants to the RoadManager class: FIRST_LANE_POSITION and FOURTH_LANE_POSITION — the far left and far right road positions
+of the x coordinates of the obstacles' matrices. Assign them the values 16 and 44 respectively.
+
+Additionally, the RoadManager class must have a list of all current obstacle objects.
+
+In the same class, create a addRoadObject(RoadObjectType, Game) method that generates a position for a new obstacle and adds it
+to the list of all obstacle objects. The obstacle's coordinates must be generated as follows:
+
+x = game.getRandomNumber(FIRST_LANE_POSITION, FOURTH_LANE_POSITION) — a random lane number;
+y = -1 * RoadObject.getHeight(type) — initially, the object is placed beyond the playing field so that it makes a smooth appearance.
+
+
+Requirements:
+1.	The RoadManager class must have a private static final int FIRST_LANE_POSITION field, initialized to 16 when it is declared.
+2.	The RoadManager class must have a private static final int FOURTH_LANE_POSITION field, initialized to 44 when it is declared.
+3.	The RoadManager class must have a private List&lt;RoadObject&gt; items field, initialized to a new ArrayList when it is declared.
+4.	The RoadManager class must have a private void addRoadObject(RoadObjectType type, Game game) method.
+5.	The addRoadObject(RoadObjectType, Game) method must declare a local int x variable that is initialized to game.getRandomNumber(FIRST_LANE_POSITION, FOURTH_LANE_POSITION) when it is declared.
+6.	The addRoadObject(RoadObjectType, Game) method must declare a local int y variable that is initialized to -1 * RoadObject.getHeight(type) when it is declared.
+7.	The addRoadObject(RoadObjectType, Game) method must call the createRoadObject(RoadObjectType, int, int) method with the following arguments: type (the method&#39;s parameter), x and y (the method&#39;s local variables).
+8.	The addRoadObject(RoadObjectType, Game) method must add the value returned by the call to the createRoadObject(RoadObjectType, int, int) method to the items list, if it is not equal to null.
+9.	The RoadManager class must import the com.codegym.engine.cell.Game class.
+
+
+Racer (Part 11/28)
 
 The player will face various obstacles on the road: other cars driving the wrong way, and spikes that don't move relative
 to the race track. These obstacles will inherit the RoadObject class. The types of all possible obstacles are listed in the
@@ -13,17 +41,6 @@ it should return null. Since we know the game object's type, there is no need to
 Accordingly, the GameObject class will need one more constructor with two int parameters (int x, int y), which are used to
 initialize the x and y fields.
 
-
-Requirements:
-1.	The GameObject class must have a public constructor with two parameters (int x, int y). It must use the parameters to set the x and y fields.
-2.	There must be a public Spike class in a separate file in the road package.
-3.	The Spike class must inherit the RoadObject class.
-4.	The Spike class must have a public constructor with two parameters (int x, int y). It must call the base class constructor with the following arguments: RoadObjectType.SPIKE, x, y.
-5.	In the Spike class&#39;s constructor, the speed field (inherited from the parent class) must be initialized to 0.
-6.	The RoadManager class must have a private RoadObject createRoadObject(RoadObjectType type, int x, int y) method.
-7.	The createRoadObject(RoadObjectType, int, int) method must return a new Spike object if type is equal to RoadObjectType.SPIKE.
-8.	The createRoadObject(RoadObjectType, int, int) method must return null if type is not equal to RoadObjectType.SPIKE.
-9.	The createRoadObject(RoadObjectType, int, int) method must call the Spike class&#39;s constructor with the method&#39;s x and y parameters.
 
 
 Racer (Part 10/28)
@@ -71,21 +88,6 @@ Let's create a PlayerCar class and make it inherit GameObject:
 At first, the player's car will be in the third lane, one position above the bottom edge of the playing field.
 Accordingly, the x coordinate will be equal to RacerGame.WIDTH/2 + 2, and the y coordinate will be RacerGame.HEIGHT - playerCarHeight - 1.
 A matrix for the car is already in ShapeMatrix. In order to reference the player's car, an instance of PlayerCar must be stored in the player variable in the RacerGame class. Call the draw(Game) method on the car to see it on the playing field.
-
-
-
-Racer (Part 6/28)
-
-The road, shoulders, and dividing line are stationary objects: they do not move.
-Motion will be simulated by other game objects. We don't have cars yet. For now, only two dashed lines on the road will move.
-Other road markings will be represented by a separate class. You don't need to create it. You have the RoadMarking class in
-your game package. Take a look at the code of this class. In addition to a constructor, RoadMarking has 2 other methods: move(int) - responsible for movement annd draw(Game) - responsible for drawing the object. At this stage, we'll only implement the drawing. The draw(Game) method takes the object that should be drawn on. In our case, it is the current instance of the RacerGame class, i.e. this.
-You also now have a ShapeMatrix class that stores int matrices containing images of game objects.
-The numbers in the matrix represent the ordinals of colors in the Color enum. Thanks to the image matrices, the object knows what
-color to paint each cell. ShapeMatrix currently only has a matrix for the road's dashed line, but in the future other objects' images
-will be added as well.
-Give the RacerGame class a RoadMarking field, initialize it in the createGame() method, and draw it in the drawScene() method.
-The dashed line must be drawn after (on top of) the stationary objects.
 
 
 
