@@ -1,4 +1,32 @@
-taskKey="com.codegym.games.racer.part10"\n\nRacer (Part 10/28)
+taskKey="com.codegym.games.racer.part11"\n\nRacer (Part 11/28)
+
+The player will face various obstacles on the road: other cars driving the wrong way, and spikes that don't move relative
+to the race track. These obstacles will inherit the RoadObject class. The types of all possible obstacles are listed in the
+RoadObjectType enum. You now have access to these classes in the road package. And new matrices for displaying obstacles
+have been added to the ShapeMatrix class. Take a look at the RoadObject class and its methods.
+
+At this stage, we'll implement the spikes. Create a Spike class and make it inherit RoadObject. To create instances of obstacles,
+in the RoadManager class, create a private RoadObject createRoadObject(RoadObjectType type, int x, int y) method that will
+create and return a new obstacle based on the passed arguments.
+We currently only have one type of obstacle: Spike, so if the createRoadObject method receives any other type as an argument,
+it should return null. Since we know the game object's type, there is no need to pass an image matrix to its constructor.
+Accordingly, the GameObject class will need one more constructor with two int parameters (int x, int y), which are used to
+initialize the x and y fields.
+
+
+Requirements:
+1.	The GameObject class must have a public constructor with two parameters (int x, int y). It must use the parameters to set the x and y fields.
+2.	There must be a public Spike class in a separate file in the road package.
+3.	The Spike class must inherit the RoadObject class.
+4.	The Spike class must have a public constructor with two parameters (int x, int y). It must call the base class constructor with the following arguments: RoadObjectType.SPIKE, x, y.
+5.	In the Spike class&#39;s constructor, the speed field (inherited from the parent class) must be initialized to 0.
+6.	The RoadManager class must have a private RoadObject createRoadObject(RoadObjectType type, int x, int y) method.
+7.	The createRoadObject(RoadObjectType, int, int) method must return a new Spike object if type is equal to RoadObjectType.SPIKE.
+8.	The createRoadObject(RoadObjectType, int, int) method must return null if type is not equal to RoadObjectType.SPIKE.
+9.	The createRoadObject(RoadObjectType, int, int) method must call the Spike class&#39;s constructor with the method&#39;s x and y parameters.
+
+
+Racer (Part 10/28)
 
 The car's behavior currently doesn't match what we would expect:
 - the car doesn't stop moving to the side when an arrow key is released;
@@ -10,16 +38,6 @@ Use them in the PlayerCar class's move() method to prevent the car from leaving 
 If you check the road boundary before changing the x coordinate of the player's car, it will be able to put one wheel on the shoulder. But if you change x first and then check the boundary, the player's car will be strictly limited to the race track.
 The choice is yours.
 
-
-Requirements:
-1.	In the RacerGame class, the onKeyReleased(Key) method of the Game parent class must be overridden.
-2.	The onKeyReleased(Key) method must set the player&#39;s direction to Direction.NONE if the method&#39;s parameter is equal to Key.RIGHT and the player&#39;s direction is equal to Direction.RIGHT.
-3.	The onKeyReleased(Key) method must set the player&#39;s direction to Direction.NONE if the method&#39;s parameter is equal to Key.LEFT and the player&#39;s direction is equal to Direction.LEFT.
-4.	There must be a public RoadManager class in a separate file in the road package.
-5.	The RoadManager class must have a public static final int LEFT_BORDER field, initialized to RacerGame.ROADSIDE_WIDTH when it is declared.
-6.	The RoadManager class must have a public static final int RIGHT_BORDER field, initialized to RacerGame.WIDTH - LEFT_BORDER when it is declared.
-7.	The PlayerCar class&#39;s move() method must set the x field to RoadManager.LEFT_BORDER if x &lt; RoadManager.LEFT_BORDER.
-8.	The PlayerCar class&#39;s move() method must set the x field to RoadManager.RIGHT_BORDER - width if x &gt; RoadManager.RIGHT_BORDER - width.
 
 
 Racer (Part 9/28)
@@ -68,19 +86,6 @@ color to paint each cell. ShapeMatrix currently only has a matrix for the road's
 will be added as well.
 Give the RacerGame class a RoadMarking field, initialize it in the createGame() method, and draw it in the drawScene() method.
 The dashed line must be drawn after (on top of) the stationary objects.
-
-
-
-Racer (Part 5/28)
-
-Create a GameObject class to represent game objects. All game objects will have the following common properties:
-- int x, int y — coordinates of the object's upper left corner on the playing field;
-- int[][] matrix — matrix for displaying the game object. The matrix values are the ordinals of the colors in the Color enum.
-To get the color, use Color.values()[matrix[i][j]], where:
-i is the y coordinate in the matrix,
-j is the x coordinate in the matrix.
-- int height, int width — The height and width match the dimensions of the matrix.
-An object must also have a method that draws it.
 
 
 
