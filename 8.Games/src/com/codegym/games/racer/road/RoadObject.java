@@ -6,7 +6,7 @@ import com.codegym.games.racer.ShapeMatrix;
 public class RoadObject extends GameObject {
     public RoadObjectType type;
     public int speed;
-    
+
     public RoadObject(RoadObjectType type, int x, int y) {
         super(x, y);
         this.type = type;

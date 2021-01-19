@@ -1,4 +1,19 @@
-taskKey="com.codegym.games.racer.part14"\n\nRacer (Part 14/28)
+taskKey="com.codegym.games.racer.part15"\n\nRacer (Part 15/28)
+
+Currently, spikes appear only once (at the beginning of the game). To generate a new spike, the old spike must be removed
+from the items list after its leaves the screen. To remove the spike, you can either use an iterator, or
+create a copy of the items list and run through it in a loop. If an object needs to be removed, call items.remove(item).
+
+
+Requirements:
+1.	The RoadManager class must have a private void deletePassedItems() method.
+2.	The deletePassedItems() method must remove from the items list any elements whose y coordinate is greater than or equal to RacerGame.HEIGHT.
+3.	The deletePassedItems() method must not change the reference stored in the items field.
+4.	The RoadManager class&#39;s move(int) method must call the deletePassedItems() method.
+5.	In the RoadManager class&#39;s move(int) method, the deletePassedItems() method must be called after moving all the object in the items list.
+
+
+Racer (Part 14/28)
 
 The time has come to draw the spike on the screen.
 
@@ -12,18 +27,6 @@ In the future, things other than spikes may be obstacles. We'll need the generat
 
 Additionally, the spike must move together with the race track in the moveAll() method.
 
-
-Requirements:
-1.	 The RoadManager class must have a private boolean spikeExists() method.
-2.	The spikeExists() method must return true if there is a spike in the items list. Otherwise, it should return false.
-3.	The RoadManager class must have a private void generateSpike(Game) method.
-4.	In the generateSpike(Game game) method, you need to call the getRandomNumber(int) method with the argument 100 on the game object.
-5.	In the generateSpike(Game game) method, if the getRandomNumber(int) method returns a number less than 10 and there are no spikes in the items list, you need to call the addRoadObject(RoadObjectType, Game) method with the following arguments: RoadObjectType.SPIKE, game.
-6.	The RoadManager class must have a public void generateNewRoadObjects(Game) method.
-7.	You need to call the generateSpike(Game) method in the generateNewRoadObjects(Game) method.
-8.	In the RacerGame class&#39;s onTurn(int) method, you need to call the generateNewRoadObjects(Game) method on the roadManager object. Pass this to the method.
-9.	In the RacerGame class&#39;s onTurn(int) method, the roadManager object&#39;s generateNewRoadObjects(Game) method must called before drawScene().
-10.	In the RacerGame class&#39;s moveAll() method, the move(int) method must be called on the roadManager object. Pass the player&#39;s speed to the method.
 
 
 Racer (Part 13/28)
@@ -81,19 +84,6 @@ Create a RoadManager class in the road package in order to manage the flow of it
 Use them in the PlayerCar class's move() method to prevent the car from leaving the road.
 If you check the road boundary before changing the x coordinate of the player's car, it will be able to put one wheel on the shoulder. But if you change x first and then check the boundary, the player's car will be strictly limited to the race track.
 The choice is yours.
-
-
-
-Racer (Part 9/28)
-
-Along the horizontal axis, the car can move right, left, or not at all. To indicate these directions, create a Direction
-enum with the following fields. RIGHT, LEFT, NONE.
-The player's car must have a field that stores the direction of motion (Direction direction).
-We'll access it through a getter and setter.
-In the PlayerCar class, create a move() method that changes the car's coordinates along the horizontal axis depending on its
-direction of motion. This method will be called in moveAll().
-To handle key presses, override the onKeyPress(Key) method. Depending on which key is pressed, use a setter to set
-the appropriate direction of the player's car.
 
 
 

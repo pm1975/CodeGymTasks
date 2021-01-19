@@ -1,7 +1,6 @@
 package com.codegym.games.racer.road;
 
 import com.codegym.engine.cell.Game;
-import com.codegym.games.racer.GameObject;
 import com.codegym.games.racer.RacerGame;
 
 import java.util.ArrayList;
@@ -15,7 +14,7 @@ public class RoadManager {
     private List<RoadObject> items = new ArrayList<>();
 
     private RoadObject createRoadObject(RoadObjectType type, int x, int y) {
-        if (type==RoadObjectType.SPIKE) {
+        if (type == RoadObjectType.SPIKE) {
             return new Spike(x, y);
         } else {
             return null;
@@ -42,4 +41,25 @@ public class RoadManager {
             item.move(boost + item.speed);
         }
     }
+
+    private boolean spikeExists() {
+        for (RoadObject item : items) {
+            if (item instanceof Spike) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void generateSpike(Game game) {
+        int randomNumber = game.getRandomNumber(100);
+        if (randomNumber < 10 && !spikeExists()) {
+            addRoadObject(RoadObjectType.SPIKE, game);
+        }
+    }
+
+    public void generateNewRoadObjects(Game game) {
+        generateSpike(game);
+    }
+
 }
