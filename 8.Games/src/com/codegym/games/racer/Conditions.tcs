@@ -1,4 +1,33 @@
-taskKey="com.codegym.games.racer.part20"\n\nRacer (Part 20/28)
+taskKey="com.codegym.games.racer.part21"\n\nRacer (Part 21/28)
+
+Let's make the game a little harder. Let's add a car whose driver is "drunk".
+To represent it on the playing field, the MovingCar class has been added to the road package. Use it to create these cars.
+Unlike ordinary cars, a car operated by a "drunk" driver will drift horizontally.
+To prevent it from hitting other cars, the MovingCar class's move() method checks for such collisions.
+To do this, in addition to the speed, you need to pass the list of all obstacle objects to the move(int boost) method.
+
+There is another nuance: MovingCar inherits RoadObject and overrides its move method, so you'll also have to add a second parameter to the move method in the parent class.
+
+When there are a lot of "drunk" drivers on the race track, the game becomes too difficult, so ensure that there is only one such car on the race track at a time.
+To check this, implement the movingCarExists() method by analogy with the spikeExists() method.
+
+The void generateMovingCar(Game) method will be responsible for generating MovingCar objects.
+Its implementation is analogous to the generateSpike(Game) method.
+
+
+Requirements:
+1.	The RoadObject class&#39;s void move() method must take two arguments: the car speed and a list RoadObjects.
+2.	In the RoadManager class&#39;s void move(int boost) method, the move() method must be called with two arguments on RoadObjects: first &mdash; the sum of boost and the object&#39;s speed, second &mdash; the items list.
+3.	The RoadManager class&#39;s createRoadObject(RoadObjectType, int, int) method must return a new MovingCar object if type is equal to RoadObjectType.DRUNK_CAR.
+4.	The RoadManager class must have a private boolean movingCarExists() method.
+5.	The movingCarExists() method must return true if there is a MovingCar object in the items list. Otherwise, it should return false.
+6.	The RoadManager class must have a private void generateMovingCar(Game) method.
+7.	In the generateMovingCar(Game game) method, you need to call the game object&#39;s getRandomNumber(int) method with the argument 100.
+8.	In the generateMovingCar(Game game) method, if the getRandomNumber(int) method returns a number less than 10 and the movingCarExists() method returns false, you need to call the addRoadObject(RoadObjectType, Game) method with the following arguments: RoadObjectType.DRUNK_CAR, game.
+9.	The RoadManager class&#39;s generateNewRoadObjects(Game) method must call the generateMovingCar(Game) method.
+
+
+Racer (Part 20/28)
 
 There are currently too many oncoming cars. To make it possible to win the game, there must be adequate spaces between obstacles.
 That said, if they are too big, then the game will become too easy and not very interesting.
@@ -9,15 +38,6 @@ Implement a boolean isRoadSpaceFree(RoadObject object) method that checks whethe
 The isCollisionWithDistance(GameObject, int) method will help you with this. This method returns false if the horizontal and vertical distance between objects is greater than the passed distance.
 If the road has enough free space, add a new car to items.
 
-
-Requirements:
-1.	The RoadManager class must have a private static final int PLAYER_CAR_DISTANCE field, initialized to 12 when it is declared.
-2.	The RoadManager class must have a private boolean isRoadSpaceFree(RoadObject object) method.
-3.	The isRoadSpaceFree(RoadObject object) must call the isCollisionWithDistance(GameObject, int) method on the elements of the items list in order to check for collisions. Pass object and PLAYER_CAR_DISTANCE as arguments.
-4.	The isRoadSpaceFree(RoadObject) method must return false if the isCollisionWithDistance(GameObject, int) method returns true for any objects in the items list.
-5.	The isRoadSpaceFree(RoadObject) method must return true if the isCollisionWithDistance(GameObject, int) method returns false for every object in the items list.
-6.	The addRoadObject(RoadObjectType, Game) method must call the isRoadSpaceFree(RoadObject) method.
-7.	The addRoadObject(RoadObjectType, Game) method must add the object created by the createRoadObject(RoadObjectType, int, int) method to the items list only if the isRoadSpaceFree(RoadObject) method returns true.
 
 
 Racer (Part 19/28)
@@ -64,14 +84,6 @@ Figure out how it works.
 
 Collisions should be visibly noticeable, i.e. we need to change the image used to display the player's car.
 To do this, give the PlayerCar class a stop() method that sets the matrix field to ShapeMatrix.PLAYER_DEAD.
-
-
-
-Racer (Part 15/28)
-
-Currently, spikes appear only once (at the beginning of the game). To generate a new spike, the old spike must be removed
-from the items list after its leaves the screen. To remove the spike, you can either use an iterator, or
-create a copy of the items list and run through it in a loop. If an object needs to be removed, call items.remove(item).
 
 
 
