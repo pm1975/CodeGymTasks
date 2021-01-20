@@ -1,4 +1,26 @@
-taskKey="com.codegym.games.racer.part19"\n\nRacer (Part 19/28)
+taskKey="com.codegym.games.racer.part20"\n\nRacer (Part 20/28)
+
+There are currently too many oncoming cars. To make it possible to win the game, there must be adequate spaces between obstacles.
+That said, if they are too big, then the game will become too easy and not very interesting.
+The optimal distance is 12, which is slightly larger than the dimensions of the player's car.
+We'll store this value in the PLAYER_CAR_DISTANCE constant.
+
+Implement a boolean isRoadSpaceFree(RoadObject object) method that checks whether there is enough room on the road to place a new car.
+The isCollisionWithDistance(GameObject, int) method will help you with this. This method returns false if the horizontal and vertical distance between objects is greater than the passed distance.
+If the road has enough free space, add a new car to items.
+
+
+Requirements:
+1.	The RoadManager class must have a private static final int PLAYER_CAR_DISTANCE field, initialized to 12 when it is declared.
+2.	The RoadManager class must have a private boolean isRoadSpaceFree(RoadObject object) method.
+3.	The isRoadSpaceFree(RoadObject object) must call the isCollisionWithDistance(GameObject, int) method on the elements of the items list in order to check for collisions. Pass object and PLAYER_CAR_DISTANCE as arguments.
+4.	The isRoadSpaceFree(RoadObject) method must return false if the isCollisionWithDistance(GameObject, int) method returns true for any objects in the items list.
+5.	The isRoadSpaceFree(RoadObject) method must return true if the isCollisionWithDistance(GameObject, int) method returns false for every object in the items list.
+6.	The addRoadObject(RoadObjectType, Game) method must call the isRoadSpaceFree(RoadObject) method.
+7.	The addRoadObject(RoadObjectType, Game) method must add the object created by the createRoadObject(RoadObjectType, int, int) method to the items list only if the isRoadSpaceFree(RoadObject) method returns true.
+
+
+Racer (Part 19/28)
 
 In addition to spikes, it would be nice to see various types of cars on the race track.
 To represent cars on the playing field, in the road package, create a Car class that will be common to all types of cars and make it inherit RoadObject.
@@ -10,19 +32,6 @@ To avoid excessively crowding the race track, a new car should be created with a
 The type of car must be randomly selected from the first four fields of the RoadObjectType enum.
 Don't forget to add each generated car to the items list.
 
-
-Requirements:
-1.	There must be a public Car class in the road package.
-2.	The Car class must inherit the RoadObject class.
-3.	The Car class must have a public constructor with three parameters: RoadObjectType type, int x, int y. It must call the base class constructor with the following arguments: type, x, y.
-4.	In the Car class&#39;s constructor, the speed field (inherited from the parent class) must be initialized to 1.
-5.	The RoadManager class&#39;s createRoadObject(RoadObjectType, int, int) method must return a new Car object if type is not equal to RoadObjectType.SPIKE.
-6.	The createRoadObject(RoadObjectType, int, int) method must call the Car class&#39;s constructor with the method&#39;s type, x, and y parameters.
-7.	The RoadManager class must have a private void generateRegularCar(Game) method.
-8.	In the generateRegularCar(Game game) method, you need to call the game object&#39;s getRandomNumber(int) method with the argument 100.
-9.	The generateRegularCar(Game game) method must declare a local int carTypeNumber variable, initialized to game.getRandomNumber(4).
-10.	In the generateRegularCar(Game game) method, if getRandomNumber(100) returns a number less than 30, you need to call the addRoadObject(RoadObjectType, Game) method with the following arguments: RoadObjectType.values()[carTypeNumber], game.
-11.	The RoadManager class&#39; generateNewRoadObjects(Game) method must call the generateRegularCar(Game) method.
 
 
 Racer (Part 18/28)
@@ -63,22 +72,6 @@ Racer (Part 15/28)
 Currently, spikes appear only once (at the beginning of the game). To generate a new spike, the old spike must be removed
 from the items list after its leaves the screen. To remove the spike, you can either use an iterator, or
 create a copy of the items list and run through it in a loop. If an object needs to be removed, call items.remove(item).
-
-
-
-Racer (Part 14/28)
-
-The time has come to draw the spike on the screen.
-
-There must not be more than one Spike object on the screen at the same time.
-To check this condition, create a spikeExists() method in the RoadManager class.
-To check whether the RoadObject is a spike, you can use its type field.
-
-The void generateSpike(Game) method will be responsible for generating spikes.
-It will check whether there is a spike on the road. If not, then a new spike is generated with a 10% probability.
-In the future, things other than spikes may be obstacles. We'll need the generateNewRoadObjects(Game) method to generate all different kinds of obstacles, but for now it will only generate spikes. It must be called in the RacerGame class's onTurn(int) method.
-
-Additionally, the spike must move together with the race track in the moveAll() method.
 
 
 

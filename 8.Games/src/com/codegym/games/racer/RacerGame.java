@@ -29,8 +29,8 @@ public class RacerGame extends Game {
             drawScene();
             return;
         }
-        moveAll();
         roadManager.generateNewRoadObjects(this);
+        moveAll();
         drawScene();
     }
 
