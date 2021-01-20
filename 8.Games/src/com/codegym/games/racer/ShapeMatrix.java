@@ -12,6 +12,17 @@ public class ShapeMatrix {
             {1, 0, 123, 123, 0, 1}
     };
 
+    public static final int[][] PLAYER_DEAD = new int[][]{
+            {0, 0, 5, 5, 0, 0},
+            {1, 0, 5, 5, 0, 1},
+            {1, 1, 5, 5, 1, 1},
+            {1, 0, 5, 5, 0, 1},
+            {0, 0, 5, 5, 0, 0},
+            {1, 0, 5, 5, 0, 1},
+            {1, 1, 5, 5, 1, 1},
+            {1, 0, 5, 5, 0, 1}
+    };
+
     public static final int[][] SPORT_CAR = new int[][]{
             {5, 0, 5, 5, 0, 5},
             {5, 1, 5, 5, 1, 5},
@@ -32,7 +43,7 @@ public class ShapeMatrix {
             {3, 1, 3, 3, 1, 3},
             {3, 0, 3, 3, 0, 3},
             {0, 0, 3, 3, 0, 0},
-    };
+    };    
 
     public static final int[][] PASSENGER_CAR = new int[][]{
             {0, 4, 4, 4, 4, 0},

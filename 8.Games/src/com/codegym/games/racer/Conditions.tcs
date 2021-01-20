@@ -1,16 +1,29 @@
-taskKey="com.codegym.games.racer.part15"\n\nRacer (Part 15/28)
+taskKey="com.codegym.games.racer.part16"\n\nRacer (Part 16/28)
+
+Currently, the player's car continues to move after colliding with an obstacle. In this part of the project,
+we'll implement a method that will check whether the car has hit an obstacle.
+When implementing this method, use the GameObject class's isCollision(GameObject) method, which we have implemented for you.
+Figure out how it works.
+
+Collisions should be visibly noticeable, i.e. we need to change the image used to display the player's car.
+To do this, give the PlayerCar class a stop() method that sets the matrix field to ShapeMatrix.PLAYER_DEAD.
+
+
+Requirements:
+1.	The RoadManager class must have a public boolean checkCrash(PlayerCar) method.
+2.	The checkCrash(PlayerCar) must call the GameObject class&#39;s isCollision(GameObject) method on the elements of the items list in order to check for collisions.
+3.	The checkCrash(PlayerCar) must return true if the player collides with any of the objects in the items list.
+4.	The checkCrash(PlayerCar) must return false if the player has not collided with any of the objects in the items list.
+5.	The PlayerCar class must have a public void stop() method.
+6.	In the stop() method, the player&#39;s matrix must be replaced by ShapeMatrix.PLAYER_DEAD.
+
+
+Racer (Part 15/28)
 
 Currently, spikes appear only once (at the beginning of the game). To generate a new spike, the old spike must be removed
 from the items list after its leaves the screen. To remove the spike, you can either use an iterator, or
 create a copy of the items list and run through it in a loop. If an object needs to be removed, call items.remove(item).
 
-
-Requirements:
-1.	The RoadManager class must have a private void deletePassedItems() method.
-2.	The deletePassedItems() method must remove from the items list any elements whose y coordinate is greater than or equal to RacerGame.HEIGHT.
-3.	The deletePassedItems() method must not change the reference stored in the items field.
-4.	The RoadManager class&#39;s move(int) method must call the deletePassedItems() method.
-5.	In the RoadManager class&#39;s move(int) method, the deletePassedItems() method must be called after moving all the object in the items list.
 
 
 Racer (Part 14/28)
@@ -70,20 +83,6 @@ We currently only have one type of obstacle: Spike, so if the createRoadObject m
 it should return null. Since we know the game object's type, there is no need to pass an image matrix to its constructor.
 Accordingly, the GameObject class will need one more constructor with two int parameters (int x, int y), which are used to
 initialize the x and y fields.
-
-
-
-Racer (Part 10/28)
-
-The car's behavior currently doesn't match what we would expect:
-- the car doesn't stop moving to the side when an arrow key is released;
-- the car drives right off the edge of the road and the playing field.
-To fix this, you need to implement the correct behavior for the car when the RIGHT and LEFT keys are released.
-Override the onKeyReleased(Key) method and there set the car's direction to Direction.NONE when this is necessary.
-Create a RoadManager class in the road package in order to manage the flow of items on the road. Give it fields that will store the x coordinates of the edges of the driving surface.
-Use them in the PlayerCar class's move() method to prevent the car from leaving the road.
-If you check the road boundary before changing the x coordinate of the player's car, it will be able to put one wheel on the shoulder. But if you change x first and then check the boundary, the player's car will be strictly limited to the race track.
-The choice is yours.
 
 
 
