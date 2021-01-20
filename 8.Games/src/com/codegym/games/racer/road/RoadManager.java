@@ -1,6 +1,7 @@
 package com.codegym.games.racer.road;
 
 import com.codegym.engine.cell.Game;
+import com.codegym.games.racer.PlayerCar;
 import com.codegym.games.racer.RacerGame;
 
 import java.util.ArrayList;
@@ -69,5 +70,14 @@ public class RoadManager {
                 items.remove(item);
             }
         }
+    }
+
+    public boolean checkCrash(PlayerCar playerCar) {
+        for (RoadObject item : items) {
+            if (item.isCollision(playerCar)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

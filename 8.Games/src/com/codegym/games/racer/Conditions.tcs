@@ -1,4 +1,28 @@
-taskKey="com.codegym.games.racer.part16"\n\nRacer (Part 16/28)
+taskKey="com.codegym.games.racer.part17"\n\nRacer (Part 17/28)
+
+The game must stop in two cases: when the player wins or when the player loses. For now, we'll only stop the game for losses.
+To save the current game state, we'll create a boolean isGameStopped field whose initial value must be false.
+
+When the player hits an obstacle, he or she loses. This means that the player must be stopped, and a message, such as GAME OVER,
+must be displayed on the screen.
+It is convenient to put all the actions associated with a lose in a separate gameOver() method.
+The onTurn(int) method must check whether the player has collided with any obstacles (checkCrash(PlayerCar) method).
+
+
+Requirements:
+1.	The RacerGame class must have a private boolean isGameStopped field.
+2.	The isGameStopped field must be initialized to false in the createGame() method.
+3.	The RacerGame class must have a private void gameOver() method.
+4.	In the gameOver() method, you must set the isGameStopped field to true.
+5.	The gameOver() method must call the showMessageDialog(Color, String, Color, int) method.
+6.	The stopTurnTimer() method must be called in the gameOver() method.
+7.	In the gameOver() method, the stop() method must be called on the player object.
+8.	In the RacerGame class&#39;s onTurn(int) method, you need to call the checkCrash(PlayerCar) method on the roadManager object before the call to the moveAll() method.
+9.	In the RacerGame class&#39;s onTurn(int) method, you need to call the gameOver() method if the checkCrash(PlayerCar) method returns true.
+10.	In the RacerGame class&#39;s onTurn(int) method, if checkCrash(PlayerCar) returns true, you need to call the drawScene() method after the gameOver() method and do nothing more.
+
+
+Racer (Part 16/28)
 
 Currently, the player's car continues to move after colliding with an obstacle. In this part of the project,
 we'll implement a method that will check whether the car has hit an obstacle.
@@ -8,14 +32,6 @@ Figure out how it works.
 Collisions should be visibly noticeable, i.e. we need to change the image used to display the player's car.
 To do this, give the PlayerCar class a stop() method that sets the matrix field to ShapeMatrix.PLAYER_DEAD.
 
-
-Requirements:
-1.	The RoadManager class must have a public boolean checkCrash(PlayerCar) method.
-2.	The checkCrash(PlayerCar) must call the GameObject class&#39;s isCollision(GameObject) method on the elements of the items list in order to check for collisions.
-3.	The checkCrash(PlayerCar) must return true if the player collides with any of the objects in the items list.
-4.	The checkCrash(PlayerCar) must return false if the player has not collided with any of the objects in the items list.
-5.	The PlayerCar class must have a public void stop() method.
-6.	In the stop() method, the player&#39;s matrix must be replaced by ShapeMatrix.PLAYER_DEAD.
 
 
 Racer (Part 15/28)
@@ -66,23 +82,6 @@ to the list of all obstacle objects. The obstacle's coordinates must be generate
 
 x = game.getRandomNumber(FIRST_LANE_POSITION, FOURTH_LANE_POSITION) — a random lane number;
 y = -1 * RoadObject.getHeight(type) — initially, the object is placed beyond the playing field so that it makes a smooth appearance.
-
-
-
-Racer (Part 11/28)
-
-The player will face various obstacles on the road: other cars driving the wrong way, and spikes that don't move relative
-to the race track. These obstacles will inherit the RoadObject class. The types of all possible obstacles are listed in the
-RoadObjectType enum. You now have access to these classes in the road package. And new matrices for displaying obstacles
-have been added to the ShapeMatrix class. Take a look at the RoadObject class and its methods.
-
-At this stage, we'll implement the spikes. Create a Spike class and make it inherit RoadObject. To create instances of obstacles,
-in the RoadManager class, create a private RoadObject createRoadObject(RoadObjectType type, int x, int y) method that will
-create and return a new obstacle based on the passed arguments.
-We currently only have one type of obstacle: Spike, so if the createRoadObject method receives any other type as an argument,
-it should return null. Since we know the game object's type, there is no need to pass an image matrix to its constructor.
-Accordingly, the GameObject class will need one more constructor with two int parameters (int x, int y), which are used to
-initialize the x and y fields.
 
 
 
