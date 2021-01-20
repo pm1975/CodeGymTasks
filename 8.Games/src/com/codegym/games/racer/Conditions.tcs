@@ -1,15 +1,37 @@
-taskKey="com.codegym.games.racer.part18"\n\nRacer (Part 18/28)
+taskKey="com.codegym.games.racer.part19"\n\nRacer (Part 19/28)
+
+In addition to spikes, it would be nice to see various types of cars on the race track.
+To represent cars on the playing field, in the road package, create a Car class that will be common to all types of cars and make it inherit RoadObject.
+All cars will move at a speed of 1.
+
+Because the RoadManager class's createRoadObject(RoadObjectType, int, int) method is responsible for creating all road objects, it must return a new Car object instead of null.
+To generate new cars, create a generateRegularCar(Game game) method in the RoadManager class.
+To avoid excessively crowding the race track, a new car should be created with a 30% probability.
+The type of car must be randomly selected from the first four fields of the RoadObjectType enum.
+Don't forget to add each generated car to the items list.
+
+
+Requirements:
+1.	There must be a public Car class in the road package.
+2.	The Car class must inherit the RoadObject class.
+3.	The Car class must have a public constructor with three parameters: RoadObjectType type, int x, int y. It must call the base class constructor with the following arguments: type, x, y.
+4.	In the Car class&#39;s constructor, the speed field (inherited from the parent class) must be initialized to 1.
+5.	The RoadManager class&#39;s createRoadObject(RoadObjectType, int, int) method must return a new Car object if type is not equal to RoadObjectType.SPIKE.
+6.	The createRoadObject(RoadObjectType, int, int) method must call the Car class&#39;s constructor with the method&#39;s type, x, and y parameters.
+7.	The RoadManager class must have a private void generateRegularCar(Game) method.
+8.	In the generateRegularCar(Game game) method, you need to call the game object&#39;s getRandomNumber(int) method with the argument 100.
+9.	The generateRegularCar(Game game) method must declare a local int carTypeNumber variable, initialized to game.getRandomNumber(4).
+10.	In the generateRegularCar(Game game) method, if getRandomNumber(100) returns a number less than 30, you need to call the addRoadObject(RoadObjectType, Game) method with the following arguments: RoadObjectType.values()[carTypeNumber], game.
+11.	The RoadManager class&#39; generateNewRoadObjects(Game) method must call the generateRegularCar(Game) method.
+
+
+Racer (Part 18/28)
 
 After the game is over, the player must be able to start a new game. Implement the ability to restart the game by pressing the SPACE key.
 
 To allow the player to cover the race track faster, his or her car must be able to accelerate.
 Implement the ability to double the speed by pressing the UP key. Releasing this key must return the car to the initial speed.
 
-
-Requirements:
-1.	The RacerGame class&#39;s onKeyPress(Key) method must call the createGame() method if the passed argument is Key.SPACE and the game is stopped (isGameStopped == true).
-2.	The onKeyPress(Key) method must set the player&#39;s speed to 2 if the method&#39;s parameter is equal to Key.UP.
-3.	The RacerGame class&#39;s onKeyReleased(Key) method must set the player&#39;s speed to 1 if the method&#39;s parameter is equal to Key.UP.
 
 
 Racer (Part 17/28)
@@ -57,16 +79,6 @@ It will check whether there is a spike on the road. If not, then a new spike is 
 In the future, things other than spikes may be obstacles. We'll need the generateNewRoadObjects(Game) method to generate all different kinds of obstacles, but for now it will only generate spikes. It must be called in the RacerGame class's onTurn(int) method.
 
 Additionally, the spike must move together with the race track in the moveAll() method.
-
-
-
-Racer (Part 13/28)
-
-The RoadManager class's name isn't arbitrary: it manages all the obstacles on the road.
-It must know how to draw and move all the stored objects.
-
-In the RacerGame class, create a RoadManager roadManager field so you can access it.
-Initialize the roadManager field in createGame(), and call draw(Game) on it in drawScene().
 
 
 
