@@ -36,6 +36,11 @@ public class RacerGame extends Game {
         if (roadManager.getPassedCarsCount() >= RACE_GOAL_CARS_COUNT) {
             finishLine.show();
         }
+        if (finishLine.isCrossed(player)) {
+            win();
+            drawScene();
+            return;
+        }
         moveAll();
         drawScene();
     }
@@ -54,9 +59,9 @@ public class RacerGame extends Game {
     private void drawScene() {
         drawField();
         roadMarking.draw(this);
+        finishLine.draw(this);
         roadManager.draw(this);
         player.draw(this);
-        finishLine.draw(this);
         progressBar.draw(this);
     }
 
@@ -120,5 +125,11 @@ public class RacerGame extends Game {
                 || (key == Key.LEFT && player.getDirection() == Direction.LEFT)) {
             player.setDirection(Direction.NONE);
         }
+    }
+
+    private void win() {
+        isGameStopped = true;
+        showMessageDialog(Color.BLACK, "You win!", Color.GREEN, 75);
+        stopTurnTimer();
     }
 }
