@@ -1,16 +1,34 @@
-taskKey="com.codegym.games.racer.part27"\n\nRacer (Part 27/28)
+taskKey="com.codegym.games.racer.part28"\n\nRacer (Part 28/28)
+
+Congratulations! The game is done! Run it and see what happens.
+If you have time and motivation, you can improve the game by adding some features of your own.
+For example:
+- make it possible to move onto the shoulder;
+- add turns to the race track;
+- add the ability to switch to different speeds;
+- replace the scoring system: for example, add points only for accelerating;
+- give the player the ability to shoot at other cars;
+- add a wider variety of cars and obstacles;
+- in the event of a win, move to higher levels;
+- and whatever else you can dream up! :)
+
+You can publish the finished game on CodeGym. But first, you need to check your solution to make the Publish button active.
+The game will be available to all users in the "Games" section.
+You can also share it with your friends on social networks. Wouldn't it be great if they played your version of Racer?
+After you publish your game, write brief instructions (the possible actions, the keys/buttons required for the game) and
+describe the features of your implementation in the comments.
+
+
+Requirements:
+1.	Run the game and play.
+
+
+Racer (Part 27/28)
 
 To allow the player to share his or her achievements, we'll add a scoring system to the game.
 The player starts with 3500 points. At each step of the game (40 ms), the number of points decreases by 5 until the player finishes.
 This motivates the player to finish the game faster.
 
-
-Requirements:
-1.	There must be a private int score variable in the RacerGame class.
-2.	The score field must be initialized to 3500 in the createGame() method.
-3.	The onTurn(int) method must reduce the value of the score field by five.
-4.	The onTurn(int) method must call the setScore(int) method with score as the argument after it has been changed.
-5.	In the onTurn(int) method, the setScore(int) method must be called before the drawScene() method.
 
 
 Racer (Part 26/28)
@@ -53,17 +71,6 @@ In this part of the project, we'll draw and move the finish line. To do this, an
 Like the methods of our other objects, the FinishLine class's draw(Game) and move(int) methods will be called every 40 ms, but the results of these method calls will be ignored until the show() method is called.
 Let's also determine the conditions necessary for a win. To make the game challenging and interesting, a win should happen after the player clears 40 car obstacles.
 We'll store this value in the RACE_GOAL_CARS_COUNT constant.
-
-
-
-Racer (Part 22/28)
-
-Let's move on to creating the finish line. A matrix for it is already in ShapeMatrix.
-The finish line appears on the race track at the end of the game.
-Actually, the object representing the finish line is created at the beginning of the game, but it is located beyond
-the playing field, so it is not visible.
-As soon as the flag responsible for the FinishLine object's visibility becomes true, the finish line starts to move down
-and appears on the playing field.
 
 
 
