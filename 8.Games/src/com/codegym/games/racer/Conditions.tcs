@@ -1,4 +1,21 @@
-taskKey="com.codegym.games.racer.part22"\n\nRacer (Part 22/28)
+taskKey="com.codegym.games.racer.part23"\n\nRacer (Part 23/28)
+
+In this part of the project, we'll draw and move the finish line. To do this, an instance must be stored in the game's main class and recreated when a new game starts.
+Like the methods of our other objects, the FinishLine class's draw(Game) and move(int) methods will be called every 40 ms, but the results of these method calls will be ignored until the show() method is called.
+Let's also determine the conditions necessary for a win. To make the game challenging and interesting, a win should happen after the player clears 40 car obstacles.
+We'll store this value in the RACE_GOAL_CARS_COUNT constant.
+
+
+Requirements:
+1.	The RacerGame class must have a private FinishLine finishLine field.
+2.	The finishLine field must be initialized with a new FinishLine object in the createGame() method before the call to the drawScene() method.
+3.	In the drawScene() method, the finishLine object&#39;s draw(Game) method must be called. Pass this to the method.
+4.	In the drawScene() method, the finishLine object&#39;s draw(Game) method must be called after the call to the drawField() method.
+5.	The move(int) method must be called on the finishLine object in the moveAll() method. Pass the player&#39;s speed to the method.
+6.	The RacerGame class must have a private static final int RACE_GOAL_CARS_COUNT field, initialized to 40 when it is declared.
+
+
+Racer (Part 22/28)
 
 Let's move on to creating the finish line. A matrix for it is already in ShapeMatrix.
 The finish line appears on the race track at the end of the game.
@@ -7,17 +24,6 @@ the playing field, so it is not visible.
 As soon as the flag responsible for the FinishLine object's visibility becomes true, the finish line starts to move down
 and appears on the playing field.
 
-
-Requirements:
-1.	There must be a public FinishLine class in a separate file.
-2.	The FinishLine class must be a descendant of the GameObject class.
-3.	The FinishLine class must have a public no-parameter constructor that calls the base class&#39;s constructor with the following arguments: RacerGame.ROADSIDE_WIDTH, -1 * ShapeMatrix.FINISH_LINE.length, ShapeMatrix.FINISH_LINE.
-4.	The FinishLine class must have a private boolean isVisible field, initialized to false when it is declared.
-5.	The FinishLine class must have a public void show() method.
-6.	The show() method must set the isVisible field to true.
-7.	The FinishLine class must have a public void move(int boost) method.
-8.	The move(int) method must not do anything if the finish line is not visible (isVisible equals false).
-9.	The move(int boost) method must increase the finish line&#39;s y coordinate by the value of boost.
 
 
 Racer (Part 21/28)
@@ -71,18 +77,6 @@ After the game is over, the player must be able to start a new game. Implement t
 
 To allow the player to cover the race track faster, his or her car must be able to accelerate.
 Implement the ability to double the speed by pressing the UP key. Releasing this key must return the car to the initial speed.
-
-
-
-Racer (Part 17/28)
-
-The game must stop in two cases: when the player wins or when the player loses. For now, we'll only stop the game for losses.
-To save the current game state, we'll create a boolean isGameStopped field whose initial value must be false.
-
-When the player hits an obstacle, he or she loses. This means that the player must be stopped, and a message, such as GAME OVER,
-must be displayed on the screen.
-It is convenient to put all the actions associated with a lose in a separate gameOver() method.
-The onTurn(int) method must check whether the player has collided with any obstacles (checkCrash(PlayerCar) method).
 
 
 
