@@ -9,7 +9,7 @@ public class PlayerCar extends GameObject {
     private Direction direction;
 
     public PlayerCar() {
-        super(RacerGame.WIDTH / 2 + 2, RacerGame.HEIGHT - playerCarHeight - 1, ShapeMatrix.PLAYER);
+        super(RacerGame.WIDTH/2 +2, RacerGame.HEIGHT - playerCarHeight -1, ShapeMatrix.PLAYER);
     }
 
     public void move() {
