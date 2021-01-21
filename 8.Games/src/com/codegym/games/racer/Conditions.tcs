@@ -1,18 +1,28 @@
-taskKey="com.codegym.games.racer.part23"\n\nRacer (Part 23/28)
+taskKey="com.codegym.games.racer.part24"\n\nRacer (Part 24/28)
+
+To check the win condition, we'll need to know the actual number of cars that the player has passed.
+To do this, create a passedCarsCount field and corresponding getter in the RoadManager class.
+The value of this field must increase by one after the player passes each car obstacle (removal of a car from the items list).
+
+We'll compare passedCarsCount and RACE_GOAL_CARS_COUNT in the onTurn(int) method.
+If the value of passedCarsCount is greater or equal to RACE_GOAL_CARS_COUNT, then the player has reached the goal and we need to show the finish line.
+
+
+Requirements:
+1.	The RoadManager class must have a private int passedCarsCount field that is initialized to 0 when it is declared.
+2.	The RoadManager class must have a public getPassedCarsCount() getter that returns the value of the passedCarsCount field.
+3.	The RoadManager class&#39;s deletePassedItems() method must increase the value of the passedCarsCount field by one if an object is removed from the items list and that object is not a spike.
+4.	The RacerGame class&#39;s onTurn(int) method must call the finishLine object&#39;s show() method if the value returned by the roadManager.getPassedCarsCount() method is greater than or equal to RACE_GOAL_CARS_COUNT.
+5.	In the RacerGame class&#39;s onTurn(int) method, the finishLine object&#39;s show() method must called before moveAll().
+
+
+Racer (Part 23/28)
 
 In this part of the project, we'll draw and move the finish line. To do this, an instance must be stored in the game's main class and recreated when a new game starts.
 Like the methods of our other objects, the FinishLine class's draw(Game) and move(int) methods will be called every 40 ms, but the results of these method calls will be ignored until the show() method is called.
 Let's also determine the conditions necessary for a win. To make the game challenging and interesting, a win should happen after the player clears 40 car obstacles.
 We'll store this value in the RACE_GOAL_CARS_COUNT constant.
 
-
-Requirements:
-1.	The RacerGame class must have a private FinishLine finishLine field.
-2.	The finishLine field must be initialized with a new FinishLine object in the createGame() method before the call to the drawScene() method.
-3.	In the drawScene() method, the finishLine object&#39;s draw(Game) method must be called. Pass this to the method.
-4.	In the drawScene() method, the finishLine object&#39;s draw(Game) method must be called after the call to the drawField() method.
-5.	The move(int) method must be called on the finishLine object in the moveAll() method. Pass the player&#39;s speed to the method.
-6.	The RacerGame class must have a private static final int RACE_GOAL_CARS_COUNT field, initialized to 40 when it is declared.
 
 
 Racer (Part 22/28)
@@ -68,15 +78,6 @@ To generate new cars, create a generateRegularCar(Game game) method in the RoadM
 To avoid excessively crowding the race track, a new car should be created with a 30% probability.
 The type of car must be randomly selected from the first four fields of the RoadObjectType enum.
 Don't forget to add each generated car to the items list.
-
-
-
-Racer (Part 18/28)
-
-After the game is over, the player must be able to start a new game. Implement the ability to restart the game by pressing the SPACE key.
-
-To allow the player to cover the race track faster, his or her car must be able to accelerate.
-Implement the ability to double the speed by pressing the UP key. Releasing this key must return the car to the initial speed.
 
 
 
