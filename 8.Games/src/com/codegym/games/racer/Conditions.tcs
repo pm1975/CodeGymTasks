@@ -1,4 +1,23 @@
-taskKey="com.codegym.games.racer.part24"\n\nRacer (Part 24/28)
+taskKey="com.codegym.games.racer.part25"\n\nRacer (Part 25/28)
+
+In this part of the project, we'll add a progress bar to indicate the player's progress through the game.
+
+Note that you have a new class: ProgressBar. Figure out how it works and what it does?
+To store an instance of the ProgressBar class, we'll need a corresponding field in the game's main class. This field will be initialized at the start of a new game.
+The size of the progress bar will depend on the number of cars that the player must pass. This value is passed to the constructor.
+
+Our progress bar will be redrawn with each tick of the game, and the displayed progress will change with the number of passed car obstacles.
+
+
+Requirements:
+1.	The RacerGame class must have a private ProgressBar progressBar field.
+2.	The progressBar field must be initialized with a new ProgressBar object in the createGame() method before the call to the drawScene() method.
+3.	In the drawScene() method, the progressBar object&#39;s draw(Game) method must be called. Pass this to the method.
+4.	In the drawScene() method, the progressBar object&#39;s draw(Game) method must be called after the call to the drawField() method.
+5.	The move(int) method must be called on the progressBar object in the moveAll() method. The value returned by roadManager.getPassedCarsCount() must be passed to the method.
+
+
+Racer (Part 24/28)
 
 To check the win condition, we'll need to know the actual number of cars that the player has passed.
 To do this, create a passedCarsCount field and corresponding getter in the RoadManager class.
@@ -7,13 +26,6 @@ The value of this field must increase by one after the player passes each car ob
 We'll compare passedCarsCount and RACE_GOAL_CARS_COUNT in the onTurn(int) method.
 If the value of passedCarsCount is greater or equal to RACE_GOAL_CARS_COUNT, then the player has reached the goal and we need to show the finish line.
 
-
-Requirements:
-1.	The RoadManager class must have a private int passedCarsCount field that is initialized to 0 when it is declared.
-2.	The RoadManager class must have a public getPassedCarsCount() getter that returns the value of the passedCarsCount field.
-3.	The RoadManager class&#39;s deletePassedItems() method must increase the value of the passedCarsCount field by one if an object is removed from the items list and that object is not a spike.
-4.	The RacerGame class&#39;s onTurn(int) method must call the finishLine object&#39;s show() method if the value returned by the roadManager.getPassedCarsCount() method is greater than or equal to RACE_GOAL_CARS_COUNT.
-5.	In the RacerGame class&#39;s onTurn(int) method, the finishLine object&#39;s show() method must called before moveAll().
 
 
 Racer (Part 23/28)
@@ -64,20 +76,6 @@ We'll store this value in the PLAYER_CAR_DISTANCE constant.
 Implement a boolean isRoadSpaceFree(RoadObject object) method that checks whether there is enough room on the road to place a new car.
 The isCollisionWithDistance(GameObject, int) method will help you with this. This method returns false if the horizontal and vertical distance between objects is greater than the passed distance.
 If the road has enough free space, add a new car to items.
-
-
-
-Racer (Part 19/28)
-
-In addition to spikes, it would be nice to see various types of cars on the race track.
-To represent cars on the playing field, in the road package, create a Car class that will be common to all types of cars and make it inherit RoadObject.
-All cars will move at a speed of 1.
-
-Because the RoadManager class's createRoadObject(RoadObjectType, int, int) method is responsible for creating all road objects, it must return a new Car object instead of null.
-To generate new cars, create a generateRegularCar(Game game) method in the RoadManager class.
-To avoid excessively crowding the race track, a new car should be created with a 30% probability.
-The type of car must be randomly selected from the first four fields of the RoadObjectType enum.
-Don't forget to add each generated car to the items list.
 
 
 
