@@ -1,4 +1,26 @@
-taskKey="com.codegym.games.spaceinvaders.part03"\n\nSpace Invaders (Part 3/34)
+taskKey="com.codegym.games.spaceinvaders.part04"\n\nSpace Invaders (Part 4/34)
+
+We can use any Unicode symbol to represent stars. We'll store it in the Star class's STAR_SIGN field.
+To draw stars on the playing field, we'll create a draw(Game) method. We'll have it call the setCellValueEx method on the Game object passed to it as an argument.
+We'll pass the star's coordinates, background color, symbol, color, and size to the setCellValueEx method. Note that the star's x and y coordinates are doubles,
+so you need to convert them to int when calling the setCellValueEx method. To add stars to the game, we'll create a list of stars and a method that will fill
+the list with new stars. And to draw the stars on the playing field, you need to call the draw(Game) method on each star after drawing the playing field.
+
+
+Requirements:
+1.	The Star class must have a private static final String STAR_SIGN field that is initialized when it is declared. For example, we can use the UTF-8 character &quot;\u2605&quot;.
+2.	The Star class must have a public void draw(Game) method.
+3.	The draw(Game) method must call the setCellValueEx(int, int, Color, String, Color, int) method on a Game object with the following arguments: x, y, Color.NONE, STAR_SIGN, &lt;star color&gt;, 100. (for &lt;star color&gt;, use any color want, such as Color.WHITE).
+4.	The SpaceInvadersGame class must have a private List&lt;Star&gt; stars field.
+5.	The SpaceInvadersGame class must have a private void createStars() method.
+6.	The stars field must be initialized with a new ArrayList&lt;Star&gt; object in the createStars() method.
+7.	In the createStars() method, you need to add 8 new Star objects to the stars list. You choose each star&#39;s coordinates within the bounds of the playing field.
+8.	The createStars() method must be called before the drawScene() method in the createGame() method.
+9.	In the drawField(Game) method, call the draw(Game) method on each object in the stars list. Pass &quot;this&quot; to the method.
+10.	The Star class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
+
+
+Space Invaders (Part 3/34)
 
 Let's implement the drawField() method, which will paint the playing field a single color.
 To do this, we need to set a color and the empty string on each cell. The Game class's setCellValueEx(int, int, Color, String) method will help us.
@@ -19,16 +41,6 @@ The game involves different game objects, so we'll put their common characterist
 into the GameObject parent class. We'll create a separate gameobjects package for all the classes representing game objects.
 Our first game objects will be stars. We'll create a Star class in the gameobjects package and make it inherit the GameObject class.
 
-
-Requirements:
-1.	In the drawField() method, call the setCellValueEx(int, int, Color, String) method with the following arguments for all the cells of the image: x, y, any color (for example, Color.BLACK), and an empty string.
-2.	There must be a public GameObject class in a separate file in the gameobjects package.
-3.	The GameObject class must have a public double x field.
-4.	The GameObject class must have a public double y field.
-5.	The GameObject class must have a public constructor with two double parameters that are used to initialize the x and y fields.
-6.	There must be a public Star class in a separate file in the gameobjects package.
-7.	The Star class must be a descendant of the GameObject class.
-8.	The Star class must have a public constructor with two double parameters that calls the base class&#39;s constructor using these parameters.
 
 
 Space Invaders (Part 2/34)
