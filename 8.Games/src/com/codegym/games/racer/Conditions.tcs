@@ -1,4 +1,19 @@
-taskKey="com.codegym.games.racer.part26"\n\nRacer (Part 26/28)
+taskKey="com.codegym.games.racer.part27"\n\nRacer (Part 27/28)
+
+To allow the player to share his or her achievements, we'll add a scoring system to the game.
+The player starts with 3500 points. At each step of the game (40 ms), the number of points decreases by 5 until the player finishes.
+This motivates the player to finish the game faster.
+
+
+Requirements:
+1.	There must be a private int score variable in the RacerGame class.
+2.	The score field must be initialized to 3500 in the createGame() method.
+3.	The onTurn(int) method must reduce the value of the score field by five.
+4.	The onTurn(int) method must call the setScore(int) method with score as the argument after it has been changed.
+5.	In the onTurn(int) method, the setScore(int) method must be called before the drawScene() method.
+
+
+Racer (Part 26/28)
 
 The player win's when he or she crosses the finish line.
 
@@ -7,17 +22,6 @@ In the FinishLine class, create a separate isCrossed(PlayerCar) method to compar
 You need to call the isCrossed(PlayerCar) method at each step of the game. When the finish line is crossed, the game must be stopped and the player must be informed of the win.
 Implement this in the win() method.
 
-
-Requirements:
-1.	The FinishLine class must have a public boolean isCrossed(PlayerCar) method.
-2.	The isCrossed(PlayerCar player) method must return true if the player has crossed the finish line. Otherwise, it should return false.
-3.	The RacerGame class must have a private void win() method.
-4.	In the win() method, you must set the isGameStopped field to true.
-5.	The win() method must call the showMessageDialog(Color, String, Color, int) method.
-6.	The stopTurnTimer() method must be called in the win() method.
-7.	In the RacerGame class&#39;s onTurn(int) method, you need to call the isCrossed(PlayerCar) method on the finishLine object before moveAll().
-8.	In the RacerGame class&#39;s onTurn(int) method, you need to call the win() method if the isCrossed(PlayerCar) method returns true.
-9.	In the RacerGame class&#39;s onTurn(int) method, if the isCrossed(PlayerCar) method returns true, you need to call the drawScene() method after the win() method and do nothing more.
 
 
 Racer (Part 25/28)
@@ -60,24 +64,6 @@ Actually, the object representing the finish line is created at the beginning of
 the playing field, so it is not visible.
 As soon as the flag responsible for the FinishLine object's visibility becomes true, the finish line starts to move down
 and appears on the playing field.
-
-
-
-Racer (Part 21/28)
-
-Let's make the game a little harder. Let's add a car whose driver is "drunk".
-To represent it on the playing field, the MovingCar class has been added to the road package. Use it to create these cars.
-Unlike ordinary cars, a car operated by a "drunk" driver will drift horizontally.
-To prevent it from hitting other cars, the MovingCar class's move() method checks for such collisions.
-To do this, in addition to the speed, you need to pass the list of all obstacle objects to the move(int boost) method.
-
-There is another nuance: MovingCar inherits RoadObject and overrides its move method, so you'll also have to add a second parameter to the move method in the parent class.
-
-When there are a lot of "drunk" drivers on the race track, the game becomes too difficult, so ensure that there is only one such car on the race track at a time.
-To check this, implement the movingCarExists() method by analogy with the spikeExists() method.
-
-The void generateMovingCar(Game) method will be responsible for generating MovingCar objects.
-Its implementation is analogous to the generateSpike(Game) method.
 
 
 
