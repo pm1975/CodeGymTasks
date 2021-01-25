@@ -2,6 +2,7 @@ package com.codegym.games.spaceinvaders.gameobjects;
 
 import com.codegym.engine.cell.Game;
 import com.codegym.games.spaceinvaders.ShapeMatrix;
+import com.codegym.games.spaceinvaders.SpaceInvadersGame;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +30,25 @@ public class EnemyFleet {
                 ships.add(new EnemyShip(x * STEP, y * STEP + 12));
             }
         }
+    }
+
+    private double getLeftBorder() {
+        double left = SpaceInvadersGame.WIDTH;
+        for (EnemyShip ship : ships) {
+            if (ship.x < left) {
+                left = ship.x;
+            }
+        }
+        return left;
+    }
+
+    private double getRightBorder() {
+        double right = 0;
+        for (EnemyShip ship : ships) {
+            if (ship.x + ship.width > right) {
+                right = ship.x + ship.width;
+            }
+        }
+        return right;
     }
 }

@@ -1,20 +1,29 @@
-taskKey="com.codegym.games.spaceinvaders.part09"\n\nSpace Invaders (Part 9/34)
+taskKey="com.codegym.games.spaceinvaders.part10"\n\nSpace Invaders (Part 10/34)
+
+According to the rules of the game, the fewer ships there are, the faster they move from side to side.
+We'll implement this relationship in the getSpeed method. Note that the enemy ships' speed must not exceed 2.
+We'll also give the EnemyFleet class a direction field and a move method.
+We'll need to give the SpaceInvadersGame class a moveSpaceObjects method. That's where we'll move objects.
+The ships move at each step of the game, so the moveSpaceObjects method must be called in the onTurn method.
+To immediately see the movement on the screen, you need to call the moveSpaceObjects method before redrawing the screen.
+
+
+Requirements:
+1.	The EnemyFleet class must have a private Direction direction field that is initialized to Direction.RIGHT when it is declared.
+2.	The EnemyFleet class must have a private double getSpeed() method.
+3.	The getSpeed() method must return the minimum of two values: 2.0 and (3.0 / number of ships in the ships list).
+4.	The EnemyFleet class must have a public void move() method.
+5.	The SpaceInvadersGame class must have a private void moveSpaceObjects() method.
+6.	In the moveSpaceObjects() method, you need to call the move() method on the enemyFleet object.
+7.	In the SpaceInvadersGame class&#39;s onTurn(int) method, you need to call the moveSpaceObjects() method before the call to the drawScene() method.
+
+
+Space Invaders (Part 9/34)
 
 Everything will move in the game, which means that we need to specify the direction in which objects are moving. It is convenient to store directions in an enum.
 We'll describe the motion of an enemy ship in the move() method. The method will change the appropriate coordinate depending on direction and speed.
 The downward speed will be a constant 2. Because the enemy fleet moves back and forth between edges of the playing field, we need to watch for when the fleet reaches the edges.
 
-
-Requirements:
-1.	There must be a public Direction enum with the following values in a separate file: RIGHT, LEFT, UP, DOWN.
-2.	The EnemyShip class must have a public void move(Direction direction, double speed) method.
-3.	In the move(Direction direction, double speed) method, you need to increase the x field by speed if direction is equal to Direction.RIGHT.
-4.	In the move(Direction direction, double speed) method, you need to decrease the x field by speed if direction is equal to Direction.LEFT.
-5.	In the move(Direction direction, double speed) method, you need to increase the y field by 2 if direction is equal to Direction.DOWN.
-6.	The EnemyFleet class must have a private double getLeftBorder() method.
-7.	The getLeftBorder() method must return the smallest x coordinate of all of the enemy ships in the ships list.
-8.	The EnemyFleet class must have a private double getRightBorder() method.
-9.	The getRightBorder() method must return the largest (x + width) value of all of the enemy ships in the ships list.
 
 
 Space Invaders (Part 8/34)
@@ -66,16 +75,6 @@ For example:
 game.setCellValueEx(x of the object on the playing field + x in the matrix, y of the object on the playing field + y in the matrix, color, empty string);
 Note that color is the color of the cell in the object's matrix. You can get it like this: Color.values()[matrix[i][j]],
 where i is the y coordinate in matrix and j is the x coordinate in matrix.
-
-
-
-Space Invaders (Part 4/34)
-
-We can use any Unicode symbol to represent stars. We'll store it in the Star class's STAR_SIGN field.
-To draw stars on the playing field, we'll create a draw(Game) method. We'll have it call the setCellValueEx method on the Game object passed to it as an argument.
-We'll pass the star's coordinates, background color, symbol, color, and size to the setCellValueEx method. Note that the star's x and y coordinates are doubles,
-so you need to convert them to int when calling the setCellValueEx method. To add stars to the game, we'll create a list of stars and a method that will fill
-the list with new stars. And to draw the stars on the playing field, you need to call the draw(Game) method on each star after drawing the playing field.
 
 
 
