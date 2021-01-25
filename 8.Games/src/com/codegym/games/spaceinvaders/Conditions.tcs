@@ -1,4 +1,19 @@
-taskKey="com.codegym.games.spaceinvaders.part10"\n\nSpace Invaders (Part 10/34)
+taskKey="com.codegym.games.spaceinvaders.part11"\n\nSpace Invaders (Part 11/34)
+
+When the ships reach the edge of the screen, they begin to move in the opposite direction and drop lower.
+To achieve this, we need to implement the EnemyFleet class's move method.
+
+
+Requirements:
+1.	The EnemyFleet class&#39;s move() method does nothing if there are no ships in the ships list.
+2.	If the direction field is equal to Direction.LEFT and the getLeftBorder() method returns a negative value, you need to set the direction field equal to Direction.RIGHT.
+3.	If the direction field is equal to Direction.RIGHT and the getRightBorder() method returns a value greater than SpaceInvadersGame.WIDTH, you need to set the direction field equal to Direction.LEFT.
+4.	In the move() method, you need to call the getSpeed() method.
+5.	If the value of the direction field changes, you need to call the move(Direction, double) method with the following arguments on each object in the ships list: Direction.DOWN, value returned by the getSpeed() method.
+6.	If the value of the direction field does not change, you need to call the move(Direction, double) method with the following arguments on each object in the ships list: direction, value returned by the getSpeed() method.
+
+
+Space Invaders (Part 10/34)
 
 According to the rules of the game, the fewer ships there are, the faster they move from side to side.
 We'll implement this relationship in the getSpeed method. Note that the enemy ships' speed must not exceed 2.
@@ -7,15 +22,6 @@ We'll need to give the SpaceInvadersGame class a moveSpaceObjects method. That's
 The ships move at each step of the game, so the moveSpaceObjects method must be called in the onTurn method.
 To immediately see the movement on the screen, you need to call the moveSpaceObjects method before redrawing the screen.
 
-
-Requirements:
-1.	The EnemyFleet class must have a private Direction direction field that is initialized to Direction.RIGHT when it is declared.
-2.	The EnemyFleet class must have a private double getSpeed() method.
-3.	The getSpeed() method must return the minimum of two values: 2.0 and (3.0 / number of ships in the ships list).
-4.	The EnemyFleet class must have a public void move() method.
-5.	The SpaceInvadersGame class must have a private void moveSpaceObjects() method.
-6.	In the moveSpaceObjects() method, you need to call the move() method on the enemyFleet object.
-7.	In the SpaceInvadersGame class&#39;s onTurn(int) method, you need to call the moveSpaceObjects() method before the call to the drawScene() method.
 
 
 Space Invaders (Part 9/34)
@@ -52,29 +58,6 @@ Space Invaders (Part 6/34)
 
 Now we'll create a Ship class that will store properties that all spaceships share. It will have a setStaticView method that at present will set a matrix.
 Later, it will set an animation. First, we make a class for ships in the enemy's fleet: EnemyShip. We've provided its matrix for you in the ShapeMatrix class.
-
-
-
-Space Invaders (Part 5/34)
-
-Stars aren't the only objects in this game. We will also need spaceships, of course! A game object's appearance is determined by a matrix,
-so we'll add a matrix field to the GameObject class. In addition to the object's outline, the matrix contains the ordinals of colors
-in the com.codegym.engine.cell.Color enum. We'll put the object's dimensions into separate width and height fields. To draw a game object on the screen,
-we'll create a draw(Game game) method. For each cell in the matrix, we'll have this method call the setCellValueEx(int x, int y, Color color, String text)
-method on the Game object passed to it as an argument. To draw the matrix on the playing field, we need to consider the x and y coordinates of the GameObject object.
-These coordinates are the coordinates of the upper left cell of the matrix on the playing field.
-
-For example:
-
-
-As you can see from the example, the upper left corner of the game object's matrix has coordinates x = 2 and y = 4 on the playing field.
-However, relative to its own matrix, these coordinates are x = 0 and y = 0. Accordingly, the setCellValueEx method will be passed the coordinates
-of the upper left corner of the game object's matrix on the playing field + the coordinates of the cell within the game object's matrix (x = 2 + 0, y = 4 + 0).
-
-For example:
-game.setCellValueEx(x of the object on the playing field + x in the matrix, y of the object on the playing field + y in the matrix, color, empty string);
-Note that color is the color of the cell in the object's matrix. You can get it like this: Color.values()[matrix[i][j]],
-where i is the y coordinate in matrix and j is the x coordinate in matrix.
 
 
 

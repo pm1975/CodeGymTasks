@@ -1,6 +1,7 @@
 package com.codegym.games.spaceinvaders.gameobjects;
 
 import com.codegym.engine.cell.Game;
+import com.codegym.games.spaceinvaders.Direction;
 import com.codegym.games.spaceinvaders.ShapeMatrix;
 import com.codegym.games.spaceinvaders.SpaceInvadersGame;
 
@@ -12,6 +13,7 @@ public class EnemyFleet {
     private static final int COLUMNS_COUNT = 10;
     private static final int STEP = ShapeMatrix.ENEMY.length + 1;
     private List<EnemyShip> ships;
+    private Direction direction = Direction.RIGHT;
 
     public EnemyFleet() {
         createShips();
@@ -34,7 +36,7 @@ public class EnemyFleet {
 
     private double getLeftBorder() {
         double left = SpaceInvadersGame.WIDTH;
-        for (EnemyShip ship : ships) {
+        for (GameObject ship : ships) {
             if (ship.x < left) {
                 left = ship.x;
             }
@@ -44,11 +46,21 @@ public class EnemyFleet {
 
     private double getRightBorder() {
         double right = 0;
-        for (EnemyShip ship : ships) {
+        for (GameObject ship : ships) {
             if (ship.x + ship.width > right) {
                 right = ship.x + ship.width;
             }
         }
         return right;
+    }
+
+    private double getSpeed() {
+        int count = ships.size();
+        double speed = 3. / count;
+        return speed > 2. ? 2. : speed;
+    }
+
+    public void move() {
+
     }
 }
