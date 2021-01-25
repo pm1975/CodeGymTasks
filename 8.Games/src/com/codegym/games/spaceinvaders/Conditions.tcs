@@ -1,19 +1,38 @@
-taskKey="com.codegym.games.spaceinvaders.part07"\n\nSpace Invaders (Part 7/34)
+taskKey="com.codegym.games.spaceinvaders.part08"\n\nSpace Invaders (Part 8/34)
+
+Let's continue working on the enemy fleet. To do this, we need to fill the ships list in the createShips() method.
+Keep in mind that the best distance from the top of the screen to the top row of ships is 12 cells.
+To add the enemy fleet to the game, we'll create an enemyFleet field in the SpaceInvadersGame class and initialize it to a new EnemyFleet object.
+The enemy ships are created when the createShips method is called in the EnemyFleet constructor.
+The game is dynamic, so we'll need to regularly redraw the screen and perform other actions. Everything that happens at each step is performed in the onTurn(int) method.
+We'll use the setTurnTimer method to set how often this method is called. It takes an argument that determines how long each step is in milliseconds.
+In other words, given a step of 40 ms (0.04 second), the onTurn method will be called 25 times per second (1 / 0.04 second).
+If you've done everything correctly, you'll see the enemy fleet when you run the program.
+
+
+Requirements:
+1.	In the EnemyFleet class&#39;s createShips() method, you need to create ROWS_COUNT * COLUMNS_COUNT enemy ships and add them to the ships list.
+2.	Each enemy ship must be created with the arguments: x * STEP, y * STEP + 12, where x is a loop counter from 0 (including 0) to COLUMNS_COUNT (not including COLUMNS_COUNT), and y is a loop counter from 0 (including 0) to ROWS_COUNT (not including ROWS_COUNT).
+3.	The EnemyFleet class must have one public no-argument constructor.
+4.	The EnemyFleet class&#39;s constructor must call the createShips() method.
+5.	The EnemyFleet class must have a public void draw(Game game) method.
+6.	In the draw(Game game) method, call the draw(Game) method on each enemy ship in the ships list. Pass game as the argument.
+7.	The SpaceInvadersGame class must have a private EnemyFleet enemyFleet field.
+8.	The enemyFleet field must be initialized with a new EnemyFleet object in the createGame() method before the call to the drawScene() method.
+9.	In the drawScene() method, the draw(Game) method must be called on the enemyFleet object after the call to the drawField() method. Pass &quot;this&quot; to the method.
+10.	In the SpaceInvadersGame class, the onTurn(int) method of the Game parent class must be overridden.
+11.	The drawScene() method must be called in the onTurn(int) method.
+12.	In the SpaceInvadersGame class&#39;s createGame() method, the Game class&#39;s setTurnTimer(int) method must be called with 40 as the argument.
+13.	The EnemyFleet class must import the com.codegym.engine.cell.Game class.
+
+
+Space Invaders (Part 7/34)
 
 In this part of the project, we'll prepare the foundation for the enemy fleet. To do this, we'll create an EnemyFleet class.
 It will store the list of ships, number of rows of ships (ROWS_COUNT), number of ships per row (COLUMNS_COUNT),
 and distance between left corners of adjacent ships (STEP). We'll create the ships and add them to the ships list in the createShips method,
 which we will implement later.
 
-
-Requirements:
-1.	There must be a public EnemyFleet class in a separate file in the gameobjects package.
-2.	The EnemyFleet class must have a private static final int ROWS_COUNT field that is initialized to 3 when it is declared.
-3.	The EnemyFleet class must have a private static final int COLUMNS_COUNT field that is initialized to 10 when it is declared.
-4.	The EnemyFleet class must have a private static final int STEP field that is initialized to ShapeMatrix.ENEMY.length + 1 when it is declared.
-5.	The EnemyFleet class must have a private List&lt;EnemyShip&gt; ships field.
-6.	The EnemyFleet class must have a private void createShips() method.
-7.	The ships field must be initialized with a new ArrayList&lt;EnemyShip&gt; object in the createShips() method.
 
 
 Space Invaders (Part 6/34)
@@ -76,14 +95,6 @@ setCellValueEx(x, y, cell color, empty string);
 The game involves different game objects, so we'll put their common characteristics, such as the coordinates of their location on the playing field,
 into the GameObject parent class. We'll create a separate gameobjects package for all the classes representing game objects.
 Our first game objects will be stars. We'll create a Star class in the gameobjects package and make it inherit the GameObject class.
-
-
-
-Space Invaders (Part 2/34)
-
-Everything in the game happens in outer space. To draw this setting, let's declare a drawField() method.
-We'll create all the elements of the game in the createGame() method, and we'll draw them in the drawScene() method.
-All objects are created when the game starts, so the initialize() method will call setScreenSize(int, int) and then createGame().
 
 
 
