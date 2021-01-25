@@ -1,4 +1,23 @@
-taskKey="com.codegym.games.spaceinvaders.part08"\n\nSpace Invaders (Part 8/34)
+taskKey="com.codegym.games.spaceinvaders.part09"\n\nSpace Invaders (Part 9/34)
+
+Everything will move in the game, which means that we need to specify the direction in which objects are moving. It is convenient to store directions in an enum.
+We'll describe the motion of an enemy ship in the move() method. The method will change the appropriate coordinate depending on direction and speed.
+The downward speed will be a constant 2. Because the enemy fleet moves back and forth between edges of the playing field, we need to watch for when the fleet reaches the edges.
+
+
+Requirements:
+1.	There must be a public Direction enum with the following values in a separate file: RIGHT, LEFT, UP, DOWN.
+2.	The EnemyShip class must have a public void move(Direction direction, double speed) method.
+3.	In the move(Direction direction, double speed) method, you need to increase the x field by speed if direction is equal to Direction.RIGHT.
+4.	In the move(Direction direction, double speed) method, you need to decrease the x field by speed if direction is equal to Direction.LEFT.
+5.	In the move(Direction direction, double speed) method, you need to increase the y field by 2 if direction is equal to Direction.DOWN.
+6.	The EnemyFleet class must have a private double getLeftBorder() method.
+7.	The getLeftBorder() method must return the smallest x coordinate of all of the enemy ships in the ships list.
+8.	The EnemyFleet class must have a private double getRightBorder() method.
+9.	The getRightBorder() method must return the largest (x + width) value of all of the enemy ships in the ships list.
+
+
+Space Invaders (Part 8/34)
 
 Let's continue working on the enemy fleet. To do this, we need to fill the ships list in the createShips() method.
 Keep in mind that the best distance from the top of the screen to the top row of ships is 12 cells.
@@ -9,21 +28,6 @@ We'll use the setTurnTimer method to set how often this method is called. It tak
 In other words, given a step of 40 ms (0.04 second), the onTurn method will be called 25 times per second (1 / 0.04 second).
 If you've done everything correctly, you'll see the enemy fleet when you run the program.
 
-
-Requirements:
-1.	In the EnemyFleet class&#39;s createShips() method, you need to create ROWS_COUNT * COLUMNS_COUNT enemy ships and add them to the ships list.
-2.	Each enemy ship must be created with the arguments: x * STEP, y * STEP + 12, where x is a loop counter from 0 (including 0) to COLUMNS_COUNT (not including COLUMNS_COUNT), and y is a loop counter from 0 (including 0) to ROWS_COUNT (not including ROWS_COUNT).
-3.	The EnemyFleet class must have one public no-argument constructor.
-4.	The EnemyFleet class&#39;s constructor must call the createShips() method.
-5.	The EnemyFleet class must have a public void draw(Game game) method.
-6.	In the draw(Game game) method, call the draw(Game) method on each enemy ship in the ships list. Pass game as the argument.
-7.	The SpaceInvadersGame class must have a private EnemyFleet enemyFleet field.
-8.	The enemyFleet field must be initialized with a new EnemyFleet object in the createGame() method before the call to the drawScene() method.
-9.	In the drawScene() method, the draw(Game) method must be called on the enemyFleet object after the call to the drawField() method. Pass &quot;this&quot; to the method.
-10.	In the SpaceInvadersGame class, the onTurn(int) method of the Game parent class must be overridden.
-11.	The drawScene() method must be called in the onTurn(int) method.
-12.	In the SpaceInvadersGame class&#39;s createGame() method, the Game class&#39;s setTurnTimer(int) method must be called with 40 as the argument.
-13.	The EnemyFleet class must import the com.codegym.engine.cell.Game class.
 
 
 Space Invaders (Part 7/34)
@@ -72,29 +76,6 @@ To draw stars on the playing field, we'll create a draw(Game) method. We'll have
 We'll pass the star's coordinates, background color, symbol, color, and size to the setCellValueEx method. Note that the star's x and y coordinates are doubles,
 so you need to convert them to int when calling the setCellValueEx method. To add stars to the game, we'll create a list of stars and a method that will fill
 the list with new stars. And to draw the stars on the playing field, you need to call the draw(Game) method on each star after drawing the playing field.
-
-
-
-Space Invaders (Part 3/34)
-
-Let's implement the drawField() method, which will paint the playing field a single color.
-To do this, we need to set a color and the empty string on each cell. The Game class's setCellValueEx(int, int, Color, String) method will help us.
-The first two parameters are the cell's x and y coordinates, the third is the background color, and the last is the cell's text,
-which is displayed on the playing field. You can find a list of available colors in the game engine's com.codegym.engine.cell.Color enum.
-We don't need any cell text, so we'll pass an empty string.
-For example, to make the cell with coordinates x = 0 and y = 2 black, you need to call setCellValueEx(0, 2, Color.BLACK, "").
-To paint all the cells rather than just one, we need to set the color and text of each cell in each row of the playing field. Loops will help us do this.
-
-For example:
-for (int y = 0; y < height of the playing field; y++) {
-for (int x = 0; x < width of the playing field; x++) {
-setCellValueEx(x, y, cell color, empty string);
-}
-}
-
-The game involves different game objects, so we'll put their common characteristics, such as the coordinates of their location on the playing field,
-into the GameObject parent class. We'll create a separate gameobjects package for all the classes representing game objects.
-Our first game objects will be stars. We'll create a Star class in the gameobjects package and make it inherit the GameObject class.
 
 
 

@@ -1,6 +1,7 @@
 package com.codegym.games.spaceinvaders;
 
 import com.codegym.engine.cell.*;
+import com.codegym.games.spaceinvaders.gameobjects.EnemyFleet;
 import com.codegym.games.spaceinvaders.gameobjects.Star;
 
 import java.util.ArrayList;
@@ -10,20 +11,28 @@ public class SpaceInvadersGame extends Game {
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
     private List<Star> stars;
-
+    private EnemyFleet enemyFleet;
     @Override
     public void initialize() {
         setScreenSize(WIDTH, HEIGHT);
         createGame();
     }
 
+    @Override
+    public void onTurn(int step) {
+        drawScene();
+    }
+
     private void createGame() {
+        enemyFleet = new EnemyFleet();
         createStars();
         drawScene();
+        setTurnTimer(40);
     }
 
     private void drawScene() {
         drawField();
+        enemyFleet.draw(this);
     }
 
     private void drawField() {
