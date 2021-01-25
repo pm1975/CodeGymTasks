@@ -1,16 +1,32 @@
-taskKey="com.codegym.games.spaceinvaders.part11"\n\nSpace Invaders (Part 11/34)
+taskKey="com.codegym.games.spaceinvaders.part12"\n\nSpace Invaders (Part 12/34)
+
+We'll create a Bullet class responsible for the projectiles. This class's constructor will take x and y coordinates and a direction.
+The constructor will also call the setMatrix method with the projectile's matrix (ShapeMatrix.BULLET), which you can find in the ShapeMatrix class.
+Because the projectiles only fly up or down, only the y coordinate changes. We'll add a dy variable, which will be responsible for the magnitude of change in the y coordinate.
+During upward flight, dy is negative. When flying down, it is positive. As a result, all we need to do in the move method is increase the y coordinate by dy.
+We'll declare an isAlive variable that will indicate whether the projectile is "alive".
+When created, it is "alive", but it "dies" if it hits an opponent's ship.
+We'll implement this behavior later.
+
+
+Requirements:
+1.	There must be a public Bullet class in a separate file in the gameobjects package.
+2.	The Bullet class must be a descendant of the GameObject class.
+3.	There must be a private int dy variable in the Bullet class.
+4.	The Bullet class must have a public constructor with three parameters (double x, double y, Direction direction) that calls the base class&#39;s constructor with its x and y parameters.
+5.	The Bullet class must have a public boolean isAlive field that is initialized to true when it is declared.
+6.	The Bullet class&#39;s constructor must call the base class&#39;s setMatrix(int[][]) method. Pass ShapeMatrix.BULLET to the method.
+7.	The Bullet class&#39;s constructor must initialize the dy field to -1 if the constructor&#39;s direction parameter is equal to Direction.UP.
+8.	The Bullet class&#39;s constructor must initialize the dy field to 1 if the constructor&#39;s direction parameter is not equal to Direction.UP.
+9.	The Bullet class must have a public void move() method.
+10.	The move() method must increase the y field by dy.
+
+
+Space Invaders (Part 11/34)
 
 When the ships reach the edge of the screen, they begin to move in the opposite direction and drop lower.
 To achieve this, we need to implement the EnemyFleet class's move method.
 
-
-Requirements:
-1.	The EnemyFleet class&#39;s move() method does nothing if there are no ships in the ships list.
-2.	If the direction field is equal to Direction.LEFT and the getLeftBorder() method returns a negative value, you need to set the direction field equal to Direction.RIGHT.
-3.	If the direction field is equal to Direction.RIGHT and the getRightBorder() method returns a value greater than SpaceInvadersGame.WIDTH, you need to set the direction field equal to Direction.LEFT.
-4.	In the move() method, you need to call the getSpeed() method.
-5.	If the value of the direction field changes, you need to call the move(Direction, double) method with the following arguments on each object in the ships list: Direction.DOWN, value returned by the getSpeed() method.
-6.	If the value of the direction field does not change, you need to call the move(Direction, double) method with the following arguments on each object in the ships list: direction, value returned by the getSpeed() method.
 
 
 Space Invaders (Part 10/34)
@@ -51,13 +67,6 @@ In this part of the project, we'll prepare the foundation for the enemy fleet. T
 It will store the list of ships, number of rows of ships (ROWS_COUNT), number of ships per row (COLUMNS_COUNT),
 and distance between left corners of adjacent ships (STEP). We'll create the ships and add them to the ships list in the createShips method,
 which we will implement later.
-
-
-
-Space Invaders (Part 6/34)
-
-Now we'll create a Ship class that will store properties that all spaceships share. It will have a setStaticView method that at present will set a matrix.
-Later, it will set an animation. First, we make a class for ships in the enemy's fleet: EnemyShip. We've provided its matrix for you in the ShapeMatrix class.
 
 
 
