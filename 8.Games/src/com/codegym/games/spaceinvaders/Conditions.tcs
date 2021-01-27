@@ -1,4 +1,25 @@
-taskKey="com.codegym.games.spaceinvaders.part15"\n\nSpace Invaders (Part 15/34)
+taskKey="com.codegym.games.spaceinvaders.part16"\n\nSpace Invaders (Part 16/34)
+
+Now we'll create the player's ship. We need the PlayerShip class for this. Its constructor will set the ship's coordinates so that
+the ship is displayed centered at the bottom of the screen. The constructor sets the ship's appearance by setting the PLAYER matrix,
+which we've provided for you in the ShapeMatrix class. A ship can have two states: "alive" or "dead". To represent these states,
+we'll add an isAlive field to the Ship parent class. When a projectile hits a ship, they (the projectile and the ship) are destroyed,
+so we'll add a kill method. When it is called, we'll "kill" the ship and the projectile.
+
+
+Requirements:
+1.	There must be a public PlayerShip class in a separate file in the gameobjects package.
+2.	The PlayerShip class must be a descendant of the Ship class.
+3.	The PlayerShip class must have a public no-parameter constructor that calls the base class&#39;s constructor with the following arguments: SpaceInvadersGame.WIDTH / 2.0, SpaceInvadersGame.HEIGHT - ShapeMatrix.PLAYER.length - 1
+4.	The PlayerShip class&#39;s constructor must call the setStaticView(int[][]) method. Pass ShapeMatrix.PLAYER as the argument.
+5.	The Ship class must have a public boolean isAlive field that is initialized to true when it is declared.
+6.	The Ship class must have a public void kill() method.
+7.	The Ship class&#39;s kill() method must set the isAlive field to false.
+8.	The Bullet class must have a public void kill() method.
+9.	The Bullet class&#39;s kill() method must set the isAlive field to false.
+
+
+Space Invaders (Part 15/34)
 
 We'll store all the enemy projectiles in an enemyBullets field in the SpaceInvadersGame class. We'll add code to draw and move them in appropriate methods.
 To remove projectiles that are no longer relevant, we'll create and implement a removeDeadBullets() method in the SpaceInvadersGame class.
@@ -9,19 +30,6 @@ Let's add a check() helper function. At this stage, it will call the removeDeadB
 We'll call the fire() method on the fleet with the same frequency, potentially causing an enemy ship to fire.
 If a shot is fired, the method returns a projectile, which must be added to the list.
 
-
-Requirements:
-1.	The SpaceInvadersGame class must have a private List&lt;Bullet&gt; enemyBullets field.
-2.	In the createGame() method, the enemyBullets field must be initialized with a new ArrayList&lt;Bullet&gt; object before the call to the drawScene() method.
-3.	In the drawScene() method, the draw(Game) method must be called on each object in the enemyBullets list after the call to the drawField() method. Pass &quot;this&quot; to the method.
-4.	The moveSpaceObjects() method must call the move() method on each object in the enemyBullets list.
-5.	The SpaceInvadersGame class must have a private void removeDeadBullets() method.
-6.	In the removeDeadBullets() method, you need to remove all &quot;dead&quot; projectiles and projectiles that have flown off the screen (y coordinate is greater than or equal to HEIGHT - 1) from the enemyBullets list.
-7.	The SpaceInvadersGame class must have a private void check() method.
-8.	In the check() method, you need to call the removeDeadBullets() method.
-9.	In the SpaceInvadersGame class&#39;s onTurn(int) method, you need to call the check() method before the call to the drawScene() method.
-10.	In the onTurn(int) method, you need to call the fire(Game) method with this as an argument on the enemyFleet object before the call to the drawScene() method.
-11.	If the value returned by calling the fire(Game) method on the enemyFleet object is not null, you need to add the return value to the enemyBullets list. Add it before the call to the drawScene() method.
 
 
 Space Invaders (Part 14/34)
@@ -56,17 +64,6 @@ Space Invaders (Part 11/34)
 
 When the ships reach the edge of the screen, they begin to move in the opposite direction and drop lower.
 To achieve this, we need to implement the EnemyFleet class's move method.
-
-
-
-Space Invaders (Part 10/34)
-
-According to the rules of the game, the fewer ships there are, the faster they move from side to side.
-We'll implement this relationship in the getSpeed method. Note that the enemy ships' speed must not exceed 2.
-We'll also give the EnemyFleet class a direction field and a move method.
-We'll need to give the SpaceInvadersGame class a moveSpaceObjects method. That's where we'll move objects.
-The ships move at each step of the game, so the moveSpaceObjects method must be called in the onTurn method.
-To immediately see the movement on the screen, you need to call the moveSpaceObjects method before redrawing the screen.
 
 
 
