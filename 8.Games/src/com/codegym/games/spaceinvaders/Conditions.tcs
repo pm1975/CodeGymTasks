@@ -1,4 +1,33 @@
-taskKey="com.codegym.games.spaceinvaders.part16"\n\nSpace Invaders (Part 16/34)
+taskKey="com.codegym.games.spaceinvaders.part18"\n\nSpace Invaders (Part 18/34)
+
+At this stage, we'll prepare an animation for when a ship explodes. To do this, we need a List<int[][]> frames field,
+which will store a list of matrices representing the animation frames.
+We'll also need a frameIndex field that stores the index of the current animation frame.
+We'll set the animation frames in the setAnimatedView method. It takes an array of frames (matrices) and puts them in the frames list.
+Finally, we'll implement the setStaticView method, which sets the ship's initial matrix.
+
+
+Requirements:
+1.	The Ship class must have a private List&lt;int[][]&gt; frames field.
+2.	The Ship class must have a private int frameIndex field.
+3.	The Ship class must have a public void setAnimatedView(int[][]... viewFrames) method.
+4.	The setAnimatedView(int[][]... viewFrames) method must call the base class&#39;s setMatrix(int[][]) method. Pass viewFrames[0] to the method.
+5.	The frames field must be initialized to Arrays.asList(viewFrames) in the setAnimatedView(int[][]... viewFrames) method.
+6.	In the setAnimatedView(int[][]... viewFrames) method, you need to set the frameIndex field to 0.
+7.	The frames field must be initialized to a new ArrayList&lt;int[][]&gt; object in the setStaticView(int[][] viewFrame) method.
+8.	In the setStaticView(int[][] viewFrame) method, you need to add the viewFrame object to the frames list.
+9.	In the setStaticView(int[][]) method, you need to set the frameIndex field to 0.
+
+
+Space Invaders (Part 17/34)
+
+We'll give the PlayerShip class a method that checks whether enemy projectiles have hit the player's ship (the isCollision() method in the GameObject class).
+If there is a hit, it will "kill" the ship and the projectile. We'll also add the player's ship to the class.
+We'll draw it and add the collision check in the appropriate method.
+
+
+
+Space Invaders (Part 16/34)
 
 Now we'll create the player's ship. We need the PlayerShip class for this. Its constructor will set the ship's coordinates so that
 the ship is displayed centered at the bottom of the screen. The constructor sets the ship's appearance by setting the PLAYER matrix,
@@ -6,17 +35,6 @@ which we've provided for you in the ShapeMatrix class. A ship can have two state
 we'll add an isAlive field to the Ship parent class. When a projectile hits a ship, they (the projectile and the ship) are destroyed,
 so we'll add a kill method. When it is called, we'll "kill" the ship and the projectile.
 
-
-Requirements:
-1.	There must be a public PlayerShip class in a separate file in the gameobjects package.
-2.	The PlayerShip class must be a descendant of the Ship class.
-3.	The PlayerShip class must have a public no-parameter constructor that calls the base class&#39;s constructor with the following arguments: SpaceInvadersGame.WIDTH / 2.0, SpaceInvadersGame.HEIGHT - ShapeMatrix.PLAYER.length - 1
-4.	The PlayerShip class&#39;s constructor must call the setStaticView(int[][]) method. Pass ShapeMatrix.PLAYER as the argument.
-5.	The Ship class must have a public boolean isAlive field that is initialized to true when it is declared.
-6.	The Ship class must have a public void kill() method.
-7.	The Ship class&#39;s kill() method must set the isAlive field to false.
-8.	The Bullet class must have a public void kill() method.
-9.	The Bullet class&#39;s kill() method must set the isAlive field to false.
 
 
 Space Invaders (Part 15/34)
@@ -45,25 +63,6 @@ Let's introduce a DIFFICULTY variable responsible for the game's difficulty, spe
 All ships should be able to fire, so we'll add a fire method to the Ship class.
 We won't create any instances of this class, so this method will be a "stub". We'll implement it in child classes.
 To make a projectile fly out of the front cannon, you need to pass the right coordinates to the constructor.
-
-
-
-Space Invaders (Part 12/34)
-
-We'll create a Bullet class responsible for the projectiles. This class's constructor will take x and y coordinates and a direction.
-The constructor will also call the setMatrix method with the projectile's matrix (ShapeMatrix.BULLET), which you can find in the ShapeMatrix class.
-Because the projectiles only fly up or down, only the y coordinate changes. We'll add a dy variable, which will be responsible for the magnitude of change in the y coordinate.
-During upward flight, dy is negative. When flying down, it is positive. As a result, all we need to do in the move method is increase the y coordinate by dy.
-We'll declare an isAlive variable that will indicate whether the projectile is "alive".
-When created, it is "alive", but it "dies" if it hits an opponent's ship.
-We'll implement this behavior later.
-
-
-
-Space Invaders (Part 11/34)
-
-When the ships reach the edge of the screen, they begin to move in the opposite direction and drop lower.
-To achieve this, we need to implement the EnemyFleet class's move method.
 
 
 
