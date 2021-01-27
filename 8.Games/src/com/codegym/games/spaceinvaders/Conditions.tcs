@@ -1,4 +1,17 @@
-taskKey="com.codegym.games.spaceinvaders.part18"\n\nSpace Invaders (Part 18/34)
+taskKey="com.codegym.games.spaceinvaders.part19"\n\nSpace Invaders (Part 19/34)
+
+We'll implement logic to "kill" the player by overriding the kill() method. In addition to setting the isAlive flag to false,
+it will add an animation of the ship's destruction.
+
+
+Requirements:
+1.	The PlayerShip class must override the kill() method.
+2.	The kill() method must not do anything if the player&#39;s ship is &quot;dead&quot;.
+3.	The PlayerShip class&#39;s kill() method must set the isAlive field to false.
+4.	In the PlayerShip class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(int[][]...) method with the following arguments: ShapeMatrix.KILL_PLAYER_ANIMATION_FIRST, ShapeMatrix.KILL_PLAYER_ANIMATION_SECOND, ShapeMatrix.KILL_PLAYER_ANIMATION_THIRD, ShapeMatrix.DEAD_PLAYER.
+
+
+Space Invaders (Part 18/34)
 
 At this stage, we'll prepare an animation for when a ship explodes. To do this, we need a List<int[][]> frames field,
 which will store a list of matrices representing the animation frames.
@@ -6,17 +19,6 @@ We'll also need a frameIndex field that stores the index of the current animatio
 We'll set the animation frames in the setAnimatedView method. It takes an array of frames (matrices) and puts them in the frames list.
 Finally, we'll implement the setStaticView method, which sets the ship's initial matrix.
 
-
-Requirements:
-1.	The Ship class must have a private List&lt;int[][]&gt; frames field.
-2.	The Ship class must have a private int frameIndex field.
-3.	The Ship class must have a public void setAnimatedView(int[][]... viewFrames) method.
-4.	The setAnimatedView(int[][]... viewFrames) method must call the base class&#39;s setMatrix(int[][]) method. Pass viewFrames[0] to the method.
-5.	The frames field must be initialized to Arrays.asList(viewFrames) in the setAnimatedView(int[][]... viewFrames) method.
-6.	In the setAnimatedView(int[][]... viewFrames) method, you need to set the frameIndex field to 0.
-7.	The frames field must be initialized to a new ArrayList&lt;int[][]&gt; object in the setStaticView(int[][] viewFrame) method.
-8.	In the setStaticView(int[][] viewFrame) method, you need to add the viewFrame object to the frames list.
-9.	In the setStaticView(int[][]) method, you need to set the frameIndex field to 0.
 
 
 Space Invaders (Part 17/34)
@@ -54,15 +56,6 @@ Space Invaders (Part 14/34)
 
 Let's create and implement a fire() method for the EnemyFleet class. This method will call the fire on a randomly selected ship in the fleet.
 Additionally, the probability that the fleet will fire will be determined by the value of the DIFFICULTY field.
-
-
-
-Space Invaders (Part 13/34)
-
-Let's introduce a DIFFICULTY variable responsible for the game's difficulty, specifically the probability that an enemy ship will fire in a step of the game.
-All ships should be able to fire, so we'll add a fire method to the Ship class.
-We won't create any instances of this class, so this method will be a "stub". We'll implement it in child classes.
-To make a projectile fly out of the front cannon, you need to pass the right coordinates to the constructor.
 
 
 
