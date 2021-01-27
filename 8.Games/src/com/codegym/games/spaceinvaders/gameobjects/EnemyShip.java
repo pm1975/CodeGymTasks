@@ -27,5 +27,4 @@ public class EnemyShip extends Ship {
     public Bullet fire() {
         return new Bullet(x + 1, y + height, Direction.DOWN);
     }
-
 }

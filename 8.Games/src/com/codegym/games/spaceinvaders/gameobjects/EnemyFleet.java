@@ -27,7 +27,7 @@ public class EnemyFleet {
 
     private void createShips() {
         ships = new ArrayList<>();
-        for (int x = 0; x < COLUMNS_COUNT; x++) {
+        for(int x = 0; x < COLUMNS_COUNT; x++) {
             for (int y = 0; y < ROWS_COUNT; y++) {
                 ships.add(new EnemyShip(x * STEP, y * STEP + 12));
             }
@@ -81,14 +81,18 @@ public class EnemyFleet {
     }
 
     public Bullet fire(Game game) {
-        if (ships.size() == 0) {
+        if (ships.isEmpty()) {
             return null;
         }
-        int number = game.getRandomNumber(100 / SpaceInvadersGame.DIFFICULTY);
-        if (number > 0) {
+
+        int random = game.getRandomNumber(100 / SpaceInvadersGame.DIFFICULTY);
+        if (random > 0) {
             return null;
         }
+
         int shipNumber = game.getRandomNumber(ships.size());
-        return ships.get(shipNumber).fire();
+        EnemyShip ship = ships.get(shipNumber);
+
+        return ship.fire();
     }
 }

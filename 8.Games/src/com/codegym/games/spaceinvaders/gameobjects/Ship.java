@@ -5,11 +5,11 @@ public class Ship extends GameObject {
         super(x, y);
     }
 
-    public void setStaticView(int[][] viewFrame) {
-        setMatrix(viewFrame);
-    }
-
     public Bullet fire() {
         return null;
+    }
+
+    public void setStaticView(int[][] viewFrame) {
+        setMatrix(viewFrame);
     }
 }
