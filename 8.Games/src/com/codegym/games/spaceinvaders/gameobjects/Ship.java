@@ -47,7 +47,7 @@ public class Ship extends GameObject {
         matrix = frames.get(frameIndex);
     }
 
-    @Override
+
     public void draw(Game game) {
         super.draw(game);
         nextFrame();
