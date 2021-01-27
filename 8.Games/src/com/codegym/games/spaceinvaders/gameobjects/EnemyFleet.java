@@ -27,7 +27,7 @@ public class EnemyFleet {
 
     private void createShips() {
         ships = new ArrayList<>();
-        for(int x = 0; x < COLUMNS_COUNT; x++) {
+        for (int x = 0; x < COLUMNS_COUNT; x++) {
             for (int y = 0; y < ROWS_COUNT; y++) {
                 ships.add(new EnemyShip(x * STEP, y * STEP + 12));
             }
