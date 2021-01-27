@@ -1,17 +1,34 @@
-taskKey="com.codegym.games.spaceinvaders.part14"\n\nSpace Invaders (Part 14/34)
+taskKey="com.codegym.games.spaceinvaders.part15"\n\nSpace Invaders (Part 15/34)
+
+We'll store all the enemy projectiles in an enemyBullets field in the SpaceInvadersGame class. We'll add code to draw and move them in appropriate methods.
+To remove projectiles that are no longer relevant, we'll create and implement a removeDeadBullets() method in the SpaceInvadersGame class.
+To remove the projectiles, you can either use an iterator, or create a copy of the enemyBullets list and run through it in a loop.
+If we determine that a projectile needs to be removed, we'll call enemyBullets.remove(bullet).
+Projectiles are irrelevant if they have flown off the screen or if they have hit their target (isAlive == false).
+Let's add a check() helper function. At this stage, it will call the removeDeadBullets() method. Later, it will perform various checks at each step of the game.
+We'll call the fire() method on the fleet with the same frequency, potentially causing an enemy ship to fire.
+If a shot is fired, the method returns a projectile, which must be added to the list.
+
+
+Requirements:
+1.	The SpaceInvadersGame class must have a private List&lt;Bullet&gt; enemyBullets field.
+2.	In the createGame() method, the enemyBullets field must be initialized with a new ArrayList&lt;Bullet&gt; object before the call to the drawScene() method.
+3.	In the drawScene() method, the draw(Game) method must be called on each object in the enemyBullets list after the call to the drawField() method. Pass &quot;this&quot; to the method.
+4.	The moveSpaceObjects() method must call the move() method on each object in the enemyBullets list.
+5.	The SpaceInvadersGame class must have a private void removeDeadBullets() method.
+6.	In the removeDeadBullets() method, you need to remove all &quot;dead&quot; projectiles and projectiles that have flown off the screen (y coordinate is greater than or equal to HEIGHT - 1) from the enemyBullets list.
+7.	The SpaceInvadersGame class must have a private void check() method.
+8.	In the check() method, you need to call the removeDeadBullets() method.
+9.	In the SpaceInvadersGame class&#39;s onTurn(int) method, you need to call the check() method before the call to the drawScene() method.
+10.	In the onTurn(int) method, you need to call the fire(Game) method with this as an argument on the enemyFleet object before the call to the drawScene() method.
+11.	If the value returned by calling the fire(Game) method on the enemyFleet object is not null, you need to add the return value to the enemyBullets list. Add it before the call to the drawScene() method.
+
+
+Space Invaders (Part 14/34)
 
 Let's create and implement a fire() method for the EnemyFleet class. This method will call the fire on a randomly selected ship in the fleet.
 Additionally, the probability that the fleet will fire will be determined by the value of the DIFFICULTY field.
 
-
-Requirements:
-1.	The EnemyFleet class must have a public Bullet fire(Game) method.
-2.	The EnemyFleet class&#39;s fire(Game) method must return null if there are no enemy ships in the ships list.
-3.	The EnemyFleet class&#39;s fire(Game) method must call the getRandomNumber(int) method on the Game object with the argument (100 / SpaceInvadersGame.DIFFICULTY).
-4.	The EnemyFleet class&#39;s fire(Game) method must return null if the call to the getRandomNumber(int) method on the Game object with the argument (100 / SpaceInvadersGame.DIFFICULTY) returns a value greater than zero.
-5.	The EnemyFleet class&#39;s fire(Game) method must call the getRandomNumber(int) method on the Game object with an argument equal to the number of enemy ships in the ships list.
-6.	The EnemyFleet class&#39;s fire(Game) method must call the fire() method on the ship in the ships list whose index is equal to the value returned by game.getRandomNumber(ships.size()).
-7.	The EnemyFleet class&#39;s fire(Game) method must return the value returned by calling the fire() method on the enemy ship.
 
 
 Space Invaders (Part 13/34)
@@ -50,14 +67,6 @@ We'll also give the EnemyFleet class a direction field and a move method.
 We'll need to give the SpaceInvadersGame class a moveSpaceObjects method. That's where we'll move objects.
 The ships move at each step of the game, so the moveSpaceObjects method must be called in the onTurn method.
 To immediately see the movement on the screen, you need to call the moveSpaceObjects method before redrawing the screen.
-
-
-
-Space Invaders (Part 9/34)
-
-Everything will move in the game, which means that we need to specify the direction in which objects are moving. It is convenient to store directions in an enum.
-We'll describe the motion of an enemy ship in the move() method. The method will change the appropriate coordinate depending on direction and speed.
-The downward speed will be a constant 2. Because the enemy fleet moves back and forth between edges of the playing field, we need to watch for when the fleet reaches the edges.
 
 
 
