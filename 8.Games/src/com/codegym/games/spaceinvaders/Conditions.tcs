@@ -1,4 +1,29 @@
-taskKey="com.codegym.games.spaceinvaders.part12"\n\nSpace Invaders (Part 12/34)
+taskKey="com.codegym.games.spaceinvaders.part14"\n\nSpace Invaders (Part 14/34)
+
+Let's create and implement a fire() method for the EnemyFleet class. This method will call the fire on a randomly selected ship in the fleet.
+Additionally, the probability that the fleet will fire will be determined by the value of the DIFFICULTY field.
+
+
+Requirements:
+1.	The EnemyFleet class must have a public Bullet fire(Game) method.
+2.	The EnemyFleet class&#39;s fire(Game) method must return null if there are no enemy ships in the ships list.
+3.	The EnemyFleet class&#39;s fire(Game) method must call the getRandomNumber(int) method on the Game object with the argument (100 / SpaceInvadersGame.DIFFICULTY).
+4.	The EnemyFleet class&#39;s fire(Game) method must return null if the call to the getRandomNumber(int) method on the Game object with the argument (100 / SpaceInvadersGame.DIFFICULTY) returns a value greater than zero.
+5.	The EnemyFleet class&#39;s fire(Game) method must call the getRandomNumber(int) method on the Game object with an argument equal to the number of enemy ships in the ships list.
+6.	The EnemyFleet class&#39;s fire(Game) method must call the fire() method on the ship in the ships list whose index is equal to the value returned by game.getRandomNumber(ships.size()).
+7.	The EnemyFleet class&#39;s fire(Game) method must return the value returned by calling the fire() method on the enemy ship.
+
+
+Space Invaders (Part 13/34)
+
+Let's introduce a DIFFICULTY variable responsible for the game's difficulty, specifically the probability that an enemy ship will fire in a step of the game.
+All ships should be able to fire, so we'll add a fire method to the Ship class.
+We won't create any instances of this class, so this method will be a "stub". We'll implement it in child classes.
+To make a projectile fly out of the front cannon, you need to pass the right coordinates to the constructor.
+
+
+
+Space Invaders (Part 12/34)
 
 We'll create a Bullet class responsible for the projectiles. This class's constructor will take x and y coordinates and a direction.
 The constructor will also call the setMatrix method with the projectile's matrix (ShapeMatrix.BULLET), which you can find in the ShapeMatrix class.
@@ -8,18 +33,6 @@ We'll declare an isAlive variable that will indicate whether the projectile is "
 When created, it is "alive", but it "dies" if it hits an opponent's ship.
 We'll implement this behavior later.
 
-
-Requirements:
-1.	There must be a public Bullet class in a separate file in the gameobjects package.
-2.	The Bullet class must be a descendant of the GameObject class.
-3.	There must be a private int dy variable in the Bullet class.
-4.	The Bullet class must have a public constructor with three parameters (double x, double y, Direction direction) that calls the base class&#39;s constructor with its x and y parameters.
-5.	The Bullet class must have a public boolean isAlive field that is initialized to true when it is declared.
-6.	The Bullet class&#39;s constructor must call the base class&#39;s setMatrix(int[][]) method. Pass ShapeMatrix.BULLET to the method.
-7.	The Bullet class&#39;s constructor must initialize the dy field to -1 if the constructor&#39;s direction parameter is equal to Direction.UP.
-8.	The Bullet class&#39;s constructor must initialize the dy field to 1 if the constructor&#39;s direction parameter is not equal to Direction.UP.
-9.	The Bullet class must have a public void move() method.
-10.	The move() method must increase the y field by dy.
 
 
 Space Invaders (Part 11/34)
@@ -45,28 +58,6 @@ Space Invaders (Part 9/34)
 Everything will move in the game, which means that we need to specify the direction in which objects are moving. It is convenient to store directions in an enum.
 We'll describe the motion of an enemy ship in the move() method. The method will change the appropriate coordinate depending on direction and speed.
 The downward speed will be a constant 2. Because the enemy fleet moves back and forth between edges of the playing field, we need to watch for when the fleet reaches the edges.
-
-
-
-Space Invaders (Part 8/34)
-
-Let's continue working on the enemy fleet. To do this, we need to fill the ships list in the createShips() method.
-Keep in mind that the best distance from the top of the screen to the top row of ships is 12 cells.
-To add the enemy fleet to the game, we'll create an enemyFleet field in the SpaceInvadersGame class and initialize it to a new EnemyFleet object.
-The enemy ships are created when the createShips method is called in the EnemyFleet constructor.
-The game is dynamic, so we'll need to regularly redraw the screen and perform other actions. Everything that happens at each step is performed in the onTurn(int) method.
-We'll use the setTurnTimer method to set how often this method is called. It takes an argument that determines how long each step is in milliseconds.
-In other words, given a step of 40 ms (0.04 second), the onTurn method will be called 25 times per second (1 / 0.04 second).
-If you've done everything correctly, you'll see the enemy fleet when you run the program.
-
-
-
-Space Invaders (Part 7/34)
-
-In this part of the project, we'll prepare the foundation for the enemy fleet. To do this, we'll create an EnemyFleet class.
-It will store the list of ships, number of rows of ships (ROWS_COUNT), number of ships per row (COLUMNS_COUNT),
-and distance between left corners of adjacent ships (STEP). We'll create the ships and add them to the ships list in the createShips method,
-which we will implement later.
 
 
 
