@@ -1,5 +1,6 @@
 package com.codegym.task.task25.task2509;
 
+import java.io.IOException;
 import java.net.Socket;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.RunnableFuture;
@@ -12,7 +13,10 @@ public abstract class SocketTask<T> implements CancellableTask<T> {
     }
 
     public synchronized void cancel() {
-        // Close all resources here
+        try {
+            if(socket != null) socket.close();
+        } catch (IOException ignored) {
+        }
     }
 
     public RunnableFuture<T> newTask() {
@@ -20,7 +24,11 @@ public abstract class SocketTask<T> implements CancellableTask<T> {
             public boolean cancel(boolean mayInterruptIfRunning) {
                 // Close all resources here using the proper SocketTask method
                 // Call the superclass's method in a finally block
-                return false;
+                try {
+                    SocketTask.this.cancel();
+                } finally {
+                    return super.cancel(mayInterruptIfRunning);
+                }
             }
         };
     }
