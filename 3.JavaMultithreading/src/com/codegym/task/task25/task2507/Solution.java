@@ -19,8 +19,15 @@ public class Solution extends Thread {
         this.in = socket.getInputStream();
     }
 
+    @Override
     public void interrupt() {
-        // Implement the logic here
+        try {
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            super.interrupt();
+        }
     }
 
     public void run() {
