@@ -18,7 +18,8 @@ public class Teacher extends UniversityPerson {
     public void teach() {
     }
 
-    public void printData() {
-        System.out.println("Teacher: " + name);
+    @Override
+    public String getPosition() {
+        return "Teacher";
     }
 }
