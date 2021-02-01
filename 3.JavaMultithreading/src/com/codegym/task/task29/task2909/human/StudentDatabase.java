@@ -9,6 +9,7 @@ public class StudentDatabase {
     public static void addStudentInfo(Student student) {
         students.add(student);
         printStudentInfo(student);
+
     }
 
     public static void printStudentInfo(Student student) {
@@ -16,8 +17,9 @@ public class StudentDatabase {
     }
 
     public static void removeStudent(int index) {
-        if (students.size() > index && index >=0)
+        if (index >= 0 && index < students.size()) {
             students.remove(index);
+        }
     }
 
     public static void findJohnOrAlex() {
