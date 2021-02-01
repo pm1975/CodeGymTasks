@@ -1,7 +1,6 @@
 package com.codegym.task.task29.task2909.human;
 
 public class Worker extends Human {
-
     private double salary;
     public String company;
 

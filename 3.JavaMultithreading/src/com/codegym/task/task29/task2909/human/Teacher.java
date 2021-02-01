@@ -6,8 +6,6 @@ public class Teacher extends UniversityPerson {
 
     public Teacher(String name, int age, int numberOfStudents) {
         super(name, age);
-        this.name = name;
-        this.age = age;
         this.numberOfStudents = numberOfStudents;
     }
 
@@ -18,7 +16,6 @@ public class Teacher extends UniversityPerson {
     public void teach() {
     }
 
-    @Override
     public String getPosition() {
         return "Teacher";
     }

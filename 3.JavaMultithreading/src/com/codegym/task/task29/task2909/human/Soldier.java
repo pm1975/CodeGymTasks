@@ -1,16 +1,13 @@
 package com.codegym.task.task29.task2909.human;
 
 public class Soldier extends Human {
-    protected boolean isSoldier;
 
     public Soldier(String name, int age) {
         super(name, age);
-        isSoldier = true;
     }
 
     public void live() {
-        if (isSoldier)
-            fight();
+        fight();
     }
 
     public void fight() {
