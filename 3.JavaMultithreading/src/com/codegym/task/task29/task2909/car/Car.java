@@ -71,6 +71,13 @@ public abstract class Car {
         return 0;
     }
 
+    private boolean canPassengersBeCarried() {
+        if (isDriverAvailable() && fuel > 0) {
+            return true;
+        }
+        return false;
+    }
+
     public boolean isDriverAvailable() {
         return driverAvailable;
     }
@@ -80,8 +87,9 @@ public abstract class Car {
     }
 
     public void startMoving() {
-        if (numberOfPassengers > 0)
+        if (numberOfPassengers > 0) {
             fastenPassengerBelts();
+        }
         fastenDriverBelt();
     }
 
@@ -92,10 +100,4 @@ public abstract class Car {
     }
 
     public abstract int getMaxSpeed();
-
-    private boolean canPassengersBeCarried() {
-        if (isDriverAvailable() && fuel > 0)
-            return true;
-        return false;
-    }
 }
