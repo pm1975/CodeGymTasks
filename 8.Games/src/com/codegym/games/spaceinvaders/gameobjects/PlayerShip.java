@@ -10,6 +10,10 @@ public class PlayerShip extends Ship {
 
     private Direction direction = Direction.UP;
 
+    public Direction getDirection() {
+        return direction;
+    }
+
     public void setDirection(Direction direction) {
         if (direction == Direction.DOWN)
             return;
