@@ -105,6 +105,7 @@ public class SpaceInvadersGame extends Game {
         for (Bullet enemyBullet : enemyBullets) {
             enemyBullet.move();
         }
+        playerShip.move();
     }
 
     private void removeDeadBullets() {

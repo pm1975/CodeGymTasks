@@ -1,4 +1,20 @@
-taskKey="com.codegym.games.spaceinvaders.part22"\n\nSpace Invaders (Part 22/34)
+taskKey="com.codegym.games.spaceinvaders.part23"\n\nSpace Invaders (Part 23/34)
+
+In this part of the project, we'll move the player's ship. Keep in mind that the ship must not leave the playing field.
+To move the ship with the other objects, you need to call the move() method in the moveSpaceObjects() method of the game's main class.
+
+
+Requirements:
+1.	The PlayerShip class must have a public void move() method.
+2.	The move() method must not do anything if the isAlive field is false.
+3.	In the move() method, if the direction field is equal to Direction.LEFT, the x coordinate must be decreased by one.
+4.	In the move() method, if the direction field is equal to Direction.RIGHT, the x coordinate must be increased by one.
+5.	In the move() method, if the x coordinate is less than zero, you need to set it to 0.
+6.	In the move() method, if the sum of the x and width fields is greater than the width of the playing field (SpaceInvadersGame.WIDTH), you need to set the x coordinate to (SpaceInvadersGame.WIDTH - width).
+7.	In the SpaceInvadersGame class&#39;s moveSpaceObjects() method, you need to call the move() method on the player&#39;s ship.
+
+
+Space Invaders (Part 22/34)
 
 Let's add a new property to the player's ship: direction. We'll set it through a setter method. The ship can move in two directions: left or right.
 But it can also hold still, so we'll use "up" to represent this state. The ship isn't moving when the game starts,
@@ -6,15 +22,6 @@ so we'll set the ship's default direction to "up". To read the player's commands
 onKeyPress(Key) method. When the player presses left or right, this method will set the corresponding direction on the ship.
 We'll also implement the ability to restart a stopped game by pressing the SPACE key.
 
-
-Requirements:
-1.	The PlayerShip class must have a private Direction direction field that is initialized to Direction.UP when it is declared.
-2.	The PlayerShip class must have a public setDirection() setter.
-3.	The setDirection(Direction newDirection) setter must set the direction field to newDirection if newDirection is not equal to Direction.DOWN.
-4.	In the SpaceInvadersGame class, the onKeyPress(Key) method of the Game parent class must be overridden.
-5.	The onKeyPress(Key) method must call the createGame() method and do nothing more if the passed argument is Key.SPACE and the game is stopped (isGameStopped == true).
-6.	The onKeyPress(Key) method must set the direction of the player&#39;s ship to Direction.LEFT if the method&#39;s parameter is equal to Key.LEFT.
-7.	The onKeyPress(Key) method must set the direction of the player&#39;s ship to Direction.RIGHT if the method&#39;s parameter is equal to Key.RIGHT.
 
 
 Space Invaders (Part 21/34)
@@ -49,14 +56,6 @@ which will store a list of matrices representing the animation frames.
 We'll also need a frameIndex field that stores the index of the current animation frame.
 We'll set the animation frames in the setAnimatedView method. It takes an array of frames (matrices) and puts them in the frames list.
 Finally, we'll implement the setStaticView method, which sets the ship's initial matrix.
-
-
-
-Space Invaders (Part 17/34)
-
-We'll give the PlayerShip class a method that checks whether enemy projectiles have hit the player's ship (the isCollision() method in the GameObject class).
-If there is a hit, it will "kill" the ship and the projectile. We'll also add the player's ship to the class.
-We'll draw it and add the collision check in the appropriate method.
 
 
 
