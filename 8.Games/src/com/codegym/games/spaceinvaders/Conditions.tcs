@@ -1,25 +1,29 @@
-taskKey="com.codegym.games.spaceinvaders.part21"\n\nSpace Invaders (Part 21/34)
+taskKey="com.codegym.games.spaceinvaders.part22"\n\nSpace Invaders (Part 22/34)
+
+Let's add a new property to the player's ship: direction. We'll set it through a setter method. The ship can move in two directions: left or right.
+But it can also hold still, so we'll use "up" to represent this state. The ship isn't moving when the game starts,
+so we'll set the ship's default direction to "up". To read the player's commands (key presses), we'll override the Game parent class's
+onKeyPress(Key) method. When the player presses left or right, this method will set the corresponding direction on the ship.
+We'll also implement the ability to restart a stopped game by pressing the SPACE key.
+
+
+Requirements:
+1.	The PlayerShip class must have a private Direction direction field that is initialized to Direction.UP when it is declared.
+2.	The PlayerShip class must have a public setDirection() setter.
+3.	The setDirection(Direction newDirection) setter must set the direction field to newDirection if newDirection is not equal to Direction.DOWN.
+4.	In the SpaceInvadersGame class, the onKeyPress(Key) method of the Game parent class must be overridden.
+5.	The onKeyPress(Key) method must call the createGame() method and do nothing more if the passed argument is Key.SPACE and the game is stopped (isGameStopped == true).
+6.	The onKeyPress(Key) method must set the direction of the player&#39;s ship to Direction.LEFT if the method&#39;s parameter is equal to Key.LEFT.
+7.	The onKeyPress(Key) method must set the direction of the player&#39;s ship to Direction.RIGHT if the method&#39;s parameter is equal to Key.RIGHT.
+
+
+Space Invaders (Part 21/34)
 
 The game ends when the player wins or loses. Let's implement the stopGame method, which will stop the game and display an appropriate message on the screen.
 You decide on the exact wording of the messages about winning and losing. If a projectile hits a player, the explosion animation must be displayed before the game
 is stopped. To do this, in the stopGameWithDelay method, we'll call the stopGame method with a delay.
 In the check method, if the player is "dead", you need to call stopGameWithDelay to start a countdown to when the game will stop.
 
-
-Requirements:
-1.	The SpaceInvadersGame class must have a private boolean isGameStopped field.
-2.	The isGameStopped field must be initialized to false in the createGame() method before the call to the drawScene() method.
-3.	The SpaceInvadersGame class must have a private int animationsCount field.
-4.	The animationsCount field must be initialized to 0 in the createGame() method before the call to the drawScene() method.
-5.	The SpaceInvadersGame class must have a private void stopGame(boolean isWin) method.
-6.	The stopGame(boolean isWin) method must set the isGameStopped field to true.
-7.	In the stopGame(boolean isWin) method, you need to call the stopTurnTimer() method.
-8.	In the stopGame(boolean isWin) method, you need to call the showMessageDialog(Color, String, Color, int) method if isWin is true. Pass Color.GREEN as the text color.
-9.	In the stopGame(boolean isWin) method, you need to call the showMessageDialog(Color, String, Color, int) method if isWin is false. Pass Color.RED as the text color.
-10.	The SpaceInvadersGame class must have a private void stopGameWithDelay() method.
-11.	The stopGameWithDelay() method must increase the animationsCount field by one.
-12.	In the stopGameWithDelay() method, you need to call the stopGame(boolean) method with playerShip.isAlive as the argument if the animationsCount field is greater than or equal to 10.
-13.	In the SpaceInvadersGame class&#39;s check() method, you need to call the stopGameWithDelay() method if the player&#39;s ship is NOT alive.
 
 
 Space Invaders (Part 20/34)
@@ -53,16 +57,6 @@ Space Invaders (Part 17/34)
 We'll give the PlayerShip class a method that checks whether enemy projectiles have hit the player's ship (the isCollision() method in the GameObject class).
 If there is a hit, it will "kill" the ship and the projectile. We'll also add the player's ship to the class.
 We'll draw it and add the collision check in the appropriate method.
-
-
-
-Space Invaders (Part 16/34)
-
-Now we'll create the player's ship. We need the PlayerShip class for this. Its constructor will set the ship's coordinates so that
-the ship is displayed centered at the bottom of the screen. The constructor sets the ship's appearance by setting the PLAYER matrix,
-which we've provided for you in the ShapeMatrix class. A ship can have two states: "alive" or "dead". To represent these states,
-we'll add an isAlive field to the Ship parent class. When a projectile hits a ship, they (the projectile and the ship) are destroyed,
-so we'll add a kill method. When it is called, we'll "kill" the ship and the projectile.
 
 
 

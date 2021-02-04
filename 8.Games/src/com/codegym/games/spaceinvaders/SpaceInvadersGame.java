@@ -2,6 +2,7 @@ package com.codegym.games.spaceinvaders;
 
 import com.codegym.engine.cell.Color;
 import com.codegym.engine.cell.Game;
+import com.codegym.engine.cell.Key;
 import com.codegym.games.spaceinvaders.gameobjects.Bullet;
 import com.codegym.games.spaceinvaders.gameobjects.EnemyFleet;
 import com.codegym.games.spaceinvaders.gameobjects.PlayerShip;
@@ -41,6 +42,17 @@ public class SpaceInvadersGame extends Game {
         }
 
         drawScene();
+    }
+
+    @Override
+    public void onKeyPress(Key key) {
+        if (key == Key.SPACE && isGameStopped) {
+            createGame();
+        } else if (key == Key.LEFT) {
+            playerShip.setDirection(Direction.LEFT);
+        } else if (key == Key.RIGHT) {
+            playerShip.setDirection(Direction.RIGHT);
+        }
     }
 
     private void createGame() {
