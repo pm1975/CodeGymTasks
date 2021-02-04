@@ -1,17 +1,22 @@
-taskKey="com.codegym.games.spaceinvaders.part23"\n\nSpace Invaders (Part 23/34)
+taskKey="com.codegym.games.spaceinvaders.part24"\n\nSpace Invaders (Part 24/34)
+
+When you release the left key or the right key, the ship does not stop moving until it hits the edge of the playing field. Let's fix that.
+We'll override the Game class's onKeyReleased() method. This method is called when keys are released.
+If the player's ship is moving, the onKeyReleased(Key) method changes the player's direction to Direction.UP and, as a result, the ship stops moving.
+
+
+Requirements:
+1.	The PlayerShip class must have a public getDirection() getter that returns the value of the direction field.
+2.	In the SpaceInvadersGame class, the onKeyReleased(Key) method of the Game parent class must be overridden.
+3.	The onKeyReleased(Key) method must set the direction of the player&#39;s ship to Direction.UP if the method&#39;s parameter is equal to Key.LEFT and the current direction of the player&#39;s ship is Direction.LEFT.
+4.	The onKeyReleased(Key) method must set the direction of the player&#39;s ship to Direction.UP if the method&#39;s parameter is equal to Key.RIGHT and the current direction of the player&#39;s ship is Direction.RIGHT.
+
+
+Space Invaders (Part 23/34)
 
 In this part of the project, we'll move the player's ship. Keep in mind that the ship must not leave the playing field.
 To move the ship with the other objects, you need to call the move() method in the moveSpaceObjects() method of the game's main class.
 
-
-Requirements:
-1.	The PlayerShip class must have a public void move() method.
-2.	The move() method must not do anything if the isAlive field is false.
-3.	In the move() method, if the direction field is equal to Direction.LEFT, the x coordinate must be decreased by one.
-4.	In the move() method, if the direction field is equal to Direction.RIGHT, the x coordinate must be increased by one.
-5.	In the move() method, if the x coordinate is less than zero, you need to set it to 0.
-6.	In the move() method, if the sum of the x and width fields is greater than the width of the playing field (SpaceInvadersGame.WIDTH), you need to set the x coordinate to (SpaceInvadersGame.WIDTH - width).
-7.	In the SpaceInvadersGame class&#39;s moveSpaceObjects() method, you need to call the move() method on the player&#39;s ship.
 
 
 Space Invaders (Part 22/34)
@@ -46,16 +51,6 @@ Space Invaders (Part 19/34)
 
 We'll implement logic to "kill" the player by overriding the kill() method. In addition to setting the isAlive flag to false,
 it will add an animation of the ship's destruction.
-
-
-
-Space Invaders (Part 18/34)
-
-At this stage, we'll prepare an animation for when a ship explodes. To do this, we need a List<int[][]> frames field,
-which will store a list of matrices representing the animation frames.
-We'll also need a frameIndex field that stores the index of the current animation frame.
-We'll set the animation frames in the setAnimatedView method. It takes an array of frames (matrices) and puts them in the frames list.
-Finally, we'll implement the setStaticView method, which sets the ship's initial matrix.
 
 
 
