@@ -24,30 +24,45 @@ public class Car {
     }
 
     public static Car create(int type, int numberOfPassengers) {
-        if (type == 0) {
-            return new Truck(numberOfPassengers);
-        } else if (type == 1) {
-            return new Sedan(numberOfPassengers);
-        } else {
-            return new Cabriolet(numberOfPassengers);
+        switch (type) {
+            case TRUCK:
+                return new Truck(numberOfPassengers);
+            case SEDAN:
+                return new Sedan(numberOfPassengers);
+            case CABRIOLET:
+                return new Cabriolet(numberOfPassengers);
+            default:
+                return null;
         }
     }
 
-    public int fill(double numberOfGallons) {
-        if (numberOfGallons < 0)
-            return -1;
+    public void fill(double numberOfGallons) throws Exception {
+        if (numberOfGallons < 0) {
+            throw new Exception();
+        }
         fuel += numberOfGallons;
-        return 0;
+    }
+
+    public boolean isSummer(Date date, Date summerStart, Date summerEnd) {
+        if (date.before(summerStart) || date.after(summerEnd))
+            return false;
+        return true;
+    }
+
+    public double getWinterConsumption(int length) {
+        return length * winterFuelConsumption + winterWarmingUp;
+    }
+
+    public double getSummerConsumption(int length) {
+        return length * summerFuelConsumption;
     }
 
     public double getTripConsumption(Date date, int length, Date summerStart, Date summerEnd) {
-        double consumption;
-        if (date.before(summerStart) || date.after(summerEnd)) {
-            consumption = length * winterFuelConsumption + winterWarmingUp;
+        if (isSummer(date, summerStart, summerEnd)) {
+            return getSummerConsumption(length);
         } else {
-            consumption = length * summerFuelConsumption;
+            return getWinterConsumption(length);
         }
-        return consumption;
     }
 
     public int getNumberOfPassengersThatCanBeCarried() {
