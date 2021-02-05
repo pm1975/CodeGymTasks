@@ -84,6 +84,6 @@ public class PlayerShip extends Ship {
     }
 
     public void win() {
-        setStaticView(ShapeMatrix.WIN_PLAYER);
+        this.setStaticView(ShapeMatrix.WIN_PLAYER);
     }
 }

@@ -99,15 +99,22 @@ public class EnemyFleet {
         return ship.fire();
     }
 
-    public void checkHit(List<Bullet> bullets) {
+    public int checkHit(List<Bullet> bullets) {
+        if (bullets.isEmpty()) {
+            return 0;
+        }
+
+        int score = 0;
         for (Bullet bullet : bullets) {
             for (EnemyShip ship : ships) {
                 if (ship.isAlive && bullet.isAlive && ship.isCollision(bullet)) {
                     ship.kill();
                     bullet.kill();
+                    score += ship.score;
                 }
             }
         }
+        return score;
     }
 
     public void deleteHiddenShips() {
@@ -119,8 +126,8 @@ public class EnemyFleet {
     }
 
     public double getBottomBorder() {
-        double bottom = 0.;
-        for (EnemyShip ship : ships) {
+        double bottom = 0;
+        for (GameObject ship : ships) {
             if (ship.y + ship.height > bottom) {
                 bottom = ship.y + ship.height;
             }
