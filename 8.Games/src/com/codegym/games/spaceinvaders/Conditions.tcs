@@ -1,18 +1,29 @@
-taskKey="com.codegym.games.spaceinvaders.part25"\n\nSpace Invaders (Part 25/34)
+taskKey="com.codegym.games.spaceinvaders.part26"\n\nSpace Invaders (Part 26/34)
+
+In this part of the project, we'll add the ability to shoot by pressing the spacebar.
+The player's newly created projectiles are added to the playerBullets list, while those that have flown off the screen are removed from it.
+To remove the projectiles, you can either use an iterator, or create a copy of the playerBullets list and run through it in a loop.
+If we determine that a projectile needs to be removed, we'll call playerBullets.remove(bullet).
+To make the game a little harder, we'll also limit the number of projectiles the player can have on the screen. For convenience, we'll put this number in a variable.
+We'll override the Game class's setCellValueEx method so that it only works with valid coordinates.
+
+
+Requirements:
+1.	The SpaceInvadersGame class must have a private static final int PLAYER_BULLETS_MAX field, initialized to 1 when it is declared.
+2.	The SpaceInvadersGame class&#39;s onKeyPress(Key) method must call the fire() method on the player&#39;s ship if the passed argument is Key.SPACE.
+3.	If the fire() does not return null and the number of objects in the playerBullets list is less than PLAYER_BULLETS_MAX, you need to add the object returned by the fire() method to the playerBullets list.
+4.	In the SpaceInvadersGame class&#39;s removeDeadBullets() method, you need to remove all projectiles from the playerBullets list if the projectile is &quot;dead&quot; OR the sum of the y coordinate and the projectile&#39;s height field is less than zero.
+5.	In the SpaceInvadersGame class, the setCellValueEx(int, int, Color, String) method of the Game parent class must be overridden.
+6.	The setCellValueEx(int x, int y, Color, String) must not do anything if method parameter x or y is off the playing field.
+7.	The setCellValueEx(int, int, Color, String) method must call the parent class&#39;s method using the super keyword.
+
+
+Space Invaders (Part 25/34)
 
 Now we'll prepare to give the player the ability to shoot. For this, we need a fire() method that will create projectiles.
 We will store them in the playerBullets list. Add logic to draw projectiles in the drawScene method, and to move them — in the moveSpaceObjects method.
 Now all that remains is to implement the ability to shoot using key presses. We'll work on this in the next part of the project.
 
-
-Requirements:
-1.	In the PlayerShip class, the fire() method of the Ship parent class must be overridden.
-2.	The fire() method must return null if the player&#39;s ship is &quot;dead&quot;.
-3.	The fire() method must return a new Bullet object. You need to call the Bullet class&#39;s constructor with the following arguments: x + 2, y - ShapeMatrix.BULLET.length, Direction.UP.
-4.	The SpaceInvadersGame class must have a private List&lt;Bullet&gt; playerBullets field.
-5.	In the createGame() method, the playerBullets field must be initialized with a new ArrayList&lt;Bullet&gt; object before the call to the drawScene() method.
-6.	In the drawScene() method, the draw(Game) method must be called on each object in the playerBullets list after the call to the drawField() method. Pass &quot;this&quot; to the method.
-7.	The moveSpaceObjects() method must call the move() method on each object in the playerBullets list.
 
 
 Space Invaders (Part 24/34)
@@ -46,15 +57,6 @@ The game ends when the player wins or loses. Let's implement the stopGame method
 You decide on the exact wording of the messages about winning and losing. If a projectile hits a player, the explosion animation must be displayed before the game
 is stopped. To do this, in the stopGameWithDelay method, we'll call the stopGame method with a delay.
 In the check method, if the player is "dead", you need to call stopGameWithDelay to start a countdown to when the game will stop.
-
-
-
-Space Invaders (Part 20/34)
-
-We'll create the nextFrame method in the Ship class to switch to the next animation frame.
-It sets the matrix field to the next animation frame, if possible.
-We'll extend the functionality of the draw method by overriding it so that it calls the superclass's method
-for drawing and the nextFrame method for changing animation frames.
 
 
 
