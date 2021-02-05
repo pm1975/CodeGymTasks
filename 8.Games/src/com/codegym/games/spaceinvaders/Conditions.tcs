@@ -1,15 +1,26 @@
-taskKey="com.codegym.games.spaceinvaders.part24"\n\nSpace Invaders (Part 24/34)
+taskKey="com.codegym.games.spaceinvaders.part25"\n\nSpace Invaders (Part 25/34)
+
+Now we'll prepare to give the player the ability to shoot. For this, we need a fire() method that will create projectiles.
+We will store them in the playerBullets list. Add logic to draw projectiles in the drawScene method, and to move them — in the moveSpaceObjects method.
+Now all that remains is to implement the ability to shoot using key presses. We'll work on this in the next part of the project.
+
+
+Requirements:
+1.	In the PlayerShip class, the fire() method of the Ship parent class must be overridden.
+2.	The fire() method must return null if the player&#39;s ship is &quot;dead&quot;.
+3.	The fire() method must return a new Bullet object. You need to call the Bullet class&#39;s constructor with the following arguments: x + 2, y - ShapeMatrix.BULLET.length, Direction.UP.
+4.	The SpaceInvadersGame class must have a private List&lt;Bullet&gt; playerBullets field.
+5.	In the createGame() method, the playerBullets field must be initialized with a new ArrayList&lt;Bullet&gt; object before the call to the drawScene() method.
+6.	In the drawScene() method, the draw(Game) method must be called on each object in the playerBullets list after the call to the drawField() method. Pass &quot;this&quot; to the method.
+7.	The moveSpaceObjects() method must call the move() method on each object in the playerBullets list.
+
+
+Space Invaders (Part 24/34)
 
 When you release the left key or the right key, the ship does not stop moving until it hits the edge of the playing field. Let's fix that.
 We'll override the Game class's onKeyReleased() method. This method is called when keys are released.
 If the player's ship is moving, the onKeyReleased(Key) method changes the player's direction to Direction.UP and, as a result, the ship stops moving.
 
-
-Requirements:
-1.	The PlayerShip class must have a public getDirection() getter that returns the value of the direction field.
-2.	In the SpaceInvadersGame class, the onKeyReleased(Key) method of the Game parent class must be overridden.
-3.	The onKeyReleased(Key) method must set the direction of the player&#39;s ship to Direction.UP if the method&#39;s parameter is equal to Key.LEFT and the current direction of the player&#39;s ship is Direction.LEFT.
-4.	The onKeyReleased(Key) method must set the direction of the player&#39;s ship to Direction.UP if the method&#39;s parameter is equal to Key.RIGHT and the current direction of the player&#39;s ship is Direction.RIGHT.
 
 
 Space Invaders (Part 23/34)
@@ -44,13 +55,6 @@ We'll create the nextFrame method in the Ship class to switch to the next animat
 It sets the matrix field to the next animation frame, if possible.
 We'll extend the functionality of the draw method by overriding it so that it calls the superclass's method
 for drawing and the nextFrame method for changing animation frames.
-
-
-
-Space Invaders (Part 19/34)
-
-We'll implement logic to "kill" the player by overriding the kill() method. In addition to setting the isAlive flag to false,
-it will add an animation of the ship's destruction.
 
 
 
