@@ -1,4 +1,20 @@
-taskKey="com.codegym.games.spaceinvaders.part26"\n\nSpace Invaders (Part 26/34)
+taskKey="com.codegym.games.spaceinvaders.part27"\n\nSpace Invaders (Part 27/34)
+
+Let's override the method for destroying an enemy ship. It sets the isAlive field to false and sets the destruction animation matrix.
+We'll also create an isVisible() method in the Ship class.
+It will return false after the entire animation has been displayed for a "dead" ship.
+
+
+Requirements:
+1.	In the EnemyShip class, the kill() method of the Ship parent class must be overridden.
+2.	The kill() method must not do anything if the ship is &quot;dead&quot;.
+3.	The kill() method must set the isAlive field to false.
+4.	In the kill() method, you need to call the base class&#39;s setAnimatedView(int[][]...) method with the following arguments: ShapeMatrix.KILL_ENEMY_ANIMATION_FIRST, ShapeMatrix.KILL_ENEMY_ANIMATION_SECOND, ShapeMatrix.KILL_ENEMY_ANIMATION_THIRD.
+5.	The Ship class must have a public boolean isVisible() method.
+6.	The isVisible() must return false if the ship is &quot;dead&quot; AND frameIndex is greater than or equal to the number of objects in the frame list. Otherwise, it should return true.
+
+
+Space Invaders (Part 26/34)
 
 In this part of the project, we'll add the ability to shoot by pressing the spacebar.
 The player's newly created projectiles are added to the playerBullets list, while those that have flown off the screen are removed from it.
@@ -7,15 +23,6 @@ If we determine that a projectile needs to be removed, we'll call playerBullets.
 To make the game a little harder, we'll also limit the number of projectiles the player can have on the screen. For convenience, we'll put this number in a variable.
 We'll override the Game class's setCellValueEx method so that it only works with valid coordinates.
 
-
-Requirements:
-1.	The SpaceInvadersGame class must have a private static final int PLAYER_BULLETS_MAX field, initialized to 1 when it is declared.
-2.	The SpaceInvadersGame class&#39;s onKeyPress(Key) method must call the fire() method on the player&#39;s ship if the passed argument is Key.SPACE.
-3.	If the fire() does not return null and the number of objects in the playerBullets list is less than PLAYER_BULLETS_MAX, you need to add the object returned by the fire() method to the playerBullets list.
-4.	In the SpaceInvadersGame class&#39;s removeDeadBullets() method, you need to remove all projectiles from the playerBullets list if the projectile is &quot;dead&quot; OR the sum of the y coordinate and the projectile&#39;s height field is less than zero.
-5.	In the SpaceInvadersGame class, the setCellValueEx(int, int, Color, String) method of the Game parent class must be overridden.
-6.	The setCellValueEx(int x, int y, Color, String) must not do anything if method parameter x or y is off the playing field.
-7.	The setCellValueEx(int, int, Color, String) method must call the parent class&#39;s method using the super keyword.
 
 
 Space Invaders (Part 25/34)
@@ -48,15 +55,6 @@ But it can also hold still, so we'll use "up" to represent this state. The ship 
 so we'll set the ship's default direction to "up". To read the player's commands (key presses), we'll override the Game parent class's
 onKeyPress(Key) method. When the player presses left or right, this method will set the corresponding direction on the ship.
 We'll also implement the ability to restart a stopped game by pressing the SPACE key.
-
-
-
-Space Invaders (Part 21/34)
-
-The game ends when the player wins or loses. Let's implement the stopGame method, which will stop the game and display an appropriate message on the screen.
-You decide on the exact wording of the messages about winning and losing. If a projectile hits a player, the explosion animation must be displayed before the game
-is stopped. To do this, in the stopGameWithDelay method, we'll call the stopGame method with a delay.
-In the check method, if the player is "dead", you need to call stopGameWithDelay to start a countdown to when the game will stop.
 
 
 
