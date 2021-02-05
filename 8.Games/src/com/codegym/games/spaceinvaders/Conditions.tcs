@@ -1,22 +1,33 @@
-taskKey="com.codegym.games.spaceinvaders.part31"\n\nSpace Invaders (Part 31/34)
+taskKey="com.codegym.games.spaceinvaders.part32"\n\nSpace Invaders (Part 32/34)
+
+The game is lost not only if the player's ship is destroyed, but also if the enemy fleet reaches the player's ship.
+To determine the coordinates of the lower edge of the enemy fleet, we'll add a getBottomBorder() method.
+If all the enemies are destroyed, the player wins. For convenience, we'll add a getShipCount(), method that will return the number of ships remaining in the enemy fleet.
+If the number is 0, you need to call the stopGameWithDelay() method and call the win() method on the playerShip object.
+This method replaces the player's ship matrix with ShapeMatrix.WIN_PLAYER.
+We'll check the number of ships remaining in the enemy fleet and whether they have reached the player's ship in the check() method.
+
+
+Requirements:
+1.	The EnemyFleet class must have a public double getBottomBorder() method.
+2.	The getBottomBorder() method must return the largest (y + height) value of all of the enemy ships in the ships list.
+3.	The EnemyFleet class must have a public int getShipCount() method.
+4.	The getShipCount() method must return the number of enemy ships in the ships list.
+5.	The PlayerShip class must have a public void win() method.
+6.	The PlayerShip class&#39;s win() method must call the setStaticView(int[][]) method. Pass ShapeMatrix.WIN_PLAYER as the argument.
+7.	In the SpaceInvadersGame class&#39;s check() method, you need to call the getBottomBorder() method on the enemyFleet object.
+8.	If the value returned by the getBottomBorder() method is greater than or equal to playerShip.y, the check() method must call the kill() method on the playerShip object.
+9.	In the SpaceInvadersGame class&#39;s check() method, you need to call the getShipCount() method on the enemyFleet object.
+10.	If the value returned by the getShipCount() method is 0, the check() method must call the win() method on the playerShip object and call the SpaceInvadersGame class&#39;s stopGameWithDelay() method.
+
+
+Space Invaders (Part 31/34)
 
 Let's make the boss animate continuously. To do this, we need to give the setAnimatedView method an isLoopAnimation parameter responsible
 for indicating whether the animation should loop. This parameter is used to properly set the loopAnimation field.
 If the loopAnimation field is true, the nextFrame method repeats the frames by resetting frameIndex.
 As a result, you need to refactor the parameters in places where the setAnimatedView method is called.
 
-
-Requirements:
-1.	The Ship class must have a private boolean loopAnimation field that is initialized to false when it is declared.
-2.	The Ship class must have a public void setAnimatedView(boolean isLoopAnimation, int[][]... viewFrames) method.
-3.	The Ship class must not have a public void setAnimatedView(int[][]... viewFrames) method.
-4.	The setAnimatedView(boolean isLoopAnimation, int[][]... viewFrames) method must set the loopAnimation field equal to the value of isLoopAnimation.
-5.	The Ship class&#39;s nextFrame() method must not do anything if frameIndex is greater than or equal to the number of frames in the frames list and loopAnimation is false.
-6.	The Ship class&#39;s nextFrame() method must set frameIndex to 0 if frameIndex is greater than or equal to the number of frames in the frames list and loopAnimation is true.
-7.	In the PlayerShip class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: false, ShapeMatrix.KILL_PLAYER_ANIMATION_FIRST, ShapeMatrix.KILL_PLAYER_ANIMATION_SECOND, ShapeMatrix.KILL_PLAYER_ANIMATION_THIRD, ShapeMatrix.DEAD_PLAYER.
-8.	In the EnemyShip class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: false, ShapeMatrix.KILL_ENEMY_ANIMATION_FIRST, ShapeMatrix.KILL_ENEMY_ANIMATION_SECOND, ShapeMatrix.KILL_ENEMY_ANIMATION_THIRD.
-9.	In the Boss class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: false, ShapeMatrix.KILL_BOSS_ANIMATION_FIRST, ShapeMatrix.KILL_BOSS_ANIMATION_SECOND, ShapeMatrix.KILL_BOSS_ANIMATION_THIRD.
-10.	In the Boss class&#39;s constructor, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: true, ShapeMatrix.BOSS_ANIMATION_FIRST, ShapeMatrix.BOSS_ANIMATION_SECOND.
 
 
 Space Invaders (Part 30/34)
@@ -50,17 +61,6 @@ Space Invaders (Part 27/34)
 Let's override the method for destroying an enemy ship. It sets the isAlive field to false and sets the destruction animation matrix.
 We'll also create an isVisible() method in the Ship class.
 It will return false after the entire animation has been displayed for a "dead" ship.
-
-
-
-Space Invaders (Part 26/34)
-
-In this part of the project, we'll add the ability to shoot by pressing the spacebar.
-The player's newly created projectiles are added to the playerBullets list, while those that have flown off the screen are removed from it.
-To remove the projectiles, you can either use an iterator, or create a copy of the playerBullets list and run through it in a loop.
-If we determine that a projectile needs to be removed, we'll call playerBullets.remove(bullet).
-To make the game a little harder, we'll also limit the number of projectiles the player can have on the screen. For convenience, we'll put this number in a variable.
-We'll override the Game class's setCellValueEx method so that it only works with valid coordinates.
 
 
 
