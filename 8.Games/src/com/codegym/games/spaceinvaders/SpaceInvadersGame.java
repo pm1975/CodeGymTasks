@@ -170,6 +170,15 @@ public class SpaceInvadersGame extends Game {
         if (!playerShip.isAlive) {
             stopGameWithDelay();
         }
+        double bottomBorder = enemyFleet.getBottomBorder();
+        if (bottomBorder >= playerShip.y) {
+            playerShip.kill();
+        }
+        int shipCount = enemyFleet.getShipCount();
+        if (shipCount == 0) {
+            playerShip.win();
+            stopGameWithDelay();
+        }
     }
 
     private void stopGame(boolean isWin) {
