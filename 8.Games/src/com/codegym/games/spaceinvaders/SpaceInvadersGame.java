@@ -1,8 +1,6 @@
 package com.codegym.games.spaceinvaders;
 
-import com.codegym.engine.cell.Color;
-import com.codegym.engine.cell.Game;
-import com.codegym.engine.cell.Key;
+import com.codegym.engine.cell.*;
 import com.codegym.games.spaceinvaders.gameobjects.Bullet;
 import com.codegym.games.spaceinvaders.gameobjects.EnemyFleet;
 import com.codegym.games.spaceinvaders.gameobjects.PlayerShip;
@@ -15,17 +13,17 @@ public class SpaceInvadersGame extends Game {
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
     public static final int DIFFICULTY = 5;
+    private static final int PLAYER_BULLETS_MAX = 1;
 
     private List<Star> stars;
     private EnemyFleet enemyFleet;
     private List<Bullet> enemyBullets;
 
     private PlayerShip playerShip;
+    private List<Bullet> playerBullets;
 
     private boolean isGameStopped = false;
     private int animationsCount;
-
-    private List<Bullet> playerBullets;
 
     @Override
     public void initialize() {
@@ -48,22 +46,43 @@ public class SpaceInvadersGame extends Game {
 
     @Override
     public void onKeyPress(Key key) {
-        if (key == Key.SPACE && isGameStopped) {
-            createGame();
-        } else if (key == Key.LEFT) {
+        if (Key.SPACE == key) {
+            if (isGameStopped) {
+                createGame();
+                return;
+            }
+
+            Bullet bullet = playerShip.fire();
+            if (bullet != null && playerBullets.size() < PLAYER_BULLETS_MAX) {
+                playerBullets.add(bullet);
+            }
+        }
+
+        if (Key.LEFT == key) {
             playerShip.setDirection(Direction.LEFT);
-        } else if (key == Key.RIGHT) {
+        }
+
+        if (Key.RIGHT == key) {
             playerShip.setDirection(Direction.RIGHT);
         }
     }
 
     @Override
     public void onKeyReleased(Key key) {
-        if (key == Key.LEFT && playerShip.getDirection()==Direction.LEFT) {
-            playerShip.setDirection(Direction.UP);
-        } else if (key == Key.RIGHT && playerShip.getDirection()==Direction.RIGHT) {
+        if (Key.LEFT == key && playerShip.getDirection() == Direction.LEFT) {
             playerShip.setDirection(Direction.UP);
         }
+        if (Key.RIGHT == key && playerShip.getDirection() == Direction.RIGHT) {
+            playerShip.setDirection(Direction.UP);
+        }
+    }
+
+    @Override
+    public void setCellValueEx(int x, int y, Color color, String value) {
+        if (x > WIDTH - 1 || x < 0 || y < 0 || y > HEIGHT - 1) {
+            return;
+        }
+        super.setCellValueEx(x, y, color, value);
     }
 
     private void createGame() {
@@ -89,8 +108,8 @@ public class SpaceInvadersGame extends Game {
             bullet.draw(this);
         }
 
-        for (Bullet playerBullet : playerBullets) {
-            playerBullet.draw(this);
+        for (Bullet bullet : playerBullets) {
+            bullet.draw(this);
         }
     }
 
@@ -117,14 +136,15 @@ public class SpaceInvadersGame extends Game {
 
     private void moveSpaceObjects() {
         enemyFleet.move();
+        playerShip.move();
 
         for (Bullet enemyBullet : enemyBullets) {
             enemyBullet.move();
         }
-        for (Bullet playerBullet : playerBullets) {
-            playerBullet.move();
+
+        for (Bullet bullet : playerBullets) {
+            bullet.move();
         }
-        playerShip.move();
     }
 
     private void removeDeadBullets() {
@@ -133,6 +153,12 @@ public class SpaceInvadersGame extends Game {
                 enemyBullets.remove(bullet);
             }
         }
+        for (Bullet bullet : new ArrayList<>(playerBullets)) {
+            if (!bullet.isAlive || bullet.y + bullet.height < 0) {
+                playerBullets.remove(bullet);
+            }
+        }
+
     }
 
     private void check() {
