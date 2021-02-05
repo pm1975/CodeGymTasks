@@ -1,19 +1,29 @@
-taskKey="com.codegym.games.spaceinvaders.part30"\n\nSpace Invaders (Part 30/34)
+taskKey="com.codegym.games.spaceinvaders.part31"\n\nSpace Invaders (Part 31/34)
+
+Let's make the boss animate continuously. To do this, we need to give the setAnimatedView method an isLoopAnimation parameter responsible
+for indicating whether the animation should loop. This parameter is used to properly set the loopAnimation field.
+If the loopAnimation field is true, the nextFrame method repeats the frames by resetting frameIndex.
+As a result, you need to refactor the parameters in places where the setAnimatedView method is called.
+
+
+Requirements:
+1.	The Ship class must have a private boolean loopAnimation field that is initialized to false when it is declared.
+2.	The Ship class must have a public void setAnimatedView(boolean isLoopAnimation, int[][]... viewFrames) method.
+3.	The Ship class must not have a public void setAnimatedView(int[][]... viewFrames) method.
+4.	The setAnimatedView(boolean isLoopAnimation, int[][]... viewFrames) method must set the loopAnimation field equal to the value of isLoopAnimation.
+5.	The Ship class&#39;s nextFrame() method must not do anything if frameIndex is greater than or equal to the number of frames in the frames list and loopAnimation is false.
+6.	The Ship class&#39;s nextFrame() method must set frameIndex to 0 if frameIndex is greater than or equal to the number of frames in the frames list and loopAnimation is true.
+7.	In the PlayerShip class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: false, ShapeMatrix.KILL_PLAYER_ANIMATION_FIRST, ShapeMatrix.KILL_PLAYER_ANIMATION_SECOND, ShapeMatrix.KILL_PLAYER_ANIMATION_THIRD, ShapeMatrix.DEAD_PLAYER.
+8.	In the EnemyShip class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: false, ShapeMatrix.KILL_ENEMY_ANIMATION_FIRST, ShapeMatrix.KILL_ENEMY_ANIMATION_SECOND, ShapeMatrix.KILL_ENEMY_ANIMATION_THIRD.
+9.	In the Boss class&#39;s kill() method, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: false, ShapeMatrix.KILL_BOSS_ANIMATION_FIRST, ShapeMatrix.KILL_BOSS_ANIMATION_SECOND, ShapeMatrix.KILL_BOSS_ANIMATION_THIRD.
+10.	In the Boss class&#39;s constructor, you need to call the base class&#39;s setAnimatedView(boolean, int[][]...) method with the following arguments: true, ShapeMatrix.BOSS_ANIMATION_FIRST, ShapeMatrix.BOSS_ANIMATION_SECOND.
+
+
+Space Invaders (Part 30/34)
 
 Now we'll teach the boss to shoot. Depending on the animation frame, the boss will shoot from different cannons.
 We'll also override the kill() method, where we'll set the value of the isAlive field and set the frames of the explosion animation.
 
-
-Requirements:
-1.	In the Boss class, the fire() method of the EnemyShip parent class must be overridden.
-2.	The fire() method must return null if the boss is &quot;dead&quot;.
-3.	The fire() method must return a new Bullet object.
-4.	In the fire() method, if matrix == ShapeMatrix.BOSS_ANIMATION_FIRST, you need to call the Bullet class&#39;s constructor with the following arguments: x + 6, y + height, Direction.DOWN.
-5.	In the fire() method, if matrix != ShapeMatrix.BOSS_ANIMATION_FIRST, you need to call the Bullet class&#39;s constructor with the following arguments: x, y + height, Direction.DOWN.
-6.	In the Boss class, the kill() method of the EnemyShip parent class must be overridden.
-7.	The kill() method must not do anything if the boss is &quot;dead&quot;.
-8.	The kill() method must set the isAlive field to false.
-9.	In the kill() method, you need to call the base class&#39;s setAnimatedView(int[][]...) method with the following arguments: ShapeMatrix.KILL_BOSS_ANIMATION_FIRST, ShapeMatrix.KILL_BOSS_ANIMATION_SECOND, ShapeMatrix.KILL_BOSS_ANIMATION_THIRD.
 
 
 Space Invaders (Part 29/34)
@@ -51,14 +61,6 @@ To remove the projectiles, you can either use an iterator, or create a copy of t
 If we determine that a projectile needs to be removed, we'll call playerBullets.remove(bullet).
 To make the game a little harder, we'll also limit the number of projectiles the player can have on the screen. For convenience, we'll put this number in a variable.
 We'll override the Game class's setCellValueEx method so that it only works with valid coordinates.
-
-
-
-Space Invaders (Part 25/34)
-
-Now we'll prepare to give the player the ability to shoot. For this, we need a fire() method that will create projectiles.
-We will store them in the playerBullets list. Add logic to draw projectiles in the drawScene method, and to move them — in the moveSpaceObjects method.
-Now all that remains is to implement the ability to shoot using key presses. We'll work on this in the next part of the project.
 
 
 
