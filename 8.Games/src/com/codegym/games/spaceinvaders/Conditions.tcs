@@ -1,17 +1,28 @@
-taskKey="com.codegym.games.spaceinvaders.part27"\n\nSpace Invaders (Part 27/34)
+taskKey="com.codegym.games.spaceinvaders.part28"\n\nSpace Invaders (Part 28/34)
+
+At this stage, we'll add a checkHit(List<Bullet> bullets) method for checking whether the player's projectile has hit an enemy ship.
+After a hit, we need to "kill" the corresponding projectile and enemy ship. Additionally, we'll add a deleteHiddenShips()
+method that will remove "hidden" ships from the list. To remove the ships, you can either use an iterator, or create a copy of the ships list
+and run through it in a loop. If we determine that a ship needs to be removed, we'll call ships.remove(ship).
+The checkHit(List<Bullet> bullets) and deleteHiddenShips() methods must be called in the SpaceInvadersGame class's check() method.
+
+
+Requirements:
+1.	The EnemyFleet class must have a public void checkHit(List&lt;Bullet&gt; bullets) method.
+2.	In the checkHit(List&lt;Bullet&gt; bullets) method, you need to use the isCollision(GameObject) method to check whether each enemy ship in the ships list has collided with any of the projectiles in the bullets list.
+3.	If a ship and projectile have collided (the isCollision(GameObject) method returns true) and the ship is &quot;alive&quot; and the projectile is &quot;alive&quot;, you need to call the kill() on them.
+4.	The EnemyFleet class must have a public void deleteHiddenShips() method.
+5.	The deleteHiddenShips() method must remove from the ships list all ships that are not visible on the playing field (ship.isVisible() == false).
+6.	In the SpaceInvadersGame class&#39;s check() method, you need to call the checkHit(List&lt;Bullet&gt;) method with playerBullets as the argument on the enemyFleet object before the call to the removeDeadBullets() method.
+7.	In the SpaceInvadersGame class&#39;s check() method, you need to call the deleteHiddenShips() method on the enemyFleet object after the checkHit(List&lt;Bullet&gt;) method.
+
+
+Space Invaders (Part 27/34)
 
 Let's override the method for destroying an enemy ship. It sets the isAlive field to false and sets the destruction animation matrix.
 We'll also create an isVisible() method in the Ship class.
 It will return false after the entire animation has been displayed for a "dead" ship.
 
-
-Requirements:
-1.	In the EnemyShip class, the kill() method of the Ship parent class must be overridden.
-2.	The kill() method must not do anything if the ship is &quot;dead&quot;.
-3.	The kill() method must set the isAlive field to false.
-4.	In the kill() method, you need to call the base class&#39;s setAnimatedView(int[][]...) method with the following arguments: ShapeMatrix.KILL_ENEMY_ANIMATION_FIRST, ShapeMatrix.KILL_ENEMY_ANIMATION_SECOND, ShapeMatrix.KILL_ENEMY_ANIMATION_THIRD.
-5.	The Ship class must have a public boolean isVisible() method.
-6.	The isVisible() must return false if the ship is &quot;dead&quot; AND frameIndex is greater than or equal to the number of objects in the frame list. Otherwise, it should return true.
 
 
 Space Invaders (Part 26/34)
@@ -45,16 +56,6 @@ Space Invaders (Part 23/34)
 
 In this part of the project, we'll move the player's ship. Keep in mind that the ship must not leave the playing field.
 To move the ship with the other objects, you need to call the move() method in the moveSpaceObjects() method of the game's main class.
-
-
-
-Space Invaders (Part 22/34)
-
-Let's add a new property to the player's ship: direction. We'll set it through a setter method. The ship can move in two directions: left or right.
-But it can also hold still, so we'll use "up" to represent this state. The ship isn't moving when the game starts,
-so we'll set the ship's default direction to "up". To read the player's commands (key presses), we'll override the Game parent class's
-onKeyPress(Key) method. When the player presses left or right, this method will set the corresponding direction on the ship.
-We'll also implement the ability to restart a stopped game by pressing the SPACE key.
 
 
 
