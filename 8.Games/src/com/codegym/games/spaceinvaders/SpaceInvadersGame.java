@@ -25,6 +25,8 @@ public class SpaceInvadersGame extends Game {
     private boolean isGameStopped = false;
     private int animationsCount;
 
+    private List<Bullet> playerBullets;
+
     @Override
     public void initialize() {
         setScreenSize(WIDTH, HEIGHT);
@@ -71,6 +73,7 @@ public class SpaceInvadersGame extends Game {
         enemyFleet = new EnemyFleet();
         enemyBullets = new ArrayList<>();
         playerShip = new PlayerShip();
+        playerBullets = new ArrayList<>();
 
         createStars();
         drawScene();
@@ -84,6 +87,10 @@ public class SpaceInvadersGame extends Game {
 
         for (Bullet bullet : enemyBullets) {
             bullet.draw(this);
+        }
+
+        for (Bullet playerBullet : playerBullets) {
+            playerBullet.draw(this);
         }
     }
 
@@ -113,6 +120,9 @@ public class SpaceInvadersGame extends Game {
 
         for (Bullet enemyBullet : enemyBullets) {
             enemyBullet.move();
+        }
+        for (Bullet playerBullet : playerBullets) {
+            playerBullet.move();
         }
         playerShip.move();
     }
