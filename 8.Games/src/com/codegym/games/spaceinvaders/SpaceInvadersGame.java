@@ -163,6 +163,8 @@ public class SpaceInvadersGame extends Game {
 
     private void check() {
         playerShip.checkHit(enemyBullets);
+        enemyFleet.checkHit(playerBullets);
+        enemyFleet.deleteHiddenShips();
         removeDeadBullets();
 
         if (!playerShip.isAlive) {
