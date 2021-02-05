@@ -1,4 +1,31 @@
-taskKey="com.codegym.games.spaceinvaders.part28"\n\nSpace Invaders (Part 28/34)
+taskKey="com.codegym.games.spaceinvaders.part30"\n\nSpace Invaders (Part 30/34)
+
+Now we'll teach the boss to shoot. Depending on the animation frame, the boss will shoot from different cannons.
+We'll also override the kill() method, where we'll set the value of the isAlive field and set the frames of the explosion animation.
+
+
+Requirements:
+1.	In the Boss class, the fire() method of the EnemyShip parent class must be overridden.
+2.	The fire() method must return null if the boss is &quot;dead&quot;.
+3.	The fire() method must return a new Bullet object.
+4.	In the fire() method, if matrix == ShapeMatrix.BOSS_ANIMATION_FIRST, you need to call the Bullet class&#39;s constructor with the following arguments: x + 6, y + height, Direction.DOWN.
+5.	In the fire() method, if matrix != ShapeMatrix.BOSS_ANIMATION_FIRST, you need to call the Bullet class&#39;s constructor with the following arguments: x, y + height, Direction.DOWN.
+6.	In the Boss class, the kill() method of the EnemyShip parent class must be overridden.
+7.	The kill() method must not do anything if the boss is &quot;dead&quot;.
+8.	The kill() method must set the isAlive field to false.
+9.	In the kill() method, you need to call the base class&#39;s setAnimatedView(int[][]...) method with the following arguments: ShapeMatrix.KILL_BOSS_ANIMATION_FIRST, ShapeMatrix.KILL_BOSS_ANIMATION_SECOND, ShapeMatrix.KILL_BOSS_ANIMATION_THIRD.
+
+
+Space Invaders (Part 29/34)
+
+It's time to create the enemy boss. To make him look tougher, we'll add an animation when he moves.
+If the animation changes with every step, it will move too quickly.
+To create the desired effect, you need to change the frame once every 10 steps.
+That's why we need to override the nextFrame method and add a frameCount variable that will count steps.
+
+
+
+Space Invaders (Part 28/34)
 
 At this stage, we'll add a checkHit(List<Bullet> bullets) method for checking whether the player's projectile has hit an enemy ship.
 After a hit, we need to "kill" the corresponding projectile and enemy ship. Additionally, we'll add a deleteHiddenShips()
@@ -6,15 +33,6 @@ method that will remove "hidden" ships from the list. To remove the ships, you c
 and run through it in a loop. If we determine that a ship needs to be removed, we'll call ships.remove(ship).
 The checkHit(List<Bullet> bullets) and deleteHiddenShips() methods must be called in the SpaceInvadersGame class's check() method.
 
-
-Requirements:
-1.	The EnemyFleet class must have a public void checkHit(List&lt;Bullet&gt; bullets) method.
-2.	In the checkHit(List&lt;Bullet&gt; bullets) method, you need to use the isCollision(GameObject) method to check whether each enemy ship in the ships list has collided with any of the projectiles in the bullets list.
-3.	If a ship and projectile have collided (the isCollision(GameObject) method returns true) and the ship is &quot;alive&quot; and the projectile is &quot;alive&quot;, you need to call the kill() on them.
-4.	The EnemyFleet class must have a public void deleteHiddenShips() method.
-5.	The deleteHiddenShips() method must remove from the ships list all ships that are not visible on the playing field (ship.isVisible() == false).
-6.	In the SpaceInvadersGame class&#39;s check() method, you need to call the checkHit(List&lt;Bullet&gt;) method with playerBullets as the argument on the enemyFleet object before the call to the removeDeadBullets() method.
-7.	In the SpaceInvadersGame class&#39;s check() method, you need to call the deleteHiddenShips() method on the enemyFleet object after the checkHit(List&lt;Bullet&gt;) method.
 
 
 Space Invaders (Part 27/34)
@@ -41,21 +59,6 @@ Space Invaders (Part 25/34)
 Now we'll prepare to give the player the ability to shoot. For this, we need a fire() method that will create projectiles.
 We will store them in the playerBullets list. Add logic to draw projectiles in the drawScene method, and to move them — in the moveSpaceObjects method.
 Now all that remains is to implement the ability to shoot using key presses. We'll work on this in the next part of the project.
-
-
-
-Space Invaders (Part 24/34)
-
-When you release the left key or the right key, the ship does not stop moving until it hits the edge of the playing field. Let's fix that.
-We'll override the Game class's onKeyReleased() method. This method is called when keys are released.
-If the player's ship is moving, the onKeyReleased(Key) method changes the player's direction to Direction.UP and, as a result, the ship stops moving.
-
-
-
-Space Invaders (Part 23/34)
-
-In this part of the project, we'll move the player's ship. Keep in mind that the ship must not leave the playing field.
-To move the ship with the other objects, you need to call the move() method in the moveSpaceObjects() method of the game's main class.
 
 
 
