@@ -9,10 +9,19 @@ The whole world is a comedy
 */
 
 public class Solution {
-    protected Lock lock = new ReentrantLock();
+    private Lock lock = new ReentrantLock();
 
     public void someMethod() {
         // Implement the logic here. Use the lock field
+        if (lock.tryLock()) {
+            try {
+                actionIfLockIsFree();
+            } finally {
+                lock.unlock();
+            }
+        } else {
+            actionIfLockIsBusy();
+        }
     }
 
     public void actionIfLockIsFree() {
