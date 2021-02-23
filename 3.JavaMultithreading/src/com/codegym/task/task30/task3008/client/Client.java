@@ -27,6 +27,7 @@ public class Client {
     }
 
     public class SocketThread extends Thread {
+
     }
 
     protected SocketThread getSocketThread() {
@@ -46,12 +47,12 @@ public class Client {
         return true;
     }
 
-    public void run()
-    {
+    public void run() {
         SocketThread socketThread = getSocketThread();
-        // Mark the thread as a deamon
+        // Mark the thread as a daemon
         socketThread.setDaemon(true);
         socketThread.start();
+
         try {
             synchronized (this) {
                 wait();
@@ -66,7 +67,7 @@ public class Client {
         else
             ConsoleHelper.writeMessage("An error occurred while running the client.");
 
-        // Until the exit command is entered, read messages from the console and sent them to the server
+        // Until the exit command is entered, read messages from the console and send them to the server
         while (clientConnected) {
             String text = ConsoleHelper.readString();
             if (text.equalsIgnoreCase("exit"))
