@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Client {
     protected Connection connection;
     private volatile boolean clientConnected;
-    
+
     protected String getServerAddress() {
         ConsoleHelper.writeMessage("Enter server address:");
         return ConsoleHelper.readString();
