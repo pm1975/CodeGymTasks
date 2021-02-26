@@ -32,7 +32,9 @@ public class RealEstate {
         activeApartments.clear();
         for (Apartment apartment : allApartments) {
             boolean randomValue = Math.random() * 2 % 2 == 0;
-            apartment.revalidate(randomValue);
+            synchronized (apartment) {
+                apartment.revalidate(randomValue);
+            }
         }
     }
 }
