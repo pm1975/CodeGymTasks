@@ -11,7 +11,8 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class ZipFileManager {
-    private Path zipFile;
+    // Full path to the zip file
+    private final Path zipFile;
 
     public ZipFileManager(Path zipFile) {
         this.zipFile = zipFile;
@@ -28,7 +29,7 @@ public class ZipFileManager {
         try (ZipOutputStream zipOutputStream = new ZipOutputStream(Files.newOutputStream(zipFile))) {
 
             if (Files.isDirectory(source)) {
-                // If we're archiving a directory, thwn we need to get the list of files it contains
+                // If we're archiving a directory, then we need to get the list of files it contains
                 FileManager fileManager = new FileManager(source);
                 List<Path> fileNames = fileManager.getFileList();
 
