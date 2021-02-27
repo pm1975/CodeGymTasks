@@ -1,4 +1,8 @@
 package com.codegym.task.task31.task3110.command;
 
-public class ZipRemoveCommand extends ZipCommand{
+public class ZipRemoveCommand extends ZipCommand {
+    @Override
+    public void execute() throws Exception {
+
+    }
 }
