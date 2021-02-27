@@ -1,12 +1,10 @@
 package com.codegym.task.task31.task3110;
 
-import com.codegym.task.task31.task3110.command.ExitCommand;
 import com.codegym.task.task31.task3110.exception.NoSuchZipFileException;
 
 import java.io.IOException;
 
 public class Archiver {
-
     public static void main(String[] args) throws IOException {
 
         Operation operation = null;
@@ -22,6 +20,7 @@ public class Archiver {
 
         } while (operation != Operation.EXIT);
     }
+
 
     public static Operation askOperation() throws IOException {
         ConsoleHelper.writeMessage("");
