@@ -1,4 +1,4 @@
-package com.codegym.task.task31.task3110;
+package com.codegym.task.task31.task3110Archivizer;
 
 public class FileProperties {
     private String name;

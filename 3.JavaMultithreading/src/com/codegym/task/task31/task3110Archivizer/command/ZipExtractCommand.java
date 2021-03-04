@@ -1,8 +1,8 @@
-package com.codegym.task.task31.task3110.command;
+package com.codegym.task.task31.task3110Archivizer.command;
 
-import com.codegym.task.task31.task3110.ConsoleHelper;
-import com.codegym.task.task31.task3110.ZipFileManager;
-import com.codegym.task.task31.task3110.exception.PathNotFoundException;
+import com.codegym.task.task31.task3110Archivizer.ConsoleHelper;
+import com.codegym.task.task31.task3110Archivizer.ZipFileManager;
+import com.codegym.task.task31.task3110Archivizer.exception.PathNotFoundException;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

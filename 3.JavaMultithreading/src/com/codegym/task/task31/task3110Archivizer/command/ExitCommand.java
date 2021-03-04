@@ -1,6 +1,6 @@
-package com.codegym.task.task31.task3110.command;
+package com.codegym.task.task31.task3110Archivizer.command;
 
-import com.codegym.task.task31.task3110.ConsoleHelper;
+import com.codegym.task.task31.task3110Archivizer.ConsoleHelper;
 
 public class ExitCommand implements Command {
     @Override

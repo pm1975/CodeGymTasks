@@ -1,6 +1,6 @@
-package com.codegym.task.task31.task3110;
+package com.codegym.task.task31.task3110Archivizer;
 
-import com.codegym.task.task31.task3110.command.*;
+import com.codegym.task.task31.task3110Archivizer.command.*;
 
 import java.util.HashMap;
 import java.util.Map;

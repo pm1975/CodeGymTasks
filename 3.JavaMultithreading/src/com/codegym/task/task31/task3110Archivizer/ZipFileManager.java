@@ -1,7 +1,7 @@
-package com.codegym.task.task31.task3110;
+package com.codegym.task.task31.task3110Archivizer;
 
-import com.codegym.task.task31.task3110.exception.PathNotFoundException;
-import com.codegym.task.task31.task3110.exception.NoSuchZipFileException;
+import com.codegym.task.task31.task3110Archivizer.exception.PathNotFoundException;
+import com.codegym.task.task31.task3110Archivizer.exception.NoSuchZipFileException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
