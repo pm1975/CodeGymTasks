@@ -13,6 +13,7 @@ public class FileProperties {
         this.compressionMethod = compressionMethod;
     }
 
+
     public String getName() {
         return name;
     }
