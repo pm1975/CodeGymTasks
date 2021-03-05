@@ -1,6 +1,7 @@
 package com.codegym.task.task28.task2808;
 
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
@@ -44,6 +45,15 @@ public class Solution {
     }
 
     public static Callable<String> getTask(final int i) {
-        return null;
+        return new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                BigInteger sum = BigInteger.ZERO;
+                for (int j = 1; j <= i; j++) {
+                    sum = sum.add(BigInteger.valueOf(j));
+                }
+                return sum.toString();
+            }
+        };
     }
 }
