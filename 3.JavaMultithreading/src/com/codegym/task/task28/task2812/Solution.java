@@ -21,7 +21,11 @@ public class Solution {
             });
         }
 
-        executor.shutdownNow();
+        List<Runnable> incomplete = executor.shutdownNow();
+        Thread.sleep(100);
+        for (Runnable r : incomplete) {
+            System.out.println(r.toString() + " was not completed");
+        }
     }
 
     private static void doExpensiveOperation(int localId) {
