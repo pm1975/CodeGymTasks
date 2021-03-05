@@ -11,7 +11,19 @@ Introducing Executors
 
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
-        // Add your code here
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+        for (int i = 1; i <= 10; i++) {
+            final int localId = i;
+            executor.submit(new Runnable() {
+                @Override
+                public void run() {
+                    doExpensiveOperation(localId);
+                }
+            });
+        }
+
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.SECONDS);
 
         /* Example output
 pool-1-thread-2, localId=2
