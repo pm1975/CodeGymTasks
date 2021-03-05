@@ -11,6 +11,11 @@ public class FactorialCalculator implements Callable {
 
     @Override
     public Long call() {
+        try {
+            return factorial(number);
+        } catch (InterruptedException e) {
+            System.out.println("INTERRUPTED BY " + e.getMessage());
+        }
         return 0L;
     }
 
