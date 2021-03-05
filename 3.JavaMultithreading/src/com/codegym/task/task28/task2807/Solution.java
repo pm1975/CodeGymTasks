@@ -1,5 +1,6 @@
 package com.codegym.task.task28.task2807;
 
+import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -11,7 +12,22 @@ Introducing ThreadPoolExecutor
 
 public class Solution {
     public static void main(String[] args) throws InterruptedException {
-        // Add your code here
+        LinkedBlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
+        for (int i = 1; i <= 10; i++) {
+            final int localId = i;
+            queue.add(new Runnable() {
+                @Override
+                public void run() {
+                    doExpensiveOperation(localId);
+                }
+            });
+        }
+
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(3, 5, 1000, TimeUnit.MILLISECONDS, queue);
+        executor.prestartAllCoreThreads();
+
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.SECONDS);
 
         /* Example output
 pool-1-thread-2, localId=2
