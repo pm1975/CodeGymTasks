@@ -1,5 +1,6 @@
 package com.codegym.task.task32.task3209.listeners;
 
+
 import com.codegym.task.task32.task3209.View;
 
 import java.awt.event.WindowAdapter;
@@ -13,7 +14,7 @@ public class FrameListener extends WindowAdapter {
     }
 
     @Override
-    public void windowClosing(WindowEvent e) {
+    public void windowClosing(WindowEvent windowEvent) {
         view.exit();
     }
 }
