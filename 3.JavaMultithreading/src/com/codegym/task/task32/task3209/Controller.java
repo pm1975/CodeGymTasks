@@ -6,6 +6,7 @@ import java.io.File;
 public class Controller {
     private View view;
     private HTMLDocument document;
+
     private File currentFile;
 
     public Controller(View view) {
@@ -26,5 +27,9 @@ public class Controller {
         view.setController(controller);
         view.init();
         controller.init();
+    }
+
+    public HTMLDocument getDocument() {
+        return document;
     }
 }

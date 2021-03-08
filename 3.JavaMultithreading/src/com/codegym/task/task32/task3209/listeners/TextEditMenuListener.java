@@ -31,5 +31,4 @@ public class TextEditMenuListener implements MenuListener {
     public void menuCanceled(MenuEvent e) {
 
     }
-
 }
