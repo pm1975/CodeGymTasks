@@ -124,7 +124,7 @@ public class View extends JFrame implements ActionListener {
         undoManager.discardAllEdits();
     }
 
-    public boolean isHtmlTabSelected() {
+    public boolean isHtmlTabSelected(){
         return tabbedPane.getSelectedIndex() == 0;
     }
 
@@ -136,8 +136,8 @@ public class View extends JFrame implements ActionListener {
     public void update() {
         htmlTextPane.setDocument(controller.getDocument());
     }
-
     public void showAbout() {
         JOptionPane.showMessageDialog(this, "Best HTML editor", "About", JOptionPane.INFORMATION_MESSAGE);
     }
+
 }
