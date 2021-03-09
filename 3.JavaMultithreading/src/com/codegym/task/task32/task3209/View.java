@@ -62,6 +62,7 @@ public class View extends JFrame implements ActionListener {
             case "About":
                 showAbout();
         }
+
     }
 
     public void init() {
