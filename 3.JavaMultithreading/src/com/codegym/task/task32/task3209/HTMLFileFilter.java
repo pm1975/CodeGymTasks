@@ -8,8 +8,8 @@ public class HTMLFileFilter extends FileFilter {
     @Override
     public boolean accept(File f) {
         return ((f.isDirectory())
-        || (f.getName().toLowerCase().endsWith(".htm"))
-        || (f.getName().toLowerCase().endsWith(".html")));
+                || (f.getName().toLowerCase().endsWith(".htm"))
+                || (f.getName().toLowerCase().endsWith(".html")));
     }
 
     @Override
