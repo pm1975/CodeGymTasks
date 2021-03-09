@@ -20,6 +20,7 @@ public class Controller {
     }
 
     public void init() {
+        createNewDocument();
     }
 
     public void exit() {
@@ -71,7 +72,11 @@ public class Controller {
     }
 
     public void createNewDocument() {
-
+        view.selectHtmlTab();
+        resetDocument();
+        view.setTitle("HTML editor");
+        view.resetUndo();
+        currentFile = null;
     }
 
     public void openDocument() {
