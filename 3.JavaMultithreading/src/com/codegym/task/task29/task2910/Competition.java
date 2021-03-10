@@ -23,7 +23,7 @@ public class Competition {
         controlAthlete.setAverageSpeed(new BigDecimal(20.));
         controlAthlete.setChanceToHit(MAX_CHANCE_TO_HIT_TARGET);
         controlAthlete.setMissCount(2);
-        controlAthlete.setResultTime(new BigDecimal("3640.0"));
+        controlAthlete.setResultTime(new BigDecimal("3640.00"));
         System.out.println("CONTROL ATHLETE'S RESULT:");
         controlAthlete.printResultInfo();
     }
