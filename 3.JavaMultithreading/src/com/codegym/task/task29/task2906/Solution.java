@@ -17,6 +17,6 @@ public class Solution {
     }
 
     public static Integer getValue(boolean first, boolean second) {
-        return first ? 100 : second ? 200 : null;
+        return first ? new Integer(100) : second ? new Integer(200) : null;
     }
 }
