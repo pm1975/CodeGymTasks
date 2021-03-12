@@ -1,4 +1,4 @@
-package com.codegym.task.task32.task3209.actions;
+package com.codegym.task.task32.task3209HtmlEditor.actions;
 
 import javax.swing.*;
 import javax.swing.text.MutableAttributeSet;
@@ -7,10 +7,10 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledEditorKit;
 import java.awt.event.ActionEvent;
 
-public class SuperscriptAction extends StyledEditorKit.StyledTextAction {
+public class SubscriptAction extends StyledEditorKit.StyledTextAction {
 
-    public SuperscriptAction() {
-        super(StyleConstants.Superscript.toString());
+    public SubscriptAction() {
+        super(StyleConstants.Subscript.toString());
     }
 
     @Override
@@ -19,7 +19,7 @@ public class SuperscriptAction extends StyledEditorKit.StyledTextAction {
         if (editor != null) {
             MutableAttributeSet mutableAttributeSet = getStyledEditorKit(editor).getInputAttributes();
             SimpleAttributeSet simpleAttributeSet = new SimpleAttributeSet();
-            StyleConstants.setSuperscript(simpleAttributeSet, !StyleConstants.isSuperscript(mutableAttributeSet));
+            StyleConstants.setSubscript(simpleAttributeSet, !StyleConstants.isSubscript(mutableAttributeSet));
             setCharacterAttributes(editor, simpleAttributeSet, false);
         }
     }

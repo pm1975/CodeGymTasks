@@ -1,8 +1,8 @@
-package com.codegym.task.task32.task3209;
+package com.codegym.task.task32.task3209HtmlEditor;
 
-import com.codegym.task.task32.task3209.listeners.FrameListener;
-import com.codegym.task.task32.task3209.listeners.TabbedPaneChangeListener;
-import com.codegym.task.task32.task3209.listeners.UndoListener;
+import com.codegym.task.task32.task3209HtmlEditor.listeners.FrameListener;
+import com.codegym.task.task32.task3209HtmlEditor.listeners.TabbedPaneChangeListener;
+import com.codegym.task.task32.task3209HtmlEditor.listeners.UndoListener;
 
 import javax.swing.*;
 import javax.swing.undo.CannotRedoException;

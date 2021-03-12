@@ -1,6 +1,6 @@
-package com.codegym.task.task32.task3209;
+package com.codegym.task.task32.task3209HtmlEditor;
 
-import com.codegym.task.task32.task3209.listeners.UndoListener;
+import com.codegym.task.task32.task3209HtmlEditor.listeners.UndoListener;
 
 import javax.swing.*;
 import javax.swing.text.BadLocationException;

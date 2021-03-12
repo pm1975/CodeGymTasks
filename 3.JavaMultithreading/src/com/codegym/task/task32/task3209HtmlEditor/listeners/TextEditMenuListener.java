@@ -1,6 +1,6 @@
-package com.codegym.task.task32.task3209.listeners;
+package com.codegym.task.task32.task3209HtmlEditor.listeners;
 
-import com.codegym.task.task32.task3209.View;
+import com.codegym.task.task32.task3209HtmlEditor.View;
 
 import javax.swing.*;
 import javax.swing.event.MenuEvent;

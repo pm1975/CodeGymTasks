@@ -1,8 +1,8 @@
-package com.codegym.task.task32.task3209;
+package com.codegym.task.task32.task3209HtmlEditor;
 
-import com.codegym.task.task32.task3209.actions.*;
-import com.codegym.task.task32.task3209.listeners.TextEditMenuListener;
-import com.codegym.task.task32.task3209.listeners.UndoMenuListener;
+import com.codegym.task.task32.task3209HtmlEditor.actions.*;
+import com.codegym.task.task32.task3209HtmlEditor.listeners.TextEditMenuListener;
+import com.codegym.task.task32.task3209HtmlEditor.listeners.UndoMenuListener;
 
 import javax.swing.*;
 import javax.swing.text.DefaultEditorKit;

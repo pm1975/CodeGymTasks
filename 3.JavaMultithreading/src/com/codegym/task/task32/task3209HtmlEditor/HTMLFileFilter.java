@@ -1,4 +1,4 @@
-package com.codegym.task.task32.task3209;
+package com.codegym.task.task32.task3209HtmlEditor;
 
 import javax.swing.filechooser.FileFilter;
 import java.io.File;

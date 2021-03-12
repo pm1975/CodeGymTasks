@@ -1,6 +1,6 @@
-package com.codegym.task.task32.task3209.actions;
+package com.codegym.task.task32.task3209HtmlEditor.actions;
 
-import com.codegym.task.task32.task3209.View;
+import com.codegym.task.task32.task3209HtmlEditor.View;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
