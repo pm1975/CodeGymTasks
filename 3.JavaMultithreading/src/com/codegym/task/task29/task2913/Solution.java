@@ -11,15 +11,18 @@ public class Solution {
     private static int numberA;
     private static int numberB;
 
-    public static String recursion(int a, int b) {
+    public static String getAllNumbersBetween(int a, int b) {
+        String text = a + "";
         if (a > b) {
-            return a + " " + recursion(a - 1, b);
-        } else {
-            if (a == b) {
-                return Integer.toString(a);
+            for (int i = a - 1; i >= b; i--) {
+                text += " " + i;
             }
-            return a + " " + recursion(a + 1, b);
+        } else {
+            for (int i = a + 1; i <= b; i++) {
+                text += " " + i;
+            }
         }
+        return text;
     }
 
     public static void main(String[] args) {
