@@ -12,7 +12,7 @@ public enum Dish {
 
         for (Dish dish : Dish.values()) {
             if ("".equals(result)) {
-                result = dish.name();
+                result += dish.name();
             } else {
                 result += ", " + dish.name();
             }

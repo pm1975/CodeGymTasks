@@ -13,6 +13,7 @@ public class Order {
     public Order(Tablet tablet) throws IOException {
         this.tablet = tablet;
         this.dishes = ConsoleHelper.getAllDishesForOrder();
+        ConsoleHelper.writeMessage(toString());
     }
 
     @Override
@@ -20,6 +21,7 @@ public class Order {
         String result = "";
         if (dishes.size() == 0) return result;
         result+="Your order: [" + dishes.get(0);
+        
         for (int i = 1; i < dishes.size(); i++) {
             result += ", " + dishes.get(i).name();
         }
