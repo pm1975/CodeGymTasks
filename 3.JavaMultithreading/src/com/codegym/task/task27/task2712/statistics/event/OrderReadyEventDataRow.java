@@ -1,6 +1,5 @@
 package com.codegym.task.task27.task2712.statistics.event;
 
-
 import com.codegym.task.task27.task2712.kitchen.Dish;
 
 import java.util.Date;
@@ -19,5 +18,24 @@ public class OrderReadyEventDataRow implements EventDataRow {
         this.cookingTimeSeconds = cookingTimeSeconds;
         this.dishesInOrder = dishesInOrder;
         this.currentDate = new Date();
+    }
+
+    @Override
+    public EventType getType() {
+        return EventType.ORDER_READY;
+    }
+
+    @Override
+    public Date getDate() {
+        return currentDate;
+    }
+
+    @Override
+    public int getTime() {
+        return cookingTimeSeconds;
+    }
+
+    public String getCookName() {
+        return cookName;
     }
 }
