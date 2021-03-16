@@ -56,7 +56,7 @@ public class StatisticsManager {
     }
 
     public Map<String, Long> getProfitMag() {
-        Map<String, Long> res = new HashMap<>();
+        Map<String, Long> res = new HashMap();
         List<EventDataRow> rows = statisticsStorage.get(EventType.VIDEOS_SELECTED);
         SimpleDateFormat format = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
         long total = 0l;
@@ -76,7 +76,7 @@ public class StatisticsManager {
     }
 
     public Map<String, Map<String, Integer>> getCookWorkloadingMap() {
-        Map<String, Map<String, Integer>> res = new HashMap<>(); //name, time
+        Map<String, Map<String, Integer>> res = new HashMap(); //name, time
         List<EventDataRow> rows = statisticsStorage.get(EventType.ORDER_READY);
         SimpleDateFormat format = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
         for (EventDataRow row : rows) {

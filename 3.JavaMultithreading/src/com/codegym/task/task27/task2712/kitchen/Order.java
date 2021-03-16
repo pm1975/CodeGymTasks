@@ -14,6 +14,7 @@ public class Order {
     }
 
     public Tablet getTablet() {
+
         return tablet;
     }
 

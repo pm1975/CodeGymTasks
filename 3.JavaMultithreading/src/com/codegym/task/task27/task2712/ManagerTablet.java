@@ -1,11 +1,10 @@
 package com.codegym.task.task27.task2712;
 
+import com.codegym.task.task27.task2712.ad.Advertisement;
+import com.codegym.task.task27.task2712.ad.StatisticsAdvertisementManager;
 import com.codegym.task.task27.task2712.statistics.StatisticsManager;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 public class ManagerTablet {
 
@@ -42,10 +41,30 @@ public class ManagerTablet {
     }
 
     public void printActiveVideoSet() {
+        List<Advertisement> videoSet = StatisticsAdvertisementManager.getInstance().getVideoSet(true);
+        Collections.sort(videoSet, new Comparator<Advertisement>() {
+            @Override
+            public int compare(Advertisement o1, Advertisement o2) {
+                return o1.getName().toLowerCase().compareTo(o2.getName().toLowerCase());
+            }
+        });
 
+        for (Advertisement advertisement : videoSet) {
+            System.out.println(advertisement.getName() + " - " + advertisement.getHits());
+        }
     }
 
     public void printArchivedVideoSet() {
+        List<Advertisement> videoSet = StatisticsAdvertisementManager.getInstance().getVideoSet(false);
+        Collections.sort(videoSet, new Comparator<Advertisement>() {
+            @Override
+            public int compare(Advertisement o1, Advertisement o2) {
+                return o1.getName().toLowerCase().compareTo(o2.getName().toLowerCase());
+            }
+        });
 
+        for (Advertisement advertisement : videoSet) {
+            System.out.println(advertisement.getName());
+        }
     }
 }
