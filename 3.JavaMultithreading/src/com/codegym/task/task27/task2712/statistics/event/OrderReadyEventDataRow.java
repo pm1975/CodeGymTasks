@@ -1,5 +1,6 @@
 package com.codegym.task.task27.task2712.statistics.event;
 
+
 import com.codegym.task.task27.task2712.kitchen.Dish;
 
 import java.util.Date;
@@ -9,7 +10,7 @@ public class OrderReadyEventDataRow implements EventDataRow {
     private String tabletName;
     private String cookName;
     private int cookingTimeSeconds;
-    List<Dish> dishesInOrder;
+    private List<Dish> dishesInOrder;
     private Date currentDate;
 
     public OrderReadyEventDataRow(String tabletName, String cookName, int cookingTimeSeconds, List<Dish> dishesInOrder) {
