@@ -1,7 +1,6 @@
 package com.codegym.task.task27.task2712;
 
 import com.codegym.task.task27.task2712.kitchen.Cook;
-import com.codegym.task.task27.task2712.kitchen.Waiter;
 import com.codegym.task.task27.task2712.statistics.StatisticsManager;
 
 import java.util.ArrayList;
