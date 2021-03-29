@@ -4,11 +4,11 @@ import java.util.List;
 
 public class RandomOrderGeneratorTask implements Runnable {
     private List<Tablet> tablets;
-    private int internal;
+    private int interval;
 
-    public RandomOrderGeneratorTask(List<Tablet> tablets, int internal) {
+    public RandomOrderGeneratorTask(List<Tablet> tablets, int interval) {
         this.tablets = tablets;
-        this.internal = internal;
+        this.interval = interval;
     }
 
     @Override
@@ -18,7 +18,7 @@ public class RandomOrderGeneratorTask implements Runnable {
                 int k = (int) (Math.random() * tablets.size());
                 Tablet expected = tablets.get(k);
                 expected.createTestOrder();
-                Thread.sleep(internal);
+                Thread.sleep(interval);
             }
         } catch (InterruptedException e) {
         }

@@ -14,10 +14,10 @@ public class StatisticsAdvertisementManager {
     private StatisticsAdvertisementManager() {
     }
 
-    public List<Advertisement> getVideoSet(boolean isAlive) {
+    public List<Advertisement> getVideoSet(boolean isActive) {
         List<Advertisement> result = new ArrayList<>();
         for (Advertisement advertisement : storage.list()) {
-            if (!isAlive ^ advertisement.isActive()) {
+            if (!isActive ^ advertisement.isActive()) {
                 result.add(advertisement);
             }
         }

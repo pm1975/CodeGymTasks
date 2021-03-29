@@ -15,7 +15,7 @@ public class ManagerTablet {
         Collections.sort(list);
 
         for (String key : list) {
-            double aLong = profitMap.get(key);
+            long aLong = profitMap.get(key);
             System.out.println(key + " - " + (aLong / 100) + "." + (aLong % 100));
         }
     }

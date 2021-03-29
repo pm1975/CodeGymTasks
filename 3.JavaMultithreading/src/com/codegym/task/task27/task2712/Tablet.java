@@ -16,23 +16,21 @@ public class Tablet extends Observable {
     private static Logger logger = Logger.getLogger(Tablet.class.getName());
     private LinkedBlockingQueue<Order> queue;
 
+
     public Tablet(int number) {
         this.number = number;
     }
 
-    public Order createOrder() {
+    public void createOrder() {
         Order order = null;
         try {
-            if (order.isEmpty()) {
-                order = new Order(this);
-                processOrder(order);
-            }
+            order = new Order(this);
+            processOrder(order);
         } catch (IOException e) {
             logger.log(Level.SEVERE, "The console is unavailable.");
-        } catch (NoVideoAvailableException nve) {
+        } catch (NoVideoAvailableException e) {
             logger.log(Level.INFO, "No video is available for the following order: " + order);
         }
-        return order;
     }
 
     private boolean processOrder(Order order) {
@@ -59,7 +57,6 @@ public class Tablet extends Observable {
         } catch (NoVideoAvailableException e) {
             logger.log(Level.INFO, "No video is available for the following order: " + order);
         }
-
     }
 
     @Override

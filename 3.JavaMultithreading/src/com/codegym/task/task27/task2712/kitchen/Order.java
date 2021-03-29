@@ -19,7 +19,7 @@ public class Order {
 
     protected List<Dish> dishes;
 
-    protected  void initDishes() throws IOException {
+    protected void initDishes() throws IOException {
         this.dishes = ConsoleHelper.getAllDishesForOrder();
     }
 
