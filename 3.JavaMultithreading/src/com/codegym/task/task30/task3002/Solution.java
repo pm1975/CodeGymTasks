@@ -15,7 +15,18 @@ public class Solution {
     }
 
     public static String convertToDecimalSystem(String s) {
-        //write your code here
-        return s;
+        if (s.startsWith("0")) {
+            char[] chars = s.toCharArray();
+            if (chars[1] == 'b') {
+                s = s.substring(2);
+                return "" + Integer.parseInt(s, 2);
+            } else if (chars[1] == 'x') {
+                s = s.substring(2);
+                return "" + Integer.parseInt(s, 16);
+            }
+            return "" + Integer.parseInt(s, 8);
+        } else {
+            return s;
+        }
     }
 }
