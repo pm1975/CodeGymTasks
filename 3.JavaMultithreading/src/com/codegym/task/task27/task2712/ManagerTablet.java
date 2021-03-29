@@ -10,13 +10,13 @@ public class ManagerTablet {
 
     public void printAdRevenue() {
         StatisticsManager statisticsManager = StatisticsManager.getInstance();
-        Map<String, Long> profitMag = statisticsManager.getProfitMag();
-        ArrayList<String> list = new ArrayList(profitMag.keySet());
+        Map<String, Long> profitMap = statisticsManager.getProfitMap();
+        ArrayList<String> list = new ArrayList(profitMap.keySet());
         Collections.sort(list);
 
         for (String key : list) {
-            double amount = 1.0 * profitMag.get(key) / 100;
-            System.out.println(key + " - " + String.format(Locale.ENGLISH, "%.2f", amount));
+            double aLong = profitMap.get(key);
+            System.out.println(key + " - " + (aLong / 100) + "." + (aLong % 100));
         }
     }
 
@@ -33,7 +33,7 @@ public class ManagerTablet {
             ArrayList<String> cookNames = new ArrayList(cookMap.keySet());
             Collections.sort(cookNames);
             for (String cookName : cookNames) {
-                System.out.println(cookName + " - " + ((cookMap.get(cookName) + 59) / 60) + " min");
+                System.out.println(cookName + " - " + ((cookMap.get(cookName)+59)/60 ) + " min");
             }
 
             System.out.println();

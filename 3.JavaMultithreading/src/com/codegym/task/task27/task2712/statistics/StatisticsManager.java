@@ -1,9 +1,9 @@
 package com.codegym.task.task27.task2712.statistics;
 
 import com.codegym.task.task27.task2712.kitchen.Cook;
+import com.codegym.task.task27.task2712.statistics.event.OrderReadyEventDataRow;
 import com.codegym.task.task27.task2712.statistics.event.EventDataRow;
 import com.codegym.task.task27.task2712.statistics.event.EventType;
-import com.codegym.task.task27.task2712.statistics.event.OrderReadyEventDataRow;
 import com.codegym.task.task27.task2712.statistics.event.VideosSelectedEventDataRow;
 
 import java.text.SimpleDateFormat;
@@ -55,7 +55,7 @@ public class StatisticsManager {
         this.cooks.add(cook);
     }
 
-    public Map<String, Long> getProfitMag() {
+    public Map<String, Long> getProfitMap() {
         Map<String, Long> res = new HashMap();
         List<EventDataRow> rows = statisticsStorage.get(EventType.VIDEOS_SELECTED);
         SimpleDateFormat format = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
