@@ -14,7 +14,7 @@ public class Model {
         resetGameTiles();
     }
 
-    public Tile[][] getGameTiles() {
+    Tile[][] getGameTiles() {
         return gameTiles;
     }
 
@@ -100,7 +100,7 @@ public class Model {
         Tile[][] result = new Tile[N][N];
         for (int r = 0; r < N; r++) {
             for (int c = 0; c < N; c++) {
-                result[c][N - 1 - r] = tiles[r][c];
+                result[c][N-1-r] = tiles[r][c];
             }
         }
         return result;
@@ -142,12 +142,12 @@ public class Model {
         gameTiles = rotateClockwise(gameTiles);
     }
 
-    private int getEmptyFilesCount() {
+    private int getEmptyTilesCount() {
         return getEmptyTiles().size();
     }
 
     private boolean isFull() {
-        return getEmptyFilesCount() == 0;
+        return getEmptyTilesCount() == 0;
     }
 
     boolean canMove() {
@@ -164,6 +164,6 @@ public class Model {
                 }
             }
         }
-        return  false;
+        return false;
     }
 }
