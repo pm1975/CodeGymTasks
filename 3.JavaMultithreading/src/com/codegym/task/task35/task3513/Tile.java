@@ -3,14 +3,13 @@ package com.codegym.task.task35.task3513;
 import java.awt.*;
 
 public class Tile {
-    int value;
-
-    Tile(int value) {
-        this.value = value;
-    }
+    int value = 0;
 
     Tile() {
-        this.value = 0;
+    }
+
+    Tile(int num) {
+        value = num;
     }
 
     public boolean isEmpty() {
