@@ -7,7 +7,7 @@ import java.util.List;
 public class Model {
     private Tile[][] gameTiles;
     private static final int FIELD_WIDTH = 4;
-    int maxTile = 0;
+    int maxTile = 2;
     int score = 0;
 
     public Model() {
@@ -45,20 +45,24 @@ public class Model {
         return list;
     }
 
-    private void consolidateTiles(Tile[] tiles) {
+    private boolean consolidateTiles(Tile[] tiles) {
         int insertPosition = 0;
+        boolean result = false;
         for (int i = 0; i < FIELD_WIDTH; i++) {
             if (!tiles[i].isEmpty()) {
                 if (i != insertPosition) {
                     tiles[insertPosition] = tiles[i];
                     tiles[i] = new Tile();
+                    result = true;
                 }
                 insertPosition++;
             }
         }
+        return result;
     }
 
-    private void mergeTiles(Tile[] tiles) {
+    private boolean mergeTiles(Tile[] tiles) {
+        boolean result = false;
         LinkedList<Tile> tilesList = new LinkedList<>();
         for (int i = 0; i < FIELD_WIDTH; i++) {
             if (tiles[i].isEmpty()) {
@@ -66,20 +70,24 @@ public class Model {
             }
 
             if (i < FIELD_WIDTH - 1 && tiles[i].value == tiles[i + 1].value) {
-                int updateValue = tiles[i].value * 2;
-                if (updateValue > maxTile) {
-                    maxTile = updateValue;
+                int updatedValue = tiles[i].value * 2;
+                if (updatedValue > maxTile) {
+                    maxTile = updatedValue;
                 }
-                score += updateValue;
-                tilesList.addLast(new Tile(updateValue));
+                score += updatedValue;
+                tilesList.addLast(new Tile(updatedValue));
                 tiles[i + 1].value = 0;
+                result = true;
             } else {
                 tilesList.addLast(new Tile(tiles[i].value));
             }
             tiles[i].value = 0;
         }
+
         for (int i = 0; i < tilesList.size(); i++) {
             tiles[i] = tilesList.get(i);
         }
+
+        return result;
     }
 }
