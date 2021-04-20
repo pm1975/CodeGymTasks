@@ -1,4 +1,4 @@
-package com.codegym.task.task35.task3513;
+package com.codegym.task.task35.task3513game2048;
 
 import javax.swing.*;
 
