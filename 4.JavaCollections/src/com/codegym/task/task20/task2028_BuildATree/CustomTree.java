@@ -1,4 +1,4 @@
-package com.codegym.task.task20.task2028;
+package com.codegym.task.task20.task2028_BuildATree;
 
 import java.io.Serializable;
 import java.util.*;
