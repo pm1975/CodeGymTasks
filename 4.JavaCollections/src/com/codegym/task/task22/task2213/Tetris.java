@@ -4,6 +4,8 @@ public class Tetris {
     private Field field;
     private GamePiece gamePiece;
 
+    static Tetris game;
+
     public Field getField() {
         return field;
     }
@@ -12,15 +14,16 @@ public class Tetris {
         return gamePiece;
     }
 
-    public static void main(String[] args) {
-
-    }
-
     public  void run() {
 
     }
 
     public void step() {
 
+    }
+
+    public static void main(String[] args) {
+        game = new Tetris();
+        game.run();
     }
 }
