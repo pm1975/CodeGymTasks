@@ -1,6 +1,5 @@
 package com.codegym.task.task22.task2213;
 
-import java.sql.ClientInfoStatus;
 import java.util.ArrayList;
 
 /**
@@ -111,16 +110,15 @@ public class Field {
 
         // Copy all the non-empty lines into a list.
         for (int i = 0; i < height; i++) {
-            // Count the number of occupied cells int he line - simply sum up all its values
+            // Count the number of occupied cells in the line - simply sum up all its values
             int count = 0;
             for (int j = 0; j < width; j++) {
                 count += matrix[i][j];
             }
 
-            // if the line's sum is not equal to its width, then add it to the list
-            if (count != width) {
+            // If the line's sum is not equal to its width, then add it to the list
+            if (count != width)
                 lines.add(matrix[i]);
-            }
         }
 
         // Add incomplete lines to the beginning of the list.
