@@ -13,7 +13,7 @@ public class Field {
     // Matrix representing the field: 1 means that part of the field is occupied, 0 means it is available
     private int[][] matrix;
 
-    public Field(int height, int width) {
+    public Field(int width, int height) {
         this.width = width;
         this.height = height;
         matrix = new int[height][width];
