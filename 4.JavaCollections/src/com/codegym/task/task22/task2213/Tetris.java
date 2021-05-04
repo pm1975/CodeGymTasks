@@ -42,7 +42,7 @@ public class Tetris {
         // Set the initial value of isGameOver to false
         isGameOver = false;
         // Create the first game piece in the middle at the top: x = half of the width, y = 0.
-        gamePiece = GamePieceFactory.createRandomGamePiece(field.getWidth()/2, 0);
+        gamePiece = GamePieceFactory.createRandomGamePiece(field.getWidth() / 2, 0);
 
         // The game is not over yet
         while (!isGameOver) {
