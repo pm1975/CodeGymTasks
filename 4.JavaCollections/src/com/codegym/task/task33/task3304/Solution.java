@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.util.Locale;
 
 /* 
 Using JSON to convert from one class to another
@@ -20,7 +21,17 @@ public class Solution {
     }
 
     public static Object convertOneToAnother(Object one, Class resultClassObject) throws IOException {
-        return null;
+        StringWriter writer = new StringWriter();
+        ObjectMapper mapper1 = new ObjectMapper();
+        mapper1.writeValue(writer, one);
+        String s = writer.toString();
+        String key1 = "\"" + one.getClass().getSimpleName().toLowerCase() + "\"";
+        String key2 = "\"" + resultClassObject.getSimpleName().toLowerCase() + "\"";
+        s = s.replaceFirst(key1, key2);
+
+        StringReader reader = new StringReader(s);
+        ObjectMapper mapper2 = new ObjectMapper();
+        return mapper2.readValue(reader, resultClassObject);
     }
 
     @JsonTypeInfo(use = JsonTypeInfo.Id.NAME,  property="className")
