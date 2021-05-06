@@ -1,4 +1,4 @@
-package com.codegym.task.task22.task2213;
+package com.codegym.task.task22.task2213_Tetris;
 
 import java.util.ArrayList;
 
