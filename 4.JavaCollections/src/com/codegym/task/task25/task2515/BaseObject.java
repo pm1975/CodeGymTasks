@@ -1,5 +1,8 @@
 package com.codegym.task.task25.task2515;
 
+import static java.lang.Math.abs;
+import static java.lang.Math.max;
+
 public abstract class BaseObject {
     private double x;
     private double y;
@@ -41,4 +44,22 @@ public abstract class BaseObject {
         return isAlive;
     }
 
+    public void draw() {
+
+    }
+
+    public void move() {
+
+    }
+
+    public void die() {
+        isAlive = false;
+    }
+
+    public boolean intersects(BaseObject o) {
+        double distanceBetweenObjects = max(o.getRadius(), getRadius());
+
+        return  abs(x - o.getX()) < distanceBetweenObjects
+                &&  abs(y - o.getY()) < distanceBetweenObjects;
+    }
 }
