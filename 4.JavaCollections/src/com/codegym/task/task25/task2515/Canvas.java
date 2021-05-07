@@ -1,5 +1,7 @@
 package com.codegym.task.task25.task2515;
 
+import static java.lang.Character.SPACE_SEPARATOR;
+
 public class Canvas {
     private int width;
     private int height;
@@ -39,5 +41,25 @@ public class Canvas {
                 }
             }
         }
+    }
+
+    public void clear() {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                matrix[i][j] = ' ';
+            }
+        }
+    }
+
+    public void print() {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 }
