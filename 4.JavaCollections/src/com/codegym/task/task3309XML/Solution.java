@@ -1,4 +1,4 @@
-package com.codegym.task.task33.task3309XML;
+package com.codegym.task.task3309XML;
 
 /* 
 Comments inside XML
