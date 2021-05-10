@@ -1,4 +1,4 @@
-package com.codegym.task.task25.task2515;
+package com.codegym.task.task25.task2515_Space;
 
 /**
  * Spaceship class
