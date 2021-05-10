@@ -93,10 +93,8 @@ public class Space {
      * The method returns a single list that contains all objects in the game
      */
     public List<BaseObject> getAllItems() {
-        // You need to create a new list and put all the game objects into it.
-        ArrayList<BaseObject> list = new ArrayList<>();
+        ArrayList<BaseObject> list = new ArrayList<BaseObject>(ufos);
         list.add(ship);
-        list.addAll(ufos);
         list.addAll(bombs);
         list.addAll(rockets);
         return list;
@@ -106,7 +104,7 @@ public class Space {
      * Create a new UFO. Once in every 10 calls.
      */
     public void createUfo() {
-        if (ufos.size() > 0) return;;
+        if (ufos.size() > 0) return;
 
         int random10 = (int) (Math.random() * 10);
         if (random10 == 0) {
@@ -123,12 +121,12 @@ public class Space {
      */
     public void checkBombs() {
         for (Bomb bomb : bombs) {
-            if (bomb.intersects(ship)) {
+            if (ship.intersects(bomb)) {
                 ship.die();
                 bomb.die();
             }
 
-            if (bomb.y > height)
+            if (bomb.getY() >= height)
                 bomb.die();
         }
     }
@@ -147,7 +145,7 @@ public class Space {
                 }
             }
 
-            if (rocket.y < 0)
+            if (rocket.getY() <= 0)
                 rocket.die();
         }
     }
@@ -178,7 +176,26 @@ public class Space {
      * b) draw all the objects on the canvas.
      */
     public void draw(Canvas canvas) {
-        // Here you need to draw all game objects
+        // Draw the game
+        for (int i = 0; i < width + 2; i++) {
+            for (int j = 0; j < height + 2; j++) {
+                canvas.setPoint(i, j, '.');
+            }
+        }
+
+        for (int i = 0; i < width + 2; i++) {
+            canvas.setPoint(i, 0, '-');
+            canvas.setPoint(i, height + 1, '-');
+        }
+
+        for (int i = 0; i < height + 2; i++) {
+            canvas.setPoint(0, i, '|');
+            canvas.setPoint(width + 1, i, '|');
+        }
+
+        for (BaseObject object : getAllItems()) {
+            object.draw(canvas);
+        }
     }
 
 
