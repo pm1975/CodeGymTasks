@@ -3,7 +3,7 @@ package com.codegym.task.task37.task3707;
 import java.io.Serializable;
 import java.util.*;
 
-public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneable, Set<E> {
+public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Serializable {
     private static final Object PRESENT = new Object();
     private transient HashMap<E, Object> map;
 
@@ -48,5 +48,16 @@ public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneab
     @Override
     public boolean remove(Object o) {
         return map.remove(o) == PRESENT;
+    }
+
+    @Override
+    public Object clone() {
+        try {
+            AmigoSet<E> newSet = (AmigoSet<E>) super.clone();
+            newSet.map = (HashMap<E, Object>) map.clone();
+            return newSet;
+        } catch (Exception e) {
+            throw new InternalError();
+        }
     }
 }
