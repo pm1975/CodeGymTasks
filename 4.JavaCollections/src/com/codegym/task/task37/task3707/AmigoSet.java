@@ -64,7 +64,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Se
     }
 
     private void writeObject(ObjectOutputStream s) throws java.io.IOException {
-        // Write our any hidden serialization magic
+        // Write out any hidden serialization magic
         s.defaultWriteObject();
 
         // Write out HashMap capacity and load factor
@@ -74,7 +74,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Se
         // Write out size
         s.writeInt(map.size());
 
-        // Write out all elements in the proper order
+        // Write out all elements in the proper order.
         for (E e : map.keySet())
             s.writeObject(e);
     }
@@ -83,7 +83,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Se
         // Read in any hidden serialization magic
         s.defaultReadObject();
 
-        // Read in HashMap capacity any load factor and create backing HashMap
+        // Read in HashMap capacity and load factor and create backing HashMap
         int capacity = s.readInt();
         float loadFactor = s.readFloat();
         map = new HashMap<>(capacity, loadFactor);
@@ -91,7 +91,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Set<E>, Cloneable, Se
         // Read in size
         int size = s.readInt();
 
-        // Read in all elements in the proper order
+        // Read in all elements in the proper order.
         for (int i = 0; i < size; i++) {
             E e = (E) s.readObject();
             map.put(e, PRESENT);
