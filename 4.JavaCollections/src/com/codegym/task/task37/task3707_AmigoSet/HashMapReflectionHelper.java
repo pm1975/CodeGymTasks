@@ -1,4 +1,4 @@
-package com.codegym.task.task37.task3707;
+package com.codegym.task.task37.task3707_AmigoSet;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package com.codegym.task.task37.task3707;
+package com.codegym.task.task37.task3707_AmigoSet;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
