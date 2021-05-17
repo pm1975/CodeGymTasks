@@ -1,4 +1,4 @@
-package com.codegym.task.task37.task3702;
+package com.codegym.task.task37.task3702_Factory;
 
 public class Solution {
     public static void main(String[] args) {

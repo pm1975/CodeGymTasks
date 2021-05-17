@@ -1,7 +1,7 @@
-package com.codegym.task.task37.task3702.female;
+package com.codegym.task.task37.task3702_Factory.female;
 
-import com.codegym.task.task37.task3702.AbstractFactory;
-import com.codegym.task.task37.task3702.Human;
+import com.codegym.task.task37.task3702_Factory.AbstractFactory;
+import com.codegym.task.task37.task3702_Factory.Human;
 
 public class FemaleFactory implements AbstractFactory {
     public Human getPerson(int age) {

@@ -1,7 +1,7 @@
-package com.codegym.task.task37.task3702;
+package com.codegym.task.task37.task3702_Factory;
 
-import com.codegym.task.task37.task3702.female.FemaleFactory;
-import com.codegym.task.task37.task3702.male.MaleFactory;
+import com.codegym.task.task37.task3702_Factory.female.FemaleFactory;
+import com.codegym.task.task37.task3702_Factory.male.MaleFactory;
 
 public class FactoryProducer {
     public static enum HumanFactoryType {

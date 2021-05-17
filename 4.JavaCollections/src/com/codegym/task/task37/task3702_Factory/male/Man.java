@@ -1,6 +1,6 @@
-package com.codegym.task.task37.task3702.male;
+package com.codegym.task.task37.task3702_Factory.male;
 
-import com.codegym.task.task37.task3702.Human;
+import com.codegym.task.task37.task3702_Factory.Human;
 
 public class Man implements Human {
     @Override
