@@ -136,7 +136,8 @@ public class FileStorageStrategy implements StorageStrategy {
         return bucketSizeLimit;
     }
 
-    public void setBucketSizeLimit() {
+    public void setBucketSizeLimit(long bucketSizeLimit) {
         this.bucketSizeLimit = bucketSizeLimit;
     }
 }
+
