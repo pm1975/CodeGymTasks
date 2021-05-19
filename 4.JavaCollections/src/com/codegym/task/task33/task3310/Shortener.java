@@ -23,3 +23,4 @@ public class Shortener {
         return storageStrategy.getValue(id);
     }
 }
+

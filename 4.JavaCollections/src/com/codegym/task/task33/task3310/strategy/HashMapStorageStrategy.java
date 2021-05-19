@@ -26,9 +26,9 @@ public class HashMapStorageStrategy implements StorageStrategy {
 
     @Override
     public Long getKey(String value) {
-        for (Map.Entry<Long, String> entry : data.entrySet()) {
-            if (Objects.equals(value, entry.getValue())) {
-                return entry.getKey();
+        for (Long key : data.keySet()) {
+            if (data.get(key) == value) {
+                return key;
             }
         }
         return null;
