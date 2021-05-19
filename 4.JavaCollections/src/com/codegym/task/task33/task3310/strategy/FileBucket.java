@@ -33,7 +33,7 @@ public class FileBucket {
     public void putEntry(Entry entry) {
         try (ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(path))) {
             oos.writeObject(entry);
-        } catch (IOException e) {
+        } catch (Exception e) {
 
         }
     }
