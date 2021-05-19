@@ -22,7 +22,7 @@ public class Solution {
 
         Set<String> origStrings = new HashSet<>();
 
-        for (long i = 0; i < elementsNumber; i++) {
+        for (int i = 0; i < elementsNumber; ++i) {
             origStrings.add(Helper.generateRandomString());
         }
 
@@ -40,11 +40,10 @@ public class Solution {
         time = endTimestamp.getTime() - startTimestamp.getTime();
         Helper.printMessage("Time to get strings for " + elementsNumber + " identifiers: " + time);
 
-        if (origStrings.equals(strings)) {
+        if (origStrings.equals(strings))
             Helper.printMessage("The test passed.");
-        } else {
+        else
             Helper.printMessage("The test failed.");
-        }
 
         Helper.printMessage("");
     }
@@ -59,10 +58,9 @@ public class Solution {
 
     public static Set<String> getStrings(Shortener shortener, Set<Long> keys) {
         Set<String> strings = new HashSet<>();
-        for (Long key : keys) {
-            strings.add(shortener.getString(key));
+        for (Long k : keys) {
+            strings.add(shortener.getString(k));
         }
         return strings;
     }
-
 }
