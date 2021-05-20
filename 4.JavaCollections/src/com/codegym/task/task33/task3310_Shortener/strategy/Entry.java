@@ -1,4 +1,4 @@
-package com.codegym.task.task33.task3310.strategy;
+package com.codegym.task.task33.task3310_Shortener.strategy;
 
 import java.io.Serializable;
 import java.util.Objects;

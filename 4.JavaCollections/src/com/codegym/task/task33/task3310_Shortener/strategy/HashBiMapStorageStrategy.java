@@ -1,9 +1,9 @@
-package com.codegym.task.task33.task3310.strategy;
+package com.codegym.task.task33.task3310_Shortener.strategy;
 
-import java.util.HashMap;
+import com.google.common.collect.HashBiMap;
 
-public class HashMapStorageStrategy implements StorageStrategy {
-    private  HashMap<Long, String> data = new HashMap<>();
+public class HashBiMapStorageStrategy implements StorageStrategy {
+    private HashBiMap<Long, String> data = HashBiMap.create();
 
     public boolean containsKey(Long key) {
         return data.containsKey(key);
@@ -22,11 +22,6 @@ public class HashMapStorageStrategy implements StorageStrategy {
     }
 
     public Long getKey(String value) {
-        for(Long key : data.keySet()) {
-            if (data.get(key).equals(value)) {
-                return key;
-            }
-        }
-        return null;
+        return data.inverse().get(value);
     }
 }

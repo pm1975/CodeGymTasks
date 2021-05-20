@@ -1,4 +1,4 @@
-package com.codegym.task.task33.task3310;
+package com.codegym.task.task33.task3310_Shortener;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

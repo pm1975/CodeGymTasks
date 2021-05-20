@@ -1,6 +1,6 @@
-package com.codegym.task.task33.task3310;
+package com.codegym.task.task33.task3310_Shortener;
 
-import com.codegym.task.task33.task3310.strategy.*;
+import com.codegym.task.task33.task3310_Shortener.strategy.*;
 
 import java.util.Date;
 import java.util.HashSet;

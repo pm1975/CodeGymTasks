@@ -1,9 +1,9 @@
-package com.codegym.task.task33.task3310.tests;
+package com.codegym.task.task33.task3310_Shortener.tests;
 
-import com.codegym.task.task33.task3310.Helper;
-import com.codegym.task.task33.task3310.Shortener;
-import com.codegym.task.task33.task3310.strategy.HashBiMapStorageStrategy;
-import com.codegym.task.task33.task3310.strategy.HashMapStorageStrategy;
+import com.codegym.task.task33.task3310_Shortener.Helper;
+import com.codegym.task.task33.task3310_Shortener.Shortener;
+import com.codegym.task.task33.task3310_Shortener.strategy.HashBiMapStorageStrategy;
+import com.codegym.task.task33.task3310_Shortener.strategy.HashMapStorageStrategy;
 import org.junit.Assert;
 import org.junit.Test;
 

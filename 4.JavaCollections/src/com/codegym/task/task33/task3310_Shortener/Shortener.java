@@ -1,6 +1,6 @@
-package com.codegym.task.task33.task3310;
+package com.codegym.task.task33.task3310_Shortener;
 
-import com.codegym.task.task33.task3310.strategy.StorageStrategy;
+import com.codegym.task.task33.task3310_Shortener.strategy.StorageStrategy;
 
 public class Shortener {
     private Long lastId = 0L;

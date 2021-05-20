@@ -1,7 +1,7 @@
-package com.codegym.task.task33.task3310.tests;
+package com.codegym.task.task33.task3310_Shortener.tests;
 
-import com.codegym.task.task33.task3310.Shortener;
-import com.codegym.task.task33.task3310.strategy.*;
+import com.codegym.task.task33.task3310_Shortener.Shortener;
+import com.codegym.task.task33.task3310_Shortener.strategy.*;
 import org.junit.Assert;
 import org.junit.Test;
 
