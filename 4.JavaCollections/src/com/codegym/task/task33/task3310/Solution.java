@@ -12,14 +12,11 @@ public class Solution {
 
         testStrategy(new HashMapStorageStrategy(), elementsNumber);
 
+        testStrategy(new FileStorageStrategy(), elementsNumber);
+
         testStrategy(new OurHashBiMapStorageStrategy(), elementsNumber);
 
         testStrategy(new OurHashMapStorageStrategy(), elementsNumber);
-
-        testStrategy(new HashBiMapStorageStrategy(), elementsNumber);
-
-        testStrategy(new DualHashBidiMapStorageStrategy(), elementsNumber);
-        //testStrategy(new FileStorageStrategy(), elementsNumber);
     }
 
     public static void testStrategy(StorageStrategy strategy, long elementsNumber) {
