@@ -16,7 +16,9 @@ public class Solution {
 
         testStrategy(new OurHashMapStorageStrategy(), elementsNumber);
 
-        testStrategy(new FileStorageStrategy(), elementsNumber);
+        testStrategy(new HashBiMapStorageStrategy(), elementsNumber);
+
+        //testStrategy(new FileStorageStrategy(), elementsNumber);
     }
 
     public static void testStrategy(StorageStrategy strategy, long elementsNumber) {
