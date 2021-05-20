@@ -18,6 +18,7 @@ public class Solution {
 
         testStrategy(new HashBiMapStorageStrategy(), elementsNumber);
 
+        testStrategy(new DualHashBidiMapStorageStrategy(), elementsNumber);
         //testStrategy(new FileStorageStrategy(), elementsNumber);
     }
 
