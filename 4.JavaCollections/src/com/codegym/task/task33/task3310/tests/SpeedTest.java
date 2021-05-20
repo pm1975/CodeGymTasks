@@ -14,12 +14,12 @@ import java.util.Set;
 public class SpeedTest {
     @Test
     public void testHashMapStorage() {
-        Shortener shortener1 = new Shortener( new HashMapStorageStrategy());
+        Shortener shortener1 = new Shortener(new HashMapStorageStrategy());
         Shortener shortener2 = new Shortener(new HashBiMapStorageStrategy());
 
         Set<String> origStrings = new HashSet<>();
 
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10000; ++i) {
             origStrings.add(Helper.generateRandomString());
         }
 
@@ -34,23 +34,21 @@ public class SpeedTest {
         long idToStringTime2 = getTimeToGetStrings(shortener2, ids2, strings2);
 
         Assert.assertTrue(stringToIdTime1 > stringToIdTime2);
-        Assert.assertEquals(idToStringTime1, idToStringTime2, 30);
+        Assert.assertEquals(idToStringTime1, idToStringTime2, 20);
     }
 
     public long getTimeToGetIds(Shortener shortener, Set<String> strings, Set<Long> ids) {
         Date startTimestamp = new Date();
-        for (String s : strings) {
+        for (String s : strings)
             ids.add(shortener.getId(s));
-        }
         Date endTimestamp = new Date();
         return endTimestamp.getTime() - startTimestamp.getTime();
     }
 
     public long getTimeToGetStrings(Shortener shortener, Set<Long> ids, Set<String> strings) {
         Date startTimestamp = new Date();
-        for (Long id : ids) {
+        for (Long id : ids)
             strings.add(shortener.getString(id));
-        }
         Date endTimestamp = new Date();
         return endTimestamp.getTime() - startTimestamp.getTime();
     }
