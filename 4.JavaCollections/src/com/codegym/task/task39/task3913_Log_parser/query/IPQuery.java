@@ -1,7 +1,7 @@
-package com.codegym.task.task39.task3913.query;
+package com.codegym.task.task39.task3913_Log_parser.query;
 
-import com.codegym.task.task39.task3913.Event;
-import com.codegym.task.task39.task3913.Status;
+import com.codegym.task.task39.task3913_Log_parser.Event;
+import com.codegym.task.task39.task3913_Log_parser.Status;
 
 import java.util.Date;
 import java.util.Set;

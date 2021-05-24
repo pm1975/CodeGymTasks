@@ -1,6 +1,6 @@
-package com.codegym.task.task39.task3913.query;
+package com.codegym.task.task39.task3913_Log_parser.query;
 
-import com.codegym.task.task39.task3913.Event;
+import com.codegym.task.task39.task3913_Log_parser.Event;
 
 import java.util.Date;
 import java.util.Map;

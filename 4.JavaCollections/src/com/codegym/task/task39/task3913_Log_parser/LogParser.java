@@ -1,6 +1,6 @@
-package com.codegym.task.task39.task3913;
+package com.codegym.task.task39.task3913_Log_parser;
 
-import com.codegym.task.task39.task3913.query.*;
+import com.codegym.task.task39.task3913_Log_parser.query.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
